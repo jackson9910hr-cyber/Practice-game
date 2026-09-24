@@ -1,0 +1,325 @@
+{
+  "game": "sound-butterfly",
+  "levels": [
+    {
+      "level": 1,
+      "params": {
+        "choices": 2,
+        "speed": 0.5,
+        "confusable": false,
+        "cvcChoices": 2,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 2,
+      "params": {
+        "choices": 2,
+        "speed": 0.51,
+        "confusable": false,
+        "cvcChoices": 2,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 3,
+      "params": {
+        "choices": 2,
+        "speed": 0.53,
+        "confusable": false,
+        "cvcChoices": 2,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 4,
+      "params": {
+        "choices": 2,
+        "speed": 0.54,
+        "confusable": false,
+        "cvcChoices": 2,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 5,
+      "params": {
+        "choices": 2,
+        "speed": 0.55,
+        "confusable": false,
+        "cvcChoices": 2,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 6,
+      "params": {
+        "choices": 3,
+        "speed": 0.56,
+        "confusable": false,
+        "cvcChoices": 2,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 7,
+      "params": {
+        "choices": 3,
+        "speed": 0.58,
+        "confusable": false,
+        "cvcChoices": 2,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 8,
+      "params": {
+        "choices": 3,
+        "speed": 0.59,
+        "confusable": false,
+        "cvcChoices": 3,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 9,
+      "params": {
+        "choices": 3,
+        "speed": 0.6,
+        "confusable": false,
+        "cvcChoices": 3,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 10,
+      "params": {
+        "choices": 3,
+        "speed": 0.62,
+        "confusable": false,
+        "cvcChoices": 3,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 11,
+      "params": {
+        "choices": 3,
+        "speed": 0.63,
+        "confusable": false,
+        "cvcChoices": 3,
+        "cvcDiff": "first"
+      }
+    },
+    {
+      "level": 12,
+      "params": {
+        "choices": 3,
+        "speed": 0.64,
+        "confusable": false,
+        "cvcChoices": 3,
+        "cvcDiff": "last"
+      }
+    },
+    {
+      "level": 13,
+      "params": {
+        "choices": 3,
+        "speed": 0.65,
+        "confusable": false,
+        "cvcChoices": 3,
+        "cvcDiff": "last"
+      }
+    },
+    {
+      "level": 14,
+      "params": {
+        "choices": 3,
+        "speed": 0.67,
+        "confusable": false,
+        "cvcChoices": 3,
+        "cvcDiff": "last"
+      }
+    },
+    {
+      "level": 15,
+      "params": {
+        "choices": 3,
+        "speed": 0.68,
+        "confusable": false,
+        "cvcChoices": 3,
+        "cvcDiff": "last"
+      }
+    },
+    {
+      "level": 16,
+      "params": {
+        "choices": 4,
+        "speed": 0.69,
+        "confusable": false,
+        "cvcChoices": 3,
+        "cvcDiff": "last"
+      }
+    },
+    {
+      "level": 17,
+      "params": {
+        "choices": 4,
+        "speed": 0.71,
+        "confusable": false,
+        "cvcChoices": 3,
+        "cvcDiff": "last"
+      }
+    },
+    {
+      "level": 18,
+      "params": {
+        "choices": 4,
+        "speed": 0.72,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "last"
+      }
+    },
+    {
+      "level": 19,
+      "params": {
+        "choices": 4,
+        "speed": 0.73,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "last"
+      }
+    },
+    {
+      "level": 20,
+      "params": {
+        "choices": 4,
+        "speed": 0.75,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "last"
+      }
+    },
+    {
+      "level": 21,
+      "params": {
+        "choices": 4,
+        "speed": 0.76,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "last"
+      }
+    },
+    {
+      "level": 22,
+      "params": {
+        "choices": 4,
+        "speed": 0.77,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    },
+    {
+      "level": 23,
+      "params": {
+        "choices": 4,
+        "speed": 0.78,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    },
+    {
+      "level": 24,
+      "params": {
+        "choices": 4,
+        "speed": 0.8,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    },
+    {
+      "level": 25,
+      "params": {
+        "choices": 4,
+        "speed": 0.81,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    },
+    {
+      "level": 26,
+      "params": {
+        "choices": 4,
+        "speed": 0.82,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    },
+    {
+      "level": 27,
+      "params": {
+        "choices": 4,
+        "speed": 0.84,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    },
+    {
+      "level": 28,
+      "params": {
+        "choices": 4,
+        "speed": 0.85,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    },
+    {
+      "level": 29,
+      "params": {
+        "choices": 4,
+        "speed": 0.86,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    },
+    {
+      "level": 30,
+      "params": {
+        "choices": 4,
+        "speed": 0.87,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    },
+    {
+      "level": 31,
+      "params": {
+        "choices": 4,
+        "speed": 0.89,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    },
+    {
+      "level": 32,
+      "params": {
+        "choices": 4,
+        "speed": 0.9,
+        "confusable": true,
+        "cvcChoices": 4,
+        "cvcDiff": "middle"
+      }
+    }
+  ]
+}

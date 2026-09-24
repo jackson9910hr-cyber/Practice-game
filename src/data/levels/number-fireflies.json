@@ -1,0 +1,389 @@
+{
+  "game": "number-fireflies",
+  "levels": [
+    {
+      "level": 1,
+      "params": {
+        "count10": 4,
+        "count20": 12,
+        "sum10": 5,
+        "sum20": 12,
+        "scatter": 0,
+        "choices": 3,
+        "subtractChance": 0.2
+      }
+    },
+    {
+      "level": 2,
+      "params": {
+        "count10": 4,
+        "count20": 12,
+        "sum10": 5,
+        "sum20": 12,
+        "scatter": 0.03,
+        "choices": 3,
+        "subtractChance": 0.21
+      }
+    },
+    {
+      "level": 3,
+      "params": {
+        "count10": 5,
+        "count20": 13,
+        "sum10": 6,
+        "sum20": 13,
+        "scatter": 0.06,
+        "choices": 3,
+        "subtractChance": 0.22
+      }
+    },
+    {
+      "level": 4,
+      "params": {
+        "count10": 5,
+        "count20": 13,
+        "sum10": 6,
+        "sum20": 13,
+        "scatter": 0.1,
+        "choices": 3,
+        "subtractChance": 0.23
+      }
+    },
+    {
+      "level": 5,
+      "params": {
+        "count10": 6,
+        "count20": 14,
+        "sum10": 6,
+        "sum20": 13,
+        "scatter": 0.13,
+        "choices": 3,
+        "subtractChance": 0.24
+      }
+    },
+    {
+      "level": 6,
+      "params": {
+        "count10": 6,
+        "count20": 14,
+        "sum10": 7,
+        "sum20": 14,
+        "scatter": 0.16,
+        "choices": 3,
+        "subtractChance": 0.25
+      }
+    },
+    {
+      "level": 7,
+      "params": {
+        "count10": 6,
+        "count20": 15,
+        "sum10": 7,
+        "sum20": 14,
+        "scatter": 0.19,
+        "choices": 3,
+        "subtractChance": 0.26
+      }
+    },
+    {
+      "level": 8,
+      "params": {
+        "count10": 7,
+        "count20": 15,
+        "sum10": 7,
+        "sum20": 14,
+        "scatter": 0.23,
+        "choices": 3,
+        "subtractChance": 0.27
+      }
+    },
+    {
+      "level": 9,
+      "params": {
+        "count10": 7,
+        "count20": 15,
+        "sum10": 8,
+        "sum20": 15,
+        "scatter": 0.26,
+        "choices": 3,
+        "subtractChance": 0.28
+      }
+    },
+    {
+      "level": 10,
+      "params": {
+        "count10": 8,
+        "count20": 16,
+        "sum10": 8,
+        "sum20": 15,
+        "scatter": 0.29,
+        "choices": 3,
+        "subtractChance": 0.29
+      }
+    },
+    {
+      "level": 11,
+      "params": {
+        "count10": 8,
+        "count20": 16,
+        "sum10": 8,
+        "sum20": 15,
+        "scatter": 0.32,
+        "choices": 3,
+        "subtractChance": 0.3
+      }
+    },
+    {
+      "level": 12,
+      "params": {
+        "count10": 8,
+        "count20": 17,
+        "sum10": 9,
+        "sum20": 16,
+        "scatter": 0.35,
+        "choices": 3,
+        "subtractChance": 0.31
+      }
+    },
+    {
+      "level": 13,
+      "params": {
+        "count10": 9,
+        "count20": 17,
+        "sum10": 9,
+        "sum20": 16,
+        "scatter": 0.39,
+        "choices": 3,
+        "subtractChance": 0.32
+      }
+    },
+    {
+      "level": 14,
+      "params": {
+        "count10": 9,
+        "count20": 17,
+        "sum10": 9,
+        "sum20": 17,
+        "scatter": 0.42,
+        "choices": 4,
+        "subtractChance": 0.33
+      }
+    },
+    {
+      "level": 15,
+      "params": {
+        "count10": 10,
+        "count20": 18,
+        "sum10": 10,
+        "sum20": 17,
+        "scatter": 0.45,
+        "choices": 4,
+        "subtractChance": 0.34
+      }
+    },
+    {
+      "level": 16,
+      "params": {
+        "count10": 10,
+        "count20": 18,
+        "sum10": 10,
+        "sum20": 17,
+        "scatter": 0.48,
+        "choices": 4,
+        "subtractChance": 0.35
+      }
+    },
+    {
+      "level": 17,
+      "params": {
+        "count10": 10,
+        "count20": 19,
+        "sum10": 10,
+        "sum20": 18,
+        "scatter": 0.52,
+        "choices": 4,
+        "subtractChance": 0.35
+      }
+    },
+    {
+      "level": 18,
+      "params": {
+        "count10": 10,
+        "count20": 19,
+        "sum10": 10,
+        "sum20": 18,
+        "scatter": 0.55,
+        "choices": 4,
+        "subtractChance": 0.36
+      }
+    },
+    {
+      "level": 19,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 18,
+        "scatter": 0.58,
+        "choices": 4,
+        "subtractChance": 0.37
+      }
+    },
+    {
+      "level": 20,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 19,
+        "scatter": 0.61,
+        "choices": 4,
+        "subtractChance": 0.38
+      }
+    },
+    {
+      "level": 21,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 19,
+        "scatter": 0.65,
+        "choices": 4,
+        "subtractChance": 0.39
+      }
+    },
+    {
+      "level": 22,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 19,
+        "scatter": 0.68,
+        "choices": 4,
+        "subtractChance": 0.4
+      }
+    },
+    {
+      "level": 23,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 20,
+        "scatter": 0.71,
+        "choices": 4,
+        "subtractChance": 0.41
+      }
+    },
+    {
+      "level": 24,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 20,
+        "scatter": 0.74,
+        "choices": 4,
+        "subtractChance": 0.42
+      }
+    },
+    {
+      "level": 25,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 20,
+        "scatter": 0.77,
+        "choices": 4,
+        "subtractChance": 0.43
+      }
+    },
+    {
+      "level": 26,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 20,
+        "scatter": 0.81,
+        "choices": 4,
+        "subtractChance": 0.44
+      }
+    },
+    {
+      "level": 27,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 20,
+        "scatter": 0.84,
+        "choices": 4,
+        "subtractChance": 0.45
+      }
+    },
+    {
+      "level": 28,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 20,
+        "scatter": 0.87,
+        "choices": 4,
+        "subtractChance": 0.46
+      }
+    },
+    {
+      "level": 29,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 20,
+        "scatter": 0.9,
+        "choices": 4,
+        "subtractChance": 0.47
+      }
+    },
+    {
+      "level": 30,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 20,
+        "scatter": 0.94,
+        "choices": 4,
+        "subtractChance": 0.48
+      }
+    },
+    {
+      "level": 31,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 20,
+        "scatter": 0.97,
+        "choices": 4,
+        "subtractChance": 0.49
+      }
+    },
+    {
+      "level": 32,
+      "params": {
+        "count10": 10,
+        "count20": 20,
+        "sum10": 10,
+        "sum20": 20,
+        "scatter": 1,
+        "choices": 4,
+        "subtractChance": 0.5
+      }
+    }
+  ]
+}

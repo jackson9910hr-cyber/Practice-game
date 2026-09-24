@@ -1,0 +1,293 @@
+{
+  "game": "ant-path",
+  "levels": [
+    {
+      "level": 1,
+      "params": {
+        "grid": 3,
+        "obstacles": 0,
+        "pathMin": 2,
+        "pathMax": 3
+      }
+    },
+    {
+      "level": 2,
+      "params": {
+        "grid": 3,
+        "obstacles": 0,
+        "pathMin": 2,
+        "pathMax": 3
+      }
+    },
+    {
+      "level": 3,
+      "params": {
+        "grid": 3,
+        "obstacles": 0,
+        "pathMin": 2,
+        "pathMax": 3
+      }
+    },
+    {
+      "level": 4,
+      "params": {
+        "grid": 3,
+        "obstacles": 1,
+        "pathMin": 2,
+        "pathMax": 4
+      }
+    },
+    {
+      "level": 5,
+      "params": {
+        "grid": 3,
+        "obstacles": 1,
+        "pathMin": 3,
+        "pathMax": 4
+      }
+    },
+    {
+      "level": 6,
+      "params": {
+        "grid": 3,
+        "obstacles": 1,
+        "pathMin": 3,
+        "pathMax": 4
+      }
+    },
+    {
+      "level": 7,
+      "params": {
+        "grid": 3,
+        "obstacles": 1,
+        "pathMin": 3,
+        "pathMax": 4
+      }
+    },
+    {
+      "level": 8,
+      "params": {
+        "grid": 4,
+        "obstacles": 2,
+        "pathMin": 3,
+        "pathMax": 4
+      }
+    },
+    {
+      "level": 9,
+      "params": {
+        "grid": 4,
+        "obstacles": 2,
+        "pathMin": 3,
+        "pathMax": 5
+      }
+    },
+    {
+      "level": 10,
+      "params": {
+        "grid": 4,
+        "obstacles": 2,
+        "pathMin": 3,
+        "pathMax": 5
+      }
+    },
+    {
+      "level": 11,
+      "params": {
+        "grid": 4,
+        "obstacles": 2,
+        "pathMin": 3,
+        "pathMax": 5
+      }
+    },
+    {
+      "level": 12,
+      "params": {
+        "grid": 4,
+        "obstacles": 2,
+        "pathMin": 3,
+        "pathMax": 5
+      }
+    },
+    {
+      "level": 13,
+      "params": {
+        "grid": 4,
+        "obstacles": 3,
+        "pathMin": 4,
+        "pathMax": 5
+      }
+    },
+    {
+      "level": 14,
+      "params": {
+        "grid": 4,
+        "obstacles": 3,
+        "pathMin": 4,
+        "pathMax": 6
+      }
+    },
+    {
+      "level": 15,
+      "params": {
+        "grid": 4,
+        "obstacles": 3,
+        "pathMin": 4,
+        "pathMax": 6
+      }
+    },
+    {
+      "level": 16,
+      "params": {
+        "grid": 5,
+        "obstacles": 3,
+        "pathMin": 4,
+        "pathMax": 6
+      }
+    },
+    {
+      "level": 17,
+      "params": {
+        "grid": 5,
+        "obstacles": 4,
+        "pathMin": 4,
+        "pathMax": 6
+      }
+    },
+    {
+      "level": 18,
+      "params": {
+        "grid": 5,
+        "obstacles": 4,
+        "pathMin": 4,
+        "pathMax": 6
+      }
+    },
+    {
+      "level": 19,
+      "params": {
+        "grid": 5,
+        "obstacles": 4,
+        "pathMin": 4,
+        "pathMax": 6
+      }
+    },
+    {
+      "level": 20,
+      "params": {
+        "grid": 5,
+        "obstacles": 4,
+        "pathMin": 4,
+        "pathMax": 7
+      }
+    },
+    {
+      "level": 21,
+      "params": {
+        "grid": 5,
+        "obstacles": 5,
+        "pathMin": 5,
+        "pathMax": 7
+      }
+    },
+    {
+      "level": 22,
+      "params": {
+        "grid": 5,
+        "obstacles": 5,
+        "pathMin": 5,
+        "pathMax": 7
+      }
+    },
+    {
+      "level": 23,
+      "params": {
+        "grid": 5,
+        "obstacles": 5,
+        "pathMin": 5,
+        "pathMax": 7
+      }
+    },
+    {
+      "level": 24,
+      "params": {
+        "grid": 6,
+        "obstacles": 5,
+        "pathMin": 5,
+        "pathMax": 7
+      }
+    },
+    {
+      "level": 25,
+      "params": {
+        "grid": 6,
+        "obstacles": 5,
+        "pathMin": 5,
+        "pathMax": 8
+      }
+    },
+    {
+      "level": 26,
+      "params": {
+        "grid": 6,
+        "obstacles": 6,
+        "pathMin": 5,
+        "pathMax": 8
+      }
+    },
+    {
+      "level": 27,
+      "params": {
+        "grid": 6,
+        "obstacles": 6,
+        "pathMin": 5,
+        "pathMax": 8
+      }
+    },
+    {
+      "level": 28,
+      "params": {
+        "grid": 6,
+        "obstacles": 6,
+        "pathMin": 5,
+        "pathMax": 8
+      }
+    },
+    {
+      "level": 29,
+      "params": {
+        "grid": 6,
+        "obstacles": 6,
+        "pathMin": 6,
+        "pathMax": 8
+      }
+    },
+    {
+      "level": 30,
+      "params": {
+        "grid": 6,
+        "obstacles": 7,
+        "pathMin": 6,
+        "pathMax": 9
+      }
+    },
+    {
+      "level": 31,
+      "params": {
+        "grid": 6,
+        "obstacles": 7,
+        "pathMin": 6,
+        "pathMax": 9
+      }
+    },
+    {
+      "level": 32,
+      "params": {
+        "grid": 6,
+        "obstacles": 7,
+        "pathMin": 6,
+        "pathMax": 9
+      }
+    }
+  ]
+}

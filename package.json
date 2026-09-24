@@ -1,0 +1,41 @@
+{
+  "name": "starlight-garden",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "별빛 정원 — 만 7세를 위한 30일 한글·수·사고력·영어 학습 게임 (PWA)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:cov": "vitest run --coverage",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "gen:levels": "tsx scripts/gen-levels.ts",
+    "gen:audio": "tsx scripts/gen-audio-manifest.ts",
+    "simulate": "tsx scripts/simulate.ts",
+    "check": "npm run lint && npm run format:check && npm run validate:data && npm run test:cov && npm run build"
+  },
+  "dependencies": {
+    "idb": "^8.0.3",
+    "pixi.js": "^8.21.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/node": "^22.20.4",
+    "@vitest/coverage-v8": "^3.2.7",
+    "eslint": "^9.39.5",
+    "fake-indexeddb": "^6.2.5",
+    "prettier": "^3.9.9",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.70.1",
+    "vite": "^6.4.3",
+    "vitest": "^3.2.7",
+    "zod": "^3.25.76"
+  }
+}

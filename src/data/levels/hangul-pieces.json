@@ -1,0 +1,261 @@
+{
+  "game": "hangul-pieces",
+  "levels": [
+    {
+      "level": 1,
+      "params": {
+        "extraPieces": 1,
+        "ghost": true,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 2,
+      "params": {
+        "extraPieces": 1,
+        "ghost": true,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 3,
+      "params": {
+        "extraPieces": 1,
+        "ghost": true,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 4,
+      "params": {
+        "extraPieces": 1,
+        "ghost": true,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 5,
+      "params": {
+        "extraPieces": 2,
+        "ghost": true,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 6,
+      "params": {
+        "extraPieces": 2,
+        "ghost": true,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 7,
+      "params": {
+        "extraPieces": 2,
+        "ghost": true,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 8,
+      "params": {
+        "extraPieces": 2,
+        "ghost": true,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 9,
+      "params": {
+        "extraPieces": 2,
+        "ghost": false,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 10,
+      "params": {
+        "extraPieces": 2,
+        "ghost": false,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 11,
+      "params": {
+        "extraPieces": 2,
+        "ghost": false,
+        "blanks": 1
+      }
+    },
+    {
+      "level": 12,
+      "params": {
+        "extraPieces": 2,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 13,
+      "params": {
+        "extraPieces": 3,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 14,
+      "params": {
+        "extraPieces": 3,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 15,
+      "params": {
+        "extraPieces": 3,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 16,
+      "params": {
+        "extraPieces": 3,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 17,
+      "params": {
+        "extraPieces": 3,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 18,
+      "params": {
+        "extraPieces": 3,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 19,
+      "params": {
+        "extraPieces": 3,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 20,
+      "params": {
+        "extraPieces": 3,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 21,
+      "params": {
+        "extraPieces": 4,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 22,
+      "params": {
+        "extraPieces": 4,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 23,
+      "params": {
+        "extraPieces": 4,
+        "ghost": false,
+        "blanks": 2
+      }
+    },
+    {
+      "level": 24,
+      "params": {
+        "extraPieces": 4,
+        "ghost": false,
+        "blanks": 3
+      }
+    },
+    {
+      "level": 25,
+      "params": {
+        "extraPieces": 4,
+        "ghost": false,
+        "blanks": 3
+      }
+    },
+    {
+      "level": 26,
+      "params": {
+        "extraPieces": 4,
+        "ghost": false,
+        "blanks": 3
+      }
+    },
+    {
+      "level": 27,
+      "params": {
+        "extraPieces": 4,
+        "ghost": false,
+        "blanks": 3
+      }
+    },
+    {
+      "level": 28,
+      "params": {
+        "extraPieces": 4,
+        "ghost": false,
+        "blanks": 3
+      }
+    },
+    {
+      "level": 29,
+      "params": {
+        "extraPieces": 5,
+        "ghost": false,
+        "blanks": 3
+      }
+    },
+    {
+      "level": 30,
+      "params": {
+        "extraPieces": 5,
+        "ghost": false,
+        "blanks": 3
+      }
+    },
+    {
+      "level": 31,
+      "params": {
+        "extraPieces": 5,
+        "ghost": false,
+        "blanks": 3
+      }
+    },
+    {
+      "level": 32,
+      "params": {
+        "extraPieces": 5,
+        "ghost": false,
+        "blanks": 3
+      }
+    }
+  ]
+}

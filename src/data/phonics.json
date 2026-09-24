@@ -1,0 +1,681 @@
+{
+  "letters": [
+    {
+      "letter": "s",
+      "day": 1,
+      "sound": "s",
+      "position": "initial",
+      "keyword": "sun",
+      "pictures": [
+        "sun",
+        "six",
+        "seven",
+        "sister",
+        "socks",
+        "sad",
+        "sing"
+      ]
+    },
+    {
+      "letter": "a",
+      "day": 2,
+      "sound": "a",
+      "position": "initial",
+      "keyword": "ant",
+      "pictures": [
+        "ant",
+        "apple",
+        "angry"
+      ]
+    },
+    {
+      "letter": "t",
+      "day": 3,
+      "sound": "t",
+      "position": "initial",
+      "keyword": "tree",
+      "pictures": [
+        "tree",
+        "two",
+        "ten",
+        "table",
+        "turtle",
+        "tired"
+      ]
+    },
+    {
+      "letter": "p",
+      "day": 4,
+      "sound": "p",
+      "position": "initial",
+      "keyword": "pink",
+      "pictures": [
+        "pink",
+        "purple",
+        "pig",
+        "pizza",
+        "pants",
+        "park",
+        "play"
+      ]
+    },
+    {
+      "letter": "i",
+      "day": 5,
+      "sound": "i",
+      "position": "initial",
+      "keyword": "insect",
+      "pictures": [
+        "insect",
+        "in"
+      ]
+    },
+    {
+      "letter": "n",
+      "day": 6,
+      "sound": "n",
+      "position": "initial",
+      "keyword": "nine",
+      "pictures": [
+        "nine",
+        "nose",
+        "night",
+        "nut"
+      ]
+    },
+    {
+      "letter": "m",
+      "day": 8,
+      "sound": "m",
+      "position": "initial",
+      "keyword": "moon",
+      "pictures": [
+        "moon",
+        "mom",
+        "monkey",
+        "milk",
+        "music"
+      ]
+    },
+    {
+      "letter": "d",
+      "day": 9,
+      "sound": "d",
+      "position": "initial",
+      "keyword": "dog",
+      "pictures": [
+        "dog",
+        "dad",
+        "duck",
+        "dress",
+        "dance",
+        "dream"
+      ]
+    },
+    {
+      "letter": "g",
+      "day": 10,
+      "sound": "g",
+      "position": "initial",
+      "keyword": "green",
+      "pictures": [
+        "green",
+        "grape",
+        "grandma",
+        "grandpa",
+        "gift",
+        "garden"
+      ]
+    },
+    {
+      "letter": "o",
+      "day": 11,
+      "sound": "o",
+      "position": "initial",
+      "keyword": "octopus",
+      "pictures": [
+        "octopus",
+        "on",
+        "ox"
+      ]
+    },
+    {
+      "letter": "c",
+      "day": 12,
+      "sound": "k",
+      "position": "initial",
+      "keyword": "cat",
+      "pictures": [
+        "cat",
+        "cake",
+        "cow",
+        "cookie",
+        "carrot",
+        "corn",
+        "coat",
+        "cold",
+        "kite",
+        "key",
+        "kangaroo",
+        "king"
+      ]
+    },
+    {
+      "letter": "k",
+      "day": 13,
+      "sound": "k",
+      "position": "initial",
+      "keyword": "kite",
+      "pictures": [
+        "cat",
+        "cake",
+        "cow",
+        "cookie",
+        "carrot",
+        "corn",
+        "coat",
+        "cold",
+        "kite",
+        "key",
+        "kangaroo",
+        "king"
+      ]
+    },
+    {
+      "letter": "e",
+      "day": 15,
+      "sound": "e",
+      "position": "initial",
+      "keyword": "egg",
+      "pictures": [
+        "egg",
+        "elephant",
+        "envelope"
+      ]
+    },
+    {
+      "letter": "u",
+      "day": 16,
+      "sound": "u",
+      "position": "initial",
+      "keyword": "umbrella",
+      "pictures": [
+        "umbrella",
+        "under",
+        "up"
+      ]
+    },
+    {
+      "letter": "r",
+      "day": 17,
+      "sound": "r",
+      "position": "initial",
+      "keyword": "red",
+      "pictures": [
+        "red",
+        "rabbit",
+        "rice",
+        "rainbow",
+        "rainy",
+        "rock",
+        "run",
+        "read"
+      ]
+    },
+    {
+      "letter": "h",
+      "day": 18,
+      "sound": "h",
+      "position": "initial",
+      "keyword": "hat",
+      "pictures": [
+        "hat",
+        "hand",
+        "head",
+        "heart",
+        "horse",
+        "hot",
+        "happy",
+        "hungry",
+        "hide"
+      ]
+    },
+    {
+      "letter": "b",
+      "day": 19,
+      "sound": "b",
+      "position": "initial",
+      "keyword": "ball",
+      "pictures": [
+        "blue",
+        "ball",
+        "balloon",
+        "bear",
+        "bug",
+        "baby",
+        "bread",
+        "banana",
+        "bag",
+        "boat",
+        "box",
+        "beach",
+        "big"
+      ]
+    },
+    {
+      "letter": "f",
+      "day": 20,
+      "sound": "f",
+      "position": "initial",
+      "keyword": "fish",
+      "pictures": [
+        "flower",
+        "four",
+        "five",
+        "fish",
+        "frog",
+        "foot",
+        "finger",
+        "fly",
+        "friend"
+      ]
+    },
+    {
+      "letter": "l",
+      "day": 22,
+      "sound": "l",
+      "position": "initial",
+      "keyword": "lion",
+      "pictures": [
+        "leaf",
+        "lion",
+        "lemon",
+        "leg",
+        "light"
+      ]
+    },
+    {
+      "letter": "j",
+      "day": 23,
+      "sound": "j",
+      "position": "initial",
+      "keyword": "juice",
+      "pictures": [
+        "juice",
+        "jump",
+        "juggle"
+      ]
+    },
+    {
+      "letter": "v",
+      "day": 24,
+      "sound": "v",
+      "position": "initial",
+      "keyword": "van",
+      "pictures": [
+        "van",
+        "violin",
+        "volcano"
+      ]
+    },
+    {
+      "letter": "w",
+      "day": 25,
+      "sound": "w",
+      "position": "initial",
+      "keyword": "water",
+      "pictures": [
+        "white",
+        "water",
+        "walk",
+        "windy",
+        "watermelon"
+      ]
+    },
+    {
+      "letter": "x",
+      "day": 26,
+      "sound": "ks",
+      "position": "final",
+      "keyword": "box",
+      "pictures": [
+        "box",
+        "fox",
+        "six"
+      ]
+    },
+    {
+      "letter": "y",
+      "day": 27,
+      "sound": "y",
+      "position": "initial",
+      "keyword": "yellow",
+      "pictures": [
+        "yellow",
+        "yarn",
+        "yoyo"
+      ]
+    },
+    {
+      "letter": "z",
+      "day": 29,
+      "sound": "z",
+      "position": "initial",
+      "keyword": "zoo",
+      "pictures": [
+        "zoo",
+        "zebra"
+      ]
+    },
+    {
+      "letter": "q",
+      "day": 29,
+      "sound": "kw",
+      "position": "initial",
+      "keyword": "queen",
+      "pictures": [
+        "queen",
+        "quiet"
+      ]
+    }
+  ],
+  "extraPictures": {
+    "ant": "🐜",
+    "insect": "🐞",
+    "octopus": "🐙",
+    "kite": "🪁",
+    "van": "🚐",
+    "queen": "👸",
+    "zebra": "🦓",
+    "fox": "🦊",
+    "kangaroo": "🦘",
+    "key": "🔑",
+    "king": "🤴",
+    "envelope": "✉️",
+    "up": "⬆️",
+    "violin": "🎻",
+    "volcano": "🌋",
+    "watermelon": "🍉",
+    "yarn": "🧶",
+    "yoyo": "🪀",
+    "quiet": "🤫",
+    "juggle": "🤹",
+    "nut": "🥜",
+    "ox": "🐂",
+    "net": "🥅",
+    "pen": "🖊️",
+    "pin": "📌",
+    "map": "🗺️",
+    "cap": "🧢",
+    "pan": "🍳",
+    "pot": "🍲",
+    "bed": "🛏️",
+    "hen": "🐔",
+    "web": "🕸️",
+    "bat": "🦇",
+    "rat": "🐀",
+    "bus": "🚌",
+    "cup": "☕",
+    "log": "🪵",
+    "lip": "👄",
+    "nest": "🪺"
+  },
+  "cvc": [
+    {
+      "word": "cat",
+      "letters": [
+        "c",
+        "a",
+        "t"
+      ]
+    },
+    {
+      "word": "map",
+      "letters": [
+        "m",
+        "a",
+        "p"
+      ]
+    },
+    {
+      "word": "cap",
+      "letters": [
+        "c",
+        "a",
+        "p"
+      ]
+    },
+    {
+      "word": "pan",
+      "letters": [
+        "p",
+        "a",
+        "n"
+      ]
+    },
+    {
+      "word": "pin",
+      "letters": [
+        "p",
+        "i",
+        "n"
+      ]
+    },
+    {
+      "word": "pig",
+      "letters": [
+        "p",
+        "i",
+        "g"
+      ]
+    },
+    {
+      "word": "dog",
+      "letters": [
+        "d",
+        "o",
+        "g"
+      ]
+    },
+    {
+      "word": "pot",
+      "letters": [
+        "p",
+        "o",
+        "t"
+      ]
+    },
+    {
+      "word": "net",
+      "letters": [
+        "n",
+        "e",
+        "t"
+      ]
+    },
+    {
+      "word": "pen",
+      "letters": [
+        "p",
+        "e",
+        "n"
+      ]
+    },
+    {
+      "word": "ten",
+      "letters": [
+        "t",
+        "e",
+        "n"
+      ]
+    },
+    {
+      "word": "sun",
+      "letters": [
+        "s",
+        "u",
+        "n"
+      ]
+    },
+    {
+      "word": "bug",
+      "letters": [
+        "b",
+        "u",
+        "g"
+      ]
+    },
+    {
+      "word": "cup",
+      "letters": [
+        "c",
+        "u",
+        "p"
+      ]
+    },
+    {
+      "word": "nut",
+      "letters": [
+        "n",
+        "u",
+        "t"
+      ]
+    },
+    {
+      "word": "bus",
+      "letters": [
+        "b",
+        "u",
+        "s"
+      ]
+    },
+    {
+      "word": "rat",
+      "letters": [
+        "r",
+        "a",
+        "t"
+      ]
+    },
+    {
+      "word": "red",
+      "letters": [
+        "r",
+        "e",
+        "d"
+      ]
+    },
+    {
+      "word": "run",
+      "letters": [
+        "r",
+        "u",
+        "n"
+      ]
+    },
+    {
+      "word": "hat",
+      "letters": [
+        "h",
+        "a",
+        "t"
+      ]
+    },
+    {
+      "word": "hen",
+      "letters": [
+        "h",
+        "e",
+        "n"
+      ]
+    },
+    {
+      "word": "hot",
+      "letters": [
+        "h",
+        "o",
+        "t"
+      ]
+    },
+    {
+      "word": "bed",
+      "letters": [
+        "b",
+        "e",
+        "d"
+      ]
+    },
+    {
+      "word": "bat",
+      "letters": [
+        "b",
+        "a",
+        "t"
+      ]
+    },
+    {
+      "word": "leg",
+      "letters": [
+        "l",
+        "e",
+        "g"
+      ]
+    },
+    {
+      "word": "lip",
+      "letters": [
+        "l",
+        "i",
+        "p"
+      ]
+    },
+    {
+      "word": "log",
+      "letters": [
+        "l",
+        "o",
+        "g"
+      ]
+    },
+    {
+      "word": "web",
+      "letters": [
+        "w",
+        "e",
+        "b"
+      ]
+    },
+    {
+      "word": "van",
+      "letters": [
+        "v",
+        "a",
+        "n"
+      ]
+    },
+    {
+      "word": "box",
+      "letters": [
+        "b",
+        "o",
+        "x"
+      ]
+    },
+    {
+      "word": "fox",
+      "letters": [
+        "f",
+        "o",
+        "x"
+      ]
+    },
+    {
+      "word": "six",
+      "letters": [
+        "s",
+        "i",
+        "x"
+      ]
+    }
+  ]
+}

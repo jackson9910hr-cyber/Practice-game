@@ -1,0 +1,261 @@
+{
+  "game": "word-garden",
+  "levels": [
+    {
+      "level": 1,
+      "params": {
+        "choices": 2,
+        "sameCategory": 0,
+        "pairs": 3
+      }
+    },
+    {
+      "level": 2,
+      "params": {
+        "choices": 2,
+        "sameCategory": 0,
+        "pairs": 3
+      }
+    },
+    {
+      "level": 3,
+      "params": {
+        "choices": 2,
+        "sameCategory": 0,
+        "pairs": 3
+      }
+    },
+    {
+      "level": 4,
+      "params": {
+        "choices": 2,
+        "sameCategory": 0,
+        "pairs": 3
+      }
+    },
+    {
+      "level": 5,
+      "params": {
+        "choices": 2,
+        "sameCategory": 0,
+        "pairs": 3
+      }
+    },
+    {
+      "level": 6,
+      "params": {
+        "choices": 3,
+        "sameCategory": 0,
+        "pairs": 3
+      }
+    },
+    {
+      "level": 7,
+      "params": {
+        "choices": 3,
+        "sameCategory": 0,
+        "pairs": 3
+      }
+    },
+    {
+      "level": 8,
+      "params": {
+        "choices": 3,
+        "sameCategory": 0,
+        "pairs": 3
+      }
+    },
+    {
+      "level": 9,
+      "params": {
+        "choices": 3,
+        "sameCategory": 0.03,
+        "pairs": 3
+      }
+    },
+    {
+      "level": 10,
+      "params": {
+        "choices": 3,
+        "sameCategory": 0.07,
+        "pairs": 4
+      }
+    },
+    {
+      "level": 11,
+      "params": {
+        "choices": 3,
+        "sameCategory": 0.1,
+        "pairs": 4
+      }
+    },
+    {
+      "level": 12,
+      "params": {
+        "choices": 3,
+        "sameCategory": 0.13,
+        "pairs": 4
+      }
+    },
+    {
+      "level": 13,
+      "params": {
+        "choices": 3,
+        "sameCategory": 0.17,
+        "pairs": 4
+      }
+    },
+    {
+      "level": 14,
+      "params": {
+        "choices": 3,
+        "sameCategory": 0.2,
+        "pairs": 4
+      }
+    },
+    {
+      "level": 15,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.23,
+        "pairs": 4
+      }
+    },
+    {
+      "level": 16,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.27,
+        "pairs": 4
+      }
+    },
+    {
+      "level": 17,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.3,
+        "pairs": 4
+      }
+    },
+    {
+      "level": 18,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.33,
+        "pairs": 4
+      }
+    },
+    {
+      "level": 19,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.37,
+        "pairs": 4
+      }
+    },
+    {
+      "level": 20,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.4,
+        "pairs": 5
+      }
+    },
+    {
+      "level": 21,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.43,
+        "pairs": 5
+      }
+    },
+    {
+      "level": 22,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.47,
+        "pairs": 5
+      }
+    },
+    {
+      "level": 23,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.5,
+        "pairs": 5
+      }
+    },
+    {
+      "level": 24,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.53,
+        "pairs": 5
+      }
+    },
+    {
+      "level": 25,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.57,
+        "pairs": 5
+      }
+    },
+    {
+      "level": 26,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.6,
+        "pairs": 5
+      }
+    },
+    {
+      "level": 27,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.63,
+        "pairs": 6
+      }
+    },
+    {
+      "level": 28,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.67,
+        "pairs": 6
+      }
+    },
+    {
+      "level": 29,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.7,
+        "pairs": 6
+      }
+    },
+    {
+      "level": 30,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.73,
+        "pairs": 6
+      }
+    },
+    {
+      "level": 31,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.77,
+        "pairs": 6
+      }
+    },
+    {
+      "level": 32,
+      "params": {
+        "choices": 4,
+        "sameCategory": 0.8,
+        "pairs": 6
+      }
+    }
+  ]
+}

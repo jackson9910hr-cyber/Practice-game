@@ -1,0 +1,4501 @@
+{
+ "$comment": "Voice lines by id. Set \"file\" to a path under public/ (e.g. \"audio/en/word/red.m4a\") to replace TTS. See docs/audio.md.",
+ "version": 1,
+ "entries": {
+  "en.big.0": {
+   "lang": "en-US",
+   "text": "Wow! Amazing!",
+   "file": null
+  },
+  "en.big.1": {
+   "lang": "en-US",
+   "text": "You are a star!",
+   "file": null
+  },
+  "en.big.2": {
+   "lang": "en-US",
+   "text": "Super star!",
+   "file": null
+  },
+  "en.dir.down": {
+   "lang": "en-US",
+   "text": "Down!",
+   "file": null
+  },
+  "en.dir.left": {
+   "lang": "en-US",
+   "text": "Left!",
+   "file": null
+  },
+  "en.dir.right": {
+   "lang": "en-US",
+   "text": "Right!",
+   "file": null
+  },
+  "en.dir.up": {
+   "lang": "en-US",
+   "text": "Up!",
+   "file": null
+  },
+  "en.greet.appy": {
+   "lang": "en-US",
+   "text": "This is a flower!",
+   "file": null
+  },
+  "en.greet.bibi": {
+   "lang": "en-US",
+   "text": "Is this your bag?",
+   "file": null
+  },
+  "en.greet.cubi": {
+   "lang": "en-US",
+   "text": "Touch your nose!",
+   "file": null
+  },
+  "en.greet.dabo": {
+   "lang": "en-US",
+   "text": "Where is the cat?",
+   "file": null
+  },
+  "en.greet.dexi": {
+   "lang": "en-US",
+   "text": "Are you hungry?",
+   "file": null
+  },
+  "en.greet.ebbi": {
+   "lang": "en-US",
+   "text": "I want a banana!",
+   "file": null
+  },
+  "en.greet.fifi": {
+   "lang": "en-US",
+   "text": "It's sunny today!",
+   "file": null
+  },
+  "en.greet.gogo": {
+   "lang": "en-US",
+   "text": "Is it a lion? No! I'm Gogo!",
+   "file": null
+  },
+  "en.greet.gomo": {
+   "lang": "en-US",
+   "text": "I love my grandma!",
+   "file": null
+  },
+  "en.greet.hoho": {
+   "lang": "en-US",
+   "text": "Put on your hat!",
+   "file": null
+  },
+  "en.greet.izzy": {
+   "lang": "en-US",
+   "text": "Look at the heart!",
+   "file": null
+  },
+  "en.greet.juju": {
+   "lang": "en-US",
+   "text": "Can you dance?",
+   "file": null
+  },
+  "en.greet.kiwa": {
+   "lang": "en-US",
+   "text": "Wash your hands!",
+   "file": null
+  },
+  "en.greet.lexy": {
+   "lang": "en-US",
+   "text": "It's in the box!",
+   "file": null
+  },
+  "en.greet.lulu": {
+   "lang": "en-US",
+   "text": "I can fly!",
+   "file": null
+  },
+  "en.greet.lumi": {
+   "lang": "en-US",
+   "text": "You are my friend!",
+   "file": null
+  },
+  "en.greet.mimi": {
+   "lang": "en-US",
+   "text": "What is it? It's a frog!",
+   "file": null
+  },
+  "en.greet.nubi": {
+   "lang": "en-US",
+   "text": "How many stars? Ten!",
+   "file": null
+  },
+  "en.greet.olli": {
+   "lang": "en-US",
+   "text": "This is my mom!",
+   "file": null
+  },
+  "en.greet.pinta": {
+   "lang": "en-US",
+   "text": "I see a big cake!",
+   "file": null
+  },
+  "en.greet.pip": {
+   "lang": "en-US",
+   "text": "I have five flowers!",
+   "file": null
+  },
+  "en.greet.rori": {
+   "lang": "en-US",
+   "text": "I don't like carrots!",
+   "file": null
+  },
+  "en.greet.ruby": {
+   "lang": "en-US",
+   "text": "What color is it? It's red!",
+   "file": null
+  },
+  "en.greet.sami": {
+   "lang": "en-US",
+   "text": "Hi! I'm Sami. I like red!",
+   "file": null
+  },
+  "en.greet.tiko": {
+   "lang": "en-US",
+   "text": "It is purple!",
+   "file": null
+  },
+  "en.greet.uppy": {
+   "lang": "en-US",
+   "text": "Do you like milk?",
+   "file": null
+  },
+  "en.greet.vivi": {
+   "lang": "en-US",
+   "text": "Let's draw!",
+   "file": null
+  },
+  "en.greet.wobi": {
+   "lang": "en-US",
+   "text": "I am happy!",
+   "file": null
+  },
+  "en.greet.yumi": {
+   "lang": "en-US",
+   "text": "I'm at the park!",
+   "file": null
+  },
+  "en.greet.zuzu": {
+   "lang": "en-US",
+   "text": "Thank you, Twinkle!",
+   "file": null
+  },
+  "en.letter.a": {
+   "lang": "en-US",
+   "text": "ay",
+   "file": null
+  },
+  "en.letter.b": {
+   "lang": "en-US",
+   "text": "B",
+   "file": null
+  },
+  "en.letter.c": {
+   "lang": "en-US",
+   "text": "C",
+   "file": null
+  },
+  "en.letter.d": {
+   "lang": "en-US",
+   "text": "D",
+   "file": null
+  },
+  "en.letter.e": {
+   "lang": "en-US",
+   "text": "ee",
+   "file": null
+  },
+  "en.letter.f": {
+   "lang": "en-US",
+   "text": "F",
+   "file": null
+  },
+  "en.letter.g": {
+   "lang": "en-US",
+   "text": "G",
+   "file": null
+  },
+  "en.letter.h": {
+   "lang": "en-US",
+   "text": "H",
+   "file": null
+  },
+  "en.letter.i": {
+   "lang": "en-US",
+   "text": "eye",
+   "file": null
+  },
+  "en.letter.j": {
+   "lang": "en-US",
+   "text": "J",
+   "file": null
+  },
+  "en.letter.k": {
+   "lang": "en-US",
+   "text": "K",
+   "file": null
+  },
+  "en.letter.l": {
+   "lang": "en-US",
+   "text": "L",
+   "file": null
+  },
+  "en.letter.m": {
+   "lang": "en-US",
+   "text": "M",
+   "file": null
+  },
+  "en.letter.n": {
+   "lang": "en-US",
+   "text": "N",
+   "file": null
+  },
+  "en.letter.o": {
+   "lang": "en-US",
+   "text": "oh",
+   "file": null
+  },
+  "en.letter.p": {
+   "lang": "en-US",
+   "text": "P",
+   "file": null
+  },
+  "en.letter.q": {
+   "lang": "en-US",
+   "text": "Q",
+   "file": null
+  },
+  "en.letter.r": {
+   "lang": "en-US",
+   "text": "R",
+   "file": null
+  },
+  "en.letter.s": {
+   "lang": "en-US",
+   "text": "S",
+   "file": null
+  },
+  "en.letter.t": {
+   "lang": "en-US",
+   "text": "T",
+   "file": null
+  },
+  "en.letter.u": {
+   "lang": "en-US",
+   "text": "you",
+   "file": null
+  },
+  "en.letter.v": {
+   "lang": "en-US",
+   "text": "V",
+   "file": null
+  },
+  "en.letter.w": {
+   "lang": "en-US",
+   "text": "W",
+   "file": null
+  },
+  "en.letter.x": {
+   "lang": "en-US",
+   "text": "X",
+   "file": null
+  },
+  "en.letter.y": {
+   "lang": "en-US",
+   "text": "why",
+   "file": null
+  },
+  "en.letter.z": {
+   "lang": "en-US",
+   "text": "Z",
+   "file": null
+  },
+  "en.misc.festival": {
+   "lang": "en-US",
+   "text": "Welcome to the Starlight Festival!",
+   "file": null
+  },
+  "en.misc.goodnight": {
+   "lang": "en-US",
+   "text": "Good night!",
+   "file": null
+  },
+  "en.misc.hello": {
+   "lang": "en-US",
+   "text": "Hello!",
+   "file": null
+  },
+  "en.misc.listen": {
+   "lang": "en-US",
+   "text": "Listen!",
+   "file": null
+  },
+  "en.misc.no": {
+   "lang": "en-US",
+   "text": "No!",
+   "file": null
+  },
+  "en.misc.ready": {
+   "lang": "en-US",
+   "text": "Ready? Go!",
+   "file": null
+  },
+  "en.misc.yes": {
+   "lang": "en-US",
+   "text": "Yes!",
+   "file": null
+  },
+  "en.num.0": {
+   "lang": "en-US",
+   "text": "zero",
+   "file": null
+  },
+  "en.num.1": {
+   "lang": "en-US",
+   "text": "one",
+   "file": null
+  },
+  "en.num.10": {
+   "lang": "en-US",
+   "text": "ten",
+   "file": null
+  },
+  "en.num.11": {
+   "lang": "en-US",
+   "text": "eleven",
+   "file": null
+  },
+  "en.num.12": {
+   "lang": "en-US",
+   "text": "twelve",
+   "file": null
+  },
+  "en.num.13": {
+   "lang": "en-US",
+   "text": "thirteen",
+   "file": null
+  },
+  "en.num.14": {
+   "lang": "en-US",
+   "text": "fourteen",
+   "file": null
+  },
+  "en.num.15": {
+   "lang": "en-US",
+   "text": "fifteen",
+   "file": null
+  },
+  "en.num.16": {
+   "lang": "en-US",
+   "text": "sixteen",
+   "file": null
+  },
+  "en.num.17": {
+   "lang": "en-US",
+   "text": "seventeen",
+   "file": null
+  },
+  "en.num.18": {
+   "lang": "en-US",
+   "text": "eighteen",
+   "file": null
+  },
+  "en.num.19": {
+   "lang": "en-US",
+   "text": "nineteen",
+   "file": null
+  },
+  "en.num.2": {
+   "lang": "en-US",
+   "text": "two",
+   "file": null
+  },
+  "en.num.20": {
+   "lang": "en-US",
+   "text": "twenty",
+   "file": null
+  },
+  "en.num.3": {
+   "lang": "en-US",
+   "text": "three",
+   "file": null
+  },
+  "en.num.4": {
+   "lang": "en-US",
+   "text": "four",
+   "file": null
+  },
+  "en.num.5": {
+   "lang": "en-US",
+   "text": "five",
+   "file": null
+  },
+  "en.num.6": {
+   "lang": "en-US",
+   "text": "six",
+   "file": null
+  },
+  "en.num.7": {
+   "lang": "en-US",
+   "text": "seven",
+   "file": null
+  },
+  "en.num.8": {
+   "lang": "en-US",
+   "text": "eight",
+   "file": null
+  },
+  "en.num.9": {
+   "lang": "en-US",
+   "text": "nine",
+   "file": null
+  },
+  "en.phoneme.a": {
+   "lang": "en-US",
+   "text": "ay",
+   "file": null
+  },
+  "en.phoneme.b": {
+   "lang": "en-US",
+   "text": "B",
+   "file": null
+  },
+  "en.phoneme.c": {
+   "lang": "en-US",
+   "text": "C",
+   "file": null
+  },
+  "en.phoneme.d": {
+   "lang": "en-US",
+   "text": "D",
+   "file": null
+  },
+  "en.phoneme.e": {
+   "lang": "en-US",
+   "text": "ee",
+   "file": null
+  },
+  "en.phoneme.f": {
+   "lang": "en-US",
+   "text": "F",
+   "file": null
+  },
+  "en.phoneme.g": {
+   "lang": "en-US",
+   "text": "G",
+   "file": null
+  },
+  "en.phoneme.h": {
+   "lang": "en-US",
+   "text": "H",
+   "file": null
+  },
+  "en.phoneme.i": {
+   "lang": "en-US",
+   "text": "eye",
+   "file": null
+  },
+  "en.phoneme.j": {
+   "lang": "en-US",
+   "text": "J",
+   "file": null
+  },
+  "en.phoneme.k": {
+   "lang": "en-US",
+   "text": "K",
+   "file": null
+  },
+  "en.phoneme.l": {
+   "lang": "en-US",
+   "text": "L",
+   "file": null
+  },
+  "en.phoneme.m": {
+   "lang": "en-US",
+   "text": "M",
+   "file": null
+  },
+  "en.phoneme.n": {
+   "lang": "en-US",
+   "text": "N",
+   "file": null
+  },
+  "en.phoneme.o": {
+   "lang": "en-US",
+   "text": "oh",
+   "file": null
+  },
+  "en.phoneme.p": {
+   "lang": "en-US",
+   "text": "P",
+   "file": null
+  },
+  "en.phoneme.q": {
+   "lang": "en-US",
+   "text": "Q",
+   "file": null
+  },
+  "en.phoneme.r": {
+   "lang": "en-US",
+   "text": "R",
+   "file": null
+  },
+  "en.phoneme.s": {
+   "lang": "en-US",
+   "text": "S",
+   "file": null
+  },
+  "en.phoneme.t": {
+   "lang": "en-US",
+   "text": "T",
+   "file": null
+  },
+  "en.phoneme.u": {
+   "lang": "en-US",
+   "text": "you",
+   "file": null
+  },
+  "en.phoneme.v": {
+   "lang": "en-US",
+   "text": "V",
+   "file": null
+  },
+  "en.phoneme.w": {
+   "lang": "en-US",
+   "text": "W",
+   "file": null
+  },
+  "en.phoneme.x": {
+   "lang": "en-US",
+   "text": "X",
+   "file": null
+  },
+  "en.phoneme.y": {
+   "lang": "en-US",
+   "text": "why",
+   "file": null
+  },
+  "en.phoneme.z": {
+   "lang": "en-US",
+   "text": "Z",
+   "file": null
+  },
+  "en.pic.ant": {
+   "lang": "en-US",
+   "text": "ant",
+   "file": null
+  },
+  "en.pic.bat": {
+   "lang": "en-US",
+   "text": "bat",
+   "file": null
+  },
+  "en.pic.bed": {
+   "lang": "en-US",
+   "text": "bed",
+   "file": null
+  },
+  "en.pic.bus": {
+   "lang": "en-US",
+   "text": "bus",
+   "file": null
+  },
+  "en.pic.cap": {
+   "lang": "en-US",
+   "text": "cap",
+   "file": null
+  },
+  "en.pic.cup": {
+   "lang": "en-US",
+   "text": "cup",
+   "file": null
+  },
+  "en.pic.envelope": {
+   "lang": "en-US",
+   "text": "envelope",
+   "file": null
+  },
+  "en.pic.fox": {
+   "lang": "en-US",
+   "text": "fox",
+   "file": null
+  },
+  "en.pic.hen": {
+   "lang": "en-US",
+   "text": "hen",
+   "file": null
+  },
+  "en.pic.insect": {
+   "lang": "en-US",
+   "text": "insect",
+   "file": null
+  },
+  "en.pic.juggle": {
+   "lang": "en-US",
+   "text": "juggle",
+   "file": null
+  },
+  "en.pic.kangaroo": {
+   "lang": "en-US",
+   "text": "kangaroo",
+   "file": null
+  },
+  "en.pic.key": {
+   "lang": "en-US",
+   "text": "key",
+   "file": null
+  },
+  "en.pic.king": {
+   "lang": "en-US",
+   "text": "king",
+   "file": null
+  },
+  "en.pic.kite": {
+   "lang": "en-US",
+   "text": "kite",
+   "file": null
+  },
+  "en.pic.lip": {
+   "lang": "en-US",
+   "text": "lip",
+   "file": null
+  },
+  "en.pic.log": {
+   "lang": "en-US",
+   "text": "log",
+   "file": null
+  },
+  "en.pic.map": {
+   "lang": "en-US",
+   "text": "map",
+   "file": null
+  },
+  "en.pic.nest": {
+   "lang": "en-US",
+   "text": "nest",
+   "file": null
+  },
+  "en.pic.net": {
+   "lang": "en-US",
+   "text": "net",
+   "file": null
+  },
+  "en.pic.nut": {
+   "lang": "en-US",
+   "text": "nut",
+   "file": null
+  },
+  "en.pic.octopus": {
+   "lang": "en-US",
+   "text": "octopus",
+   "file": null
+  },
+  "en.pic.ox": {
+   "lang": "en-US",
+   "text": "ox",
+   "file": null
+  },
+  "en.pic.pan": {
+   "lang": "en-US",
+   "text": "pan",
+   "file": null
+  },
+  "en.pic.pen": {
+   "lang": "en-US",
+   "text": "pen",
+   "file": null
+  },
+  "en.pic.pin": {
+   "lang": "en-US",
+   "text": "pin",
+   "file": null
+  },
+  "en.pic.pot": {
+   "lang": "en-US",
+   "text": "pot",
+   "file": null
+  },
+  "en.pic.queen": {
+   "lang": "en-US",
+   "text": "queen",
+   "file": null
+  },
+  "en.pic.quiet": {
+   "lang": "en-US",
+   "text": "quiet",
+   "file": null
+  },
+  "en.pic.rat": {
+   "lang": "en-US",
+   "text": "rat",
+   "file": null
+  },
+  "en.pic.up": {
+   "lang": "en-US",
+   "text": "up",
+   "file": null
+  },
+  "en.pic.van": {
+   "lang": "en-US",
+   "text": "van",
+   "file": null
+  },
+  "en.pic.violin": {
+   "lang": "en-US",
+   "text": "violin",
+   "file": null
+  },
+  "en.pic.volcano": {
+   "lang": "en-US",
+   "text": "volcano",
+   "file": null
+  },
+  "en.pic.watermelon": {
+   "lang": "en-US",
+   "text": "watermelon",
+   "file": null
+  },
+  "en.pic.web": {
+   "lang": "en-US",
+   "text": "web",
+   "file": null
+  },
+  "en.pic.yarn": {
+   "lang": "en-US",
+   "text": "yarn",
+   "file": null
+  },
+  "en.pic.yoyo": {
+   "lang": "en-US",
+   "text": "yo-yo",
+   "file": null
+  },
+  "en.pic.zebra": {
+   "lang": "en-US",
+   "text": "zebra",
+   "file": null
+  },
+  "en.praise.0": {
+   "lang": "en-US",
+   "text": "Great job!",
+   "file": null
+  },
+  "en.praise.1": {
+   "lang": "en-US",
+   "text": "You did it!",
+   "file": null
+  },
+  "en.praise.2": {
+   "lang": "en-US",
+   "text": "Wow!",
+   "file": null
+  },
+  "en.praise.3": {
+   "lang": "en-US",
+   "text": "Awesome!",
+   "file": null
+  },
+  "en.praise.4": {
+   "lang": "en-US",
+   "text": "Super!",
+   "file": null
+  },
+  "en.praise.5": {
+   "lang": "en-US",
+   "text": "Well done!",
+   "file": null
+  },
+  "en.praise.6": {
+   "lang": "en-US",
+   "text": "Yay!",
+   "file": null
+  },
+  "en.praise.7": {
+   "lang": "en-US",
+   "text": "Fantastic!",
+   "file": null
+  },
+  "en.praise.8": {
+   "lang": "en-US",
+   "text": "Nice!",
+   "file": null
+  },
+  "en.praise.9": {
+   "lang": "en-US",
+   "text": "Good thinking!",
+   "file": null
+  },
+  "en.t.apple-banana-i-want-a-grape": {
+   "lang": "en-US",
+   "text": "Apple, banana, I want a grape!",
+   "file": null
+  },
+  "en.t.are-you-happy": {
+   "lang": "en-US",
+   "text": "Are you happy?",
+   "file": null
+  },
+  "en.t.are-you-hungry": {
+   "lang": "en-US",
+   "text": "Are you hungry?",
+   "file": null
+  },
+  "en.t.are-you-thirsty": {
+   "lang": "en-US",
+   "text": "Are you thirsty?",
+   "file": null
+  },
+  "en.t.are-you-tired": {
+   "lang": "en-US",
+   "text": "Are you tired?",
+   "file": null
+  },
+  "en.t.blue-blue-i-like-blue": {
+   "lang": "en-US",
+   "text": "Blue, blue, I like blue!",
+   "file": null
+  },
+  "en.t.can-you-clap": {
+   "lang": "en-US",
+   "text": "Can you clap?",
+   "file": null
+  },
+  "en.t.can-you-dance": {
+   "lang": "en-US",
+   "text": "Can you dance?",
+   "file": null
+  },
+  "en.t.can-you-fly-let-s-fly": {
+   "lang": "en-US",
+   "text": "Can you fly? Let's fly!",
+   "file": null
+  },
+  "en.t.can-you-jump": {
+   "lang": "en-US",
+   "text": "Can you jump?",
+   "file": null
+  },
+  "en.t.can-you-sing": {
+   "lang": "en-US",
+   "text": "Can you sing?",
+   "file": null
+  },
+  "en.t.do-you-like-bread": {
+   "lang": "en-US",
+   "text": "Do you like bread?",
+   "file": null
+  },
+  "en.t.do-you-like-cookies": {
+   "lang": "en-US",
+   "text": "Do you like cookies?",
+   "file": null
+  },
+  "en.t.do-you-like-eggs": {
+   "lang": "en-US",
+   "text": "Do you like eggs?",
+   "file": null
+  },
+  "en.t.do-you-like-milk": {
+   "lang": "en-US",
+   "text": "Do you like milk?",
+   "file": null
+  },
+  "en.t.do-you-like-milk-do-you-like-rice": {
+   "lang": "en-US",
+   "text": "Do you like milk? Do you like rice?",
+   "file": null
+  },
+  "en.t.frog-fish-duck-where-is-the-duck": {
+   "lang": "en-US",
+   "text": "Frog, fish, duck. Where is the duck?",
+   "file": null
+  },
+  "en.t.how-many-balloons": {
+   "lang": "en-US",
+   "text": "How many balloons?",
+   "file": null
+  },
+  "en.t.how-many-fish": {
+   "lang": "en-US",
+   "text": "How many fish?",
+   "file": null
+  },
+  "en.t.how-many-flowers": {
+   "lang": "en-US",
+   "text": "How many flowers?",
+   "file": null
+  },
+  "en.t.how-many-stars": {
+   "lang": "en-US",
+   "text": "How many stars?",
+   "file": null
+  },
+  "en.t.i-am-happy": {
+   "lang": "en-US",
+   "text": "I am happy.",
+   "file": null
+  },
+  "en.t.i-am-happy-are-you-happy": {
+   "lang": "en-US",
+   "text": "I am happy, are you happy?",
+   "file": null
+  },
+  "en.t.i-am-sad": {
+   "lang": "en-US",
+   "text": "I am sad.",
+   "file": null
+  },
+  "en.t.i-am-scared": {
+   "lang": "en-US",
+   "text": "I am scared.",
+   "file": null
+  },
+  "en.t.i-am-sleepy": {
+   "lang": "en-US",
+   "text": "I am sleepy.",
+   "file": null
+  },
+  "en.t.i-can-fly": {
+   "lang": "en-US",
+   "text": "I can fly.",
+   "file": null
+  },
+  "en.t.i-can-jump": {
+   "lang": "en-US",
+   "text": "I can jump.",
+   "file": null
+  },
+  "en.t.i-can-run": {
+   "lang": "en-US",
+   "text": "I can run.",
+   "file": null
+  },
+  "en.t.i-can-run-i-can-jump": {
+   "lang": "en-US",
+   "text": "I can run, I can jump.",
+   "file": null
+  },
+  "en.t.i-can-swim": {
+   "lang": "en-US",
+   "text": "I can swim.",
+   "file": null
+  },
+  "en.t.i-don-t-like-candy": {
+   "lang": "en-US",
+   "text": "I don't like candy.",
+   "file": null
+  },
+  "en.t.i-don-t-like-carrots": {
+   "lang": "en-US",
+   "text": "I don't like carrots.",
+   "file": null
+  },
+  "en.t.i-don-t-like-corn": {
+   "lang": "en-US",
+   "text": "I don't like corn.",
+   "file": null
+  },
+  "en.t.i-don-t-like-pizza": {
+   "lang": "en-US",
+   "text": "I don't like pizza.",
+   "file": null
+  },
+  "en.t.i-have-a-bag": {
+   "lang": "en-US",
+   "text": "I have a bag.",
+   "file": null
+  },
+  "en.t.i-have-five-flowers": {
+   "lang": "en-US",
+   "text": "I have five flowers.",
+   "file": null
+  },
+  "en.t.i-have-three-balloons": {
+   "lang": "en-US",
+   "text": "I have three balloons.",
+   "file": null
+  },
+  "en.t.i-have-two-flowers": {
+   "lang": "en-US",
+   "text": "I have two flowers.",
+   "file": null
+  },
+  "en.t.i-like-apples": {
+   "lang": "en-US",
+   "text": "I like apples.",
+   "file": null
+  },
+  "en.t.i-like-green": {
+   "lang": "en-US",
+   "text": "I like green.",
+   "file": null
+  },
+  "en.t.i-like-music": {
+   "lang": "en-US",
+   "text": "I like music.",
+   "file": null
+  },
+  "en.t.i-like-red": {
+   "lang": "en-US",
+   "text": "I like red.",
+   "file": null
+  },
+  "en.t.i-love-my-dad": {
+   "lang": "en-US",
+   "text": "I love my dad.",
+   "file": null
+  },
+  "en.t.i-love-my-grandma": {
+   "lang": "en-US",
+   "text": "I love my grandma.",
+   "file": null
+  },
+  "en.t.i-love-my-grandma-i-love-my-grandpa": {
+   "lang": "en-US",
+   "text": "I love my grandma, I love my grandpa!",
+   "file": null
+  },
+  "en.t.i-love-my-grandpa": {
+   "lang": "en-US",
+   "text": "I love my grandpa.",
+   "file": null
+  },
+  "en.t.i-love-my-mom": {
+   "lang": "en-US",
+   "text": "I love my mom.",
+   "file": null
+  },
+  "en.t.i-m-at-the-beach": {
+   "lang": "en-US",
+   "text": "I'm at the beach.",
+   "file": null
+  },
+  "en.t.i-m-at-the-park": {
+   "lang": "en-US",
+   "text": "I'm at the park.",
+   "file": null
+  },
+  "en.t.i-m-at-the-pool": {
+   "lang": "en-US",
+   "text": "I'm at the pool.",
+   "file": null
+  },
+  "en.t.i-m-at-the-zoo": {
+   "lang": "en-US",
+   "text": "I'm at the zoo.",
+   "file": null
+  },
+  "en.t.i-see-a-ball": {
+   "lang": "en-US",
+   "text": "I see a ball.",
+   "file": null
+  },
+  "en.t.i-see-a-big-cake": {
+   "lang": "en-US",
+   "text": "I see a big cake.",
+   "file": null
+  },
+  "en.t.i-see-a-red-balloon": {
+   "lang": "en-US",
+   "text": "I see a red balloon.",
+   "file": null
+  },
+  "en.t.i-see-an-owl": {
+   "lang": "en-US",
+   "text": "I see an owl.",
+   "file": null
+  },
+  "en.t.i-want-a-banana": {
+   "lang": "en-US",
+   "text": "I want a banana.",
+   "file": null
+  },
+  "en.t.i-want-a-lemon": {
+   "lang": "en-US",
+   "text": "I want a lemon.",
+   "file": null
+  },
+  "en.t.i-want-an-apple": {
+   "lang": "en-US",
+   "text": "I want an apple.",
+   "file": null
+  },
+  "en.t.i-want-grapes": {
+   "lang": "en-US",
+   "text": "I want grapes.",
+   "file": null
+  },
+  "en.t.is-it-a-cow": {
+   "lang": "en-US",
+   "text": "Is it a cow?",
+   "file": null
+  },
+  "en.t.is-it-a-horse": {
+   "lang": "en-US",
+   "text": "Is it a horse?",
+   "file": null
+  },
+  "en.t.is-it-a-lion": {
+   "lang": "en-US",
+   "text": "Is it a lion?",
+   "file": null
+  },
+  "en.t.is-it-a-monkey": {
+   "lang": "en-US",
+   "text": "Is it a monkey?",
+   "file": null
+  },
+  "en.t.is-this-your-bag": {
+   "lang": "en-US",
+   "text": "Is this your bag?",
+   "file": null
+  },
+  "en.t.is-this-your-coat": {
+   "lang": "en-US",
+   "text": "Is this your coat?",
+   "file": null
+  },
+  "en.t.is-this-your-dress": {
+   "lang": "en-US",
+   "text": "Is this your dress?",
+   "file": null
+  },
+  "en.t.is-this-your-umbrella": {
+   "lang": "en-US",
+   "text": "Is this your umbrella?",
+   "file": null
+  },
+  "en.t.it-is-big": {
+   "lang": "en-US",
+   "text": "It is big.",
+   "file": null
+  },
+  "en.t.it-is-cold": {
+   "lang": "en-US",
+   "text": "It is cold.",
+   "file": null
+  },
+  "en.t.it-is-purple": {
+   "lang": "en-US",
+   "text": "It is purple.",
+   "file": null
+  },
+  "en.t.it-is-white": {
+   "lang": "en-US",
+   "text": "It is white.",
+   "file": null
+  },
+  "en.t.it-s-a-duck": {
+   "lang": "en-US",
+   "text": "It's a duck.",
+   "file": null
+  },
+  "en.t.it-s-a-fish": {
+   "lang": "en-US",
+   "text": "It's a fish.",
+   "file": null
+  },
+  "en.t.it-s-a-frog": {
+   "lang": "en-US",
+   "text": "It's a frog.",
+   "file": null
+  },
+  "en.t.it-s-a-turtle": {
+   "lang": "en-US",
+   "text": "It's a turtle.",
+   "file": null
+  },
+  "en.t.it-s-black": {
+   "lang": "en-US",
+   "text": "It's black.",
+   "file": null
+  },
+  "en.t.it-s-blue": {
+   "lang": "en-US",
+   "text": "It's blue.",
+   "file": null
+  },
+  "en.t.it-s-brown": {
+   "lang": "en-US",
+   "text": "It's brown.",
+   "file": null
+  },
+  "en.t.it-s-green": {
+   "lang": "en-US",
+   "text": "It's green.",
+   "file": null
+  },
+  "en.t.it-s-in-the-box": {
+   "lang": "en-US",
+   "text": "It's in the box.",
+   "file": null
+  },
+  "en.t.it-s-on-the-box": {
+   "lang": "en-US",
+   "text": "It's on the box.",
+   "file": null
+  },
+  "en.t.it-s-on-the-table": {
+   "lang": "en-US",
+   "text": "It's on the table.",
+   "file": null
+  },
+  "en.t.it-s-orange": {
+   "lang": "en-US",
+   "text": "It's orange.",
+   "file": null
+  },
+  "en.t.it-s-pink": {
+   "lang": "en-US",
+   "text": "It's pink.",
+   "file": null
+  },
+  "en.t.it-s-purple": {
+   "lang": "en-US",
+   "text": "It's purple.",
+   "file": null
+  },
+  "en.t.it-s-rainy-today": {
+   "lang": "en-US",
+   "text": "It's rainy today.",
+   "file": null
+  },
+  "en.t.it-s-red": {
+   "lang": "en-US",
+   "text": "It's red.",
+   "file": null
+  },
+  "en.t.it-s-snowy-today": {
+   "lang": "en-US",
+   "text": "It's snowy today.",
+   "file": null
+  },
+  "en.t.it-s-sunny-today": {
+   "lang": "en-US",
+   "text": "It's sunny today.",
+   "file": null
+  },
+  "en.t.it-s-sunny-today-it-s-rainy-today": {
+   "lang": "en-US",
+   "text": "It's sunny today! It's rainy today!",
+   "file": null
+  },
+  "en.t.it-s-under-the-table": {
+   "lang": "en-US",
+   "text": "It's under the table.",
+   "file": null
+  },
+  "en.t.it-s-white": {
+   "lang": "en-US",
+   "text": "It's white.",
+   "file": null
+  },
+  "en.t.it-s-windy-today": {
+   "lang": "en-US",
+   "text": "It's windy today.",
+   "file": null
+  },
+  "en.t.it-s-yellow": {
+   "lang": "en-US",
+   "text": "It's yellow.",
+   "file": null
+  },
+  "en.t.let-s-dance": {
+   "lang": "en-US",
+   "text": "Let's dance!",
+   "file": null
+  },
+  "en.t.let-s-draw": {
+   "lang": "en-US",
+   "text": "Let's draw!",
+   "file": null
+  },
+  "en.t.let-s-play": {
+   "lang": "en-US",
+   "text": "Let's play!",
+   "file": null
+  },
+  "en.t.let-s-read": {
+   "lang": "en-US",
+   "text": "Let's read!",
+   "file": null
+  },
+  "en.t.look-at-the-heart": {
+   "lang": "en-US",
+   "text": "Look at the heart!",
+   "file": null
+  },
+  "en.t.look-at-the-moon": {
+   "lang": "en-US",
+   "text": "Look at the moon!",
+   "file": null
+  },
+  "en.t.look-at-the-rainbow": {
+   "lang": "en-US",
+   "text": "Look at the rainbow!",
+   "file": null
+  },
+  "en.t.look-at-the-star": {
+   "lang": "en-US",
+   "text": "Look at the star!",
+   "file": null
+  },
+  "en.t.look-at-the-star-it-is-big": {
+   "lang": "en-US",
+   "text": "Look at the star! It is big!",
+   "file": null
+  },
+  "en.t.one-two-three-four-five": {
+   "lang": "en-US",
+   "text": "One, two, three, four, five!",
+   "file": null
+  },
+  "en.t.put-on-your-hat": {
+   "lang": "en-US",
+   "text": "Put on your hat.",
+   "file": null
+  },
+  "en.t.put-on-your-hat-put-on-your-shoes": {
+   "lang": "en-US",
+   "text": "Put on your hat, put on your shoes.",
+   "file": null
+  },
+  "en.t.put-on-your-shirt": {
+   "lang": "en-US",
+   "text": "Put on your shirt.",
+   "file": null
+  },
+  "en.t.put-on-your-shoes": {
+   "lang": "en-US",
+   "text": "Put on your shoes.",
+   "file": null
+  },
+  "en.t.put-on-your-socks": {
+   "lang": "en-US",
+   "text": "Put on your socks.",
+   "file": null
+  },
+  "en.t.red-red-i-like-red": {
+   "lang": "en-US",
+   "text": "Red, red, I like red!",
+   "file": null
+  },
+  "en.t.thank-you-dad": {
+   "lang": "en-US",
+   "text": "Thank you, dad!",
+   "file": null
+  },
+  "en.t.thank-you-grandma": {
+   "lang": "en-US",
+   "text": "Thank you, grandma!",
+   "file": null
+  },
+  "en.t.thank-you-mom": {
+   "lang": "en-US",
+   "text": "Thank you, mom!",
+   "file": null
+  },
+  "en.t.thank-you-twinkle": {
+   "lang": "en-US",
+   "text": "Thank you, Twinkle!",
+   "file": null
+  },
+  "en.t.this-is-a-cake": {
+   "lang": "en-US",
+   "text": "This is a cake.",
+   "file": null
+  },
+  "en.t.this-is-a-flower": {
+   "lang": "en-US",
+   "text": "This is a flower.",
+   "file": null
+  },
+  "en.t.this-is-a-leaf": {
+   "lang": "en-US",
+   "text": "This is a leaf.",
+   "file": null
+  },
+  "en.t.this-is-a-tree": {
+   "lang": "en-US",
+   "text": "This is a tree.",
+   "file": null
+  },
+  "en.t.this-is-my-brother": {
+   "lang": "en-US",
+   "text": "This is my brother.",
+   "file": null
+  },
+  "en.t.this-is-my-dad": {
+   "lang": "en-US",
+   "text": "This is my dad.",
+   "file": null
+  },
+  "en.t.this-is-my-mom": {
+   "lang": "en-US",
+   "text": "This is my mom.",
+   "file": null
+  },
+  "en.t.this-is-my-mom-this-is-my-dad": {
+   "lang": "en-US",
+   "text": "This is my mom, this is my dad.",
+   "file": null
+  },
+  "en.t.this-is-my-sister": {
+   "lang": "en-US",
+   "text": "This is my sister.",
+   "file": null
+  },
+  "en.t.touch-your-ear": {
+   "lang": "en-US",
+   "text": "Touch your ear.",
+   "file": null
+  },
+  "en.t.touch-your-head": {
+   "lang": "en-US",
+   "text": "Touch your head.",
+   "file": null
+  },
+  "en.t.touch-your-mouth": {
+   "lang": "en-US",
+   "text": "Touch your mouth.",
+   "file": null
+  },
+  "en.t.touch-your-nose": {
+   "lang": "en-US",
+   "text": "Touch your nose.",
+   "file": null
+  },
+  "en.t.touch-your-nose-touch-your-ear": {
+   "lang": "en-US",
+   "text": "Touch your nose, touch your ear!",
+   "file": null
+  },
+  "en.t.wash-your-arms": {
+   "lang": "en-US",
+   "text": "Wash your arms.",
+   "file": null
+  },
+  "en.t.wash-your-feet": {
+   "lang": "en-US",
+   "text": "Wash your feet.",
+   "file": null
+  },
+  "en.t.wash-your-fingers": {
+   "lang": "en-US",
+   "text": "Wash your fingers.",
+   "file": null
+  },
+  "en.t.wash-your-hands": {
+   "lang": "en-US",
+   "text": "Wash your hands.",
+   "file": null
+  },
+  "en.t.what-color-is-it": {
+   "lang": "en-US",
+   "text": "What color is it?",
+   "file": null
+  },
+  "en.t.what-is-it": {
+   "lang": "en-US",
+   "text": "What is it?",
+   "file": null
+  },
+  "en.t.where-is-the-ball": {
+   "lang": "en-US",
+   "text": "Where is the ball?",
+   "file": null
+  },
+  "en.t.where-is-the-cat": {
+   "lang": "en-US",
+   "text": "Where is the cat?",
+   "file": null
+  },
+  "en.t.where-is-the-dog": {
+   "lang": "en-US",
+   "text": "Where is the dog?",
+   "file": null
+  },
+  "en.t.where-is-the-rabbit": {
+   "lang": "en-US",
+   "text": "Where is the rabbit?",
+   "file": null
+  },
+  "en.t.yes-i-am": {
+   "lang": "en-US",
+   "text": "Yes, I am.",
+   "file": null
+  },
+  "en.t.yes-i-can": {
+   "lang": "en-US",
+   "text": "Yes, I can.",
+   "file": null
+  },
+  "en.t.yes-i-do": {
+   "lang": "en-US",
+   "text": "Yes, I do.",
+   "file": null
+  },
+  "en.t.yes-it-is": {
+   "lang": "en-US",
+   "text": "Yes, it is.",
+   "file": null
+  },
+  "en.t.you-are-my-brother": {
+   "lang": "en-US",
+   "text": "You are my brother.",
+   "file": null
+  },
+  "en.t.you-are-my-friend": {
+   "lang": "en-US",
+   "text": "You are my friend.",
+   "file": null
+  },
+  "en.t.you-are-my-friend-good-night": {
+   "lang": "en-US",
+   "text": "You are my friend! Good night!",
+   "file": null
+  },
+  "en.t.you-are-my-sister": {
+   "lang": "en-US",
+   "text": "You are my sister.",
+   "file": null
+  },
+  "en.t.you-are-my-star": {
+   "lang": "en-US",
+   "text": "You are my star.",
+   "file": null
+  },
+  "en.word.angry": {
+   "lang": "en-US",
+   "text": "angry",
+   "file": null
+  },
+  "en.word.apple": {
+   "lang": "en-US",
+   "text": "apple",
+   "file": null
+  },
+  "en.word.arm": {
+   "lang": "en-US",
+   "text": "arm",
+   "file": null
+  },
+  "en.word.baby": {
+   "lang": "en-US",
+   "text": "baby",
+   "file": null
+  },
+  "en.word.bag": {
+   "lang": "en-US",
+   "text": "bag",
+   "file": null
+  },
+  "en.word.ball": {
+   "lang": "en-US",
+   "text": "ball",
+   "file": null
+  },
+  "en.word.balloon": {
+   "lang": "en-US",
+   "text": "balloon",
+   "file": null
+  },
+  "en.word.banana": {
+   "lang": "en-US",
+   "text": "banana",
+   "file": null
+  },
+  "en.word.beach": {
+   "lang": "en-US",
+   "text": "beach",
+   "file": null
+  },
+  "en.word.bear": {
+   "lang": "en-US",
+   "text": "bear",
+   "file": null
+  },
+  "en.word.big": {
+   "lang": "en-US",
+   "text": "big",
+   "file": null
+  },
+  "en.word.black": {
+   "lang": "en-US",
+   "text": "black",
+   "file": null
+  },
+  "en.word.blue": {
+   "lang": "en-US",
+   "text": "blue",
+   "file": null
+  },
+  "en.word.boat": {
+   "lang": "en-US",
+   "text": "boat",
+   "file": null
+  },
+  "en.word.boots": {
+   "lang": "en-US",
+   "text": "boots",
+   "file": null
+  },
+  "en.word.box": {
+   "lang": "en-US",
+   "text": "box",
+   "file": null
+  },
+  "en.word.brave": {
+   "lang": "en-US",
+   "text": "brave",
+   "file": null
+  },
+  "en.word.bread": {
+   "lang": "en-US",
+   "text": "bread",
+   "file": null
+  },
+  "en.word.bridge": {
+   "lang": "en-US",
+   "text": "bridge",
+   "file": null
+  },
+  "en.word.brother": {
+   "lang": "en-US",
+   "text": "brother",
+   "file": null
+  },
+  "en.word.brown": {
+   "lang": "en-US",
+   "text": "brown",
+   "file": null
+  },
+  "en.word.bug": {
+   "lang": "en-US",
+   "text": "bug",
+   "file": null
+  },
+  "en.word.cake": {
+   "lang": "en-US",
+   "text": "cake",
+   "file": null
+  },
+  "en.word.candy": {
+   "lang": "en-US",
+   "text": "candy",
+   "file": null
+  },
+  "en.word.carrot": {
+   "lang": "en-US",
+   "text": "carrot",
+   "file": null
+  },
+  "en.word.cat": {
+   "lang": "en-US",
+   "text": "cat",
+   "file": null
+  },
+  "en.word.circle": {
+   "lang": "en-US",
+   "text": "circle",
+   "file": null
+  },
+  "en.word.clap": {
+   "lang": "en-US",
+   "text": "clap",
+   "file": null
+  },
+  "en.word.cloud": {
+   "lang": "en-US",
+   "text": "cloud",
+   "file": null
+  },
+  "en.word.cloudy": {
+   "lang": "en-US",
+   "text": "cloudy",
+   "file": null
+  },
+  "en.word.coat": {
+   "lang": "en-US",
+   "text": "coat",
+   "file": null
+  },
+  "en.word.cold": {
+   "lang": "en-US",
+   "text": "cold",
+   "file": null
+  },
+  "en.word.cook": {
+   "lang": "en-US",
+   "text": "cook",
+   "file": null
+  },
+  "en.word.cookie": {
+   "lang": "en-US",
+   "text": "cookie",
+   "file": null
+  },
+  "en.word.corn": {
+   "lang": "en-US",
+   "text": "corn",
+   "file": null
+  },
+  "en.word.cow": {
+   "lang": "en-US",
+   "text": "cow",
+   "file": null
+  },
+  "en.word.dad": {
+   "lang": "en-US",
+   "text": "dad",
+   "file": null
+  },
+  "en.word.dance": {
+   "lang": "en-US",
+   "text": "dance",
+   "file": null
+  },
+  "en.word.dog": {
+   "lang": "en-US",
+   "text": "dog",
+   "file": null
+  },
+  "en.word.draw": {
+   "lang": "en-US",
+   "text": "draw",
+   "file": null
+  },
+  "en.word.dream": {
+   "lang": "en-US",
+   "text": "dream",
+   "file": null
+  },
+  "en.word.dress": {
+   "lang": "en-US",
+   "text": "dress",
+   "file": null
+  },
+  "en.word.duck": {
+   "lang": "en-US",
+   "text": "duck",
+   "file": null
+  },
+  "en.word.ear": {
+   "lang": "en-US",
+   "text": "ear",
+   "file": null
+  },
+  "en.word.eat": {
+   "lang": "en-US",
+   "text": "eat",
+   "file": null
+  },
+  "en.word.egg": {
+   "lang": "en-US",
+   "text": "egg",
+   "file": null
+  },
+  "en.word.eight": {
+   "lang": "en-US",
+   "text": "eight",
+   "file": null
+  },
+  "en.word.elephant": {
+   "lang": "en-US",
+   "text": "elephant",
+   "file": null
+  },
+  "en.word.eye": {
+   "lang": "en-US",
+   "text": "eye",
+   "file": null
+  },
+  "en.word.finger": {
+   "lang": "en-US",
+   "text": "finger",
+   "file": null
+  },
+  "en.word.fish": {
+   "lang": "en-US",
+   "text": "fish",
+   "file": null
+  },
+  "en.word.five": {
+   "lang": "en-US",
+   "text": "five",
+   "file": null
+  },
+  "en.word.flower": {
+   "lang": "en-US",
+   "text": "flower",
+   "file": null
+  },
+  "en.word.fly": {
+   "lang": "en-US",
+   "text": "fly",
+   "file": null
+  },
+  "en.word.foot": {
+   "lang": "en-US",
+   "text": "foot",
+   "file": null
+  },
+  "en.word.four": {
+   "lang": "en-US",
+   "text": "four",
+   "file": null
+  },
+  "en.word.friend": {
+   "lang": "en-US",
+   "text": "friend",
+   "file": null
+  },
+  "en.word.frog": {
+   "lang": "en-US",
+   "text": "frog",
+   "file": null
+  },
+  "en.word.garden": {
+   "lang": "en-US",
+   "text": "garden",
+   "file": null
+  },
+  "en.word.gift": {
+   "lang": "en-US",
+   "text": "gift",
+   "file": null
+  },
+  "en.word.grandma": {
+   "lang": "en-US",
+   "text": "grandma",
+   "file": null
+  },
+  "en.word.grandpa": {
+   "lang": "en-US",
+   "text": "grandpa",
+   "file": null
+  },
+  "en.word.grape": {
+   "lang": "en-US",
+   "text": "grape",
+   "file": null
+  },
+  "en.word.green": {
+   "lang": "en-US",
+   "text": "green",
+   "file": null
+  },
+  "en.word.hand": {
+   "lang": "en-US",
+   "text": "hand",
+   "file": null
+  },
+  "en.word.happy": {
+   "lang": "en-US",
+   "text": "happy",
+   "file": null
+  },
+  "en.word.hat": {
+   "lang": "en-US",
+   "text": "hat",
+   "file": null
+  },
+  "en.word.head": {
+   "lang": "en-US",
+   "text": "head",
+   "file": null
+  },
+  "en.word.heart": {
+   "lang": "en-US",
+   "text": "heart",
+   "file": null
+  },
+  "en.word.hide": {
+   "lang": "en-US",
+   "text": "hide",
+   "file": null
+  },
+  "en.word.horse": {
+   "lang": "en-US",
+   "text": "horse",
+   "file": null
+  },
+  "en.word.hot": {
+   "lang": "en-US",
+   "text": "hot",
+   "file": null
+  },
+  "en.word.hungry": {
+   "lang": "en-US",
+   "text": "hungry",
+   "file": null
+  },
+  "en.word.in": {
+   "lang": "en-US",
+   "text": "in",
+   "file": null
+  },
+  "en.word.juice": {
+   "lang": "en-US",
+   "text": "juice",
+   "file": null
+  },
+  "en.word.jump": {
+   "lang": "en-US",
+   "text": "jump",
+   "file": null
+  },
+  "en.word.leaf": {
+   "lang": "en-US",
+   "text": "leaf",
+   "file": null
+  },
+  "en.word.leg": {
+   "lang": "en-US",
+   "text": "leg",
+   "file": null
+  },
+  "en.word.lemon": {
+   "lang": "en-US",
+   "text": "lemon",
+   "file": null
+  },
+  "en.word.light": {
+   "lang": "en-US",
+   "text": "light",
+   "file": null
+  },
+  "en.word.lion": {
+   "lang": "en-US",
+   "text": "lion",
+   "file": null
+  },
+  "en.word.milk": {
+   "lang": "en-US",
+   "text": "milk",
+   "file": null
+  },
+  "en.word.mom": {
+   "lang": "en-US",
+   "text": "mom",
+   "file": null
+  },
+  "en.word.monkey": {
+   "lang": "en-US",
+   "text": "monkey",
+   "file": null
+  },
+  "en.word.moon": {
+   "lang": "en-US",
+   "text": "moon",
+   "file": null
+  },
+  "en.word.mouth": {
+   "lang": "en-US",
+   "text": "mouth",
+   "file": null
+  },
+  "en.word.mushroom": {
+   "lang": "en-US",
+   "text": "mushroom",
+   "file": null
+  },
+  "en.word.music": {
+   "lang": "en-US",
+   "text": "music",
+   "file": null
+  },
+  "en.word.night": {
+   "lang": "en-US",
+   "text": "night",
+   "file": null
+  },
+  "en.word.nine": {
+   "lang": "en-US",
+   "text": "nine",
+   "file": null
+  },
+  "en.word.nose": {
+   "lang": "en-US",
+   "text": "nose",
+   "file": null
+  },
+  "en.word.on": {
+   "lang": "en-US",
+   "text": "on",
+   "file": null
+  },
+  "en.word.one": {
+   "lang": "en-US",
+   "text": "one",
+   "file": null
+  },
+  "en.word.orange": {
+   "lang": "en-US",
+   "text": "orange",
+   "file": null
+  },
+  "en.word.owl": {
+   "lang": "en-US",
+   "text": "owl",
+   "file": null
+  },
+  "en.word.pants": {
+   "lang": "en-US",
+   "text": "pants",
+   "file": null
+  },
+  "en.word.park": {
+   "lang": "en-US",
+   "text": "park",
+   "file": null
+  },
+  "en.word.pig": {
+   "lang": "en-US",
+   "text": "pig",
+   "file": null
+  },
+  "en.word.pink": {
+   "lang": "en-US",
+   "text": "pink",
+   "file": null
+  },
+  "en.word.pizza": {
+   "lang": "en-US",
+   "text": "pizza",
+   "file": null
+  },
+  "en.word.play": {
+   "lang": "en-US",
+   "text": "play",
+   "file": null
+  },
+  "en.word.pool": {
+   "lang": "en-US",
+   "text": "pool",
+   "file": null
+  },
+  "en.word.purple": {
+   "lang": "en-US",
+   "text": "purple",
+   "file": null
+  },
+  "en.word.rabbit": {
+   "lang": "en-US",
+   "text": "rabbit",
+   "file": null
+  },
+  "en.word.rainbow": {
+   "lang": "en-US",
+   "text": "rainbow",
+   "file": null
+  },
+  "en.word.rainy": {
+   "lang": "en-US",
+   "text": "rainy",
+   "file": null
+  },
+  "en.word.read": {
+   "lang": "en-US",
+   "text": "read",
+   "file": null
+  },
+  "en.word.red": {
+   "lang": "en-US",
+   "text": "red",
+   "file": null
+  },
+  "en.word.rice": {
+   "lang": "en-US",
+   "text": "rice",
+   "file": null
+  },
+  "en.word.rock": {
+   "lang": "en-US",
+   "text": "rock",
+   "file": null
+  },
+  "en.word.run": {
+   "lang": "en-US",
+   "text": "run",
+   "file": null
+  },
+  "en.word.sad": {
+   "lang": "en-US",
+   "text": "sad",
+   "file": null
+  },
+  "en.word.scared": {
+   "lang": "en-US",
+   "text": "scared",
+   "file": null
+  },
+  "en.word.seven": {
+   "lang": "en-US",
+   "text": "seven",
+   "file": null
+  },
+  "en.word.shirt": {
+   "lang": "en-US",
+   "text": "shirt",
+   "file": null
+  },
+  "en.word.shoes": {
+   "lang": "en-US",
+   "text": "shoes",
+   "file": null
+  },
+  "en.word.shy": {
+   "lang": "en-US",
+   "text": "shy",
+   "file": null
+  },
+  "en.word.sing": {
+   "lang": "en-US",
+   "text": "sing",
+   "file": null
+  },
+  "en.word.sister": {
+   "lang": "en-US",
+   "text": "sister",
+   "file": null
+  },
+  "en.word.six": {
+   "lang": "en-US",
+   "text": "six",
+   "file": null
+  },
+  "en.word.sky": {
+   "lang": "en-US",
+   "text": "sky",
+   "file": null
+  },
+  "en.word.sleep": {
+   "lang": "en-US",
+   "text": "sleep",
+   "file": null
+  },
+  "en.word.sleepy": {
+   "lang": "en-US",
+   "text": "sleepy",
+   "file": null
+  },
+  "en.word.small": {
+   "lang": "en-US",
+   "text": "small",
+   "file": null
+  },
+  "en.word.snowy": {
+   "lang": "en-US",
+   "text": "snowy",
+   "file": null
+  },
+  "en.word.socks": {
+   "lang": "en-US",
+   "text": "socks",
+   "file": null
+  },
+  "en.word.square": {
+   "lang": "en-US",
+   "text": "square",
+   "file": null
+  },
+  "en.word.star": {
+   "lang": "en-US",
+   "text": "star",
+   "file": null
+  },
+  "en.word.store": {
+   "lang": "en-US",
+   "text": "store",
+   "file": null
+  },
+  "en.word.strawberry": {
+   "lang": "en-US",
+   "text": "strawberry",
+   "file": null
+  },
+  "en.word.sun": {
+   "lang": "en-US",
+   "text": "sun",
+   "file": null
+  },
+  "en.word.sunny": {
+   "lang": "en-US",
+   "text": "sunny",
+   "file": null
+  },
+  "en.word.swim": {
+   "lang": "en-US",
+   "text": "swim",
+   "file": null
+  },
+  "en.word.table": {
+   "lang": "en-US",
+   "text": "table",
+   "file": null
+  },
+  "en.word.ten": {
+   "lang": "en-US",
+   "text": "ten",
+   "file": null
+  },
+  "en.word.thirsty": {
+   "lang": "en-US",
+   "text": "thirsty",
+   "file": null
+  },
+  "en.word.three": {
+   "lang": "en-US",
+   "text": "three",
+   "file": null
+  },
+  "en.word.tired": {
+   "lang": "en-US",
+   "text": "tired",
+   "file": null
+  },
+  "en.word.tree": {
+   "lang": "en-US",
+   "text": "tree",
+   "file": null
+  },
+  "en.word.triangle": {
+   "lang": "en-US",
+   "text": "triangle",
+   "file": null
+  },
+  "en.word.turtle": {
+   "lang": "en-US",
+   "text": "turtle",
+   "file": null
+  },
+  "en.word.two": {
+   "lang": "en-US",
+   "text": "two",
+   "file": null
+  },
+  "en.word.umbrella": {
+   "lang": "en-US",
+   "text": "umbrella",
+   "file": null
+  },
+  "en.word.under": {
+   "lang": "en-US",
+   "text": "under",
+   "file": null
+  },
+  "en.word.walk": {
+   "lang": "en-US",
+   "text": "walk",
+   "file": null
+  },
+  "en.word.water": {
+   "lang": "en-US",
+   "text": "water",
+   "file": null
+  },
+  "en.word.white": {
+   "lang": "en-US",
+   "text": "white",
+   "file": null
+  },
+  "en.word.windy": {
+   "lang": "en-US",
+   "text": "windy",
+   "file": null
+  },
+  "en.word.yellow": {
+   "lang": "en-US",
+   "text": "yellow",
+   "file": null
+  },
+  "en.word.zoo": {
+   "lang": "en-US",
+   "text": "zoo",
+   "file": null
+  },
+  "en.wsent.angry": {
+   "lang": "en-US",
+   "text": "I am angry.",
+   "file": null
+  },
+  "en.wsent.apple": {
+   "lang": "en-US",
+   "text": "I want an apple.",
+   "file": null
+  },
+  "en.wsent.arm": {
+   "lang": "en-US",
+   "text": "Wash your arms.",
+   "file": null
+  },
+  "en.wsent.baby": {
+   "lang": "en-US",
+   "text": "This is my baby.",
+   "file": null
+  },
+  "en.wsent.bag": {
+   "lang": "en-US",
+   "text": "Is this your bag?",
+   "file": null
+  },
+  "en.wsent.ball": {
+   "lang": "en-US",
+   "text": "I see a ball.",
+   "file": null
+  },
+  "en.wsent.balloon": {
+   "lang": "en-US",
+   "text": "I see a balloon.",
+   "file": null
+  },
+  "en.wsent.banana": {
+   "lang": "en-US",
+   "text": "I want a banana.",
+   "file": null
+  },
+  "en.wsent.beach": {
+   "lang": "en-US",
+   "text": "I'm at the beach.",
+   "file": null
+  },
+  "en.wsent.bear": {
+   "lang": "en-US",
+   "text": "Where is the bear?",
+   "file": null
+  },
+  "en.wsent.big": {
+   "lang": "en-US",
+   "text": "It is big.",
+   "file": null
+  },
+  "en.wsent.black": {
+   "lang": "en-US",
+   "text": "It is black.",
+   "file": null
+  },
+  "en.wsent.blue": {
+   "lang": "en-US",
+   "text": "I like blue.",
+   "file": null
+  },
+  "en.wsent.boat": {
+   "lang": "en-US",
+   "text": "I love my boat.",
+   "file": null
+  },
+  "en.wsent.boots": {
+   "lang": "en-US",
+   "text": "Put on your boots.",
+   "file": null
+  },
+  "en.wsent.box": {
+   "lang": "en-US",
+   "text": "It's a box.",
+   "file": null
+  },
+  "en.wsent.brave": {
+   "lang": "en-US",
+   "text": "Are you brave?",
+   "file": null
+  },
+  "en.wsent.bread": {
+   "lang": "en-US",
+   "text": "Do you like bread?",
+   "file": null
+  },
+  "en.wsent.bridge": {
+   "lang": "en-US",
+   "text": "This is a bridge.",
+   "file": null
+  },
+  "en.wsent.brother": {
+   "lang": "en-US",
+   "text": "This is my brother.",
+   "file": null
+  },
+  "en.wsent.brown": {
+   "lang": "en-US",
+   "text": "It is brown.",
+   "file": null
+  },
+  "en.wsent.bug": {
+   "lang": "en-US",
+   "text": "What is it? It's a bug.",
+   "file": null
+  },
+  "en.wsent.cake": {
+   "lang": "en-US",
+   "text": "I see a cake.",
+   "file": null
+  },
+  "en.wsent.candy": {
+   "lang": "en-US",
+   "text": "I don't like candy.",
+   "file": null
+  },
+  "en.wsent.carrot": {
+   "lang": "en-US",
+   "text": "I don't like carrots.",
+   "file": null
+  },
+  "en.wsent.cat": {
+   "lang": "en-US",
+   "text": "Where is the cat?",
+   "file": null
+  },
+  "en.wsent.circle": {
+   "lang": "en-US",
+   "text": "Look at the circle!",
+   "file": null
+  },
+  "en.wsent.clap": {
+   "lang": "en-US",
+   "text": "Can you clap?",
+   "file": null
+  },
+  "en.wsent.cloud": {
+   "lang": "en-US",
+   "text": "I see a cloud.",
+   "file": null
+  },
+  "en.wsent.cloudy": {
+   "lang": "en-US",
+   "text": "It's cloudy today.",
+   "file": null
+  },
+  "en.wsent.coat": {
+   "lang": "en-US",
+   "text": "Is this your coat?",
+   "file": null
+  },
+  "en.wsent.cold": {
+   "lang": "en-US",
+   "text": "It is cold.",
+   "file": null
+  },
+  "en.wsent.cook": {
+   "lang": "en-US",
+   "text": "Let's cook!",
+   "file": null
+  },
+  "en.wsent.cookie": {
+   "lang": "en-US",
+   "text": "Do you like cookies?",
+   "file": null
+  },
+  "en.wsent.corn": {
+   "lang": "en-US",
+   "text": "I don't like corn.",
+   "file": null
+  },
+  "en.wsent.cow": {
+   "lang": "en-US",
+   "text": "Is it a cow?",
+   "file": null
+  },
+  "en.wsent.dad": {
+   "lang": "en-US",
+   "text": "This is my dad.",
+   "file": null
+  },
+  "en.wsent.dance": {
+   "lang": "en-US",
+   "text": "Can you dance?",
+   "file": null
+  },
+  "en.wsent.dog": {
+   "lang": "en-US",
+   "text": "Where is the dog?",
+   "file": null
+  },
+  "en.wsent.draw": {
+   "lang": "en-US",
+   "text": "Let's draw!",
+   "file": null
+  },
+  "en.wsent.dream": {
+   "lang": "en-US",
+   "text": "Sweet dreams!",
+   "file": null
+  },
+  "en.wsent.dress": {
+   "lang": "en-US",
+   "text": "Is this your dress?",
+   "file": null
+  },
+  "en.wsent.duck": {
+   "lang": "en-US",
+   "text": "What is it? It's a duck.",
+   "file": null
+  },
+  "en.wsent.ear": {
+   "lang": "en-US",
+   "text": "Touch your ear.",
+   "file": null
+  },
+  "en.wsent.eat": {
+   "lang": "en-US",
+   "text": "Can you eat?",
+   "file": null
+  },
+  "en.wsent.egg": {
+   "lang": "en-US",
+   "text": "Do you like eggs?",
+   "file": null
+  },
+  "en.wsent.eight": {
+   "lang": "en-US",
+   "text": "How many stars? Eight!",
+   "file": null
+  },
+  "en.wsent.elephant": {
+   "lang": "en-US",
+   "text": "Is it an elephant?",
+   "file": null
+  },
+  "en.wsent.eye": {
+   "lang": "en-US",
+   "text": "Touch your eye.",
+   "file": null
+  },
+  "en.wsent.finger": {
+   "lang": "en-US",
+   "text": "Wash your fingers.",
+   "file": null
+  },
+  "en.wsent.fish": {
+   "lang": "en-US",
+   "text": "What is it? It's a fish.",
+   "file": null
+  },
+  "en.wsent.five": {
+   "lang": "en-US",
+   "text": "I have five flowers.",
+   "file": null
+  },
+  "en.wsent.flower": {
+   "lang": "en-US",
+   "text": "This is a flower.",
+   "file": null
+  },
+  "en.wsent.fly": {
+   "lang": "en-US",
+   "text": "I can fly.",
+   "file": null
+  },
+  "en.wsent.foot": {
+   "lang": "en-US",
+   "text": "Wash your feet.",
+   "file": null
+  },
+  "en.wsent.four": {
+   "lang": "en-US",
+   "text": "I have four flowers.",
+   "file": null
+  },
+  "en.wsent.friend": {
+   "lang": "en-US",
+   "text": "You are my friend.",
+   "file": null
+  },
+  "en.wsent.frog": {
+   "lang": "en-US",
+   "text": "What is it? It's a frog.",
+   "file": null
+  },
+  "en.wsent.garden": {
+   "lang": "en-US",
+   "text": "I love my garden.",
+   "file": null
+  },
+  "en.wsent.gift": {
+   "lang": "en-US",
+   "text": "This is a gift.",
+   "file": null
+  },
+  "en.wsent.grandma": {
+   "lang": "en-US",
+   "text": "I love my grandma.",
+   "file": null
+  },
+  "en.wsent.grandpa": {
+   "lang": "en-US",
+   "text": "I love my grandpa.",
+   "file": null
+  },
+  "en.wsent.grape": {
+   "lang": "en-US",
+   "text": "I want grapes.",
+   "file": null
+  },
+  "en.wsent.green": {
+   "lang": "en-US",
+   "text": "I like green.",
+   "file": null
+  },
+  "en.wsent.hand": {
+   "lang": "en-US",
+   "text": "Wash your hands.",
+   "file": null
+  },
+  "en.wsent.happy": {
+   "lang": "en-US",
+   "text": "I am happy.",
+   "file": null
+  },
+  "en.wsent.hat": {
+   "lang": "en-US",
+   "text": "Put on your hat.",
+   "file": null
+  },
+  "en.wsent.head": {
+   "lang": "en-US",
+   "text": "Touch your head.",
+   "file": null
+  },
+  "en.wsent.heart": {
+   "lang": "en-US",
+   "text": "Look at the heart!",
+   "file": null
+  },
+  "en.wsent.hide": {
+   "lang": "en-US",
+   "text": "Let's hide!",
+   "file": null
+  },
+  "en.wsent.horse": {
+   "lang": "en-US",
+   "text": "Is it a horse?",
+   "file": null
+  },
+  "en.wsent.hot": {
+   "lang": "en-US",
+   "text": "It is hot.",
+   "file": null
+  },
+  "en.wsent.hungry": {
+   "lang": "en-US",
+   "text": "Are you hungry?",
+   "file": null
+  },
+  "en.wsent.in": {
+   "lang": "en-US",
+   "text": "It's in the box.",
+   "file": null
+  },
+  "en.wsent.juice": {
+   "lang": "en-US",
+   "text": "I like juice.",
+   "file": null
+  },
+  "en.wsent.jump": {
+   "lang": "en-US",
+   "text": "I can jump.",
+   "file": null
+  },
+  "en.wsent.leaf": {
+   "lang": "en-US",
+   "text": "This is a leaf.",
+   "file": null
+  },
+  "en.wsent.leg": {
+   "lang": "en-US",
+   "text": "Wash your legs.",
+   "file": null
+  },
+  "en.wsent.lemon": {
+   "lang": "en-US",
+   "text": "I want a lemon.",
+   "file": null
+  },
+  "en.wsent.light": {
+   "lang": "en-US",
+   "text": "Look at the light!",
+   "file": null
+  },
+  "en.wsent.lion": {
+   "lang": "en-US",
+   "text": "Is it a lion?",
+   "file": null
+  },
+  "en.wsent.milk": {
+   "lang": "en-US",
+   "text": "Do you like milk?",
+   "file": null
+  },
+  "en.wsent.mom": {
+   "lang": "en-US",
+   "text": "This is my mom.",
+   "file": null
+  },
+  "en.wsent.monkey": {
+   "lang": "en-US",
+   "text": "Is it a monkey?",
+   "file": null
+  },
+  "en.wsent.moon": {
+   "lang": "en-US",
+   "text": "This is the moon.",
+   "file": null
+  },
+  "en.wsent.mouth": {
+   "lang": "en-US",
+   "text": "Touch your mouth.",
+   "file": null
+  },
+  "en.wsent.mushroom": {
+   "lang": "en-US",
+   "text": "It's a mushroom.",
+   "file": null
+  },
+  "en.wsent.music": {
+   "lang": "en-US",
+   "text": "I like music.",
+   "file": null
+  },
+  "en.wsent.night": {
+   "lang": "en-US",
+   "text": "Good night!",
+   "file": null
+  },
+  "en.wsent.nine": {
+   "lang": "en-US",
+   "text": "How many stars? Nine!",
+   "file": null
+  },
+  "en.wsent.nose": {
+   "lang": "en-US",
+   "text": "Touch your nose.",
+   "file": null
+  },
+  "en.wsent.on": {
+   "lang": "en-US",
+   "text": "It's on the box.",
+   "file": null
+  },
+  "en.wsent.one": {
+   "lang": "en-US",
+   "text": "I have one flower.",
+   "file": null
+  },
+  "en.wsent.orange": {
+   "lang": "en-US",
+   "text": "It is orange.",
+   "file": null
+  },
+  "en.wsent.owl": {
+   "lang": "en-US",
+   "text": "I see an owl.",
+   "file": null
+  },
+  "en.wsent.pants": {
+   "lang": "en-US",
+   "text": "Put on your pants.",
+   "file": null
+  },
+  "en.wsent.park": {
+   "lang": "en-US",
+   "text": "I'm at the park.",
+   "file": null
+  },
+  "en.wsent.pig": {
+   "lang": "en-US",
+   "text": "Where is the pig?",
+   "file": null
+  },
+  "en.wsent.pink": {
+   "lang": "en-US",
+   "text": "I like pink.",
+   "file": null
+  },
+  "en.wsent.pizza": {
+   "lang": "en-US",
+   "text": "I like pizza.",
+   "file": null
+  },
+  "en.wsent.play": {
+   "lang": "en-US",
+   "text": "Let's play!",
+   "file": null
+  },
+  "en.wsent.pool": {
+   "lang": "en-US",
+   "text": "I'm at the pool.",
+   "file": null
+  },
+  "en.wsent.purple": {
+   "lang": "en-US",
+   "text": "It is purple.",
+   "file": null
+  },
+  "en.wsent.rabbit": {
+   "lang": "en-US",
+   "text": "Where is the rabbit?",
+   "file": null
+  },
+  "en.wsent.rainbow": {
+   "lang": "en-US",
+   "text": "Look at the rainbow!",
+   "file": null
+  },
+  "en.wsent.rainy": {
+   "lang": "en-US",
+   "text": "It's rainy today.",
+   "file": null
+  },
+  "en.wsent.read": {
+   "lang": "en-US",
+   "text": "Let's read!",
+   "file": null
+  },
+  "en.wsent.red": {
+   "lang": "en-US",
+   "text": "I like red.",
+   "file": null
+  },
+  "en.wsent.rice": {
+   "lang": "en-US",
+   "text": "Do you like rice?",
+   "file": null
+  },
+  "en.wsent.rock": {
+   "lang": "en-US",
+   "text": "I see a rock.",
+   "file": null
+  },
+  "en.wsent.run": {
+   "lang": "en-US",
+   "text": "I can run.",
+   "file": null
+  },
+  "en.wsent.sad": {
+   "lang": "en-US",
+   "text": "I am sad.",
+   "file": null
+  },
+  "en.wsent.scared": {
+   "lang": "en-US",
+   "text": "I am scared.",
+   "file": null
+  },
+  "en.wsent.seven": {
+   "lang": "en-US",
+   "text": "How many stars? Seven!",
+   "file": null
+  },
+  "en.wsent.shirt": {
+   "lang": "en-US",
+   "text": "Put on your shirt.",
+   "file": null
+  },
+  "en.wsent.shoes": {
+   "lang": "en-US",
+   "text": "Put on your shoes.",
+   "file": null
+  },
+  "en.wsent.shy": {
+   "lang": "en-US",
+   "text": "Are you shy?",
+   "file": null
+  },
+  "en.wsent.sing": {
+   "lang": "en-US",
+   "text": "Can you sing?",
+   "file": null
+  },
+  "en.wsent.sister": {
+   "lang": "en-US",
+   "text": "This is my sister.",
+   "file": null
+  },
+  "en.wsent.six": {
+   "lang": "en-US",
+   "text": "How many stars? Six!",
+   "file": null
+  },
+  "en.wsent.sky": {
+   "lang": "en-US",
+   "text": "Look at the sky!",
+   "file": null
+  },
+  "en.wsent.sleep": {
+   "lang": "en-US",
+   "text": "Can you sleep?",
+   "file": null
+  },
+  "en.wsent.sleepy": {
+   "lang": "en-US",
+   "text": "I am sleepy.",
+   "file": null
+  },
+  "en.wsent.small": {
+   "lang": "en-US",
+   "text": "It is small.",
+   "file": null
+  },
+  "en.wsent.snowy": {
+   "lang": "en-US",
+   "text": "It's snowy today.",
+   "file": null
+  },
+  "en.wsent.socks": {
+   "lang": "en-US",
+   "text": "Put on your socks.",
+   "file": null
+  },
+  "en.wsent.square": {
+   "lang": "en-US",
+   "text": "Look at the square!",
+   "file": null
+  },
+  "en.wsent.star": {
+   "lang": "en-US",
+   "text": "Look at the star!",
+   "file": null
+  },
+  "en.wsent.store": {
+   "lang": "en-US",
+   "text": "I'm at the store.",
+   "file": null
+  },
+  "en.wsent.strawberry": {
+   "lang": "en-US",
+   "text": "I want a strawberry.",
+   "file": null
+  },
+  "en.wsent.sun": {
+   "lang": "en-US",
+   "text": "This is the sun.",
+   "file": null
+  },
+  "en.wsent.sunny": {
+   "lang": "en-US",
+   "text": "It's sunny today.",
+   "file": null
+  },
+  "en.wsent.swim": {
+   "lang": "en-US",
+   "text": "I can swim.",
+   "file": null
+  },
+  "en.wsent.table": {
+   "lang": "en-US",
+   "text": "It's on the table.",
+   "file": null
+  },
+  "en.wsent.ten": {
+   "lang": "en-US",
+   "text": "How many stars? Ten!",
+   "file": null
+  },
+  "en.wsent.thirsty": {
+   "lang": "en-US",
+   "text": "Are you thirsty?",
+   "file": null
+  },
+  "en.wsent.three": {
+   "lang": "en-US",
+   "text": "I have three flowers.",
+   "file": null
+  },
+  "en.wsent.tired": {
+   "lang": "en-US",
+   "text": "Are you tired?",
+   "file": null
+  },
+  "en.wsent.tree": {
+   "lang": "en-US",
+   "text": "This is a tree.",
+   "file": null
+  },
+  "en.wsent.triangle": {
+   "lang": "en-US",
+   "text": "Look at the triangle!",
+   "file": null
+  },
+  "en.wsent.turtle": {
+   "lang": "en-US",
+   "text": "What is it? It's a turtle.",
+   "file": null
+  },
+  "en.wsent.two": {
+   "lang": "en-US",
+   "text": "I have two flowers.",
+   "file": null
+  },
+  "en.wsent.umbrella": {
+   "lang": "en-US",
+   "text": "Is this your umbrella?",
+   "file": null
+  },
+  "en.wsent.under": {
+   "lang": "en-US",
+   "text": "It's under the box.",
+   "file": null
+  },
+  "en.wsent.walk": {
+   "lang": "en-US",
+   "text": "I can walk.",
+   "file": null
+  },
+  "en.wsent.water": {
+   "lang": "en-US",
+   "text": "I love water.",
+   "file": null
+  },
+  "en.wsent.white": {
+   "lang": "en-US",
+   "text": "It is white.",
+   "file": null
+  },
+  "en.wsent.windy": {
+   "lang": "en-US",
+   "text": "It's windy today.",
+   "file": null
+  },
+  "en.wsent.yellow": {
+   "lang": "en-US",
+   "text": "I like yellow.",
+   "file": null
+  },
+  "en.wsent.zoo": {
+   "lang": "en-US",
+   "text": "I'm at the zoo.",
+   "file": null
+  },
+  "ko.ant.english": {
+   "lang": "ko-KR",
+   "text": "영어를 잘 듣고, 맞는 화살표를 눌러봐!",
+   "file": null
+  },
+  "ko.ant.oops": {
+   "lang": "ko-KR",
+   "text": "앗, 길이 막혔어. 다시 해볼까?",
+   "file": null
+  },
+  "ko.ant.plan": {
+   "lang": "ko-KR",
+   "text": "화살표를 눌러서 개미 길을 만들어줘! 다 만들면 출발 버튼!",
+   "file": null
+  },
+  "ko.boot.tap": {
+   "lang": "ko-KR",
+   "text": "별을 눌러줘!",
+   "file": null
+  },
+  "ko.butterfly.1": {
+   "lang": "ko-KR",
+   "text": "첫소리를 잘 듣고, 그 글자 나비를 잡아봐!",
+   "file": null
+  },
+  "ko.butterfly.2": {
+   "lang": "ko-KR",
+   "text": "나비 글자와 첫소리가 같은 그림을 찾아봐!",
+   "file": null
+  },
+  "ko.butterfly.2final": {
+   "lang": "ko-KR",
+   "text": "나비 글자와 끝소리가 같은 그림을 찾아봐!",
+   "file": null
+  },
+  "ko.butterfly.3": {
+   "lang": "ko-KR",
+   "text": "소리를 합치면 어떤 말이 될까? 그림을 골라봐!",
+   "file": null
+  },
+  "ko.butterfly.4": {
+   "lang": "ko-KR",
+   "text": "잘 듣고 맞는 글자 카드를 골라봐!",
+   "file": null
+  },
+  "ko.chant.go": {
+   "lang": "ko-KR",
+   "text": "노래를 같이 불러볼까?",
+   "file": null
+  },
+  "ko.chapter.2": {
+   "lang": "ko-KR",
+   "text": "연못이 깨어났어! 새로운 곳이 열렸어!",
+   "file": null
+  },
+  "ko.chapter.3": {
+   "lang": "ko-KR",
+   "text": "숲이 깨어났어! 새로운 곳이 열렸어!",
+   "file": null
+  },
+  "ko.chapter.4": {
+   "lang": "ko-KR",
+   "text": "하늘다리가 나타났어! 새로운 곳이 열렸어!",
+   "file": null
+  },
+  "ko.codex.go": {
+   "lang": "ko-KR",
+   "text": "친구를 누르면 인사를 들을 수 있어!",
+   "file": null
+  },
+  "ko.decorate.go": {
+   "lang": "ko-KR",
+   "text": "별빛으로 정원을 꾸며볼까? 빈 자리를 눌러봐!",
+   "file": null
+  },
+  "ko.decorate.need": {
+   "lang": "ko-KR",
+   "text": "별빛이 조금 더 필요해!",
+   "file": null
+  },
+  "ko.finale.end": {
+   "lang": "ko-KR",
+   "text": "삼십 일 동안 정말 잘했어! 너는 최고의 별 요정이야!",
+   "file": null
+  },
+  "ko.finale.intro": {
+   "lang": "ko-KR",
+   "text": "오늘은 별빛 축제야! 친구들이 모두 모였어!",
+   "file": null
+  },
+  "ko.fireflies.add": {
+   "lang": "ko-KR",
+   "text": "반딧불이가 더 날아왔어! 모두 몇 마리일까?",
+   "file": null
+  },
+  "ko.fireflies.count": {
+   "lang": "ko-KR",
+   "text": "반딧불이를 하나씩 눌러서 세어봐!",
+   "file": null
+  },
+  "ko.fireflies.pick": {
+   "lang": "ko-KR",
+   "text": "모두 몇 마리야? 숫자를 골라봐!",
+   "file": null
+  },
+  "ko.fireflies.sub": {
+   "lang": "ko-KR",
+   "text": "반딧불이가 날아갔어! 몇 마리 남았을까?",
+   "file": null
+  },
+  "ko.friend.coming": {
+   "lang": "ko-KR",
+   "text": "어? 누가 왔나 봐!",
+   "file": null
+  },
+  "ko.friend.done": {
+   "lang": "ko-KR",
+   "text": "고마워! 이제 정원 길로 가 볼까?",
+   "file": null
+  },
+  "ko.friend.hello": {
+   "lang": "ko-KR",
+   "text": "새 친구야! 인사해 볼까?",
+   "file": null
+  },
+  "ko.friend.words": {
+   "lang": "ko-KR",
+   "text": "친구가 영어 말을 알려준대. 잘 듣고 따라 해봐!",
+   "file": null
+  },
+  "ko.goodnight.bye": {
+   "lang": "ko-KR",
+   "text": "내일 또 만나!",
+   "file": null
+  },
+  "ko.goodnight.review": {
+   "lang": "ko-KR",
+   "text": "오늘 배운 말을 다시 들어볼까?",
+   "file": null
+  },
+  "ko.goodnight.sleep": {
+   "lang": "ko-KR",
+   "text": "정원이 잠들 시간이야.",
+   "file": null
+  },
+  "ko.goodnight.tomorrow": {
+   "lang": "ko-KR",
+   "text": "내일은 이 소리로 시작하는 친구가 올 거야!",
+   "file": null
+  },
+  "ko.h.가": {
+   "lang": "ko-KR",
+   "text": "가",
+   "file": null
+  },
+  "ko.h.가방": {
+   "lang": "ko-KR",
+   "text": "가방",
+   "file": null
+  },
+  "ko.h.가지": {
+   "lang": "ko-KR",
+   "text": "가지",
+   "file": null
+  },
+  "ko.h.갑": {
+   "lang": "ko-KR",
+   "text": "갑",
+   "file": null
+  },
+  "ko.h.강": {
+   "lang": "ko-KR",
+   "text": "강",
+   "file": null
+  },
+  "ko.h.강아지": {
+   "lang": "ko-KR",
+   "text": "강아지",
+   "file": null
+  },
+  "ko.h.갸": {
+   "lang": "ko-KR",
+   "text": "갸",
+   "file": null
+  },
+  "ko.h.거": {
+   "lang": "ko-KR",
+   "text": "거",
+   "file": null
+  },
+  "ko.h.거미": {
+   "lang": "ko-KR",
+   "text": "거미",
+   "file": null
+  },
+  "ko.h.겨": {
+   "lang": "ko-KR",
+   "text": "겨",
+   "file": null
+  },
+  "ko.h.고": {
+   "lang": "ko-KR",
+   "text": "고",
+   "file": null
+  },
+  "ko.h.고구마": {
+   "lang": "ko-KR",
+   "text": "고구마",
+   "file": null
+  },
+  "ko.h.고기": {
+   "lang": "ko-KR",
+   "text": "고기",
+   "file": null
+  },
+  "ko.h.고양이": {
+   "lang": "ko-KR",
+   "text": "고양이",
+   "file": null
+  },
+  "ko.h.곰": {
+   "lang": "ko-KR",
+   "text": "곰",
+   "file": null
+  },
+  "ko.h.공": {
+   "lang": "ko-KR",
+   "text": "공",
+   "file": null
+  },
+  "ko.h.교": {
+   "lang": "ko-KR",
+   "text": "교",
+   "file": null
+  },
+  "ko.h.구": {
+   "lang": "ko-KR",
+   "text": "구",
+   "file": null
+  },
+  "ko.h.규": {
+   "lang": "ko-KR",
+   "text": "규",
+   "file": null
+  },
+  "ko.h.그": {
+   "lang": "ko-KR",
+   "text": "그",
+   "file": null
+  },
+  "ko.h.기": {
+   "lang": "ko-KR",
+   "text": "기",
+   "file": null
+  },
+  "ko.h.기차": {
+   "lang": "ko-KR",
+   "text": "기차",
+   "file": null
+  },
+  "ko.h.기타": {
+   "lang": "ko-KR",
+   "text": "기타",
+   "file": null
+  },
+  "ko.h.나": {
+   "lang": "ko-KR",
+   "text": "나",
+   "file": null
+  },
+  "ko.h.나무": {
+   "lang": "ko-KR",
+   "text": "나무",
+   "file": null
+  },
+  "ko.h.나비": {
+   "lang": "ko-KR",
+   "text": "나비",
+   "file": null
+  },
+  "ko.h.냐": {
+   "lang": "ko-KR",
+   "text": "냐",
+   "file": null
+  },
+  "ko.h.너": {
+   "lang": "ko-KR",
+   "text": "너",
+   "file": null
+  },
+  "ko.h.녀": {
+   "lang": "ko-KR",
+   "text": "녀",
+   "file": null
+  },
+  "ko.h.노": {
+   "lang": "ko-KR",
+   "text": "노",
+   "file": null
+  },
+  "ko.h.뇨": {
+   "lang": "ko-KR",
+   "text": "뇨",
+   "file": null
+  },
+  "ko.h.누": {
+   "lang": "ko-KR",
+   "text": "누",
+   "file": null
+  },
+  "ko.h.눈": {
+   "lang": "ko-KR",
+   "text": "눈",
+   "file": null
+  },
+  "ko.h.눈사람": {
+   "lang": "ko-KR",
+   "text": "눈사람",
+   "file": null
+  },
+  "ko.h.뉴": {
+   "lang": "ko-KR",
+   "text": "뉴",
+   "file": null
+  },
+  "ko.h.느": {
+   "lang": "ko-KR",
+   "text": "느",
+   "file": null
+  },
+  "ko.h.니": {
+   "lang": "ko-KR",
+   "text": "니",
+   "file": null
+  },
+  "ko.h.다": {
+   "lang": "ko-KR",
+   "text": "다",
+   "file": null
+  },
+  "ko.h.달": {
+   "lang": "ko-KR",
+   "text": "달",
+   "file": null
+  },
+  "ko.h.댜": {
+   "lang": "ko-KR",
+   "text": "댜",
+   "file": null
+  },
+  "ko.h.더": {
+   "lang": "ko-KR",
+   "text": "더",
+   "file": null
+  },
+  "ko.h.뎌": {
+   "lang": "ko-KR",
+   "text": "뎌",
+   "file": null
+  },
+  "ko.h.도": {
+   "lang": "ko-KR",
+   "text": "도",
+   "file": null
+  },
+  "ko.h.도토리": {
+   "lang": "ko-KR",
+   "text": "도토리",
+   "file": null
+  },
+  "ko.h.됴": {
+   "lang": "ko-KR",
+   "text": "됴",
+   "file": null
+  },
+  "ko.h.두": {
+   "lang": "ko-KR",
+   "text": "두",
+   "file": null
+  },
+  "ko.h.듀": {
+   "lang": "ko-KR",
+   "text": "듀",
+   "file": null
+  },
+  "ko.h.드": {
+   "lang": "ko-KR",
+   "text": "드",
+   "file": null
+  },
+  "ko.h.디": {
+   "lang": "ko-KR",
+   "text": "디",
+   "file": null
+  },
+  "ko.h.라": {
+   "lang": "ko-KR",
+   "text": "라",
+   "file": null
+  },
+  "ko.h.람": {
+   "lang": "ko-KR",
+   "text": "람",
+   "file": null
+  },
+  "ko.h.랴": {
+   "lang": "ko-KR",
+   "text": "랴",
+   "file": null
+  },
+  "ko.h.러": {
+   "lang": "ko-KR",
+   "text": "러",
+   "file": null
+  },
+  "ko.h.려": {
+   "lang": "ko-KR",
+   "text": "려",
+   "file": null
+  },
+  "ko.h.로": {
+   "lang": "ko-KR",
+   "text": "로",
+   "file": null
+  },
+  "ko.h.료": {
+   "lang": "ko-KR",
+   "text": "료",
+   "file": null
+  },
+  "ko.h.루": {
+   "lang": "ko-KR",
+   "text": "루",
+   "file": null
+  },
+  "ko.h.류": {
+   "lang": "ko-KR",
+   "text": "류",
+   "file": null
+  },
+  "ko.h.르": {
+   "lang": "ko-KR",
+   "text": "르",
+   "file": null
+  },
+  "ko.h.리": {
+   "lang": "ko-KR",
+   "text": "리",
+   "file": null
+  },
+  "ko.h.마": {
+   "lang": "ko-KR",
+   "text": "마",
+   "file": null
+  },
+  "ko.h.말": {
+   "lang": "ko-KR",
+   "text": "말",
+   "file": null
+  },
+  "ko.h.먀": {
+   "lang": "ko-KR",
+   "text": "먀",
+   "file": null
+  },
+  "ko.h.머": {
+   "lang": "ko-KR",
+   "text": "머",
+   "file": null
+  },
+  "ko.h.며": {
+   "lang": "ko-KR",
+   "text": "며",
+   "file": null
+  },
+  "ko.h.모": {
+   "lang": "ko-KR",
+   "text": "모",
+   "file": null
+  },
+  "ko.h.모기": {
+   "lang": "ko-KR",
+   "text": "모기",
+   "file": null
+  },
+  "ko.h.모자": {
+   "lang": "ko-KR",
+   "text": "모자",
+   "file": null
+  },
+  "ko.h.묘": {
+   "lang": "ko-KR",
+   "text": "묘",
+   "file": null
+  },
+  "ko.h.무": {
+   "lang": "ko-KR",
+   "text": "무",
+   "file": null
+  },
+  "ko.h.문": {
+   "lang": "ko-KR",
+   "text": "문",
+   "file": null
+  },
+  "ko.h.물": {
+   "lang": "ko-KR",
+   "text": "물",
+   "file": null
+  },
+  "ko.h.뮤": {
+   "lang": "ko-KR",
+   "text": "뮤",
+   "file": null
+  },
+  "ko.h.므": {
+   "lang": "ko-KR",
+   "text": "므",
+   "file": null
+  },
+  "ko.h.미": {
+   "lang": "ko-KR",
+   "text": "미",
+   "file": null
+  },
+  "ko.h.바": {
+   "lang": "ko-KR",
+   "text": "바",
+   "file": null
+  },
+  "ko.h.바다": {
+   "lang": "ko-KR",
+   "text": "바다",
+   "file": null
+  },
+  "ko.h.바지": {
+   "lang": "ko-KR",
+   "text": "바지",
+   "file": null
+  },
+  "ko.h.박": {
+   "lang": "ko-KR",
+   "text": "박",
+   "file": null
+  },
+  "ko.h.발": {
+   "lang": "ko-KR",
+   "text": "발",
+   "file": null
+  },
+  "ko.h.밥": {
+   "lang": "ko-KR",
+   "text": "밥",
+   "file": null
+  },
+  "ko.h.방": {
+   "lang": "ko-KR",
+   "text": "방",
+   "file": null
+  },
+  "ko.h.뱌": {
+   "lang": "ko-KR",
+   "text": "뱌",
+   "file": null
+  },
+  "ko.h.버": {
+   "lang": "ko-KR",
+   "text": "버",
+   "file": null
+  },
+  "ko.h.버스": {
+   "lang": "ko-KR",
+   "text": "버스",
+   "file": null
+  },
+  "ko.h.벼": {
+   "lang": "ko-KR",
+   "text": "벼",
+   "file": null
+  },
+  "ko.h.별": {
+   "lang": "ko-KR",
+   "text": "별",
+   "file": null
+  },
+  "ko.h.보": {
+   "lang": "ko-KR",
+   "text": "보",
+   "file": null
+  },
+  "ko.h.뵤": {
+   "lang": "ko-KR",
+   "text": "뵤",
+   "file": null
+  },
+  "ko.h.부": {
+   "lang": "ko-KR",
+   "text": "부",
+   "file": null
+  },
+  "ko.h.부츠": {
+   "lang": "ko-KR",
+   "text": "부츠",
+   "file": null
+  },
+  "ko.h.불": {
+   "lang": "ko-KR",
+   "text": "불",
+   "file": null
+  },
+  "ko.h.뷰": {
+   "lang": "ko-KR",
+   "text": "뷰",
+   "file": null
+  },
+  "ko.h.브": {
+   "lang": "ko-KR",
+   "text": "브",
+   "file": null
+  },
+  "ko.h.비": {
+   "lang": "ko-KR",
+   "text": "비",
+   "file": null
+  },
+  "ko.h.비누": {
+   "lang": "ko-KR",
+   "text": "비누",
+   "file": null
+  },
+  "ko.h.사": {
+   "lang": "ko-KR",
+   "text": "사",
+   "file": null
+  },
+  "ko.h.사람": {
+   "lang": "ko-KR",
+   "text": "사람",
+   "file": null
+  },
+  "ko.h.사자": {
+   "lang": "ko-KR",
+   "text": "사자",
+   "file": null
+  },
+  "ko.h.사탕": {
+   "lang": "ko-KR",
+   "text": "사탕",
+   "file": null
+  },
+  "ko.h.산": {
+   "lang": "ko-KR",
+   "text": "산",
+   "file": null
+  },
+  "ko.h.상": {
+   "lang": "ko-KR",
+   "text": "상",
+   "file": null
+  },
+  "ko.h.상자": {
+   "lang": "ko-KR",
+   "text": "상자",
+   "file": null
+  },
+  "ko.h.샤": {
+   "lang": "ko-KR",
+   "text": "샤",
+   "file": null
+  },
+  "ko.h.서": {
+   "lang": "ko-KR",
+   "text": "서",
+   "file": null
+  },
+  "ko.h.선": {
+   "lang": "ko-KR",
+   "text": "선",
+   "file": null
+  },
+  "ko.h.선물": {
+   "lang": "ko-KR",
+   "text": "선물",
+   "file": null
+  },
+  "ko.h.셔": {
+   "lang": "ko-KR",
+   "text": "셔",
+   "file": null
+  },
+  "ko.h.소": {
+   "lang": "ko-KR",
+   "text": "소",
+   "file": null
+  },
+  "ko.h.손": {
+   "lang": "ko-KR",
+   "text": "손",
+   "file": null
+  },
+  "ko.h.쇼": {
+   "lang": "ko-KR",
+   "text": "쇼",
+   "file": null
+  },
+  "ko.h.수": {
+   "lang": "ko-KR",
+   "text": "수",
+   "file": null
+  },
+  "ko.h.수박": {
+   "lang": "ko-KR",
+   "text": "수박",
+   "file": null
+  },
+  "ko.h.슈": {
+   "lang": "ko-KR",
+   "text": "슈",
+   "file": null
+  },
+  "ko.h.스": {
+   "lang": "ko-KR",
+   "text": "스",
+   "file": null
+  },
+  "ko.h.시": {
+   "lang": "ko-KR",
+   "text": "시",
+   "file": null
+  },
+  "ko.h.신": {
+   "lang": "ko-KR",
+   "text": "신",
+   "file": null
+  },
+  "ko.h.신발": {
+   "lang": "ko-KR",
+   "text": "신발",
+   "file": null
+  },
+  "ko.h.아": {
+   "lang": "ko-KR",
+   "text": "아",
+   "file": null
+  },
+  "ko.h.아기": {
+   "lang": "ko-KR",
+   "text": "아기",
+   "file": null
+  },
+  "ko.h.야": {
+   "lang": "ko-KR",
+   "text": "야",
+   "file": null
+  },
+  "ko.h.양": {
+   "lang": "ko-KR",
+   "text": "양",
+   "file": null
+  },
+  "ko.h.양말": {
+   "lang": "ko-KR",
+   "text": "양말",
+   "file": null
+  },
+  "ko.h.어": {
+   "lang": "ko-KR",
+   "text": "어",
+   "file": null
+  },
+  "ko.h.여": {
+   "lang": "ko-KR",
+   "text": "여",
+   "file": null
+  },
+  "ko.h.여우": {
+   "lang": "ko-KR",
+   "text": "여우",
+   "file": null
+  },
+  "ko.h.연": {
+   "lang": "ko-KR",
+   "text": "연",
+   "file": null
+  },
+  "ko.h.연필": {
+   "lang": "ko-KR",
+   "text": "연필",
+   "file": null
+  },
+  "ko.h.오": {
+   "lang": "ko-KR",
+   "text": "오",
+   "file": null
+  },
+  "ko.h.오리": {
+   "lang": "ko-KR",
+   "text": "오리",
+   "file": null
+  },
+  "ko.h.오이": {
+   "lang": "ko-KR",
+   "text": "오이",
+   "file": null
+  },
+  "ko.h.오징어": {
+   "lang": "ko-KR",
+   "text": "오징어",
+   "file": null
+  },
+  "ko.h.요": {
+   "lang": "ko-KR",
+   "text": "요",
+   "file": null
+  },
+  "ko.h.우": {
+   "lang": "ko-KR",
+   "text": "우",
+   "file": null
+  },
+  "ko.h.우산": {
+   "lang": "ko-KR",
+   "text": "우산",
+   "file": null
+  },
+  "ko.h.우유": {
+   "lang": "ko-KR",
+   "text": "우유",
+   "file": null
+  },
+  "ko.h.유": {
+   "lang": "ko-KR",
+   "text": "유",
+   "file": null
+  },
+  "ko.h.으": {
+   "lang": "ko-KR",
+   "text": "으",
+   "file": null
+  },
+  "ko.h.이": {
+   "lang": "ko-KR",
+   "text": "이",
+   "file": null
+  },
+  "ko.h.자": {
+   "lang": "ko-KR",
+   "text": "자",
+   "file": null
+  },
+  "ko.h.장": {
+   "lang": "ko-KR",
+   "text": "장",
+   "file": null
+  },
+  "ko.h.장갑": {
+   "lang": "ko-KR",
+   "text": "장갑",
+   "file": null
+  },
+  "ko.h.쟈": {
+   "lang": "ko-KR",
+   "text": "쟈",
+   "file": null
+  },
+  "ko.h.저": {
+   "lang": "ko-KR",
+   "text": "저",
+   "file": null
+  },
+  "ko.h.져": {
+   "lang": "ko-KR",
+   "text": "져",
+   "file": null
+  },
+  "ko.h.조": {
+   "lang": "ko-KR",
+   "text": "조",
+   "file": null
+  },
+  "ko.h.죠": {
+   "lang": "ko-KR",
+   "text": "죠",
+   "file": null
+  },
+  "ko.h.주": {
+   "lang": "ko-KR",
+   "text": "주",
+   "file": null
+  },
+  "ko.h.쥬": {
+   "lang": "ko-KR",
+   "text": "쥬",
+   "file": null
+  },
+  "ko.h.즈": {
+   "lang": "ko-KR",
+   "text": "즈",
+   "file": null
+  },
+  "ko.h.지": {
+   "lang": "ko-KR",
+   "text": "지",
+   "file": null
+  },
+  "ko.h.집": {
+   "lang": "ko-KR",
+   "text": "집",
+   "file": null
+  },
+  "ko.h.징": {
+   "lang": "ko-KR",
+   "text": "징",
+   "file": null
+  },
+  "ko.h.차": {
+   "lang": "ko-KR",
+   "text": "차",
+   "file": null
+  },
+  "ko.h.챠": {
+   "lang": "ko-KR",
+   "text": "챠",
+   "file": null
+  },
+  "ko.h.처": {
+   "lang": "ko-KR",
+   "text": "처",
+   "file": null
+  },
+  "ko.h.쳐": {
+   "lang": "ko-KR",
+   "text": "쳐",
+   "file": null
+  },
+  "ko.h.초": {
+   "lang": "ko-KR",
+   "text": "초",
+   "file": null
+  },
+  "ko.h.쵸": {
+   "lang": "ko-KR",
+   "text": "쵸",
+   "file": null
+  },
+  "ko.h.추": {
+   "lang": "ko-KR",
+   "text": "추",
+   "file": null
+  },
+  "ko.h.츄": {
+   "lang": "ko-KR",
+   "text": "츄",
+   "file": null
+  },
+  "ko.h.츠": {
+   "lang": "ko-KR",
+   "text": "츠",
+   "file": null
+  },
+  "ko.h.치": {
+   "lang": "ko-KR",
+   "text": "치",
+   "file": null
+  },
+  "ko.h.치마": {
+   "lang": "ko-KR",
+   "text": "치마",
+   "file": null
+  },
+  "ko.h.카": {
+   "lang": "ko-KR",
+   "text": "카",
+   "file": null
+  },
+  "ko.h.캬": {
+   "lang": "ko-KR",
+   "text": "캬",
+   "file": null
+  },
+  "ko.h.커": {
+   "lang": "ko-KR",
+   "text": "커",
+   "file": null
+  },
+  "ko.h.컵": {
+   "lang": "ko-KR",
+   "text": "컵",
+   "file": null
+  },
+  "ko.h.켜": {
+   "lang": "ko-KR",
+   "text": "켜",
+   "file": null
+  },
+  "ko.h.코": {
+   "lang": "ko-KR",
+   "text": "코",
+   "file": null
+  },
+  "ko.h.쿄": {
+   "lang": "ko-KR",
+   "text": "쿄",
+   "file": null
+  },
+  "ko.h.쿠": {
+   "lang": "ko-KR",
+   "text": "쿠",
+   "file": null
+  },
+  "ko.h.큐": {
+   "lang": "ko-KR",
+   "text": "큐",
+   "file": null
+  },
+  "ko.h.크": {
+   "lang": "ko-KR",
+   "text": "크",
+   "file": null
+  },
+  "ko.h.키": {
+   "lang": "ko-KR",
+   "text": "키",
+   "file": null
+  },
+  "ko.h.타": {
+   "lang": "ko-KR",
+   "text": "타",
+   "file": null
+  },
+  "ko.h.탕": {
+   "lang": "ko-KR",
+   "text": "탕",
+   "file": null
+  },
+  "ko.h.탸": {
+   "lang": "ko-KR",
+   "text": "탸",
+   "file": null
+  },
+  "ko.h.터": {
+   "lang": "ko-KR",
+   "text": "터",
+   "file": null
+  },
+  "ko.h.텨": {
+   "lang": "ko-KR",
+   "text": "텨",
+   "file": null
+  },
+  "ko.h.토": {
+   "lang": "ko-KR",
+   "text": "토",
+   "file": null
+  },
+  "ko.h.툐": {
+   "lang": "ko-KR",
+   "text": "툐",
+   "file": null
+  },
+  "ko.h.투": {
+   "lang": "ko-KR",
+   "text": "투",
+   "file": null
+  },
+  "ko.h.튜": {
+   "lang": "ko-KR",
+   "text": "튜",
+   "file": null
+  },
+  "ko.h.트": {
+   "lang": "ko-KR",
+   "text": "트",
+   "file": null
+  },
+  "ko.h.티": {
+   "lang": "ko-KR",
+   "text": "티",
+   "file": null
+  },
+  "ko.h.파": {
+   "lang": "ko-KR",
+   "text": "파",
+   "file": null
+  },
+  "ko.h.퍄": {
+   "lang": "ko-KR",
+   "text": "퍄",
+   "file": null
+  },
+  "ko.h.퍼": {
+   "lang": "ko-KR",
+   "text": "퍼",
+   "file": null
+  },
+  "ko.h.펴": {
+   "lang": "ko-KR",
+   "text": "펴",
+   "file": null
+  },
+  "ko.h.포": {
+   "lang": "ko-KR",
+   "text": "포",
+   "file": null
+  },
+  "ko.h.포도": {
+   "lang": "ko-KR",
+   "text": "포도",
+   "file": null
+  },
+  "ko.h.표": {
+   "lang": "ko-KR",
+   "text": "표",
+   "file": null
+  },
+  "ko.h.푸": {
+   "lang": "ko-KR",
+   "text": "푸",
+   "file": null
+  },
+  "ko.h.풍": {
+   "lang": "ko-KR",
+   "text": "풍",
+   "file": null
+  },
+  "ko.h.풍선": {
+   "lang": "ko-KR",
+   "text": "풍선",
+   "file": null
+  },
+  "ko.h.퓨": {
+   "lang": "ko-KR",
+   "text": "퓨",
+   "file": null
+  },
+  "ko.h.프": {
+   "lang": "ko-KR",
+   "text": "프",
+   "file": null
+  },
+  "ko.h.피": {
+   "lang": "ko-KR",
+   "text": "피",
+   "file": null
+  },
+  "ko.h.피자": {
+   "lang": "ko-KR",
+   "text": "피자",
+   "file": null
+  },
+  "ko.h.필": {
+   "lang": "ko-KR",
+   "text": "필",
+   "file": null
+  },
+  "ko.h.하": {
+   "lang": "ko-KR",
+   "text": "하",
+   "file": null
+  },
+  "ko.h.하마": {
+   "lang": "ko-KR",
+   "text": "하마",
+   "file": null
+  },
+  "ko.h.햐": {
+   "lang": "ko-KR",
+   "text": "햐",
+   "file": null
+  },
+  "ko.h.허": {
+   "lang": "ko-KR",
+   "text": "허",
+   "file": null
+  },
+  "ko.h.혀": {
+   "lang": "ko-KR",
+   "text": "혀",
+   "file": null
+  },
+  "ko.h.호": {
+   "lang": "ko-KR",
+   "text": "호",
+   "file": null
+  },
+  "ko.h.효": {
+   "lang": "ko-KR",
+   "text": "효",
+   "file": null
+  },
+  "ko.h.후": {
+   "lang": "ko-KR",
+   "text": "후",
+   "file": null
+  },
+  "ko.h.휴": {
+   "lang": "ko-KR",
+   "text": "휴",
+   "file": null
+  },
+  "ko.h.흐": {
+   "lang": "ko-KR",
+   "text": "흐",
+   "file": null
+  },
+  "ko.h.히": {
+   "lang": "ko-KR",
+   "text": "히",
+   "file": null
+  },
+  "ko.hangul.1": {
+   "lang": "ko-KR",
+   "text": "조각을 모아서 글자를 만들어봐!",
+   "file": null
+  },
+  "ko.hangul.2": {
+   "lang": "ko-KR",
+   "text": "빈칸에 글자 조각을 넣어서 낱말을 완성해봐!",
+   "file": null
+  },
+  "ko.hint.listen": {
+   "lang": "ko-KR",
+   "text": "잘 들어봐!",
+   "file": null
+  },
+  "ko.hint.look": {
+   "lang": "ko-KR",
+   "text": "반짝이는 걸 봐!",
+   "file": null
+  },
+  "ko.hub.allDone": {
+   "lang": "ko-KR",
+   "text": "오늘 놀이를 다 했어! 정원에 별빛을 심어 볼까?",
+   "file": null
+  },
+  "ko.hub.free": {
+   "lang": "ko-KR",
+   "text": "더 놀고 싶으면 반짝이는 놀이를 골라봐!",
+   "file": null
+  },
+  "ko.hub.go": {
+   "lang": "ko-KR",
+   "text": "반짝이는 돌을 눌러봐!",
+   "file": null
+  },
+  "ko.hub.next": {
+   "lang": "ko-KR",
+   "text": "다음 놀이로 가자!",
+   "file": null
+  },
+  "ko.limitReached": {
+   "lang": "ko-KR",
+   "text": "오늘은 충분히 놀았어. 내일 또 만나!",
+   "file": null
+  },
+  "ko.medley.go": {
+   "lang": "ko-KR",
+   "text": "친구들이 차례로 인사할 거야!",
+   "file": null
+  },
+  "ko.party.intro": {
+   "lang": "ko-KR",
+   "text": "오늘은 친구들과 복습 파티야!",
+   "file": null
+  },
+  "ko.pattern.english": {
+   "lang": "ko-KR",
+   "text": "영어로 잘 들어봐! 다음엔 뭐가 올까?",
+   "file": null
+  },
+  "ko.pattern.go": {
+   "lang": "ko-KR",
+   "text": "규칙을 찾아봐! 다음엔 어떤 꽃이 올까?",
+   "file": null
+  },
+  "ko.plant.done": {
+   "lang": "ko-KR",
+   "text": "새 친구의 집이 생겼어!",
+   "file": null
+  },
+  "ko.plant.go": {
+   "lang": "ko-KR",
+   "text": "모은 별빛을 정원에 뿌려볼까? 반짝이를 눌러봐!",
+   "file": null
+  },
+  "ko.praise.0": {
+   "lang": "ko-KR",
+   "text": "잘했어!",
+   "file": null
+  },
+  "ko.praise.1": {
+   "lang": "ko-KR",
+   "text": "멋지다!",
+   "file": null
+  },
+  "ko.praise.2": {
+   "lang": "ko-KR",
+   "text": "우와, 해냈어!",
+   "file": null
+  },
+  "ko.praise.3": {
+   "lang": "ko-KR",
+   "text": "역시 너야!",
+   "file": null
+  },
+  "ko.praise.4": {
+   "lang": "ko-KR",
+   "text": "최고야!",
+   "file": null
+  },
+  "ko.praise.5": {
+   "lang": "ko-KR",
+   "text": "정말 잘 찾았어!",
+   "file": null
+  },
+  "ko.rehearsal.go": {
+   "lang": "ko-KR",
+   "text": "내일은 축제야! 친구들 인사를 연습해 볼까?",
+   "file": null
+  },
+  "ko.retry": {
+   "lang": "ko-KR",
+   "text": "괜찮아, 다시 해보자!",
+   "file": null
+  },
+  "ko.sameDay": {
+   "lang": "ko-KR",
+   "text": "오늘 친구는 벌써 만났어! 조금만 더 놀아볼까?",
+   "file": null
+  },
+  "ko.say.go": {
+   "lang": "ko-KR",
+   "text": "따라 말해볼까?",
+   "file": null
+  },
+  "ko.say.nice": {
+   "lang": "ko-KR",
+   "text": "멋진 목소리야!",
+   "file": null
+  },
+  "ko.say.playback": {
+   "lang": "ko-KR",
+   "text": "내 목소리를 들어봐!",
+   "file": null
+  },
+  "ko.say.record": {
+   "lang": "ko-KR",
+   "text": "마이크를 누르고 말해봐!",
+   "file": null
+  },
+  "ko.station.done": {
+   "lang": "ko-KR",
+   "text": "별빛을 모았어! 정원이 더 반짝여!",
+   "file": null
+  },
+  "ko.timeUp": {
+   "lang": "ko-KR",
+   "text": "오늘 놀이 시간이 다 됐어. 이것만 하고 쉬자!",
+   "file": null
+  },
+  "ko.together": {
+   "lang": "ko-KR",
+   "text": "같이 해볼까?",
+   "file": null
+  },
+  "ko.train.answer": {
+   "lang": "ko-KR",
+   "text": "친구에게 대답해볼까? 맞는 대답을 골라봐!",
+   "file": null
+  },
+  "ko.train.go": {
+   "lang": "ko-KR",
+   "text": "문장을 잘 듣고, 기차 칸에 순서대로 놓아봐!",
+   "file": null
+  },
+  "ko.train.picture": {
+   "lang": "ko-KR",
+   "text": "문장을 잘 듣고, 맞는 그림을 골라봐!",
+   "file": null
+  },
+  "ko.train.tapHint": {
+   "lang": "ko-KR",
+   "text": "카드를 누르면 소리를 들을 수 있어!",
+   "file": null
+  },
+  "ko.unlock.new": {
+   "lang": "ko-KR",
+   "text": "새 놀이가 생겼어!",
+   "file": null
+  },
+  "ko.welcome.back": {
+   "lang": "ko-KR",
+   "text": "다시 왔구나! 보고 싶었어!",
+   "file": null
+  },
+  "ko.welcome.first": {
+   "lang": "ko-KR",
+   "text": "안녕! 나는 별 요정 반짝이야. 우리 같이 시든 정원을 살려볼까?",
+   "file": null
+  },
+  "ko.welcome.today": {
+   "lang": "ko-KR",
+   "text": "오늘도 와줬구나!",
+   "file": null
+  },
+  "ko.wordGarden.1": {
+   "lang": "ko-KR",
+   "text": "잘 듣고 알맞은 그림을 눌러봐!",
+   "file": null
+  },
+  "ko.wordGarden.2": {
+   "lang": "ko-KR",
+   "text": "꿀벌을 눌러서 들어보고, 맞는 그림으로 데려가 줘!",
+   "file": null
+  },
+  "ko.wordGarden.3": {
+   "lang": "ko-KR",
+   "text": "카드를 뒤집어서 그림과 소리 짝을 찾아봐!",
+   "file": null
+  },
+  "ko.wordGarden.4": {
+   "lang": "ko-KR",
+   "text": "움직이는 그림을 잘 보고 골라봐!",
+   "file": null
+  }
+ }
+}

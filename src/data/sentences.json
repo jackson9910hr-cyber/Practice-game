@@ -1,0 +1,2850 @@
+{
+  "patterns": [
+    {
+      "id": "p01",
+      "day": 1,
+      "frame": "I like ___."
+    },
+    {
+      "id": "p02",
+      "day": 2,
+      "frame": "This is a ___."
+    },
+    {
+      "id": "p03",
+      "day": 3,
+      "frame": "It is ___."
+    },
+    {
+      "id": "p04",
+      "day": 4,
+      "frame": "I have ___."
+    },
+    {
+      "id": "p05",
+      "day": 5,
+      "frame": "Look at the ___!"
+    },
+    {
+      "id": "p06",
+      "day": 6,
+      "frame": "How many ___?"
+    },
+    {
+      "id": "p07",
+      "day": 7,
+      "frame": "I see ___."
+    },
+    {
+      "id": "p08",
+      "day": 8,
+      "frame": "What is it? It's a ___.",
+      "prompt": "What is it?"
+    },
+    {
+      "id": "p09",
+      "day": 9,
+      "frame": "Where is the ___?"
+    },
+    {
+      "id": "p10",
+      "day": 10,
+      "frame": "Is it a ___?",
+      "answer": "Yes, it is.",
+      "distractors": [
+        "Yes, I do.",
+        "Yes, I can."
+      ]
+    },
+    {
+      "id": "p11",
+      "day": 11,
+      "frame": "This is my ___."
+    },
+    {
+      "id": "p12",
+      "day": 12,
+      "frame": "Touch your ___."
+    },
+    {
+      "id": "p13",
+      "day": 13,
+      "frame": "Wash your ___."
+    },
+    {
+      "id": "p14",
+      "day": 14,
+      "frame": "I love my ___."
+    },
+    {
+      "id": "p15",
+      "day": 15,
+      "frame": "I want ___."
+    },
+    {
+      "id": "p16",
+      "day": 16,
+      "frame": "Do you like ___?",
+      "answer": "Yes, I do.",
+      "distractors": [
+        "Yes, I can.",
+        "Yes, I am."
+      ]
+    },
+    {
+      "id": "p17",
+      "day": 17,
+      "frame": "I don't like ___."
+    },
+    {
+      "id": "p18",
+      "day": 18,
+      "frame": "Put on your ___."
+    },
+    {
+      "id": "p19",
+      "day": 19,
+      "frame": "Is this your ___?",
+      "answer": "Yes, it is.",
+      "distractors": [
+        "Yes, I do.",
+        "Yes, I am."
+      ]
+    },
+    {
+      "id": "p20",
+      "day": 20,
+      "frame": "It's ___ today."
+    },
+    {
+      "id": "p21",
+      "day": 21,
+      "frame": "What color is it?",
+      "answerFromWords": [
+        "red",
+        "blue",
+        "yellow",
+        "green",
+        "pink",
+        "orange",
+        "purple",
+        "white",
+        "black",
+        "brown"
+      ],
+      "answerFrame": "It's {w}."
+    },
+    {
+      "id": "p22",
+      "day": 22,
+      "frame": "I can ___."
+    },
+    {
+      "id": "p23",
+      "day": 23,
+      "frame": "Can you ___?",
+      "answer": "Yes, I can.",
+      "distractors": [
+        "Yes, I do.",
+        "Yes, I am."
+      ]
+    },
+    {
+      "id": "p24",
+      "day": 24,
+      "frame": "Let's ___!"
+    },
+    {
+      "id": "p25",
+      "day": 25,
+      "frame": "I am ___."
+    },
+    {
+      "id": "p26",
+      "day": 26,
+      "frame": "Are you ___?",
+      "answer": "Yes, I am.",
+      "distractors": [
+        "Yes, I do.",
+        "Yes, I can."
+      ]
+    },
+    {
+      "id": "p27",
+      "day": 27,
+      "frame": "I'm at the ___."
+    },
+    {
+      "id": "p28",
+      "day": 28,
+      "frame": "It's in / on / under the ___."
+    },
+    {
+      "id": "p29",
+      "day": 29,
+      "frame": "Thank you, ___!"
+    },
+    {
+      "id": "p30",
+      "day": 30,
+      "frame": "You are my ___."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "p01-1",
+      "pattern": "p01",
+      "text": "I like red.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "red",
+          "w": "red"
+        }
+      ],
+      "words": [
+        "red"
+      ],
+      "availableDay": 1
+    },
+    {
+      "id": "p01-2",
+      "pattern": "p01",
+      "text": "I like green.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "green",
+          "w": "green"
+        }
+      ],
+      "words": [
+        "green"
+      ],
+      "availableDay": 1
+    },
+    {
+      "id": "p01-3",
+      "pattern": "p01",
+      "text": "I like apples.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "apples",
+          "w": "apple"
+        }
+      ],
+      "words": [
+        "apple"
+      ],
+      "availableDay": 15
+    },
+    {
+      "id": "p01-4",
+      "pattern": "p01",
+      "text": "I like music.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "music",
+          "w": "music"
+        }
+      ],
+      "words": [
+        "music"
+      ],
+      "availableDay": 30
+    },
+    {
+      "id": "p02-1",
+      "pattern": "p02",
+      "text": "This is a flower.",
+      "cards": [
+        {
+          "t": "This"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "flower",
+          "w": "flower"
+        }
+      ],
+      "words": [
+        "flower"
+      ],
+      "availableDay": 2
+    },
+    {
+      "id": "p02-2",
+      "pattern": "p02",
+      "text": "This is a tree.",
+      "cards": [
+        {
+          "t": "This"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "tree",
+          "w": "tree"
+        }
+      ],
+      "words": [
+        "tree"
+      ],
+      "availableDay": 2
+    },
+    {
+      "id": "p02-3",
+      "pattern": "p02",
+      "text": "This is a leaf.",
+      "cards": [
+        {
+          "t": "This"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "leaf",
+          "w": "leaf"
+        }
+      ],
+      "words": [
+        "leaf"
+      ],
+      "availableDay": 2
+    },
+    {
+      "id": "p02-4",
+      "pattern": "p02",
+      "text": "This is a cake.",
+      "cards": [
+        {
+          "t": "This"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "cake",
+          "w": "cake"
+        }
+      ],
+      "words": [
+        "cake"
+      ],
+      "availableDay": 7
+    },
+    {
+      "id": "p03-1",
+      "pattern": "p03",
+      "text": "It is purple.",
+      "cards": [
+        {
+          "t": "It"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "purple",
+          "w": "purple"
+        }
+      ],
+      "words": [
+        "purple"
+      ],
+      "availableDay": 3
+    },
+    {
+      "id": "p03-2",
+      "pattern": "p03",
+      "text": "It is white.",
+      "cards": [
+        {
+          "t": "It"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "white",
+          "w": "white"
+        }
+      ],
+      "words": [
+        "white"
+      ],
+      "availableDay": 3
+    },
+    {
+      "id": "p03-3",
+      "pattern": "p03",
+      "text": "It is big.",
+      "cards": [
+        {
+          "t": "It"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "big",
+          "w": "big"
+        }
+      ],
+      "words": [
+        "big"
+      ],
+      "availableDay": 7
+    },
+    {
+      "id": "p03-4",
+      "pattern": "p03",
+      "text": "It is cold.",
+      "cards": [
+        {
+          "t": "It"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "cold",
+          "w": "cold"
+        }
+      ],
+      "words": [
+        "cold"
+      ],
+      "availableDay": 21
+    },
+    {
+      "id": "p04-1",
+      "pattern": "p04",
+      "text": "I have two flowers.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "have"
+        },
+        {
+          "t": "two",
+          "w": "two"
+        },
+        {
+          "t": "flowers",
+          "w": "flower"
+        }
+      ],
+      "words": [
+        "two",
+        "flower"
+      ],
+      "availableDay": 4
+    },
+    {
+      "id": "p04-2",
+      "pattern": "p04",
+      "text": "I have five flowers.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "have"
+        },
+        {
+          "t": "five",
+          "w": "five"
+        },
+        {
+          "t": "flowers",
+          "w": "flower"
+        }
+      ],
+      "words": [
+        "five",
+        "flower"
+      ],
+      "availableDay": 4
+    },
+    {
+      "id": "p04-3",
+      "pattern": "p04",
+      "text": "I have three balloons.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "have"
+        },
+        {
+          "t": "three",
+          "w": "three"
+        },
+        {
+          "t": "balloons",
+          "w": "balloon"
+        }
+      ],
+      "words": [
+        "three",
+        "balloon"
+      ],
+      "availableDay": 7
+    },
+    {
+      "id": "p04-4",
+      "pattern": "p04",
+      "text": "I have a bag.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "have"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "bag",
+          "w": "bag"
+        }
+      ],
+      "words": [
+        "bag"
+      ],
+      "availableDay": 19
+    },
+    {
+      "id": "p05-1",
+      "pattern": "p05",
+      "text": "Look at the star!",
+      "cards": [
+        {
+          "t": "Look"
+        },
+        {
+          "t": "at"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "star",
+          "w": "star"
+        }
+      ],
+      "words": [
+        "star"
+      ],
+      "availableDay": 5
+    },
+    {
+      "id": "p05-2",
+      "pattern": "p05",
+      "text": "Look at the heart!",
+      "cards": [
+        {
+          "t": "Look"
+        },
+        {
+          "t": "at"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "heart",
+          "w": "heart"
+        }
+      ],
+      "words": [
+        "heart"
+      ],
+      "availableDay": 5
+    },
+    {
+      "id": "p05-3",
+      "pattern": "p05",
+      "text": "Look at the moon!",
+      "cards": [
+        {
+          "t": "Look"
+        },
+        {
+          "t": "at"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "moon",
+          "w": "moon"
+        }
+      ],
+      "words": [
+        "moon"
+      ],
+      "availableDay": 5
+    },
+    {
+      "id": "p05-4",
+      "pattern": "p05",
+      "text": "Look at the rainbow!",
+      "cards": [
+        {
+          "t": "Look"
+        },
+        {
+          "t": "at"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "rainbow",
+          "w": "rainbow"
+        }
+      ],
+      "words": [
+        "rainbow"
+      ],
+      "availableDay": 21
+    },
+    {
+      "id": "p06-1",
+      "pattern": "p06",
+      "text": "How many stars?",
+      "cards": [
+        {
+          "t": "How"
+        },
+        {
+          "t": "many"
+        },
+        {
+          "t": "stars",
+          "w": "star"
+        }
+      ],
+      "words": [
+        "star"
+      ],
+      "availableDay": 6
+    },
+    {
+      "id": "p06-2",
+      "pattern": "p06",
+      "text": "How many flowers?",
+      "cards": [
+        {
+          "t": "How"
+        },
+        {
+          "t": "many"
+        },
+        {
+          "t": "flowers",
+          "w": "flower"
+        }
+      ],
+      "words": [
+        "flower"
+      ],
+      "availableDay": 6
+    },
+    {
+      "id": "p06-3",
+      "pattern": "p06",
+      "text": "How many balloons?",
+      "cards": [
+        {
+          "t": "How"
+        },
+        {
+          "t": "many"
+        },
+        {
+          "t": "balloons",
+          "w": "balloon"
+        }
+      ],
+      "words": [
+        "balloon"
+      ],
+      "availableDay": 7
+    },
+    {
+      "id": "p06-4",
+      "pattern": "p06",
+      "text": "How many fish?",
+      "cards": [
+        {
+          "t": "How"
+        },
+        {
+          "t": "many"
+        },
+        {
+          "t": "fish",
+          "w": "fish"
+        }
+      ],
+      "words": [
+        "fish"
+      ],
+      "availableDay": 8
+    },
+    {
+      "id": "p07-1",
+      "pattern": "p07",
+      "text": "I see a big cake.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "see"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "big",
+          "w": "big"
+        },
+        {
+          "t": "cake",
+          "w": "cake"
+        }
+      ],
+      "words": [
+        "big",
+        "cake"
+      ],
+      "availableDay": 7
+    },
+    {
+      "id": "p07-2",
+      "pattern": "p07",
+      "text": "I see a ball.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "see"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "ball",
+          "w": "ball"
+        }
+      ],
+      "words": [
+        "ball"
+      ],
+      "availableDay": 7
+    },
+    {
+      "id": "p07-3",
+      "pattern": "p07",
+      "text": "I see a red balloon.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "see"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "red",
+          "w": "red"
+        },
+        {
+          "t": "balloon",
+          "w": "balloon"
+        }
+      ],
+      "words": [
+        "red",
+        "balloon"
+      ],
+      "availableDay": 7
+    },
+    {
+      "id": "p07-4",
+      "pattern": "p07",
+      "text": "I see an owl.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "see"
+        },
+        {
+          "t": "an"
+        },
+        {
+          "t": "owl",
+          "w": "owl"
+        }
+      ],
+      "words": [
+        "owl"
+      ],
+      "availableDay": 21
+    },
+    {
+      "id": "p08-1",
+      "pattern": "p08",
+      "text": "It's a frog.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "frog",
+          "w": "frog"
+        }
+      ],
+      "words": [
+        "frog"
+      ],
+      "availableDay": 8
+    },
+    {
+      "id": "p08-2",
+      "pattern": "p08",
+      "text": "It's a duck.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "duck",
+          "w": "duck"
+        }
+      ],
+      "words": [
+        "duck"
+      ],
+      "availableDay": 8
+    },
+    {
+      "id": "p08-3",
+      "pattern": "p08",
+      "text": "It's a turtle.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "turtle",
+          "w": "turtle"
+        }
+      ],
+      "words": [
+        "turtle"
+      ],
+      "availableDay": 8
+    },
+    {
+      "id": "p08-4",
+      "pattern": "p08",
+      "text": "It's a fish.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "fish",
+          "w": "fish"
+        }
+      ],
+      "words": [
+        "fish"
+      ],
+      "availableDay": 8
+    },
+    {
+      "id": "p09-1",
+      "pattern": "p09",
+      "text": "Where is the cat?",
+      "cards": [
+        {
+          "t": "Where"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "cat",
+          "w": "cat"
+        }
+      ],
+      "words": [
+        "cat"
+      ],
+      "availableDay": 9
+    },
+    {
+      "id": "p09-2",
+      "pattern": "p09",
+      "text": "Where is the dog?",
+      "cards": [
+        {
+          "t": "Where"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "dog",
+          "w": "dog"
+        }
+      ],
+      "words": [
+        "dog"
+      ],
+      "availableDay": 9
+    },
+    {
+      "id": "p09-3",
+      "pattern": "p09",
+      "text": "Where is the rabbit?",
+      "cards": [
+        {
+          "t": "Where"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "rabbit",
+          "w": "rabbit"
+        }
+      ],
+      "words": [
+        "rabbit"
+      ],
+      "availableDay": 9
+    },
+    {
+      "id": "p09-4",
+      "pattern": "p09",
+      "text": "Where is the ball?",
+      "cards": [
+        {
+          "t": "Where"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "ball",
+          "w": "ball"
+        }
+      ],
+      "words": [
+        "ball"
+      ],
+      "availableDay": 9
+    },
+    {
+      "id": "p10-1",
+      "pattern": "p10",
+      "text": "Is it a lion?",
+      "cards": [
+        {
+          "t": "Is"
+        },
+        {
+          "t": "it"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "lion",
+          "w": "lion"
+        }
+      ],
+      "words": [
+        "lion"
+      ],
+      "availableDay": 10
+    },
+    {
+      "id": "p10-2",
+      "pattern": "p10",
+      "text": "Is it a monkey?",
+      "cards": [
+        {
+          "t": "Is"
+        },
+        {
+          "t": "it"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "monkey",
+          "w": "monkey"
+        }
+      ],
+      "words": [
+        "monkey"
+      ],
+      "availableDay": 10
+    },
+    {
+      "id": "p10-3",
+      "pattern": "p10",
+      "text": "Is it a horse?",
+      "cards": [
+        {
+          "t": "Is"
+        },
+        {
+          "t": "it"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "horse",
+          "w": "horse"
+        }
+      ],
+      "words": [
+        "horse"
+      ],
+      "availableDay": 10
+    },
+    {
+      "id": "p10-4",
+      "pattern": "p10",
+      "text": "Is it a cow?",
+      "cards": [
+        {
+          "t": "Is"
+        },
+        {
+          "t": "it"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "cow",
+          "w": "cow"
+        }
+      ],
+      "words": [
+        "cow"
+      ],
+      "availableDay": 10
+    },
+    {
+      "id": "p11-1",
+      "pattern": "p11",
+      "text": "This is my mom.",
+      "cards": [
+        {
+          "t": "This"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "mom",
+          "w": "mom"
+        }
+      ],
+      "words": [
+        "mom"
+      ],
+      "availableDay": 11
+    },
+    {
+      "id": "p11-2",
+      "pattern": "p11",
+      "text": "This is my dad.",
+      "cards": [
+        {
+          "t": "This"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "dad",
+          "w": "dad"
+        }
+      ],
+      "words": [
+        "dad"
+      ],
+      "availableDay": 11
+    },
+    {
+      "id": "p11-3",
+      "pattern": "p11",
+      "text": "This is my sister.",
+      "cards": [
+        {
+          "t": "This"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "sister",
+          "w": "sister"
+        }
+      ],
+      "words": [
+        "sister"
+      ],
+      "availableDay": 11
+    },
+    {
+      "id": "p11-4",
+      "pattern": "p11",
+      "text": "This is my brother.",
+      "cards": [
+        {
+          "t": "This"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "brother",
+          "w": "brother"
+        }
+      ],
+      "words": [
+        "brother"
+      ],
+      "availableDay": 11
+    },
+    {
+      "id": "p12-1",
+      "pattern": "p12",
+      "text": "Touch your nose.",
+      "cards": [
+        {
+          "t": "Touch"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "nose",
+          "w": "nose"
+        }
+      ],
+      "words": [
+        "nose"
+      ],
+      "availableDay": 12
+    },
+    {
+      "id": "p12-2",
+      "pattern": "p12",
+      "text": "Touch your head.",
+      "cards": [
+        {
+          "t": "Touch"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "head",
+          "w": "head"
+        }
+      ],
+      "words": [
+        "head"
+      ],
+      "availableDay": 12
+    },
+    {
+      "id": "p12-3",
+      "pattern": "p12",
+      "text": "Touch your ear.",
+      "cards": [
+        {
+          "t": "Touch"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "ear",
+          "w": "ear"
+        }
+      ],
+      "words": [
+        "ear"
+      ],
+      "availableDay": 12
+    },
+    {
+      "id": "p12-4",
+      "pattern": "p12",
+      "text": "Touch your mouth.",
+      "cards": [
+        {
+          "t": "Touch"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "mouth",
+          "w": "mouth"
+        }
+      ],
+      "words": [
+        "mouth"
+      ],
+      "availableDay": 12
+    },
+    {
+      "id": "p13-1",
+      "pattern": "p13",
+      "text": "Wash your hands.",
+      "cards": [
+        {
+          "t": "Wash"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "hands",
+          "w": "hand"
+        }
+      ],
+      "words": [
+        "hand"
+      ],
+      "availableDay": 13
+    },
+    {
+      "id": "p13-2",
+      "pattern": "p13",
+      "text": "Wash your feet.",
+      "cards": [
+        {
+          "t": "Wash"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "feet",
+          "w": "foot"
+        }
+      ],
+      "words": [
+        "foot"
+      ],
+      "availableDay": 13
+    },
+    {
+      "id": "p13-3",
+      "pattern": "p13",
+      "text": "Wash your arms.",
+      "cards": [
+        {
+          "t": "Wash"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "arms",
+          "w": "arm"
+        }
+      ],
+      "words": [
+        "arm"
+      ],
+      "availableDay": 13
+    },
+    {
+      "id": "p13-4",
+      "pattern": "p13",
+      "text": "Wash your fingers.",
+      "cards": [
+        {
+          "t": "Wash"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "fingers",
+          "w": "finger"
+        }
+      ],
+      "words": [
+        "finger"
+      ],
+      "availableDay": 13
+    },
+    {
+      "id": "p14-1",
+      "pattern": "p14",
+      "text": "I love my grandma.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "love"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "grandma",
+          "w": "grandma"
+        }
+      ],
+      "words": [
+        "grandma"
+      ],
+      "availableDay": 14
+    },
+    {
+      "id": "p14-2",
+      "pattern": "p14",
+      "text": "I love my grandpa.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "love"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "grandpa",
+          "w": "grandpa"
+        }
+      ],
+      "words": [
+        "grandpa"
+      ],
+      "availableDay": 14
+    },
+    {
+      "id": "p14-3",
+      "pattern": "p14",
+      "text": "I love my mom.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "love"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "mom",
+          "w": "mom"
+        }
+      ],
+      "words": [
+        "mom"
+      ],
+      "availableDay": 14
+    },
+    {
+      "id": "p14-4",
+      "pattern": "p14",
+      "text": "I love my dad.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "love"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "dad",
+          "w": "dad"
+        }
+      ],
+      "words": [
+        "dad"
+      ],
+      "availableDay": 14
+    },
+    {
+      "id": "p15-1",
+      "pattern": "p15",
+      "text": "I want a banana.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "want"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "banana",
+          "w": "banana"
+        }
+      ],
+      "words": [
+        "banana"
+      ],
+      "availableDay": 15
+    },
+    {
+      "id": "p15-2",
+      "pattern": "p15",
+      "text": "I want an apple.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "want"
+        },
+        {
+          "t": "an"
+        },
+        {
+          "t": "apple",
+          "w": "apple"
+        }
+      ],
+      "words": [
+        "apple"
+      ],
+      "availableDay": 15
+    },
+    {
+      "id": "p15-3",
+      "pattern": "p15",
+      "text": "I want grapes.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "want"
+        },
+        {
+          "t": "grapes",
+          "w": "grape"
+        }
+      ],
+      "words": [
+        "grape"
+      ],
+      "availableDay": 15
+    },
+    {
+      "id": "p15-4",
+      "pattern": "p15",
+      "text": "I want a lemon.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "want"
+        },
+        {
+          "t": "a"
+        },
+        {
+          "t": "lemon",
+          "w": "lemon"
+        }
+      ],
+      "words": [
+        "lemon"
+      ],
+      "availableDay": 15
+    },
+    {
+      "id": "p16-1",
+      "pattern": "p16",
+      "text": "Do you like milk?",
+      "cards": [
+        {
+          "t": "Do"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "milk",
+          "w": "milk"
+        }
+      ],
+      "words": [
+        "milk"
+      ],
+      "availableDay": 16
+    },
+    {
+      "id": "p16-2",
+      "pattern": "p16",
+      "text": "Do you like bread?",
+      "cards": [
+        {
+          "t": "Do"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "bread",
+          "w": "bread"
+        }
+      ],
+      "words": [
+        "bread"
+      ],
+      "availableDay": 16
+    },
+    {
+      "id": "p16-3",
+      "pattern": "p16",
+      "text": "Do you like eggs?",
+      "cards": [
+        {
+          "t": "Do"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "eggs",
+          "w": "egg"
+        }
+      ],
+      "words": [
+        "egg"
+      ],
+      "availableDay": 16
+    },
+    {
+      "id": "p16-4",
+      "pattern": "p16",
+      "text": "Do you like cookies?",
+      "cards": [
+        {
+          "t": "Do"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "cookies",
+          "w": "cookie"
+        }
+      ],
+      "words": [
+        "cookie"
+      ],
+      "availableDay": 16
+    },
+    {
+      "id": "p17-1",
+      "pattern": "p17",
+      "text": "I don't like carrots.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "don't"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "carrots",
+          "w": "carrot"
+        }
+      ],
+      "words": [
+        "carrot"
+      ],
+      "availableDay": 17
+    },
+    {
+      "id": "p17-2",
+      "pattern": "p17",
+      "text": "I don't like corn.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "don't"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "corn",
+          "w": "corn"
+        }
+      ],
+      "words": [
+        "corn"
+      ],
+      "availableDay": 17
+    },
+    {
+      "id": "p17-3",
+      "pattern": "p17",
+      "text": "I don't like candy.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "don't"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "candy",
+          "w": "candy"
+        }
+      ],
+      "words": [
+        "candy"
+      ],
+      "availableDay": 17
+    },
+    {
+      "id": "p17-4",
+      "pattern": "p17",
+      "text": "I don't like pizza.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "don't"
+        },
+        {
+          "t": "like"
+        },
+        {
+          "t": "pizza",
+          "w": "pizza"
+        }
+      ],
+      "words": [
+        "pizza"
+      ],
+      "availableDay": 17
+    },
+    {
+      "id": "p18-1",
+      "pattern": "p18",
+      "text": "Put on your hat.",
+      "cards": [
+        {
+          "t": "Put"
+        },
+        {
+          "t": "on"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "hat",
+          "w": "hat"
+        }
+      ],
+      "words": [
+        "hat"
+      ],
+      "availableDay": 18
+    },
+    {
+      "id": "p18-2",
+      "pattern": "p18",
+      "text": "Put on your shoes.",
+      "cards": [
+        {
+          "t": "Put"
+        },
+        {
+          "t": "on"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "shoes",
+          "w": "shoes"
+        }
+      ],
+      "words": [
+        "shoes"
+      ],
+      "availableDay": 18
+    },
+    {
+      "id": "p18-3",
+      "pattern": "p18",
+      "text": "Put on your socks.",
+      "cards": [
+        {
+          "t": "Put"
+        },
+        {
+          "t": "on"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "socks",
+          "w": "socks"
+        }
+      ],
+      "words": [
+        "socks"
+      ],
+      "availableDay": 18
+    },
+    {
+      "id": "p18-4",
+      "pattern": "p18",
+      "text": "Put on your shirt.",
+      "cards": [
+        {
+          "t": "Put"
+        },
+        {
+          "t": "on"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "shirt",
+          "w": "shirt"
+        }
+      ],
+      "words": [
+        "shirt"
+      ],
+      "availableDay": 18
+    },
+    {
+      "id": "p19-1",
+      "pattern": "p19",
+      "text": "Is this your bag?",
+      "cards": [
+        {
+          "t": "Is"
+        },
+        {
+          "t": "this"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "bag",
+          "w": "bag"
+        }
+      ],
+      "words": [
+        "bag"
+      ],
+      "availableDay": 19
+    },
+    {
+      "id": "p19-2",
+      "pattern": "p19",
+      "text": "Is this your coat?",
+      "cards": [
+        {
+          "t": "Is"
+        },
+        {
+          "t": "this"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "coat",
+          "w": "coat"
+        }
+      ],
+      "words": [
+        "coat"
+      ],
+      "availableDay": 19
+    },
+    {
+      "id": "p19-3",
+      "pattern": "p19",
+      "text": "Is this your dress?",
+      "cards": [
+        {
+          "t": "Is"
+        },
+        {
+          "t": "this"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "dress",
+          "w": "dress"
+        }
+      ],
+      "words": [
+        "dress"
+      ],
+      "availableDay": 19
+    },
+    {
+      "id": "p19-4",
+      "pattern": "p19",
+      "text": "Is this your umbrella?",
+      "cards": [
+        {
+          "t": "Is"
+        },
+        {
+          "t": "this"
+        },
+        {
+          "t": "your"
+        },
+        {
+          "t": "umbrella",
+          "w": "umbrella"
+        }
+      ],
+      "words": [
+        "umbrella"
+      ],
+      "availableDay": 19
+    },
+    {
+      "id": "p20-1",
+      "pattern": "p20",
+      "text": "It's sunny today.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "sunny",
+          "w": "sunny"
+        },
+        {
+          "t": "today"
+        }
+      ],
+      "words": [
+        "sunny"
+      ],
+      "availableDay": 20
+    },
+    {
+      "id": "p20-2",
+      "pattern": "p20",
+      "text": "It's rainy today.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "rainy",
+          "w": "rainy"
+        },
+        {
+          "t": "today"
+        }
+      ],
+      "words": [
+        "rainy"
+      ],
+      "availableDay": 20
+    },
+    {
+      "id": "p20-3",
+      "pattern": "p20",
+      "text": "It's snowy today.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "snowy",
+          "w": "snowy"
+        },
+        {
+          "t": "today"
+        }
+      ],
+      "words": [
+        "snowy"
+      ],
+      "availableDay": 20
+    },
+    {
+      "id": "p20-4",
+      "pattern": "p20",
+      "text": "It's windy today.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "windy",
+          "w": "windy"
+        },
+        {
+          "t": "today"
+        }
+      ],
+      "words": [
+        "windy"
+      ],
+      "availableDay": 20
+    },
+    {
+      "id": "p21-1",
+      "pattern": "p21",
+      "text": "What color is it?",
+      "cards": [
+        {
+          "t": "What"
+        },
+        {
+          "t": "color"
+        },
+        {
+          "t": "is"
+        },
+        {
+          "t": "it"
+        }
+      ],
+      "words": [],
+      "availableDay": 21
+    },
+    {
+      "id": "p22-1",
+      "pattern": "p22",
+      "text": "I can fly.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "can"
+        },
+        {
+          "t": "fly",
+          "w": "fly"
+        }
+      ],
+      "words": [
+        "fly"
+      ],
+      "availableDay": 22
+    },
+    {
+      "id": "p22-2",
+      "pattern": "p22",
+      "text": "I can run.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "can"
+        },
+        {
+          "t": "run",
+          "w": "run"
+        }
+      ],
+      "words": [
+        "run"
+      ],
+      "availableDay": 22
+    },
+    {
+      "id": "p22-3",
+      "pattern": "p22",
+      "text": "I can jump.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "can"
+        },
+        {
+          "t": "jump",
+          "w": "jump"
+        }
+      ],
+      "words": [
+        "jump"
+      ],
+      "availableDay": 22
+    },
+    {
+      "id": "p22-4",
+      "pattern": "p22",
+      "text": "I can swim.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "can"
+        },
+        {
+          "t": "swim",
+          "w": "swim"
+        }
+      ],
+      "words": [
+        "swim"
+      ],
+      "availableDay": 22
+    },
+    {
+      "id": "p23-1",
+      "pattern": "p23",
+      "text": "Can you dance?",
+      "cards": [
+        {
+          "t": "Can"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "dance",
+          "w": "dance"
+        }
+      ],
+      "words": [
+        "dance"
+      ],
+      "availableDay": 23
+    },
+    {
+      "id": "p23-2",
+      "pattern": "p23",
+      "text": "Can you sing?",
+      "cards": [
+        {
+          "t": "Can"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "sing",
+          "w": "sing"
+        }
+      ],
+      "words": [
+        "sing"
+      ],
+      "availableDay": 23
+    },
+    {
+      "id": "p23-3",
+      "pattern": "p23",
+      "text": "Can you clap?",
+      "cards": [
+        {
+          "t": "Can"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "clap",
+          "w": "clap"
+        }
+      ],
+      "words": [
+        "clap"
+      ],
+      "availableDay": 23
+    },
+    {
+      "id": "p23-4",
+      "pattern": "p23",
+      "text": "Can you jump?",
+      "cards": [
+        {
+          "t": "Can"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "jump",
+          "w": "jump"
+        }
+      ],
+      "words": [
+        "jump"
+      ],
+      "availableDay": 23
+    },
+    {
+      "id": "p24-1",
+      "pattern": "p24",
+      "text": "Let's draw!",
+      "cards": [
+        {
+          "t": "Let's"
+        },
+        {
+          "t": "draw",
+          "w": "draw"
+        }
+      ],
+      "words": [
+        "draw"
+      ],
+      "availableDay": 24
+    },
+    {
+      "id": "p24-2",
+      "pattern": "p24",
+      "text": "Let's read!",
+      "cards": [
+        {
+          "t": "Let's"
+        },
+        {
+          "t": "read",
+          "w": "read"
+        }
+      ],
+      "words": [
+        "read"
+      ],
+      "availableDay": 24
+    },
+    {
+      "id": "p24-3",
+      "pattern": "p24",
+      "text": "Let's play!",
+      "cards": [
+        {
+          "t": "Let's"
+        },
+        {
+          "t": "play",
+          "w": "play"
+        }
+      ],
+      "words": [
+        "play"
+      ],
+      "availableDay": 24
+    },
+    {
+      "id": "p24-4",
+      "pattern": "p24",
+      "text": "Let's dance!",
+      "cards": [
+        {
+          "t": "Let's"
+        },
+        {
+          "t": "dance",
+          "w": "dance"
+        }
+      ],
+      "words": [
+        "dance"
+      ],
+      "availableDay": 24
+    },
+    {
+      "id": "p25-1",
+      "pattern": "p25",
+      "text": "I am happy.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "am"
+        },
+        {
+          "t": "happy",
+          "w": "happy"
+        }
+      ],
+      "words": [
+        "happy"
+      ],
+      "availableDay": 25
+    },
+    {
+      "id": "p25-2",
+      "pattern": "p25",
+      "text": "I am sad.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "am"
+        },
+        {
+          "t": "sad",
+          "w": "sad"
+        }
+      ],
+      "words": [
+        "sad"
+      ],
+      "availableDay": 25
+    },
+    {
+      "id": "p25-3",
+      "pattern": "p25",
+      "text": "I am sleepy.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "am"
+        },
+        {
+          "t": "sleepy",
+          "w": "sleepy"
+        }
+      ],
+      "words": [
+        "sleepy"
+      ],
+      "availableDay": 25
+    },
+    {
+      "id": "p25-4",
+      "pattern": "p25",
+      "text": "I am scared.",
+      "cards": [
+        {
+          "t": "I"
+        },
+        {
+          "t": "am"
+        },
+        {
+          "t": "scared",
+          "w": "scared"
+        }
+      ],
+      "words": [
+        "scared"
+      ],
+      "availableDay": 25
+    },
+    {
+      "id": "p26-1",
+      "pattern": "p26",
+      "text": "Are you hungry?",
+      "cards": [
+        {
+          "t": "Are"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "hungry",
+          "w": "hungry"
+        }
+      ],
+      "words": [
+        "hungry"
+      ],
+      "availableDay": 26
+    },
+    {
+      "id": "p26-2",
+      "pattern": "p26",
+      "text": "Are you tired?",
+      "cards": [
+        {
+          "t": "Are"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "tired",
+          "w": "tired"
+        }
+      ],
+      "words": [
+        "tired"
+      ],
+      "availableDay": 26
+    },
+    {
+      "id": "p26-3",
+      "pattern": "p26",
+      "text": "Are you thirsty?",
+      "cards": [
+        {
+          "t": "Are"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "thirsty",
+          "w": "thirsty"
+        }
+      ],
+      "words": [
+        "thirsty"
+      ],
+      "availableDay": 26
+    },
+    {
+      "id": "p26-4",
+      "pattern": "p26",
+      "text": "Are you happy?",
+      "cards": [
+        {
+          "t": "Are"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "happy",
+          "w": "happy"
+        }
+      ],
+      "words": [
+        "happy"
+      ],
+      "availableDay": 26
+    },
+    {
+      "id": "p27-1",
+      "pattern": "p27",
+      "text": "I'm at the park.",
+      "cards": [
+        {
+          "t": "I'm"
+        },
+        {
+          "t": "at"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "park",
+          "w": "park"
+        }
+      ],
+      "words": [
+        "park"
+      ],
+      "availableDay": 27
+    },
+    {
+      "id": "p27-2",
+      "pattern": "p27",
+      "text": "I'm at the zoo.",
+      "cards": [
+        {
+          "t": "I'm"
+        },
+        {
+          "t": "at"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "zoo",
+          "w": "zoo"
+        }
+      ],
+      "words": [
+        "zoo"
+      ],
+      "availableDay": 27
+    },
+    {
+      "id": "p27-3",
+      "pattern": "p27",
+      "text": "I'm at the beach.",
+      "cards": [
+        {
+          "t": "I'm"
+        },
+        {
+          "t": "at"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "beach",
+          "w": "beach"
+        }
+      ],
+      "words": [
+        "beach"
+      ],
+      "availableDay": 27
+    },
+    {
+      "id": "p27-4",
+      "pattern": "p27",
+      "text": "I'm at the pool.",
+      "cards": [
+        {
+          "t": "I'm"
+        },
+        {
+          "t": "at"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "pool",
+          "w": "pool"
+        }
+      ],
+      "words": [
+        "pool"
+      ],
+      "availableDay": 27
+    },
+    {
+      "id": "p28-1",
+      "pattern": "p28",
+      "text": "It's in the box.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "in",
+          "w": "in"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "box",
+          "w": "box"
+        }
+      ],
+      "words": [
+        "in",
+        "box"
+      ],
+      "availableDay": 28
+    },
+    {
+      "id": "p28-2",
+      "pattern": "p28",
+      "text": "It's on the box.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "on",
+          "w": "on"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "box",
+          "w": "box"
+        }
+      ],
+      "words": [
+        "on",
+        "box"
+      ],
+      "availableDay": 28
+    },
+    {
+      "id": "p28-3",
+      "pattern": "p28",
+      "text": "It's under the table.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "under",
+          "w": "under"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "table",
+          "w": "table"
+        }
+      ],
+      "words": [
+        "under",
+        "table"
+      ],
+      "availableDay": 28
+    },
+    {
+      "id": "p28-4",
+      "pattern": "p28",
+      "text": "It's on the table.",
+      "cards": [
+        {
+          "t": "It's"
+        },
+        {
+          "t": "on",
+          "w": "on"
+        },
+        {
+          "t": "the"
+        },
+        {
+          "t": "table",
+          "w": "table"
+        }
+      ],
+      "words": [
+        "on",
+        "table"
+      ],
+      "availableDay": 28
+    },
+    {
+      "id": "p29-1",
+      "pattern": "p29",
+      "text": "Thank you, Twinkle!",
+      "cards": [
+        {
+          "t": "Thank"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "Twinkle"
+        }
+      ],
+      "words": [],
+      "availableDay": 29
+    },
+    {
+      "id": "p29-2",
+      "pattern": "p29",
+      "text": "Thank you, mom!",
+      "cards": [
+        {
+          "t": "Thank"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "mom",
+          "w": "mom"
+        }
+      ],
+      "words": [
+        "mom"
+      ],
+      "availableDay": 29
+    },
+    {
+      "id": "p29-3",
+      "pattern": "p29",
+      "text": "Thank you, grandma!",
+      "cards": [
+        {
+          "t": "Thank"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "grandma",
+          "w": "grandma"
+        }
+      ],
+      "words": [
+        "grandma"
+      ],
+      "availableDay": 29
+    },
+    {
+      "id": "p29-4",
+      "pattern": "p29",
+      "text": "Thank you, dad!",
+      "cards": [
+        {
+          "t": "Thank"
+        },
+        {
+          "t": "you"
+        },
+        {
+          "t": "dad",
+          "w": "dad"
+        }
+      ],
+      "words": [
+        "dad"
+      ],
+      "availableDay": 29
+    },
+    {
+      "id": "p30-1",
+      "pattern": "p30",
+      "text": "You are my friend.",
+      "cards": [
+        {
+          "t": "You"
+        },
+        {
+          "t": "are"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "friend",
+          "w": "friend"
+        }
+      ],
+      "words": [
+        "friend"
+      ],
+      "availableDay": 30
+    },
+    {
+      "id": "p30-2",
+      "pattern": "p30",
+      "text": "You are my sister.",
+      "cards": [
+        {
+          "t": "You"
+        },
+        {
+          "t": "are"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "sister",
+          "w": "sister"
+        }
+      ],
+      "words": [
+        "sister"
+      ],
+      "availableDay": 30
+    },
+    {
+      "id": "p30-3",
+      "pattern": "p30",
+      "text": "You are my brother.",
+      "cards": [
+        {
+          "t": "You"
+        },
+        {
+          "t": "are"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "brother",
+          "w": "brother"
+        }
+      ],
+      "words": [
+        "brother"
+      ],
+      "availableDay": 30
+    },
+    {
+      "id": "p30-4",
+      "pattern": "p30",
+      "text": "You are my star.",
+      "cards": [
+        {
+          "t": "You"
+        },
+        {
+          "t": "are"
+        },
+        {
+          "t": "my"
+        },
+        {
+          "t": "star",
+          "w": "star"
+        }
+      ],
+      "words": [
+        "star"
+      ],
+      "availableDay": 30
+    }
+  ]
+}

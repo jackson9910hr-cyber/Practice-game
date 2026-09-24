@@ -1,0 +1,1354 @@
+{
+  "words": [
+    {
+      "id": "red",
+      "en": "red",
+      "ko": "빨강",
+      "day": 1,
+      "pic": "draw:color:#E63946",
+      "sentence": "I like red.",
+      "category": "color"
+    },
+    {
+      "id": "blue",
+      "en": "blue",
+      "ko": "파랑",
+      "day": 1,
+      "pic": "draw:color:#3A86FF",
+      "sentence": "I like blue.",
+      "category": "color"
+    },
+    {
+      "id": "yellow",
+      "en": "yellow",
+      "ko": "노랑",
+      "day": 1,
+      "pic": "draw:color:#FFD60A",
+      "sentence": "I like yellow.",
+      "category": "color"
+    },
+    {
+      "id": "green",
+      "en": "green",
+      "ko": "초록",
+      "day": 1,
+      "pic": "draw:color:#2DC653",
+      "sentence": "I like green.",
+      "category": "color"
+    },
+    {
+      "id": "pink",
+      "en": "pink",
+      "ko": "분홍",
+      "day": 1,
+      "pic": "draw:color:#FF8FAB",
+      "sentence": "I like pink.",
+      "category": "color"
+    },
+    {
+      "id": "flower",
+      "en": "flower",
+      "ko": "꽃",
+      "day": 2,
+      "pic": "🌷",
+      "sentence": "This is a flower.",
+      "category": "nature"
+    },
+    {
+      "id": "tree",
+      "en": "tree",
+      "ko": "나무",
+      "day": 2,
+      "pic": "🌳",
+      "sentence": "This is a tree.",
+      "category": "nature"
+    },
+    {
+      "id": "leaf",
+      "en": "leaf",
+      "ko": "나뭇잎",
+      "day": 2,
+      "pic": "🍃",
+      "sentence": "This is a leaf.",
+      "category": "nature"
+    },
+    {
+      "id": "sun",
+      "en": "sun",
+      "ko": "해",
+      "day": 2,
+      "pic": "🌞",
+      "sentence": "This is the sun.",
+      "category": "nature"
+    },
+    {
+      "id": "moon",
+      "en": "moon",
+      "ko": "달",
+      "day": 2,
+      "pic": "🌙",
+      "sentence": "This is the moon.",
+      "category": "nature"
+    },
+    {
+      "id": "orange",
+      "en": "orange",
+      "ko": "주황",
+      "day": 3,
+      "pic": "draw:color:#FB8500",
+      "sentence": "It is orange.",
+      "category": "color"
+    },
+    {
+      "id": "purple",
+      "en": "purple",
+      "ko": "보라",
+      "day": 3,
+      "pic": "draw:color:#8E44AD",
+      "sentence": "It is purple.",
+      "category": "color"
+    },
+    {
+      "id": "white",
+      "en": "white",
+      "ko": "하양",
+      "day": 3,
+      "pic": "draw:color:#FFFFFF",
+      "sentence": "It is white.",
+      "category": "color"
+    },
+    {
+      "id": "black",
+      "en": "black",
+      "ko": "검정",
+      "day": 3,
+      "pic": "draw:color:#22223B",
+      "sentence": "It is black.",
+      "category": "color"
+    },
+    {
+      "id": "brown",
+      "en": "brown",
+      "ko": "갈색",
+      "day": 3,
+      "pic": "draw:color:#8D5524",
+      "sentence": "It is brown.",
+      "category": "color"
+    },
+    {
+      "id": "one",
+      "en": "one",
+      "ko": "하나(1)",
+      "day": 4,
+      "pic": "draw:num:1",
+      "sentence": "I have one flower.",
+      "category": "number"
+    },
+    {
+      "id": "two",
+      "en": "two",
+      "ko": "둘(2)",
+      "day": 4,
+      "pic": "draw:num:2",
+      "sentence": "I have two flowers.",
+      "category": "number"
+    },
+    {
+      "id": "three",
+      "en": "three",
+      "ko": "셋(3)",
+      "day": 4,
+      "pic": "draw:num:3",
+      "sentence": "I have three flowers.",
+      "category": "number"
+    },
+    {
+      "id": "four",
+      "en": "four",
+      "ko": "넷(4)",
+      "day": 4,
+      "pic": "draw:num:4",
+      "sentence": "I have four flowers.",
+      "category": "number"
+    },
+    {
+      "id": "five",
+      "en": "five",
+      "ko": "다섯(5)",
+      "day": 4,
+      "pic": "draw:num:5",
+      "sentence": "I have five flowers.",
+      "category": "number"
+    },
+    {
+      "id": "circle",
+      "en": "circle",
+      "ko": "동그라미",
+      "day": 5,
+      "pic": "draw:shape:circle",
+      "sentence": "Look at the circle!",
+      "category": "shape"
+    },
+    {
+      "id": "square",
+      "en": "square",
+      "ko": "네모",
+      "day": 5,
+      "pic": "draw:shape:square",
+      "sentence": "Look at the square!",
+      "category": "shape"
+    },
+    {
+      "id": "triangle",
+      "en": "triangle",
+      "ko": "세모",
+      "day": 5,
+      "pic": "draw:shape:triangle",
+      "sentence": "Look at the triangle!",
+      "category": "shape"
+    },
+    {
+      "id": "heart",
+      "en": "heart",
+      "ko": "하트",
+      "day": 5,
+      "pic": "draw:shape:heart",
+      "sentence": "Look at the heart!",
+      "category": "shape"
+    },
+    {
+      "id": "star",
+      "en": "star",
+      "ko": "별",
+      "day": 5,
+      "pic": "draw:shape:star",
+      "sentence": "Look at the star!",
+      "category": "shape"
+    },
+    {
+      "id": "six",
+      "en": "six",
+      "ko": "여섯(6)",
+      "day": 6,
+      "pic": "draw:num:6",
+      "sentence": "How many stars? Six!",
+      "category": "number"
+    },
+    {
+      "id": "seven",
+      "en": "seven",
+      "ko": "일곱(7)",
+      "day": 6,
+      "pic": "draw:num:7",
+      "sentence": "How many stars? Seven!",
+      "category": "number"
+    },
+    {
+      "id": "eight",
+      "en": "eight",
+      "ko": "여덟(8)",
+      "day": 6,
+      "pic": "draw:num:8",
+      "sentence": "How many stars? Eight!",
+      "category": "number"
+    },
+    {
+      "id": "nine",
+      "en": "nine",
+      "ko": "아홉(9)",
+      "day": 6,
+      "pic": "draw:num:9",
+      "sentence": "How many stars? Nine!",
+      "category": "number"
+    },
+    {
+      "id": "ten",
+      "en": "ten",
+      "ko": "열(10)",
+      "day": 6,
+      "pic": "draw:num:10",
+      "sentence": "How many stars? Ten!",
+      "category": "number"
+    },
+    {
+      "id": "big",
+      "en": "big",
+      "ko": "큰",
+      "day": 7,
+      "pic": "draw:size:big",
+      "sentence": "It is big.",
+      "category": "adjective"
+    },
+    {
+      "id": "small",
+      "en": "small",
+      "ko": "작은",
+      "day": 7,
+      "pic": "draw:size:small",
+      "sentence": "It is small.",
+      "category": "adjective"
+    },
+    {
+      "id": "cake",
+      "en": "cake",
+      "ko": "케이크",
+      "day": 7,
+      "pic": "🎂",
+      "sentence": "I see a cake.",
+      "category": "thing"
+    },
+    {
+      "id": "ball",
+      "en": "ball",
+      "ko": "공",
+      "day": 7,
+      "pic": "⚽",
+      "sentence": "I see a ball.",
+      "category": "thing"
+    },
+    {
+      "id": "balloon",
+      "en": "balloon",
+      "ko": "풍선",
+      "day": 7,
+      "pic": "🎈",
+      "sentence": "I see a balloon.",
+      "category": "thing"
+    },
+    {
+      "id": "frog",
+      "en": "frog",
+      "ko": "개구리",
+      "day": 8,
+      "pic": "🐸",
+      "sentence": "What is it? It's a frog.",
+      "category": "animal"
+    },
+    {
+      "id": "fish",
+      "en": "fish",
+      "ko": "물고기",
+      "day": 8,
+      "pic": "🐟",
+      "sentence": "What is it? It's a fish.",
+      "category": "animal"
+    },
+    {
+      "id": "duck",
+      "en": "duck",
+      "ko": "오리",
+      "day": 8,
+      "pic": "🦆",
+      "sentence": "What is it? It's a duck.",
+      "category": "animal"
+    },
+    {
+      "id": "turtle",
+      "en": "turtle",
+      "ko": "거북",
+      "day": 8,
+      "pic": "🐢",
+      "sentence": "What is it? It's a turtle.",
+      "category": "animal"
+    },
+    {
+      "id": "bug",
+      "en": "bug",
+      "ko": "벌레",
+      "day": 8,
+      "pic": "🐛",
+      "sentence": "What is it? It's a bug.",
+      "category": "animal"
+    },
+    {
+      "id": "cat",
+      "en": "cat",
+      "ko": "고양이",
+      "day": 9,
+      "pic": "🐱",
+      "sentence": "Where is the cat?",
+      "category": "animal"
+    },
+    {
+      "id": "dog",
+      "en": "dog",
+      "ko": "강아지",
+      "day": 9,
+      "pic": "🐶",
+      "sentence": "Where is the dog?",
+      "category": "animal"
+    },
+    {
+      "id": "rabbit",
+      "en": "rabbit",
+      "ko": "토끼",
+      "day": 9,
+      "pic": "🐰",
+      "sentence": "Where is the rabbit?",
+      "category": "animal"
+    },
+    {
+      "id": "bear",
+      "en": "bear",
+      "ko": "곰",
+      "day": 9,
+      "pic": "🐻",
+      "sentence": "Where is the bear?",
+      "category": "animal"
+    },
+    {
+      "id": "pig",
+      "en": "pig",
+      "ko": "돼지",
+      "day": 9,
+      "pic": "🐷",
+      "sentence": "Where is the pig?",
+      "category": "animal"
+    },
+    {
+      "id": "lion",
+      "en": "lion",
+      "ko": "사자",
+      "day": 10,
+      "pic": "🦁",
+      "sentence": "Is it a lion?",
+      "category": "animal"
+    },
+    {
+      "id": "monkey",
+      "en": "monkey",
+      "ko": "원숭이",
+      "day": 10,
+      "pic": "🐵",
+      "sentence": "Is it a monkey?",
+      "category": "animal"
+    },
+    {
+      "id": "elephant",
+      "en": "elephant",
+      "ko": "코끼리",
+      "day": 10,
+      "pic": "🐘",
+      "sentence": "Is it an elephant?",
+      "category": "animal"
+    },
+    {
+      "id": "horse",
+      "en": "horse",
+      "ko": "말",
+      "day": 10,
+      "pic": "🐴",
+      "sentence": "Is it a horse?",
+      "category": "animal"
+    },
+    {
+      "id": "cow",
+      "en": "cow",
+      "ko": "소",
+      "day": 10,
+      "pic": "🐮",
+      "sentence": "Is it a cow?",
+      "category": "animal"
+    },
+    {
+      "id": "mom",
+      "en": "mom",
+      "ko": "엄마",
+      "day": 11,
+      "pic": "👩",
+      "sentence": "This is my mom.",
+      "category": "family"
+    },
+    {
+      "id": "dad",
+      "en": "dad",
+      "ko": "아빠",
+      "day": 11,
+      "pic": "👨",
+      "sentence": "This is my dad.",
+      "category": "family"
+    },
+    {
+      "id": "baby",
+      "en": "baby",
+      "ko": "아기",
+      "day": 11,
+      "pic": "👶",
+      "sentence": "This is my baby.",
+      "category": "family"
+    },
+    {
+      "id": "sister",
+      "en": "sister",
+      "ko": "언니·누나·여동생",
+      "day": 11,
+      "pic": "👧",
+      "sentence": "This is my sister.",
+      "category": "family"
+    },
+    {
+      "id": "brother",
+      "en": "brother",
+      "ko": "형·오빠·남동생",
+      "day": 11,
+      "pic": "👦",
+      "sentence": "This is my brother.",
+      "category": "family"
+    },
+    {
+      "id": "head",
+      "en": "head",
+      "ko": "머리",
+      "day": 12,
+      "pic": "draw:mark:head",
+      "sentence": "Touch your head.",
+      "category": "body"
+    },
+    {
+      "id": "eye",
+      "en": "eye",
+      "ko": "눈",
+      "day": 12,
+      "pic": "👁️",
+      "sentence": "Touch your eye.",
+      "category": "body"
+    },
+    {
+      "id": "nose",
+      "en": "nose",
+      "ko": "코",
+      "day": 12,
+      "pic": "👃",
+      "sentence": "Touch your nose.",
+      "category": "body"
+    },
+    {
+      "id": "mouth",
+      "en": "mouth",
+      "ko": "입",
+      "day": 12,
+      "pic": "👄",
+      "sentence": "Touch your mouth.",
+      "category": "body"
+    },
+    {
+      "id": "ear",
+      "en": "ear",
+      "ko": "귀",
+      "day": 12,
+      "pic": "👂",
+      "sentence": "Touch your ear.",
+      "category": "body"
+    },
+    {
+      "id": "hand",
+      "en": "hand",
+      "ko": "손",
+      "day": 13,
+      "pic": "✋",
+      "sentence": "Wash your hands.",
+      "category": "body"
+    },
+    {
+      "id": "foot",
+      "en": "foot",
+      "ko": "발",
+      "day": 13,
+      "pic": "🦶",
+      "sentence": "Wash your feet.",
+      "category": "body"
+    },
+    {
+      "id": "arm",
+      "en": "arm",
+      "ko": "팔",
+      "day": 13,
+      "pic": "💪",
+      "sentence": "Wash your arms.",
+      "category": "body"
+    },
+    {
+      "id": "leg",
+      "en": "leg",
+      "ko": "다리",
+      "day": 13,
+      "pic": "🦵",
+      "sentence": "Wash your legs.",
+      "category": "body"
+    },
+    {
+      "id": "finger",
+      "en": "finger",
+      "ko": "손가락",
+      "day": 13,
+      "pic": "☝️",
+      "sentence": "Wash your fingers.",
+      "category": "body"
+    },
+    {
+      "id": "water",
+      "en": "water",
+      "ko": "물",
+      "day": 14,
+      "pic": "💧",
+      "sentence": "I love water.",
+      "category": "nature"
+    },
+    {
+      "id": "boat",
+      "en": "boat",
+      "ko": "배",
+      "day": 14,
+      "pic": "⛵",
+      "sentence": "I love my boat.",
+      "category": "thing"
+    },
+    {
+      "id": "rock",
+      "en": "rock",
+      "ko": "돌",
+      "day": 14,
+      "pic": "🪨",
+      "sentence": "I see a rock.",
+      "category": "nature"
+    },
+    {
+      "id": "grandma",
+      "en": "grandma",
+      "ko": "할머니",
+      "day": 14,
+      "pic": "👵",
+      "sentence": "I love my grandma.",
+      "category": "family"
+    },
+    {
+      "id": "grandpa",
+      "en": "grandpa",
+      "ko": "할아버지",
+      "day": 14,
+      "pic": "👴",
+      "sentence": "I love my grandpa.",
+      "category": "family"
+    },
+    {
+      "id": "apple",
+      "en": "apple",
+      "ko": "사과",
+      "day": 15,
+      "pic": "🍎",
+      "sentence": "I want an apple.",
+      "category": "food"
+    },
+    {
+      "id": "banana",
+      "en": "banana",
+      "ko": "바나나",
+      "day": 15,
+      "pic": "🍌",
+      "sentence": "I want a banana.",
+      "category": "food"
+    },
+    {
+      "id": "grape",
+      "en": "grape",
+      "ko": "포도",
+      "day": 15,
+      "pic": "🍇",
+      "sentence": "I want grapes.",
+      "category": "food"
+    },
+    {
+      "id": "strawberry",
+      "en": "strawberry",
+      "ko": "딸기",
+      "day": 15,
+      "pic": "🍓",
+      "sentence": "I want a strawberry.",
+      "category": "food"
+    },
+    {
+      "id": "lemon",
+      "en": "lemon",
+      "ko": "레몬",
+      "day": 15,
+      "pic": "🍋",
+      "sentence": "I want a lemon.",
+      "category": "food"
+    },
+    {
+      "id": "bread",
+      "en": "bread",
+      "ko": "빵",
+      "day": 16,
+      "pic": "🍞",
+      "sentence": "Do you like bread?",
+      "category": "food"
+    },
+    {
+      "id": "milk",
+      "en": "milk",
+      "ko": "우유",
+      "day": 16,
+      "pic": "🥛",
+      "sentence": "Do you like milk?",
+      "category": "food"
+    },
+    {
+      "id": "egg",
+      "en": "egg",
+      "ko": "달걀",
+      "day": 16,
+      "pic": "🥚",
+      "sentence": "Do you like eggs?",
+      "category": "food"
+    },
+    {
+      "id": "rice",
+      "en": "rice",
+      "ko": "밥",
+      "day": 16,
+      "pic": "🍚",
+      "sentence": "Do you like rice?",
+      "category": "food"
+    },
+    {
+      "id": "cookie",
+      "en": "cookie",
+      "ko": "쿠키",
+      "day": 16,
+      "pic": "🍪",
+      "sentence": "Do you like cookies?",
+      "category": "food"
+    },
+    {
+      "id": "carrot",
+      "en": "carrot",
+      "ko": "당근",
+      "day": 17,
+      "pic": "🥕",
+      "sentence": "I don't like carrots.",
+      "category": "food"
+    },
+    {
+      "id": "corn",
+      "en": "corn",
+      "ko": "옥수수",
+      "day": 17,
+      "pic": "🌽",
+      "sentence": "I don't like corn.",
+      "category": "food"
+    },
+    {
+      "id": "juice",
+      "en": "juice",
+      "ko": "주스",
+      "day": 17,
+      "pic": "🧃",
+      "sentence": "I like juice.",
+      "category": "food"
+    },
+    {
+      "id": "pizza",
+      "en": "pizza",
+      "ko": "피자",
+      "day": 17,
+      "pic": "🍕",
+      "sentence": "I like pizza.",
+      "category": "food"
+    },
+    {
+      "id": "candy",
+      "en": "candy",
+      "ko": "사탕",
+      "day": 17,
+      "pic": "🍬",
+      "sentence": "I don't like candy.",
+      "category": "food"
+    },
+    {
+      "id": "hat",
+      "en": "hat",
+      "ko": "모자",
+      "day": 18,
+      "pic": "👒",
+      "sentence": "Put on your hat.",
+      "category": "clothes"
+    },
+    {
+      "id": "shirt",
+      "en": "shirt",
+      "ko": "셔츠",
+      "day": 18,
+      "pic": "👕",
+      "sentence": "Put on your shirt.",
+      "category": "clothes"
+    },
+    {
+      "id": "pants",
+      "en": "pants",
+      "ko": "바지",
+      "day": 18,
+      "pic": "👖",
+      "sentence": "Put on your pants.",
+      "category": "clothes"
+    },
+    {
+      "id": "shoes",
+      "en": "shoes",
+      "ko": "신발",
+      "day": 18,
+      "pic": "👟",
+      "sentence": "Put on your shoes.",
+      "category": "clothes"
+    },
+    {
+      "id": "socks",
+      "en": "socks",
+      "ko": "양말",
+      "day": 18,
+      "pic": "🧦",
+      "sentence": "Put on your socks.",
+      "category": "clothes"
+    },
+    {
+      "id": "dress",
+      "en": "dress",
+      "ko": "원피스",
+      "day": 19,
+      "pic": "👗",
+      "sentence": "Is this your dress?",
+      "category": "clothes"
+    },
+    {
+      "id": "coat",
+      "en": "coat",
+      "ko": "코트",
+      "day": 19,
+      "pic": "🧥",
+      "sentence": "Is this your coat?",
+      "category": "clothes"
+    },
+    {
+      "id": "bag",
+      "en": "bag",
+      "ko": "가방",
+      "day": 19,
+      "pic": "🎒",
+      "sentence": "Is this your bag?",
+      "category": "clothes"
+    },
+    {
+      "id": "umbrella",
+      "en": "umbrella",
+      "ko": "우산",
+      "day": 19,
+      "pic": "☂️",
+      "sentence": "Is this your umbrella?",
+      "category": "clothes"
+    },
+    {
+      "id": "boots",
+      "en": "boots",
+      "ko": "장화",
+      "day": 19,
+      "pic": "👢",
+      "sentence": "Put on your boots.",
+      "category": "clothes"
+    },
+    {
+      "id": "sunny",
+      "en": "sunny",
+      "ko": "맑은",
+      "day": 20,
+      "pic": "☀️",
+      "sentence": "It's sunny today.",
+      "category": "weather"
+    },
+    {
+      "id": "rainy",
+      "en": "rainy",
+      "ko": "비 오는",
+      "day": 20,
+      "pic": "🌧️",
+      "sentence": "It's rainy today.",
+      "category": "weather"
+    },
+    {
+      "id": "cloudy",
+      "en": "cloudy",
+      "ko": "흐린",
+      "day": 20,
+      "pic": "🌥️",
+      "sentence": "It's cloudy today.",
+      "category": "weather"
+    },
+    {
+      "id": "snowy",
+      "en": "snowy",
+      "ko": "눈 오는",
+      "day": 20,
+      "pic": "🌨️",
+      "sentence": "It's snowy today.",
+      "category": "weather"
+    },
+    {
+      "id": "windy",
+      "en": "windy",
+      "ko": "바람 부는",
+      "day": 20,
+      "pic": "🌬️",
+      "sentence": "It's windy today.",
+      "category": "weather"
+    },
+    {
+      "id": "hot",
+      "en": "hot",
+      "ko": "더운",
+      "day": 21,
+      "pic": "🥵",
+      "sentence": "It is hot.",
+      "category": "weather"
+    },
+    {
+      "id": "cold",
+      "en": "cold",
+      "ko": "추운",
+      "day": 21,
+      "pic": "🥶",
+      "sentence": "It is cold.",
+      "category": "weather"
+    },
+    {
+      "id": "rainbow",
+      "en": "rainbow",
+      "ko": "무지개",
+      "day": 21,
+      "pic": "🌈",
+      "sentence": "Look at the rainbow!",
+      "category": "nature"
+    },
+    {
+      "id": "owl",
+      "en": "owl",
+      "ko": "부엉이",
+      "day": 21,
+      "pic": "🦉",
+      "sentence": "I see an owl.",
+      "category": "animal"
+    },
+    {
+      "id": "mushroom",
+      "en": "mushroom",
+      "ko": "버섯",
+      "day": 21,
+      "pic": "🍄",
+      "sentence": "It's a mushroom.",
+      "category": "nature"
+    },
+    {
+      "id": "run",
+      "en": "run",
+      "ko": "달리다",
+      "day": 22,
+      "pic": "🏃",
+      "sentence": "I can run.",
+      "category": "action"
+    },
+    {
+      "id": "jump",
+      "en": "jump",
+      "ko": "뛰다",
+      "day": 22,
+      "pic": "draw:act:jump",
+      "sentence": "I can jump.",
+      "category": "action"
+    },
+    {
+      "id": "walk",
+      "en": "walk",
+      "ko": "걷다",
+      "day": 22,
+      "pic": "🚶",
+      "sentence": "I can walk.",
+      "category": "action"
+    },
+    {
+      "id": "swim",
+      "en": "swim",
+      "ko": "수영하다",
+      "day": 22,
+      "pic": "🏊",
+      "sentence": "I can swim.",
+      "category": "action"
+    },
+    {
+      "id": "fly",
+      "en": "fly",
+      "ko": "날다",
+      "day": 22,
+      "pic": "🕊️",
+      "sentence": "I can fly.",
+      "category": "action"
+    },
+    {
+      "id": "sing",
+      "en": "sing",
+      "ko": "노래하다",
+      "day": 23,
+      "pic": "🎤",
+      "sentence": "Can you sing?",
+      "category": "action"
+    },
+    {
+      "id": "dance",
+      "en": "dance",
+      "ko": "춤추다",
+      "day": 23,
+      "pic": "💃",
+      "sentence": "Can you dance?",
+      "category": "action"
+    },
+    {
+      "id": "clap",
+      "en": "clap",
+      "ko": "손뼉 치다",
+      "day": 23,
+      "pic": "👏",
+      "sentence": "Can you clap?",
+      "category": "action"
+    },
+    {
+      "id": "sleep",
+      "en": "sleep",
+      "ko": "자다",
+      "day": 23,
+      "pic": "🛌",
+      "sentence": "Can you sleep?",
+      "category": "action"
+    },
+    {
+      "id": "eat",
+      "en": "eat",
+      "ko": "먹다",
+      "day": 23,
+      "pic": "😋",
+      "sentence": "Can you eat?",
+      "category": "action"
+    },
+    {
+      "id": "read",
+      "en": "read",
+      "ko": "읽다",
+      "day": 24,
+      "pic": "📖",
+      "sentence": "Let's read!",
+      "category": "action"
+    },
+    {
+      "id": "draw",
+      "en": "draw",
+      "ko": "그리다",
+      "day": 24,
+      "pic": "🖍️",
+      "sentence": "Let's draw!",
+      "category": "action"
+    },
+    {
+      "id": "play",
+      "en": "play",
+      "ko": "놀다",
+      "day": 24,
+      "pic": "🧸",
+      "sentence": "Let's play!",
+      "category": "action"
+    },
+    {
+      "id": "cook",
+      "en": "cook",
+      "ko": "요리하다",
+      "day": 24,
+      "pic": "🍳",
+      "sentence": "Let's cook!",
+      "category": "action"
+    },
+    {
+      "id": "hide",
+      "en": "hide",
+      "ko": "숨다",
+      "day": 24,
+      "pic": "🙈",
+      "sentence": "Let's hide!",
+      "category": "action"
+    },
+    {
+      "id": "happy",
+      "en": "happy",
+      "ko": "행복한",
+      "day": 25,
+      "pic": "😄",
+      "sentence": "I am happy.",
+      "category": "feeling"
+    },
+    {
+      "id": "sad",
+      "en": "sad",
+      "ko": "슬픈",
+      "day": 25,
+      "pic": "😢",
+      "sentence": "I am sad.",
+      "category": "feeling"
+    },
+    {
+      "id": "angry",
+      "en": "angry",
+      "ko": "화난",
+      "day": 25,
+      "pic": "😠",
+      "sentence": "I am angry.",
+      "category": "feeling"
+    },
+    {
+      "id": "scared",
+      "en": "scared",
+      "ko": "무서운",
+      "day": 25,
+      "pic": "😨",
+      "sentence": "I am scared.",
+      "category": "feeling"
+    },
+    {
+      "id": "sleepy",
+      "en": "sleepy",
+      "ko": "졸린",
+      "day": 25,
+      "pic": "😪",
+      "sentence": "I am sleepy.",
+      "category": "feeling"
+    },
+    {
+      "id": "hungry",
+      "en": "hungry",
+      "ko": "배고픈",
+      "day": 26,
+      "pic": "🤤",
+      "sentence": "Are you hungry?",
+      "category": "feeling"
+    },
+    {
+      "id": "thirsty",
+      "en": "thirsty",
+      "ko": "목마른",
+      "day": 26,
+      "pic": "draw:combo:😩💧",
+      "sentence": "Are you thirsty?",
+      "category": "feeling"
+    },
+    {
+      "id": "tired",
+      "en": "tired",
+      "ko": "피곤한",
+      "day": 26,
+      "pic": "😫",
+      "sentence": "Are you tired?",
+      "category": "feeling"
+    },
+    {
+      "id": "brave",
+      "en": "brave",
+      "ko": "용감한",
+      "day": 26,
+      "pic": "🦸",
+      "sentence": "Are you brave?",
+      "category": "feeling"
+    },
+    {
+      "id": "shy",
+      "en": "shy",
+      "ko": "수줍은",
+      "day": 26,
+      "pic": "😳",
+      "sentence": "Are you shy?",
+      "category": "feeling"
+    },
+    {
+      "id": "park",
+      "en": "park",
+      "ko": "공원",
+      "day": 27,
+      "pic": "🏞️",
+      "sentence": "I'm at the park.",
+      "category": "place"
+    },
+    {
+      "id": "zoo",
+      "en": "zoo",
+      "ko": "동물원",
+      "day": 27,
+      "pic": "draw:combo:🦒🎪",
+      "sentence": "I'm at the zoo.",
+      "category": "place"
+    },
+    {
+      "id": "beach",
+      "en": "beach",
+      "ko": "바닷가",
+      "day": 27,
+      "pic": "🏖️",
+      "sentence": "I'm at the beach.",
+      "category": "place"
+    },
+    {
+      "id": "store",
+      "en": "store",
+      "ko": "가게",
+      "day": 27,
+      "pic": "🏪",
+      "sentence": "I'm at the store.",
+      "category": "place"
+    },
+    {
+      "id": "pool",
+      "en": "pool",
+      "ko": "수영장",
+      "day": 27,
+      "pic": "draw:place:pool",
+      "sentence": "I'm at the pool.",
+      "category": "place"
+    },
+    {
+      "id": "in",
+      "en": "in",
+      "ko": "안에",
+      "day": 28,
+      "pic": "draw:prep:in",
+      "sentence": "It's in the box.",
+      "category": "position"
+    },
+    {
+      "id": "on",
+      "en": "on",
+      "ko": "위에",
+      "day": 28,
+      "pic": "draw:prep:on",
+      "sentence": "It's on the box.",
+      "category": "position"
+    },
+    {
+      "id": "under",
+      "en": "under",
+      "ko": "아래에",
+      "day": 28,
+      "pic": "draw:prep:under",
+      "sentence": "It's under the box.",
+      "category": "position"
+    },
+    {
+      "id": "box",
+      "en": "box",
+      "ko": "상자",
+      "day": 28,
+      "pic": "📦",
+      "sentence": "It's a box.",
+      "category": "thing"
+    },
+    {
+      "id": "table",
+      "en": "table",
+      "ko": "탁자",
+      "day": 28,
+      "pic": "draw:thing:table",
+      "sentence": "It's on the table.",
+      "category": "thing"
+    },
+    {
+      "id": "sky",
+      "en": "sky",
+      "ko": "하늘",
+      "day": 29,
+      "pic": "draw:place:sky",
+      "sentence": "Look at the sky!",
+      "category": "nature"
+    },
+    {
+      "id": "cloud",
+      "en": "cloud",
+      "ko": "구름",
+      "day": 29,
+      "pic": "☁️",
+      "sentence": "I see a cloud.",
+      "category": "nature"
+    },
+    {
+      "id": "night",
+      "en": "night",
+      "ko": "밤",
+      "day": 29,
+      "pic": "🌃",
+      "sentence": "Good night!",
+      "category": "nature"
+    },
+    {
+      "id": "bridge",
+      "en": "bridge",
+      "ko": "다리(건너는)",
+      "day": 29,
+      "pic": "🌉",
+      "sentence": "This is a bridge.",
+      "category": "place"
+    },
+    {
+      "id": "dream",
+      "en": "dream",
+      "ko": "꿈",
+      "day": 29,
+      "pic": "💭",
+      "sentence": "Sweet dreams!",
+      "category": "thing"
+    },
+    {
+      "id": "friend",
+      "en": "friend",
+      "ko": "친구",
+      "day": 30,
+      "pic": "🧑‍🤝‍🧑",
+      "sentence": "You are my friend.",
+      "category": "people"
+    },
+    {
+      "id": "gift",
+      "en": "gift",
+      "ko": "선물",
+      "day": 30,
+      "pic": "🎁",
+      "sentence": "This is a gift.",
+      "category": "thing"
+    },
+    {
+      "id": "music",
+      "en": "music",
+      "ko": "음악",
+      "day": 30,
+      "pic": "🎵",
+      "sentence": "I like music.",
+      "category": "thing"
+    },
+    {
+      "id": "light",
+      "en": "light",
+      "ko": "빛",
+      "day": 30,
+      "pic": "💡",
+      "sentence": "Look at the light!",
+      "category": "thing"
+    },
+    {
+      "id": "garden",
+      "en": "garden",
+      "ko": "정원",
+      "day": 30,
+      "pic": "draw:combo:🌷🌻🌷",
+      "sentence": "I love my garden.",
+      "category": "place"
+    }
+  ]
+}

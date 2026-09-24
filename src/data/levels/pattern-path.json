@@ -1,0 +1,472 @@
+{
+  "game": "pattern-path",
+  "levels": [
+    {
+      "level": 1,
+      "params": {
+        "units": [
+          "AB"
+        ],
+        "visible": 4,
+        "attrs": 1,
+        "choices": 2,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 2,
+      "params": {
+        "units": [
+          "AB"
+        ],
+        "visible": 4,
+        "attrs": 1,
+        "choices": 2,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 3,
+      "params": {
+        "units": [
+          "AB"
+        ],
+        "visible": 4,
+        "attrs": 1,
+        "choices": 2,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 4,
+      "params": {
+        "units": [
+          "AB"
+        ],
+        "visible": 4,
+        "attrs": 1,
+        "choices": 2,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 5,
+      "params": {
+        "units": [
+          "AB",
+          "ABC"
+        ],
+        "visible": 5,
+        "attrs": 1,
+        "choices": 2,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 6,
+      "params": {
+        "units": [
+          "AB",
+          "ABC"
+        ],
+        "visible": 5,
+        "attrs": 1,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 7,
+      "params": {
+        "units": [
+          "AB",
+          "ABC"
+        ],
+        "visible": 5,
+        "attrs": 1,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 8,
+      "params": {
+        "units": [
+          "AB",
+          "ABC"
+        ],
+        "visible": 5,
+        "attrs": 1,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 9,
+      "params": {
+        "units": [
+          "AB",
+          "ABC"
+        ],
+        "visible": 5,
+        "attrs": 1,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 10,
+      "params": {
+        "units": [
+          "AB",
+          "ABC"
+        ],
+        "visible": 5,
+        "attrs": 1,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 11,
+      "params": {
+        "units": [
+          "AB",
+          "ABC"
+        ],
+        "visible": 5,
+        "attrs": 1,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 12,
+      "params": {
+        "units": [
+          "AB",
+          "ABC",
+          "AAB",
+          "ABB"
+        ],
+        "visible": 5,
+        "attrs": 1,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 13,
+      "params": {
+        "units": [
+          "AB",
+          "ABC",
+          "AAB",
+          "ABB"
+        ],
+        "visible": 6,
+        "attrs": 1,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 14,
+      "params": {
+        "units": [
+          "AB",
+          "ABC",
+          "AAB",
+          "ABB"
+        ],
+        "visible": 6,
+        "attrs": 1,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 15,
+      "params": {
+        "units": [
+          "AB",
+          "ABC",
+          "AAB",
+          "ABB"
+        ],
+        "visible": 6,
+        "attrs": 1,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 16,
+      "params": {
+        "units": [
+          "AB",
+          "ABC",
+          "AAB",
+          "ABB"
+        ],
+        "visible": 6,
+        "attrs": 2,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 17,
+      "params": {
+        "units": [
+          "AB",
+          "ABC",
+          "AAB",
+          "ABB"
+        ],
+        "visible": 6,
+        "attrs": 2,
+        "choices": 3,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 18,
+      "params": {
+        "units": [
+          "AB",
+          "ABC",
+          "AAB",
+          "ABB"
+        ],
+        "visible": 6,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 19,
+      "params": {
+        "units": [
+          "AB",
+          "ABC",
+          "AAB",
+          "ABB"
+        ],
+        "visible": 6,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 20,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 6,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 21,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 7,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 22,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 7,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 23,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 7,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": false
+      }
+    },
+    {
+      "level": 24,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 7,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": true
+      }
+    },
+    {
+      "level": 25,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 7,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": true
+      }
+    },
+    {
+      "level": 26,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 7,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": true
+      }
+    },
+    {
+      "level": 27,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 7,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": true
+      }
+    },
+    {
+      "level": 28,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 7,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": true
+      }
+    },
+    {
+      "level": 29,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 8,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": true
+      }
+    },
+    {
+      "level": 30,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 8,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": true
+      }
+    },
+    {
+      "level": 31,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 8,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": true
+      }
+    },
+    {
+      "level": 32,
+      "params": {
+        "units": [
+          "ABC",
+          "AAB",
+          "ABB",
+          "AABB",
+          "ABCD"
+        ],
+        "visible": 8,
+        "attrs": 2,
+        "choices": 4,
+        "blankMiddle": true
+      }
+    }
+  ]
+}

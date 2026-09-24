@@ -1,0 +1,261 @@
+{
+  "game": "sentence-train",
+  "levels": [
+    {
+      "level": 1,
+      "params": {
+        "extraCards": 0,
+        "firstFixed": true,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 2,
+      "params": {
+        "extraCards": 0,
+        "firstFixed": true,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 3,
+      "params": {
+        "extraCards": 0,
+        "firstFixed": true,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 4,
+      "params": {
+        "extraCards": 0,
+        "firstFixed": true,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 5,
+      "params": {
+        "extraCards": 0,
+        "firstFixed": true,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 6,
+      "params": {
+        "extraCards": 0,
+        "firstFixed": true,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 7,
+      "params": {
+        "extraCards": 0,
+        "firstFixed": false,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 8,
+      "params": {
+        "extraCards": 0,
+        "firstFixed": false,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 9,
+      "params": {
+        "extraCards": 0,
+        "firstFixed": false,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 10,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 11,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 2
+      }
+    },
+    {
+      "level": 12,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 13,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 14,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 15,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 16,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 17,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 18,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 19,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 20,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 21,
+      "params": {
+        "extraCards": 1,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 22,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 23,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 3
+      }
+    },
+    {
+      "level": 24,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 4
+      }
+    },
+    {
+      "level": 25,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 4
+      }
+    },
+    {
+      "level": 26,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 4
+      }
+    },
+    {
+      "level": 27,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 4
+      }
+    },
+    {
+      "level": 28,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 4
+      }
+    },
+    {
+      "level": 29,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 4
+      }
+    },
+    {
+      "level": 30,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 4
+      }
+    },
+    {
+      "level": 31,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 4
+      }
+    },
+    {
+      "level": 32,
+      "params": {
+        "extraCards": 2,
+        "firstFixed": false,
+        "pictureChoices": 4
+      }
+    }
+  ]
+}
