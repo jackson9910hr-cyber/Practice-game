@@ -39,4 +39,4 @@ npm run gen:audio      # 음성 매니페스트 재생성 (녹음 파일 경로�
 
 ## 배포
 
-`main` 브랜치에 push하면 `.github/workflows/deploy.yml`이 GitHub Pages로 배포합니다. 저장소 **Settings → Pages → Source: GitHub Actions**로 한 번 설정해 주세요.
+`main` 브랜치에 push하면 `.github/workflows/deploy.yml`이 테스트 후 빌드해 `gh-pages` 브랜치로 배포합니다 (Settings → Pages → Deploy from a branch → `gh-pages` / root). 주소: https://jackson9910hr-cyber.github.io/Practice-game/
