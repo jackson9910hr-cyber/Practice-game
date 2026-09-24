@@ -11,5 +11,8 @@ export function saveAt(day: number): SaveData {
     s = { ...s, words: introduce(s.words, ids, d) };
     for (const id of ids) s = { ...s, words: recordExposure(s.words, id, d, 'correct') };
   }
+  // reviews that fell before `day` were done on time
+  for (const ws of Object.values(s.words))
+    ws.reviewsDone = [1, 3, 7].filter((o) => ws.introducedDay + o < day);
   return meetFriend(s);
 }

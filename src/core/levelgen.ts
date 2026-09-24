@@ -59,6 +59,10 @@ export interface AntParams {
   pathMax: number;
 }
 export interface TrainParams {
+  /** sentences per round */
+  sentences: number;
+  /** longest sentence (cards) used in mode 1 — grows so strong children get longer trains */
+  maxCardsL1: number;
   extraCards: number;
   firstFixed: boolean;
   pictureChoices: number;
@@ -127,6 +131,8 @@ const gens: { [G in GameId]: (l: number) => LevelParamsMap[G] } = {
     pathMax: step(l, 3, 9),
   }),
   'sentence-train': (l) => ({
+    sentences: l < 6 ? 3 : 4,
+    maxCardsL1: l < 8 ? 3 : l < 16 ? 4 : 6,
     extraCards: l < 10 ? 0 : l < 22 ? 1 : 2,
     firstFixed: l <= 6,
     pictureChoices: l < 12 ? 2 : l < 24 ? 3 : 4,

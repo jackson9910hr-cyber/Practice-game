@@ -108,7 +108,15 @@ export class SentenceTrainView extends GameBase<'sentence-train'> {
 
   async start() {
     const save = store.save;
-    const sents = pickSentences(save, this.day, 3, this.mode, this.rng, this.scope);
+    const sents = pickSentences(
+      save,
+      this.day,
+      this.params.sentences,
+      this.mode,
+      this.rng,
+      this.scope,
+      this.params.maxCardsL1,
+    );
     const learned = Object.keys(save.words);
     this.qs = sents.map((s) => makeTrainQuestion(s, this.mode, this.params, this.rng, learned));
     this.setTotal(this.qs.length);

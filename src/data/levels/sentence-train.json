@@ -4,6 +4,8 @@
     {
       "level": 1,
       "params": {
+        "sentences": 3,
+        "maxCardsL1": 3,
         "extraCards": 0,
         "firstFixed": true,
         "pictureChoices": 2
@@ -12,6 +14,8 @@
     {
       "level": 2,
       "params": {
+        "sentences": 3,
+        "maxCardsL1": 3,
         "extraCards": 0,
         "firstFixed": true,
         "pictureChoices": 2
@@ -20,6 +24,8 @@
     {
       "level": 3,
       "params": {
+        "sentences": 3,
+        "maxCardsL1": 3,
         "extraCards": 0,
         "firstFixed": true,
         "pictureChoices": 2
@@ -28,6 +34,8 @@
     {
       "level": 4,
       "params": {
+        "sentences": 3,
+        "maxCardsL1": 3,
         "extraCards": 0,
         "firstFixed": true,
         "pictureChoices": 2
@@ -36,6 +44,8 @@
     {
       "level": 5,
       "params": {
+        "sentences": 3,
+        "maxCardsL1": 3,
         "extraCards": 0,
         "firstFixed": true,
         "pictureChoices": 2
@@ -44,6 +54,8 @@
     {
       "level": 6,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 3,
         "extraCards": 0,
         "firstFixed": true,
         "pictureChoices": 2
@@ -52,6 +64,8 @@
     {
       "level": 7,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 3,
         "extraCards": 0,
         "firstFixed": false,
         "pictureChoices": 2
@@ -60,6 +74,8 @@
     {
       "level": 8,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 4,
         "extraCards": 0,
         "firstFixed": false,
         "pictureChoices": 2
@@ -68,6 +84,8 @@
     {
       "level": 9,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 4,
         "extraCards": 0,
         "firstFixed": false,
         "pictureChoices": 2
@@ -76,6 +94,8 @@
     {
       "level": 10,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 4,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 2
@@ -84,6 +104,8 @@
     {
       "level": 11,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 4,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 2
@@ -92,6 +114,8 @@
     {
       "level": 12,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 4,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 3
@@ -100,6 +124,8 @@
     {
       "level": 13,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 4,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 3
@@ -108,6 +134,8 @@
     {
       "level": 14,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 4,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 3
@@ -116,6 +144,8 @@
     {
       "level": 15,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 4,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 3
@@ -124,6 +154,8 @@
     {
       "level": 16,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 3
@@ -132,6 +164,8 @@
     {
       "level": 17,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 3
@@ -140,6 +174,8 @@
     {
       "level": 18,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 3
@@ -148,6 +184,8 @@
     {
       "level": 19,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 3
@@ -156,6 +194,8 @@
     {
       "level": 20,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 3
@@ -164,6 +204,8 @@
     {
       "level": 21,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 1,
         "firstFixed": false,
         "pictureChoices": 3
@@ -172,6 +214,8 @@
     {
       "level": 22,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 3
@@ -180,6 +224,8 @@
     {
       "level": 23,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 3
@@ -188,6 +234,8 @@
     {
       "level": 24,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 4
@@ -196,6 +244,8 @@
     {
       "level": 25,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 4
@@ -204,6 +254,8 @@
     {
       "level": 26,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 4
@@ -212,6 +264,8 @@
     {
       "level": 27,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 4
@@ -220,6 +274,8 @@
     {
       "level": 28,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 4
@@ -228,6 +284,8 @@
     {
       "level": 29,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 4
@@ -236,6 +294,8 @@
     {
       "level": 30,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 4
@@ -244,6 +304,8 @@
     {
       "level": 31,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 4
@@ -252,6 +314,8 @@
     {
       "level": 32,
       "params": {
+        "sentences": 4,
+        "maxCardsL1": 6,
         "extraCards": 2,
         "firstFixed": false,
         "pictureChoices": 4

@@ -18,13 +18,22 @@ describe('adaptive difficulty', () => {
   });
 
   it('raises the level when accuracy is above 85%', () => {
-    const s = feed([true, true, true, true, true]);
+    const s = feed([true, true, true, true, false, true, true, true, true, true], createAdaptive(5));
+    // 6/7 with a recent miss: +1 (no fast-track)
     expect(s.level).toBe(6);
   });
 
+  it('fast-tracks +2 after five in a row (so rarely played games catch up quickly)', () => {
+    expect(feed([true, true, true, true, true]).level).toBe(7);
+  });
+
   it('lowers the level when accuracy is below 70%', () => {
-    const s = feed([false, false, true, false, false]);
+    const s = feed([true, true, false, false, true, false]);
     expect(s.level).toBe(4);
+  });
+
+  it('drops 2 levels when the last five were (almost) all wrong', () => {
+    expect(feed([false, false, true, false, false]).level).toBe(3);
   });
 
   it('keeps the level inside the 70–85% band', () => {
@@ -35,12 +44,12 @@ describe('adaptive difficulty', () => {
   });
 
   it('waits for the cooldown before adjusting again', () => {
-    let s = feed([true, true, true, true, true]); // -> 6
-    expect(s.level).toBe(6);
-    s = feed([true, true, true, true], s);
-    expect(s.level).toBe(6);
-    s = recordAnswer(s, true, 30);
+    let s = feed([true, true, true, true, true]); // -> 7
     expect(s.level).toBe(7);
+    s = feed([true, true, true, true], s);
+    expect(s.level).toBe(7);
+    s = recordAnswer(s, true, 30);
+    expect(s.level).toBe(9);
   });
 
   it('only keeps the last window of answers', () => {
@@ -50,7 +59,9 @@ describe('adaptive difficulty', () => {
 
   it('clamps to [min, max]', () => {
     expect(feed([true, true, true, true, true], createAdaptive(3), 3).level).toBe(3);
+    expect(feed([true, true, true, true, true], createAdaptive(29), 30).level).toBe(30);
     expect(feed([false, false, false, false, false], createAdaptive(1)).level).toBe(1);
+    expect(feed([false, false, false, false, false], createAdaptive(2)).level).toBe(1);
   });
 
   it('is immutable', () => {

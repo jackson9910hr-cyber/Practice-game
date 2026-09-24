@@ -36,11 +36,13 @@ export function recordAnswer(
   let sinceAdjust = s.sinceAdjust + 1;
   if (history.length >= ADAPTIVE.minSamples && sinceAdjust >= ADAPTIVE.cooldown) {
     const acc = history.filter(Boolean).length / history.length;
+    const last5 = history.slice(-5).filter(Boolean).length;
     if (acc > ADAPTIVE.high && level < maxLevel) {
-      level += 1;
+      // five in a row: fast-track, so games played only every few days catch up quickly
+      level += last5 === 5 ? 2 : 1;
       sinceAdjust = 0;
     } else if (acc < ADAPTIVE.low && level > minLevel) {
-      level -= 1;
+      level -= last5 <= 1 ? 2 : 1;
       sinceAdjust = 0;
     }
   }

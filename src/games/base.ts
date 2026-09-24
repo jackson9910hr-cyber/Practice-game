@@ -4,15 +4,15 @@
  * (adaptive level, spaced-repetition exposures, stats, starlight, time limit).
  */
 import { Container, Text } from 'pixi.js';
-import { createAdaptive, recordAnswer } from '../core/adaptive';
+import { createAdaptive } from '../core/adaptive';
+import { applyAnswer, exposeWords, startLevel } from '../core/answers';
 import { chapterOf, praise } from '../core/content';
-import { assistFor, createPraiser, type Assist, type Praiser } from '../core/feedback';
-import { levelCount, levelParams } from '../core/levels';
+import { assistFor, createPraiser, needsHelp, type Assist, type Praiser } from '../core/feedback';
+import { levelParams } from '../core/levels';
 import type { LevelParamsMap } from '../core/levelgen';
-import { completeStation, curriculumDay, recordAnswerStats, secondsLeft } from '../core/progress';
+import { completeStation, curriculumDay, secondsLeft } from '../core/progress';
 import { createRng, type Rng } from '../core/rng';
 import type { Scope } from '../core/rounds';
-import { recordExposure } from '../core/srs';
 import type { GameId, StationPlan } from '../core/types';
 import { vid } from '../core/voice-ids';
 import { GardenBackground } from '../art/backgrounds';
@@ -49,6 +49,8 @@ export abstract class GameBase<G extends GameId> extends Scene {
   protected doneCount = 0;
   private finished = false;
   protected busy = false;
+  /** struggling at the easiest level → hints come one mistake sooner */
+  protected helpMode = false;
 
   constructor(
     game: GameApp,
@@ -62,8 +64,9 @@ export abstract class GameBase<G extends GameId> extends Scene {
     this.mode = plan.mode;
     this.scope = plan.review;
     this.rng = createRng((Date.now() ^ (this.day * 7919)) >>> 0);
-    const a = save.adaptive[this.adaptiveKey] ?? createAdaptive(1);
+    const a = save.adaptive[this.adaptiveKey] ?? createAdaptive(startLevel(save, gameId, plan.mode));
     this.params = levelParams(gameId, a.level);
+    this.helpMode = needsHelp(save.adaptive[this.adaptiveKey]);
     this.praiser = createPraiser(praise.en, praise.big, this.rng);
     this.bg = new GardenBackground(chapterOf(this.day).key, 1);
     this.fx = new Fx(game);
@@ -127,54 +130,37 @@ export abstract class GameBase<G extends GameId> extends Scene {
    * `words` get a spaced-repetition exposure, `letter` updates phonics stats.
    */
   protected record(correct: boolean, opts: { words?: string[]; letter?: string } = {}): Assist {
-    const key = this.adaptiveKey;
-    const assisted = !correct || this.wrongs >= 3;
-    store.update((s) => {
-      let n = recordAnswerStats(s, this.gameId, correct && this.wrongs < 3);
-      const a = recordAnswer(
-        n.adaptive[key] ?? createAdaptive(1),
-        correct && !assisted,
-        levelCount(this.gameId),
-      );
-      n = { ...n, adaptive: { ...n.adaptive, [key]: a } };
-      let w = n.words;
-      for (const id of opts.words ?? []) w = recordExposure(w, id, this.day, correct ? 'correct' : 'wrong');
-      n = { ...n, words: w };
-      if (opts.letter) {
-        const l = n.letters[opts.letter] ?? { correct: 0, wrong: 0 };
-        n = {
-          ...n,
-          letters: {
-            ...n.letters,
-            [opts.letter]: { correct: l.correct + (correct ? 1 : 0), wrong: l.wrong + (correct ? 0 : 1) },
-          },
-        };
-      }
-      return n;
-    });
+    const assisted = assistFor(this.wrongs, this.helpMode) === 'together';
+    store.update((s) =>
+      applyAnswer(s, {
+        game: this.gameId,
+        mode: this.mode,
+        day: this.day,
+        correct,
+        assisted,
+        words: opts.words,
+        letter: opts.letter,
+      }),
+    );
     if (correct) {
       this.streak = this.wrongs === 0 ? this.streak + 1 : 0;
       return 'none';
     }
     this.streak = 0;
     this.wrongs += 1;
-    return assistFor(this.wrongs);
+    return assistFor(this.wrongs, this.helpMode);
   }
 
   /** A mistake inside a multi-step task (scored once at the end via `record`). */
   protected miss(): Assist {
     this.wrongs += 1;
     this.streak = 0;
-    return assistFor(this.wrongs);
+    return assistFor(this.wrongs, this.helpMode);
   }
 
   /** Passive exposure (word heard in a non-target role, e.g. counting in English). */
   protected expose(words: string[]) {
-    store.update((s) => {
-      let w = s.words;
-      for (const id of words) if (w[id]) w = recordExposure(w, id, this.day, 'passive');
-      return { ...s, words: w };
-    });
+    store.update((s) => exposeWords(s, words, this.day));
   }
 
   /** Soft "not this one" feedback + the assist ladder voice. */

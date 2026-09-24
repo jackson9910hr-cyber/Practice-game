@@ -1,6 +1,7 @@
 import type { StationPlan } from '../core/types';
 
 export function stationIcon(p: StationPlan): string {
+  if (p.kind === 'review') return '💐';
   switch (p.game ?? p.kind) {
     case 'word-garden':
       return '🌷';

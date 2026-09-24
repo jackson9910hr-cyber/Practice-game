@@ -4,6 +4,8 @@
  */
 import { Container, Text } from 'pixi.js';
 import { chants, chapterOf, chapters, friends, getDay, getFriend, getWord, sentences } from '../core/content';
+import { exposeWords } from '../core/answers';
+import { festivalWords } from '../core/rounds';
 import { completeStation, curriculumDay } from '../core/progress';
 import type { StationPlan } from '../core/types';
 import { vid } from '../core/voice-ids';
@@ -146,11 +148,7 @@ export class ChantScene extends SpecialBase {
     await nav.hub(this);
   }
   private expose(ids: string[]) {
-    store.update((s) => {
-      const words = { ...s.words };
-      for (const id of ids) if (words[id]) words[id] = { ...words[id]!, exposures: words[id]!.exposures + 1 };
-      return { ...s, words };
-    });
+    store.update((s) => exposeWords(s, ids, this.day));
   }
   private showLine(text: string, ws: string[]) {
     this.lineText.text = text;
@@ -205,6 +203,7 @@ async function parade(
     if (opts.sentence) {
       // each friend says the sentence pattern they taught
       const s = sentences.find((x) => x.pattern === getDay(f.day).pattern)!;
+      store.update((sv) => exposeWords(sv, s.words, curriculumDay(sv)));
       await voice.say(vid.sentence(s.text));
     } else await voice.say(vid.greet(id));
     await wait(120);
@@ -286,6 +285,46 @@ export class FinaleScene extends SpecialBase {
   override update(dt: number) {
     super.update(dt);
     for (const s of this.sprites) s.update(dt);
+  }
+
+  /** Lumi's gift: today's five words, each shown and said once more. */
+  private async wordGift() {
+    await voice.say(vid.ko('finale.gift'));
+    const ids = getDay(30).words;
+    store.update((s) => exposeWords(s, ids, this.day));
+    await this.showWords(ids, 900);
+  }
+
+  /** Festival chant: the last two days' words on the beat, friends bouncing along. */
+  private async festivalChant() {
+    await voice.say(vid.ko('finale.chant'));
+    const ids = festivalWords();
+    store.update((s) => exposeWords(s, ids, this.day));
+    this.startBeat(108);
+    await this.showWords(ids, 450);
+    this.beatOn = false;
+  }
+
+  private async showWords(ids: string[], gap: number) {
+    const row = new Container();
+    row.position.set(this.game.W / 2, this.game.H * 0.8);
+    this.addChild(row);
+    const size = Math.min(150, (this.game.W - 40) / Math.min(ids.length, 5));
+    for (const [i, id] of ids.entries()) {
+      this.check();
+      const c = new Card(size - 10, size - 10);
+      c.addChild(makePicture(getWord(id).pic, size - 20));
+      c.x = ((i % 5) - 2) * size;
+      c.y = Math.floor(i / 5) * size - (ids.length > 5 ? size / 2 : 0);
+      c.scale.set(0);
+      row.addChild(c);
+      void tween(c.scale, { x: 1, y: 1 }, { duration: 300, ease: ease.outBack });
+      this.sprites.forEach((s) => i % 2 === 0 && s.hop());
+      await voice.say(vid.word(id));
+      await wait(gap);
+    }
+    await wait(500);
+    row.destroy({ children: true });
   }
 }
 

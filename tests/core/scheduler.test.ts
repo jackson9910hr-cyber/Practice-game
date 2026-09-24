@@ -16,16 +16,29 @@ describe('daily station planner', () => {
     expect(plan.map((p) => p.game)).toEqual(['word-garden', 'sound-butterfly']);
   });
 
-  it('day 2 adds the thinking station', () => {
-    expect(planDay(saveOnDay(2)).map((p) => p.game)).toEqual([
+  it('day 2 adds the thinking station and the daily review', () => {
+    const plan = planDay(saveOnDay(2));
+    expect(plan.map((p) => p.game)).toEqual([
       'word-garden',
       'hangul-pieces',
       'sound-butterfly',
+      'word-garden',
     ]);
+    expect(plan[3]).toMatchObject({ kind: 'review', review: 'due' });
   });
 
-  it('from day 3 there are four stations incl. the sentence train', () => {
-    expect(kinds(saveOnDay(3))).toEqual(['english', 'thinking', 'phonics', 'sentence']);
+  it('from day 3 there are five stations incl. review and the sentence train', () => {
+    expect(kinds(saveOnDay(3))).toEqual(['english', 'thinking', 'phonics', 'review', 'sentence']);
+  });
+
+  it('the review station uses a quick choice mode different from the main English station', () => {
+    for (const d of [4, 10, 16, 24]) {
+      const plan = planDay(saveOnDay(d));
+      const e = plan.find((p) => p.kind === 'english')!;
+      const r = plan.find((p) => p.kind === 'review')!;
+      expect(r.mode).not.toBe(3);
+      expect(r.mode).not.toBe(e.mode);
+    }
   });
 
   it('a game unlocked today is played today', () => {
@@ -47,10 +60,15 @@ describe('daily station planner', () => {
     expect(last[last.length - 1]!.kind).toBe('finale');
   });
 
-  it('after day 30 it keeps a 4-station all-review plan', () => {
+  it('after day 30 it keeps a 5-station review plan', () => {
     const plan = planDay(saveOnDay(31));
-    expect(plan).toHaveLength(4);
-    expect(plan.every((p) => p.kind === 'thinking' || p.review === 'all')).toBe(true);
+    expect(plan).toHaveLength(5);
+    expect(plan.every((p) => p.kind === 'thinking' || p.review === 'all' || p.review === 'due')).toBe(true);
+  });
+
+  it('festival days let new words into the review round', () => {
+    expect(planDay(saveOnDay(29)).find((p) => p.kind === 'review')?.review).toBe('all');
+    expect(planDay(saveOnDay(28)).find((p) => p.kind === 'review')?.review).toBe('due');
   });
 
   it('rotates the thinking game to the least recently played one', () => {

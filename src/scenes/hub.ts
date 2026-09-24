@@ -260,7 +260,7 @@ export class HubScene extends Scene {
     this.path.stroke({ width: 26, color: 0xffffff, alpha: 0.18, cap: 'round', join: 'round' });
     this.stones.forEach((s, i) => s.position.set(pts[i]!.x, pts[i]!.y));
     this.moon.position.set(pts[n - 1]!.x, pts[n - 1]!.y);
-    this.fairy.position.set(portrait ? w * 0.14 : w * 0.08, portrait ? h * 0.46 : h * 0.45);
+    this.fairy.position.set(portrait ? w * 0.15 : w * 0.08, portrait ? h * 0.2 + 40 : h * 0.45);
     const fy = h * 0.88;
     this.sprites.forEach((s, i) => {
       const k = this.sprites.length === 1 ? 0.5 : i / (this.sprites.length - 1);

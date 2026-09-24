@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { assistFor, createPraiser } from '../../src/core/feedback';
+import { assistFor, createPraiser, needsHelp } from '../../src/core/feedback';
 import { createRng } from '../../src/core/rng';
 
 describe('assist ladder', () => {
@@ -9,6 +9,23 @@ describe('assist ladder', () => {
     expect(assistFor(2)).toBe('hint');
     expect(assistFor(3)).toBe('together');
     expect(assistFor(7)).toBe('together');
+  });
+});
+
+describe('help mode', () => {
+  it('moves hint and together one mistake earlier', () => {
+    expect(assistFor(1, true)).toBe('hint');
+    expect(assistFor(2, true)).toBe('together');
+    expect(assistFor(0, true)).toBe('none');
+  });
+
+  it('turns on only for a child struggling at level 1', () => {
+    const miss = [false, false, true, false, true];
+    expect(needsHelp({ level: 1, history: miss })).toBe(true);
+    expect(needsHelp({ level: 2, history: miss })).toBe(false);
+    expect(needsHelp({ level: 1, history: [false, false] })).toBe(false);
+    expect(needsHelp({ level: 1, history: [true, true, true, false, true] })).toBe(false);
+    expect(needsHelp(undefined)).toBe(false);
   });
 });
 

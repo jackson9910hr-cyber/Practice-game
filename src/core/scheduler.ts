@@ -41,6 +41,16 @@ function lastThinking(save: SaveData): GameId | undefined {
   return bestDay >= 0 ? best : undefined;
 }
 
+/** Daily "복습 꽃밭": word garden on due words only, in a different mode than the main English station. */
+function reviewStation(englishMode: number, day: number): StationPlan {
+  const max = maxMode('word-garden', day);
+  // quick choice modes only (memory pairs hold too few words for a review round)
+  const modes = Array.from({ length: max }, (_, i) => i + 1).filter((m) => m !== englishMode && m !== 3);
+  const mode = modes.length ? modes[(day + englishMode) % modes.length]! : max;
+  // festival days: the last words have no later days to be reviewed in, so new words may join
+  return { kind: 'review', game: 'word-garden', mode, review: day >= 29 ? 'all' : 'due' };
+}
+
 export function planDay(save: SaveData): StationPlan[] {
   const day = curriculumDay(save);
   const post = save.playDay > LAST_DAY;
@@ -55,41 +65,51 @@ export function planDay(save: SaveData): StationPlan[] {
   const thinking = thinkingGame ? [st('thinking', thinkingGame)] : [];
 
   if (post) {
+    const e = st('english', 'word-garden', 'all');
     return [
-      st('english', 'word-garden', 'all'),
+      e,
       ...thinking,
       st('phonics', 'sound-butterfly', 'all'),
+      reviewStation(e.mode, day),
       st('sentence', 'sentence-train', 'all'),
     ];
   }
   if (cd.finale) {
+    const e = st('english', 'word-garden', 'all');
     return [
-      st('english', 'word-garden', 'all'),
+      e,
+      reviewStation(e.mode, day),
       st('sentence', 'sentence-train', 'all'),
       { kind: 'finale', mode: 0 },
     ];
   }
   if (day === 29) {
+    const e = st('english', 'word-garden', 'all');
     return [
-      st('english', 'word-garden', 'all'),
+      e,
       st('phonics', 'sound-butterfly'),
+      reviewStation(e.mode, day),
       st('sentence', 'sentence-train', 'all'),
       ...thinking,
     ];
   }
   if (cd.party) {
+    const e = st('english', 'word-garden', 'week');
     return [
       { kind: 'chant', mode: 0 },
-      st('english', 'word-garden', 'week'),
+      e,
       ...thinking,
+      reviewStation(e.mode, day),
       st('sentence', 'sentence-train', 'week'),
     ];
   }
   const plan: StationPlan[] = [];
   if (unlocksOn(day).includes('feature:greeting-medley')) plan.push({ kind: 'medley', mode: 0 });
-  plan.push(st('english', 'word-garden'));
+  const english = st('english', 'word-garden');
+  plan.push(english);
   if (day >= 2) plan.push(...thinking);
   plan.push(st('phonics', 'sound-butterfly'));
+  if (day >= 2) plan.push(reviewStation(english.mode, day));
   if (maxMode('sentence-train', day) > 0) plan.push(st('sentence', 'sentence-train'));
   return plan;
 }

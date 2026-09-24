@@ -127,7 +127,8 @@ export interface HangulWord {
   pic: string;
 }
 
-export type StationKind = 'english' | 'thinking' | 'phonics' | 'sentence' | 'chant' | 'medley' | 'finale';
+export type StationKind =
+  'english' | 'review' | 'thinking' | 'phonics' | 'sentence' | 'chant' | 'medley' | 'finale';
 
 export interface StationPlan {
   kind: StationKind;
@@ -136,5 +137,5 @@ export interface StationPlan {
   /** unlocked mode (L1..L4) of the game */
   mode: number;
   /** review-party / rehearsal rounds use the whole week or all content */
-  review?: 'week' | 'all';
+  review?: 'week' | 'all' | 'due';
 }

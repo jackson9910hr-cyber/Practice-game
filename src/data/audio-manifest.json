@@ -3837,9 +3837,19 @@
    "text": "별빛이 조금 더 필요해!",
    "file": null
   },
+  "ko.finale.chant": {
+   "lang": "ko-KR",
+   "text": "다 같이 축제 노래를 불러볼까?",
+   "file": null
+  },
   "ko.finale.end": {
    "lang": "ko-KR",
    "text": "삼십 일 동안 정말 잘했어! 너는 최고의 별 요정이야!",
+   "file": null
+  },
+  "ko.finale.gift": {
+   "lang": "ko-KR",
+   "text": "루미가 마지막 선물을 가져왔어! 새 단어를 들어볼까?",
    "file": null
   },
   "ko.finale.intro": {

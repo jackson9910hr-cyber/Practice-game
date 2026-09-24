@@ -66,7 +66,9 @@
     "finale.intro": "오늘은 별빛 축제야! 친구들이 모두 모였어!",
     "finale.end": "삼십 일 동안 정말 잘했어! 너는 최고의 별 요정이야!",
     "rehearsal.go": "내일은 축제야! 친구들 인사를 연습해 볼까?",
-    "medley.go": "친구들이 차례로 인사할 거야!"
+    "medley.go": "친구들이 차례로 인사할 거야!",
+    "finale.gift": "루미가 마지막 선물을 가져왔어! 새 단어를 들어볼까?",
+    "finale.chant": "다 같이 축제 노래를 불러볼까?"
   },
   "en": {
     "misc.goodnight": "Good night!",

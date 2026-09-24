@@ -4,6 +4,8 @@
  */
 import { Container, Graphics } from 'pixi.js';
 import { LAST_DAY, chapterOf, getDay, getFriend, getLetter, getWord } from '../core/content';
+import { exposeWords } from '../core/answers';
+import { recapWords } from '../core/rounds';
 import { curriculumDay, markToday, secondsLeft } from '../core/progress';
 import { vid } from '../core/voice-ids';
 import { GardenBackground } from '../art/backgrounds';
@@ -127,19 +129,18 @@ export class GoodnightScene extends Scene {
     music.play('night');
     void tween(this.fairy, { x: this.game.W * 0.18, y: this.game.H * 0.66 }, { duration: 600 });
     await tween(this.night, { alpha: 0.45 }, { duration: 1200 });
-    const ids = getDay(this.day).words;
-    const pick = [...ids]
-      .sort((a, b) => (store.save.words[b]?.wrong ?? 0) - (store.save.words[a]?.wrong ?? 0))
-      .slice(0, 3);
+    const pick = recapWords(store.save, this.day);
+    store.update((s) => exposeWords(s, pick, this.day));
     await voice.sayNow(vid.ko('goodnight.review'));
     for (const [i, id] of pick.entries()) {
       this.check();
       const c = new Card(200, 200);
       c.addChild(makePicture(getWord(id).pic, 180));
-      c.x = (i - 1) * 240;
+      c.x = (i - (pick.length - 1) / 2) * Math.min(240, (this.game.W - 60) / pick.length);
+      const target = pick.length > 3 ? Math.min(1, (this.game.W - 80) / pick.length / 220) : 1;
       c.scale.set(0);
       this.stage.addChild(c);
-      await tween(c.scale, { x: 1, y: 1 }, { duration: 380, ease: ease.outBack });
+      await tween(c.scale, { x: target, y: target }, { duration: 380, ease: ease.outBack });
       this.fairy.talk(900);
       await voice.say(vid.word(id));
       await wait(700);
