@@ -40,8 +40,13 @@ export class GameApp {
       if (sc.width !== this.lastW || sc.height !== this.lastH) this.resize();
       const dt = Math.min(t.deltaMS, 100);
       this.trackFps(dt);
-      updateTweens(dt);
-      for (const f of this.updateFns) f(dt);
+      // one bad frame must never stop the ticker (Pixi would not re-request animation frames)
+      try {
+        updateTweens(dt);
+        for (const f of this.updateFns) f(dt);
+      } catch (e) {
+        console.error('frame error', e);
+      }
     });
     this.resize();
   }
@@ -60,14 +65,21 @@ export class GameApp {
   private lastH = 0;
 
   resize() {
-    const w = this.app.screen.width;
-    const h = this.app.screen.height;
-    this.lastW = w;
-    this.lastH = h;
+    const sw = this.app.screen.width;
+    const sh = this.app.screen.height;
+    this.lastW = sw;
+    this.lastH = sh;
+    // lay the game out inside the notch-free area; the canvas background fills the edges
+    const cs = getComputedStyle(this.app.canvas.parentElement ?? document.body);
+    const px = (v: string) => parseFloat(cs.getPropertyValue(v)) || 0;
+    const [t, r, b, l] = [px('--sat'), px('--sar'), px('--sab'), px('--sal')];
+    const w = Math.max(1, sw - l - r);
+    const h = Math.max(1, sh - t - b);
     this.scale = Math.min(w, h) / DESIGN_SHORT;
     this.W = w / this.scale;
     this.H = h / this.scale;
     this.root.scale.set(this.scale);
+    this.root.position.set(l, t);
     this.app.stage.hitArea = this.app.screen;
     for (const f of this.resizeFns) f(this.W, this.H);
   }

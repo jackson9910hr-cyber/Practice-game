@@ -26,6 +26,11 @@ npm run build && npx cap add ios && npx cap sync ios
 - `Info.plist` → `NSMicrophoneUsageDescription`: "보호자가 켠 경우에만, 아이가 영어 문장을 따라 말한 목소리를 이 기기에 저장해 다시 들려주기 위해 마이크를 사용합니다. 녹음은 외부로 전송되지 않습니다."
 - **Privacy Manifest**(`PrivacyInfo.xcprivacy`): 추적 없음(`NSPrivacyTracking=false`), 수집 데이터 없음. Capacitor/플러그인이 쓰는 Required-Reason API(예: UserDefaults `CA92.1`, 파일 타임스탬프 `C617.1`)를 선언합니다.
 - 화면 방향: 세로와 가로 모두 지원(iPad 멀티태스킹 대응).
+- **네트워크 누수 방지(capacitor.config)**: `server.url` 없음(라이브 리로드 URL 금지), `server.allowNavigation` 비움, `ios.limitsNavigationsToAppBoundDomains: true`, 출시 빌드에서 `webContentsDebuggingEnabled: false`. CI에서 `npm ls --prod`가 pixi.js·idb·@capacitor/core뿐인지 확인
+- **마이크 권한**: WKUIDelegate `requestMediaCapturePermissionFor`는 네이티브 권한이 이미 허용된 경우에만 `.grant`. 권한 창은 보호자 화면에서만 띄움(웹 버전은 `micGranted()`로 이미 적용)
+- **백업·인쇄**: WKWebView에서는 `<a download>`와 `window.print()`가 동작하지 않으므로 `@capacitor/filesystem` + `@capacitor/share`, 인쇄는 `UIPrintInteractionController`로 대체
+- **음성**: TTS 플러그인은 iOS `AVSpeechSynthesizer`(기기 안 처리)만 사용하고, 원격 음성 엔진은 금지
+- **Privacy Manifest**: `NSPrivacyTracking=false`, `NSPrivacyCollectedDataTypes=[]`. Required-Reason API는 실제로 쓰는 것만 선언
 
 ## 3. App Store Kids 카테고리 제출 체크리스트
 
@@ -34,9 +39,10 @@ npm run build && npx cap add ios && npx cap sync ios
 - [ ] 외부 링크 없음. 개인정보 처리방침 링크를 넣는다면 **보호자 게이트 뒤**에 둠
 - [ ] 보호자 게이트: 어른용 곱셈 문제(2자리×1자리, 3회 실패 시 30초 잠금). 설정·녹음 켜기(권한 요청)·초기화·백업·인쇄를 모두 이 뒤에 둠
 - [ ] 개인정보 라벨: **"데이터 수집 안 함(Data Not Collected)"** — 녹음과 진도는 기기 밖으로 나가지 않음
-- [ ] 개인정보 처리방침 URL 필수(수집하지 않는다는 내용이라도 필요). 기기 로컬 저장, 녹음 보관과 삭제 방법, 문의처 기재
-- [ ] 연령 등급 설문: 모든 항목 "없음" → 4+
+- [ ] 개인정보 처리방침: 앱 안 전문 표시(보호자 화면, `src/data/privacy.json`) + App Store Connect URL(`/privacy.html`). **문의처(이메일)를 채워 넣을 것**
+- [ ] 연령 등급: 2025년 개편된 설문(4+/9+/13+/16+/18+, 앱 내 통제·연령 확인 질문 포함)에 답함. 1차 카테고리는 **Education**(Games로 두면 한국 게임물 등급 검토가 따로 필요)
 - [ ] 스크린샷: iPhone 6.7"/6.5", iPad 13" (세로·가로)
 - [ ] 심사 메모: 보호자 게이트 푸는 법("화면에 나온 곱셈의 답"), 녹음은 기본 꺼짐이라는 점, 네트워크를 쓰지 않는다는 점
-- [ ] 캐릭터 이름과 모습의 독창성 재확인 (GDD §8.4)
+- [ ] 캐릭터 이름 30개를 KIPRIS·USPTO(9·28·41류)에서 검색하고 기록으로 남김. 모습의 독창성 5인 블라인드 확인 (GDD §8.4)
+- [ ] `NSMicrophoneUsageDescription` 영어 기본값 + `ko.lproj/InfoPlist.strings` 한국어. 심사 메모에 녹음 켜는 방법(게이트 → 설정 → 녹음 켜기 → 문장 기차) 기재
 - [ ] 한국 개인정보보호법(만 14세 미만): 수집이 없으므로 법정대리인 동의 대상 아님. 처리방침에 명시

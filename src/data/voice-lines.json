@@ -52,8 +52,8 @@
     "goodnight.sleep": "정원이 잠들 시간이야.",
     "goodnight.tomorrow": "내일은 이 소리로 시작하는 친구가 올 거야!",
     "goodnight.bye": "내일 또 만나!",
-    "timeUp": "오늘 놀이 시간이 다 됐어. 이것만 하고 쉬자!",
-    "sameDay": "오늘 친구는 벌써 만났어! 조금만 더 놀아볼까?",
+    "timeUp": "오늘은 여기까지! 정말 잘했어.",
+    "sameDay": "오늘 친구는 벌써 만났어. 정원 친구들한테 인사하고 올까?",
     "limitReached": "오늘은 충분히 놀았어. 내일 또 만나!",
     "chant.go": "노래를 같이 불러볼까?",
     "chapter.2": "연못이 깨어났어! 새로운 곳이 열렸어!",
@@ -68,7 +68,13 @@
     "rehearsal.go": "내일은 축제야! 친구들 인사를 연습해 볼까?",
     "medley.go": "친구들이 차례로 인사할 거야!",
     "finale.gift": "루미가 마지막 선물을 가져왔어! 새 단어를 들어볼까?",
-    "finale.chant": "다 같이 축제 노래를 불러볼까?"
+    "finale.chant": "다 같이 축제 노래를 불러볼까?",
+    "goodnight.tomorrowFinal": "내일은 이 소리로 끝나는 말을 배울 거야!",
+    "timeSoon": "이제 조금만 더 하고 잘 시간이야.",
+    "leave.ask": "정원으로 갈까? 초록 버튼을 누르면 가.",
+    "hub.locked": "먼저 반짝이는 돌부터 해볼까?",
+    "ant.needArrows": "화살표부터 눌러서 길을 만들어 봐!",
+    "decorate.replace": "여기에 새 장식을 놓을까? 한 번 더 누르면 바꿔."
   },
   "en": {
     "misc.goodnight": "Good night!",

@@ -22,7 +22,10 @@ export interface TrainQuestion {
 
 function extraCards(s: Sentence, n: number, rng: Rng): TrainCard[] {
   const have = new Set(s.cards.map((c) => c.t.toLowerCase()));
-  const pool = rng.shuffle(sentences.flatMap((x) => x.cards)).filter((c) => !have.has(c.t.toLowerCase()));
+  // distractors are picture words only: a child who can't read can still tell them apart
+  const pool = rng
+    .shuffle(sentences.flatMap((x) => x.cards))
+    .filter((c) => !!c.w && !have.has(c.t.toLowerCase()));
   const out: TrainCard[] = [];
   for (const c of pool) {
     if (out.length >= n) break;

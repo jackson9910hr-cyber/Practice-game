@@ -146,19 +146,17 @@ export class AntView extends GameBase<'ant-path'> {
     // controls: a + shaped pad
     const px = portrait ? w / 2 : w * 0.78;
     const py = portrait ? h * 0.8 : h * 0.6;
-    const gap = 140;
+    // ≥145 units apart so neighbouring big buttons never overlap; ▶ and ↩ sit outside the cross
+    const gap = 145;
     const off: Record<Dir, [number, number]> = {
       up: [0, -gap],
       down: [0, gap],
       left: [-gap, 0],
       right: [gap, 0],
     };
-    DIRS.forEach((d, i) =>
-      this.pads[i]!.position.set(px + off[d][0], py + off[d][1] * (portrait ? 0.75 : 1)),
-    );
-    this.go.position.set(px, py);
-    this.go.scale.set(0.9);
-    this.undo.position.set(portrait ? w - 90 : w * 0.95, portrait ? h * 0.8 : h * 0.82);
+    DIRS.forEach((d, i) => this.pads[i]!.position.set(px + off[d][0], py + off[d][1]));
+    this.go.position.set(px + gap * 1.15, py + gap);
+    this.undo.position.set(px - gap * 1.15, py + gap);
     this.chips.position.set(portrait ? w / 2 : w * 0.78, portrait ? h * 0.63 : h * 0.26);
   }
 
@@ -215,7 +213,11 @@ export class AntView extends GameBase<'ant-path'> {
   }
 
   private async run() {
-    if (this.busy || !this.seq.length) return;
+    if (this.busy) return;
+    if (!this.seq.length) {
+      this.pads.forEach((p) => void bounce(p));
+      return void voice.sayNow(vid.ko('ant.needArrows'));
+    }
     this.busy = true;
     const r = simulate(this.pz, this.seq);
     await this.walk(r.path);
@@ -266,6 +268,8 @@ export class AntView extends GameBase<'ant-path'> {
     const d = this.pz.solution[this.cmdIndex];
     if (!d) return;
     await wait(200);
+    // the ear button repeats the current English direction too
+    this.setInstruction([vid.ko('ant.english'), vid.en(`dir.${d}`)]);
     await voice.sayNow(vid.en(`dir.${d}`));
   }
 

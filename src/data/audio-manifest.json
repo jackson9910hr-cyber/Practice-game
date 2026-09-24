@@ -9,12 +9,12 @@
   },
   "en.big.1": {
    "lang": "en-US",
-   "text": "You are a star!",
+   "text": "Great listening!",
    "file": null
   },
   "en.big.2": {
    "lang": "en-US",
-   "text": "Super star!",
+   "text": "You worked hard!",
    "file": null
   },
   "en.card.a": {
@@ -169,7 +169,7 @@
   },
   "en.card.dad": {
    "lang": "en-US",
-   "text": "dad",
+   "text": "Dad",
    "file": null
   },
   "en.card.dance": {
@@ -264,7 +264,7 @@
   },
   "en.card.grandma": {
    "lang": "en-US",
-   "text": "grandma",
+   "text": "Grandma",
    "file": null
   },
   "en.card.grandpa": {
@@ -409,7 +409,7 @@
   },
   "en.card.mom": {
    "lang": "en-US",
-   "text": "mom",
+   "text": "Mom",
    "file": null
   },
   "en.card.monkey": {
@@ -762,11 +762,6 @@
    "text": "Is it a lion? No! I'm Gogo!",
    "file": null
   },
-  "en.greet.gomo": {
-   "lang": "en-US",
-   "text": "I love my grandma!",
-   "file": null
-  },
   "en.greet.hoho": {
    "lang": "en-US",
    "text": "Put on your hat!",
@@ -802,7 +797,7 @@
    "text": "You are my friend!",
    "file": null
   },
-  "en.greet.mimi": {
+  "en.greet.mobi": {
    "lang": "en-US",
    "text": "What is it? It's a frog!",
    "file": null
@@ -827,19 +822,24 @@
    "text": "I have five flowers!",
    "file": null
   },
+  "en.greet.reni": {
+   "lang": "en-US",
+   "text": "What color is it? It's red!",
+   "file": null
+  },
   "en.greet.rori": {
    "lang": "en-US",
    "text": "I don't like carrots!",
    "file": null
   },
-  "en.greet.ruby": {
-   "lang": "en-US",
-   "text": "What color is it? It's red!",
-   "file": null
-  },
   "en.greet.sami": {
    "lang": "en-US",
    "text": "Hi! I'm Sami. I like red!",
+   "file": null
+  },
+  "en.greet.soli": {
+   "lang": "en-US",
+   "text": "I love my grandma!",
    "file": null
   },
   "en.greet.tiko": {
@@ -874,7 +874,7 @@
   },
   "en.letter.a": {
    "lang": "en-US",
-   "text": "ay",
+   "text": "A.",
    "file": null
   },
   "en.letter.b": {
@@ -894,7 +894,7 @@
   },
   "en.letter.e": {
    "lang": "en-US",
-   "text": "ee",
+   "text": "E.",
    "file": null
   },
   "en.letter.f": {
@@ -914,7 +914,7 @@
   },
   "en.letter.i": {
    "lang": "en-US",
-   "text": "eye",
+   "text": "I.",
    "file": null
   },
   "en.letter.j": {
@@ -944,7 +944,7 @@
   },
   "en.letter.o": {
    "lang": "en-US",
-   "text": "oh",
+   "text": "O.",
    "file": null
   },
   "en.letter.p": {
@@ -974,7 +974,7 @@
   },
   "en.letter.u": {
    "lang": "en-US",
-   "text": "you",
+   "text": "U.",
    "file": null
   },
   "en.letter.v": {
@@ -994,7 +994,7 @@
   },
   "en.letter.y": {
    "lang": "en-US",
-   "text": "why",
+   "text": "Y.",
    "file": null
   },
   "en.letter.z": {
@@ -1035,6 +1035,156 @@
   "en.misc.yes": {
    "lang": "en-US",
    "text": "Yes!",
+   "file": null
+  },
+  "en.name.appy": {
+   "lang": "en-US",
+   "text": "Hi! I'm Appy!",
+   "file": null
+  },
+  "en.name.bibi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Bibi!",
+   "file": null
+  },
+  "en.name.cubi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Cubi!",
+   "file": null
+  },
+  "en.name.dabo": {
+   "lang": "en-US",
+   "text": "Hi! I'm Dabo!",
+   "file": null
+  },
+  "en.name.dexi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Dexi!",
+   "file": null
+  },
+  "en.name.ebbi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Ebbi!",
+   "file": null
+  },
+  "en.name.fifi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Fifi!",
+   "file": null
+  },
+  "en.name.gogo": {
+   "lang": "en-US",
+   "text": "Hi! I'm Gogo!",
+   "file": null
+  },
+  "en.name.hoho": {
+   "lang": "en-US",
+   "text": "Hi! I'm Hoho!",
+   "file": null
+  },
+  "en.name.izzy": {
+   "lang": "en-US",
+   "text": "Hi! I'm Izzy!",
+   "file": null
+  },
+  "en.name.juju": {
+   "lang": "en-US",
+   "text": "Hi! I'm Juju!",
+   "file": null
+  },
+  "en.name.kiwa": {
+   "lang": "en-US",
+   "text": "Hi! I'm Kiwa!",
+   "file": null
+  },
+  "en.name.lexy": {
+   "lang": "en-US",
+   "text": "Hi! I'm Lexy!",
+   "file": null
+  },
+  "en.name.lulu": {
+   "lang": "en-US",
+   "text": "Hi! I'm Lulu!",
+   "file": null
+  },
+  "en.name.lumi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Lumi!",
+   "file": null
+  },
+  "en.name.mobi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Mobi!",
+   "file": null
+  },
+  "en.name.nubi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Nubi!",
+   "file": null
+  },
+  "en.name.olli": {
+   "lang": "en-US",
+   "text": "Hi! I'm Olli!",
+   "file": null
+  },
+  "en.name.pinta": {
+   "lang": "en-US",
+   "text": "Hi! I'm Pinta!",
+   "file": null
+  },
+  "en.name.pip": {
+   "lang": "en-US",
+   "text": "Hi! I'm Pip!",
+   "file": null
+  },
+  "en.name.reni": {
+   "lang": "en-US",
+   "text": "Hi! I'm Reni!",
+   "file": null
+  },
+  "en.name.rori": {
+   "lang": "en-US",
+   "text": "Hi! I'm Rori!",
+   "file": null
+  },
+  "en.name.sami": {
+   "lang": "en-US",
+   "text": "Hi! I'm Sami!",
+   "file": null
+  },
+  "en.name.soli": {
+   "lang": "en-US",
+   "text": "Hi! I'm Soli!",
+   "file": null
+  },
+  "en.name.tiko": {
+   "lang": "en-US",
+   "text": "Hi! I'm Tiko!",
+   "file": null
+  },
+  "en.name.uppy": {
+   "lang": "en-US",
+   "text": "Hi! I'm Uppy!",
+   "file": null
+  },
+  "en.name.vivi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Vivi!",
+   "file": null
+  },
+  "en.name.wobi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Wobi!",
+   "file": null
+  },
+  "en.name.yumi": {
+   "lang": "en-US",
+   "text": "Hi! I'm Yumi!",
+   "file": null
+  },
+  "en.name.zuzu": {
+   "lang": "en-US",
+   "text": "Hi! I'm Zuzu!",
    "file": null
   },
   "en.num.0": {
@@ -1144,132 +1294,132 @@
   },
   "en.phoneme.a": {
    "lang": "en-US",
-   "text": "ay",
+   "text": "ant",
    "file": null
   },
   "en.phoneme.b": {
    "lang": "en-US",
-   "text": "B",
+   "text": "ball",
    "file": null
   },
   "en.phoneme.c": {
    "lang": "en-US",
-   "text": "C",
+   "text": "cat",
    "file": null
   },
   "en.phoneme.d": {
    "lang": "en-US",
-   "text": "D",
+   "text": "dog",
    "file": null
   },
   "en.phoneme.e": {
    "lang": "en-US",
-   "text": "ee",
+   "text": "egg",
    "file": null
   },
   "en.phoneme.f": {
    "lang": "en-US",
-   "text": "F",
+   "text": "fish",
    "file": null
   },
   "en.phoneme.g": {
    "lang": "en-US",
-   "text": "G",
+   "text": "goat",
    "file": null
   },
   "en.phoneme.h": {
    "lang": "en-US",
-   "text": "H",
+   "text": "hat",
    "file": null
   },
   "en.phoneme.i": {
    "lang": "en-US",
-   "text": "eye",
+   "text": "igloo",
    "file": null
   },
   "en.phoneme.j": {
    "lang": "en-US",
-   "text": "J",
+   "text": "juice",
    "file": null
   },
   "en.phoneme.k": {
    "lang": "en-US",
-   "text": "K",
+   "text": "kite",
    "file": null
   },
   "en.phoneme.l": {
    "lang": "en-US",
-   "text": "L",
+   "text": "lion",
    "file": null
   },
   "en.phoneme.m": {
    "lang": "en-US",
-   "text": "M",
+   "text": "moon",
    "file": null
   },
   "en.phoneme.n": {
    "lang": "en-US",
-   "text": "N",
+   "text": "nine",
    "file": null
   },
   "en.phoneme.o": {
    "lang": "en-US",
-   "text": "oh",
+   "text": "octopus",
    "file": null
   },
   "en.phoneme.p": {
    "lang": "en-US",
-   "text": "P",
+   "text": "pink",
    "file": null
   },
   "en.phoneme.q": {
    "lang": "en-US",
-   "text": "Q",
+   "text": "queen",
    "file": null
   },
   "en.phoneme.r": {
    "lang": "en-US",
-   "text": "R",
+   "text": "red",
    "file": null
   },
   "en.phoneme.s": {
    "lang": "en-US",
-   "text": "S",
+   "text": "sun",
    "file": null
   },
   "en.phoneme.t": {
    "lang": "en-US",
-   "text": "T",
+   "text": "tiger",
    "file": null
   },
   "en.phoneme.u": {
    "lang": "en-US",
-   "text": "you",
+   "text": "umbrella",
    "file": null
   },
   "en.phoneme.v": {
    "lang": "en-US",
-   "text": "V",
+   "text": "van",
    "file": null
   },
   "en.phoneme.w": {
    "lang": "en-US",
-   "text": "W",
+   "text": "water",
    "file": null
   },
   "en.phoneme.x": {
    "lang": "en-US",
-   "text": "X",
+   "text": "box",
    "file": null
   },
   "en.phoneme.y": {
    "lang": "en-US",
-   "text": "why",
+   "text": "yellow",
    "file": null
   },
   "en.phoneme.z": {
    "lang": "en-US",
-   "text": "Z",
+   "text": "zoo",
    "file": null
   },
   "en.pic.ant": {
@@ -1302,9 +1452,9 @@
    "text": "cup",
    "file": null
   },
-  "en.pic.envelope": {
+  "en.pic.elevator": {
    "lang": "en-US",
-   "text": "envelope",
+   "text": "elevator",
    "file": null
   },
   "en.pic.fox": {
@@ -1312,9 +1462,19 @@
    "text": "fox",
    "file": null
   },
+  "en.pic.goat": {
+   "lang": "en-US",
+   "text": "goat",
+   "file": null
+  },
   "en.pic.hen": {
    "lang": "en-US",
    "text": "hen",
+   "file": null
+  },
+  "en.pic.igloo": {
+   "lang": "en-US",
+   "text": "igloo",
    "file": null
   },
   "en.pic.insect": {
@@ -1337,19 +1497,14 @@
    "text": "key",
    "file": null
   },
-  "en.pic.king": {
-   "lang": "en-US",
-   "text": "king",
-   "file": null
-  },
   "en.pic.kite": {
    "lang": "en-US",
    "text": "kite",
    "file": null
   },
-  "en.pic.lip": {
+  "en.pic.koala": {
    "lang": "en-US",
-   "text": "lip",
+   "text": "koala",
    "file": null
   },
   "en.pic.log": {
@@ -1382,9 +1537,9 @@
    "text": "octopus",
    "file": null
   },
-  "en.pic.ox": {
+  "en.pic.otter": {
    "lang": "en-US",
-   "text": "ox",
+   "text": "otter",
    "file": null
   },
   "en.pic.pan": {
@@ -1420,6 +1575,11 @@
   "en.pic.rat": {
    "lang": "en-US",
    "text": "rat",
+   "file": null
+  },
+  "en.pic.tiger": {
+   "lang": "en-US",
+   "text": "tiger",
    "file": null
   },
   "en.pic.up": {
@@ -1517,9 +1677,9 @@
    "text": "Good thinking!",
    "file": null
   },
-  "en.t.apple-banana-i-want-a-grape": {
+  "en.t.apple-banana-i-want-grapes": {
    "lang": "en-US",
-   "text": "Apple, banana, I want a grape!",
+   "text": "Apple, banana, I want grapes!",
    "file": null
   },
   "en.t.are-you-happy": {
@@ -2074,17 +2234,17 @@
   },
   "en.t.thank-you-dad": {
    "lang": "en-US",
-   "text": "Thank you, dad!",
+   "text": "Thank you, Dad!",
    "file": null
   },
   "en.t.thank-you-grandma": {
    "lang": "en-US",
-   "text": "Thank you, grandma!",
+   "text": "Thank you, Grandma!",
    "file": null
   },
   "en.t.thank-you-mom": {
    "lang": "en-US",
-   "text": "Thank you, mom!",
+   "text": "Thank you, Mom!",
    "file": null
   },
   "en.t.thank-you-twinkle": {
@@ -2789,7 +2949,7 @@
   },
   "en.word.read": {
    "lang": "en-US",
-   "text": "read",
+   "text": "reed",
    "file": null
   },
   "en.word.red": {
@@ -3024,7 +3184,7 @@
   },
   "en.wsent.baby": {
    "lang": "en-US",
-   "text": "This is my baby.",
+   "text": "This is a baby.",
    "file": null
   },
   "en.wsent.bag": {
@@ -3229,7 +3389,7 @@
   },
   "en.wsent.eat": {
    "lang": "en-US",
-   "text": "Can you eat?",
+   "text": "Let's eat!",
    "file": null
   },
   "en.wsent.egg": {
@@ -3614,7 +3774,7 @@
   },
   "en.wsent.sleep": {
    "lang": "en-US",
-   "text": "Can you sleep?",
+   "text": "Let's sleep!",
    "file": null
   },
   "en.wsent.sleepy": {
@@ -3762,6 +3922,11 @@
    "text": "영어를 잘 듣고, 맞는 화살표를 눌러봐!",
    "file": null
   },
+  "ko.ant.needArrows": {
+   "lang": "ko-KR",
+   "text": "화살표부터 눌러서 길을 만들어 봐!",
+   "file": null
+  },
   "ko.ant.oops": {
    "lang": "ko-KR",
    "text": "앗, 길이 막혔어. 다시 해볼까?",
@@ -3835,6 +4000,11 @@
   "ko.decorate.need": {
    "lang": "ko-KR",
    "text": "별빛이 조금 더 필요해!",
+   "file": null
+  },
+  "ko.decorate.replace": {
+   "lang": "ko-KR",
+   "text": "여기에 새 장식을 놓을까? 한 번 더 누르면 바꿔.",
    "file": null
   },
   "ko.finale.chant": {
@@ -3915,6 +4085,11 @@
   "ko.goodnight.tomorrow": {
    "lang": "ko-KR",
    "text": "내일은 이 소리로 시작하는 친구가 올 거야!",
+   "file": null
+  },
+  "ko.goodnight.tomorrowFinal": {
+   "lang": "ko-KR",
+   "text": "내일은 이 소리로 끝나는 말을 배울 거야!",
    "file": null
   },
   "ko.h.가": {
@@ -5012,9 +5187,139 @@
    "text": "반짝이는 돌을 눌러봐!",
    "file": null
   },
+  "ko.hub.locked": {
+   "lang": "ko-KR",
+   "text": "먼저 반짝이는 돌부터 해볼까?",
+   "file": null
+  },
   "ko.hub.next": {
    "lang": "ko-KR",
    "text": "다음 놀이로 가자!",
+   "file": null
+  },
+  "ko.jamo.ㄱ": {
+   "lang": "ko-KR",
+   "text": "그",
+   "file": null
+  },
+  "ko.jamo.ㄴ": {
+   "lang": "ko-KR",
+   "text": "느",
+   "file": null
+  },
+  "ko.jamo.ㄷ": {
+   "lang": "ko-KR",
+   "text": "드",
+   "file": null
+  },
+  "ko.jamo.ㄹ": {
+   "lang": "ko-KR",
+   "text": "르",
+   "file": null
+  },
+  "ko.jamo.ㅁ": {
+   "lang": "ko-KR",
+   "text": "므",
+   "file": null
+  },
+  "ko.jamo.ㅂ": {
+   "lang": "ko-KR",
+   "text": "브",
+   "file": null
+  },
+  "ko.jamo.ㅅ": {
+   "lang": "ko-KR",
+   "text": "스",
+   "file": null
+  },
+  "ko.jamo.ㅇ": {
+   "lang": "ko-KR",
+   "text": "이응",
+   "file": null
+  },
+  "ko.jamo.ㅈ": {
+   "lang": "ko-KR",
+   "text": "즈",
+   "file": null
+  },
+  "ko.jamo.ㅊ": {
+   "lang": "ko-KR",
+   "text": "츠",
+   "file": null
+  },
+  "ko.jamo.ㅋ": {
+   "lang": "ko-KR",
+   "text": "크",
+   "file": null
+  },
+  "ko.jamo.ㅌ": {
+   "lang": "ko-KR",
+   "text": "트",
+   "file": null
+  },
+  "ko.jamo.ㅍ": {
+   "lang": "ko-KR",
+   "text": "프",
+   "file": null
+  },
+  "ko.jamo.ㅎ": {
+   "lang": "ko-KR",
+   "text": "흐",
+   "file": null
+  },
+  "ko.jamo.ㅏ": {
+   "lang": "ko-KR",
+   "text": "아",
+   "file": null
+  },
+  "ko.jamo.ㅑ": {
+   "lang": "ko-KR",
+   "text": "야",
+   "file": null
+  },
+  "ko.jamo.ㅓ": {
+   "lang": "ko-KR",
+   "text": "어",
+   "file": null
+  },
+  "ko.jamo.ㅕ": {
+   "lang": "ko-KR",
+   "text": "여",
+   "file": null
+  },
+  "ko.jamo.ㅗ": {
+   "lang": "ko-KR",
+   "text": "오",
+   "file": null
+  },
+  "ko.jamo.ㅛ": {
+   "lang": "ko-KR",
+   "text": "요",
+   "file": null
+  },
+  "ko.jamo.ㅜ": {
+   "lang": "ko-KR",
+   "text": "우",
+   "file": null
+  },
+  "ko.jamo.ㅠ": {
+   "lang": "ko-KR",
+   "text": "유",
+   "file": null
+  },
+  "ko.jamo.ㅡ": {
+   "lang": "ko-KR",
+   "text": "으",
+   "file": null
+  },
+  "ko.jamo.ㅣ": {
+   "lang": "ko-KR",
+   "text": "이",
+   "file": null
+  },
+  "ko.leave.ask": {
+   "lang": "ko-KR",
+   "text": "정원으로 갈까? 초록 버튼을 누르면 가.",
    "file": null
   },
   "ko.limitReached": {
@@ -5025,6 +5330,106 @@
   "ko.medley.go": {
    "lang": "ko-KR",
    "text": "친구들이 차례로 인사할 거야!",
+   "file": null
+  },
+  "ko.num.1": {
+   "lang": "ko-KR",
+   "text": "하나",
+   "file": null
+  },
+  "ko.num.10": {
+   "lang": "ko-KR",
+   "text": "열",
+   "file": null
+  },
+  "ko.num.11": {
+   "lang": "ko-KR",
+   "text": "열하나",
+   "file": null
+  },
+  "ko.num.12": {
+   "lang": "ko-KR",
+   "text": "열둘",
+   "file": null
+  },
+  "ko.num.13": {
+   "lang": "ko-KR",
+   "text": "열셋",
+   "file": null
+  },
+  "ko.num.14": {
+   "lang": "ko-KR",
+   "text": "열넷",
+   "file": null
+  },
+  "ko.num.15": {
+   "lang": "ko-KR",
+   "text": "열다섯",
+   "file": null
+  },
+  "ko.num.16": {
+   "lang": "ko-KR",
+   "text": "열여섯",
+   "file": null
+  },
+  "ko.num.17": {
+   "lang": "ko-KR",
+   "text": "열일곱",
+   "file": null
+  },
+  "ko.num.18": {
+   "lang": "ko-KR",
+   "text": "열여덟",
+   "file": null
+  },
+  "ko.num.19": {
+   "lang": "ko-KR",
+   "text": "열아홉",
+   "file": null
+  },
+  "ko.num.2": {
+   "lang": "ko-KR",
+   "text": "둘",
+   "file": null
+  },
+  "ko.num.20": {
+   "lang": "ko-KR",
+   "text": "스물",
+   "file": null
+  },
+  "ko.num.3": {
+   "lang": "ko-KR",
+   "text": "셋",
+   "file": null
+  },
+  "ko.num.4": {
+   "lang": "ko-KR",
+   "text": "넷",
+   "file": null
+  },
+  "ko.num.5": {
+   "lang": "ko-KR",
+   "text": "다섯",
+   "file": null
+  },
+  "ko.num.6": {
+   "lang": "ko-KR",
+   "text": "여섯",
+   "file": null
+  },
+  "ko.num.7": {
+   "lang": "ko-KR",
+   "text": "일곱",
+   "file": null
+  },
+  "ko.num.8": {
+   "lang": "ko-KR",
+   "text": "여덟",
+   "file": null
+  },
+  "ko.num.9": {
+   "lang": "ko-KR",
+   "text": "아홉",
    "file": null
   },
   "ko.party.intro": {
@@ -5052,6 +5457,26 @@
    "text": "모은 별빛을 정원에 뿌려볼까? 반짝이를 눌러봐!",
    "file": null
   },
+  "ko.pp.0": {
+   "lang": "ko-KR",
+   "text": "끝까지 찾았구나!",
+   "file": null
+  },
+  "ko.pp.1": {
+   "lang": "ko-KR",
+   "text": "다시 해봐서 찾았어!",
+   "file": null
+  },
+  "ko.pp.2": {
+   "lang": "ko-KR",
+   "text": "잘 듣고 골랐네!",
+   "file": null
+  },
+  "ko.pp.3": {
+   "lang": "ko-KR",
+   "text": "포기하지 않았구나!",
+   "file": null
+  },
   "ko.praise.0": {
    "lang": "ko-KR",
    "text": "잘했어!",
@@ -5069,7 +5494,7 @@
   },
   "ko.praise.3": {
    "lang": "ko-KR",
-   "text": "역시 너야!",
+   "text": "열심히 찾았구나!",
    "file": null
   },
   "ko.praise.4": {
@@ -5094,7 +5519,7 @@
   },
   "ko.sameDay": {
    "lang": "ko-KR",
-   "text": "오늘 친구는 벌써 만났어! 조금만 더 놀아볼까?",
+   "text": "오늘 친구는 벌써 만났어. 정원 친구들한테 인사하고 올까?",
    "file": null
   },
   "ko.say.go": {
@@ -5122,14 +5547,24 @@
    "text": "별빛을 모았어! 정원이 더 반짝여!",
    "file": null
   },
+  "ko.timeSoon": {
+   "lang": "ko-KR",
+   "text": "이제 조금만 더 하고 잘 시간이야.",
+   "file": null
+  },
   "ko.timeUp": {
    "lang": "ko-KR",
-   "text": "오늘 놀이 시간이 다 됐어. 이것만 하고 쉬자!",
+   "text": "오늘은 여기까지! 정말 잘했어.",
    "file": null
   },
   "ko.together": {
    "lang": "ko-KR",
    "text": "같이 해볼까?",
+   "file": null
+  },
+  "ko.together.done": {
+   "lang": "ko-KR",
+   "text": "같이 하니까 됐다!",
    "file": null
   },
   "ko.train.answer": {

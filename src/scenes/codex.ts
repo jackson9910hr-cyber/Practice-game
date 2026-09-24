@@ -91,7 +91,7 @@ export class CodexScene extends Scene {
     const panel = new Graphics();
     const w = Math.min(this.game.W - 40, 900);
     panel
-      .roundRect(-w / 2, -300, w, 600, 40)
+      .roundRect(-w / 2, -300, w, 700, 40)
       .fill(C.cream)
       .stroke({ width: 8, color: C.gold });
     const sp = new FriendSprite(f, 220);
@@ -106,11 +106,15 @@ export class CodexScene extends Scene {
     name.y = -10;
     d.addChild(shade, panel, sp, name);
     const ws = getDay(f.day).words;
-    const cw = Math.min(150, (w - 60) / 5);
+    // cards stay ≥120 units (≥64 CSS px): wrap to 3 + 2 on narrow screens
+    const perRow = (w - 60) / 5 >= 132 ? 5 : 3;
+    const cw = Math.max(132, Math.min(150, (w - 60) / perRow));
     ws.forEach((wid, i) => {
       const c = new Card(cw - 12, cw - 12);
       c.addChild(makePicture(getWord(wid).pic, cw - 24));
-      c.position.set((i - 2) * cw, 130);
+      const row = Math.floor(i / perRow);
+      const inRow = Math.min(perRow, ws.length - row * perRow);
+      c.position.set(((i % perRow) - (inRow - 1) / 2) * cw, 110 + row * cw);
       c.eventMode = 'static';
       c.cursor = 'pointer';
       c.on('pointertap', () => void voice.sayNow(vid.word(wid)));

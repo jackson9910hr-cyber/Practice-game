@@ -123,7 +123,8 @@ export function speakerIcon(size: number, color: number = C.indigo): Graphics {
 }
 
 export function earButton(onTap: () => void): Button {
-  return new Button({ icon: speakerIcon(70), color: C.cream, onTap, a11y: '다시 듣기' });
+  // an ear (not a speaker) so it never looks like the in-game "hear the word" buttons
+  return new Button({ icon: '👂', color: C.cream, onTap, a11y: '다시 듣기' });
 }
 
 export function homeButton(onTap: () => void): Button {

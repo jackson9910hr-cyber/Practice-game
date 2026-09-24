@@ -182,7 +182,8 @@ async function parade(
   opts: { sentence: boolean },
 ) {
   const shown: FriendSprite[] = [];
-  const cols = Math.min(10, ids.length);
+  // phones in portrait: 5 per row so every friend stays big enough to see
+  const cols = Math.min(game.H > game.W ? 5 : 10, ids.length);
   for (const [i, id] of ids.entries()) {
     if (!scene.alive) return shown;
     const f = getFriend(id);
@@ -266,6 +267,10 @@ export class FinaleScene extends SpecialBase {
     this.sprites = await parade(this as unknown as Scene & { fx: Fx }, this.layer, this.game, all, {
       sentence: true,
     });
+    this.check();
+    await this.wordGift();
+    this.check();
+    await this.festivalChant();
     this.check();
     for (let i = 0; i < 8; i++) {
       sfx.sparkle();

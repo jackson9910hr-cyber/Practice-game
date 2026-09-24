@@ -85,6 +85,20 @@ export function reviewCount(save: SaveData, day: number): number {
   return Math.min(16, Math.max(8, dueWords(save.words, day).length + Math.min(2, fresh) + 2));
 }
 
+/** Pictures too close to tell apart side by side (sun ☀ sunny, sleep 🛌 sleepy/tired, …). */
+const LOOKALIKES: string[][] = [
+  ['sun', 'sunny'],
+  ['cloud', 'cloudy'],
+  ['sleep', 'sleepy', 'tired'],
+  ['night', 'bridge', 'sky'],
+  ['flower', 'garden'],
+  ['hot', 'thirsty'],
+  ['eat', 'hungry'],
+];
+export function confusable(a: string, b: string): boolean {
+  return LOOKALIKES.some((g) => g.includes(a) && g.includes(b));
+}
+
 export function pickDistractors(
   target: string,
   pool: readonly string[],
@@ -93,7 +107,7 @@ export function pickDistractors(
   sameCategoryChance: number,
 ): string[] {
   const t = getWord(target);
-  const others = pool.filter((id) => id !== target && getWord(id).pic !== t.pic);
+  const others = pool.filter((id) => id !== target && getWord(id).pic !== t.pic && !confusable(id, target));
   const same = rng.shuffle(others.filter((id) => getWord(id).category === t.category));
   const diff = rng.shuffle(others.filter((id) => getWord(id).category !== t.category));
   const out: string[] = [];

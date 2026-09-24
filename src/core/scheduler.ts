@@ -23,8 +23,12 @@ function chooseThinking(save: SaveData, day: number, avoid?: GameId): GameId | n
   const fresh = open.find((g) => unlocksOn(day).some((k) => k.startsWith(`${g}:`)));
   if (fresh) return fresh;
   const candidates = open.length > 1 && avoid ? open.filter((g) => g !== avoid) : open;
+  // Hangul and numbers are the core school-readiness skills: they come back every ~2 days,
+  // pattern/ant every ~4 (sort by "next due day" = last played + interval)
+  const interval = (g: GameId) => (g === 'hangul-pieces' || g === 'number-fireflies' ? 2 : 4);
+  const due = (g: GameId) => (save.games[g]?.lastPlayedDay ?? 0) + interval(g);
   return [...candidates].sort(
-    (a, b) => (save.games[a]?.lastPlayedDay ?? 0) - (save.games[b]?.lastPlayedDay ?? 0),
+    (a, b) => due(a) - due(b) || THINKING_GAMES.indexOf(a) - THINKING_GAMES.indexOf(b),
   )[0]!;
 }
 

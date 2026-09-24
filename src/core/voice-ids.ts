@@ -25,6 +25,59 @@ export interface VoiceEntry {
   text: string;
 }
 
+/** Native Korean counting words (children count objects this way). */
+export const KO_NUMBERS = [
+  '영',
+  '하나',
+  '둘',
+  '셋',
+  '넷',
+  '다섯',
+  '여섯',
+  '일곱',
+  '여덟',
+  '아홉',
+  '열',
+  '열하나',
+  '열둘',
+  '열셋',
+  '열넷',
+  '열다섯',
+  '열여섯',
+  '열일곱',
+  '열여덟',
+  '열아홉',
+  '스물',
+];
+
+/** The sound each jamo stands for (ㅇ has none at the start of a syllable, so it keeps its name). */
+const JAMO_SOUND: Record<string, string> = {
+  ㄱ: '그',
+  ㄴ: '느',
+  ㄷ: '드',
+  ㄹ: '르',
+  ㅁ: '므',
+  ㅂ: '브',
+  ㅅ: '스',
+  ㅇ: '이응',
+  ㅈ: '즈',
+  ㅊ: '츠',
+  ㅋ: '크',
+  ㅌ: '트',
+  ㅍ: '프',
+  ㅎ: '흐',
+  ㅏ: '아',
+  ㅑ: '야',
+  ㅓ: '어',
+  ㅕ: '여',
+  ㅗ: '오',
+  ㅛ: '요',
+  ㅜ: '우',
+  ㅠ: '유',
+  ㅡ: '으',
+  ㅣ: '이',
+};
+
 export const NUMBER_WORDS = [
   'zero',
   'one',
@@ -50,7 +103,9 @@ export const NUMBER_WORDS = [
 ];
 
 /** TTS reads a lone "a" as the article; spell letter names so they are said as names. */
-const LETTER_NAME: Record<string, string> = { a: 'ay', i: 'eye', o: 'oh', u: 'you', e: 'ee', y: 'why' };
+const LETTER_NAME: Record<string, string> = { a: 'A.', e: 'E.', i: 'I.', o: 'O.', u: 'U.', y: 'Y.' };
+/** TTS reads some words ambiguously in isolation (read → "red"). Only the spoken text changes. */
+const SAY_AS: Record<string, string> = { read: 'reed' };
 
 export function slug(text: string): string {
   return text
@@ -66,16 +121,30 @@ export const vid = {
   sentence: (text: string) => `en.t.${slug(text)}`,
   card: (token: string) => `en.card.${slug(token)}`,
   greet: (friend: string) => `en.greet.${friend}`,
+  friendName: (friend: string) => `en.name.${friend}`,
   letter: (l: string) => `en.letter.${l}`,
   phoneme: (l: string) => `en.phoneme.${l}`,
   num: (n: number) => `en.num.${n}`,
+  numKo: (n: number) => `ko.num.${n}`,
   praiseEn: (i: number) => `en.praise.${i}`,
   bigPraise: (i: number) => `en.big.${i}`,
   praiseKo: (i: number) => `ko.praise.${i}`,
+  praiseProcess: (i: number) => `ko.pp.${i}`,
   ko: (key: string) => `ko.${key}`,
   en: (key: string) => `en.${key}`,
   hangul: (text: string) => `ko.h.${text}`,
+  jamo: (j: string) => `ko.jamo.${j}`,
 };
+
+/**
+ * Lines that carry a letter's SOUND. A recorded phoneme (/s/, /æ/ …) is used when it exists;
+ * until then only the keyword word is spoken — never the letter name, which would teach the
+ * wrong sound (c = "see", g = "gee", w = "double-u"). See docs/audio.md.
+ */
+export function soundIds(letter: string, keyword: string, recorded: (id: string) => boolean): string[] {
+  const kw = vid.pic(keyword);
+  return recorded(vid.phoneme(letter)) ? [vid.phoneme(letter), kw] : [kw];
+}
 
 function composeSyllable(c: string, v: string): string {
   const CHO = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ';
@@ -89,7 +158,7 @@ export function buildVoiceEntries(): VoiceEntry[] {
   const ko = (id: string, text: string) => out.set(id, { id, lang: 'ko-KR', text });
 
   for (const w of words) {
-    en(vid.word(w.id), w.en);
+    en(vid.word(w.id), SAY_AS[w.id] ?? w.en);
     en(vid.wordSentence(w.id), w.sentence);
   }
   for (const [id] of Object.entries(extraPictures)) en(vid.pic(id), id === 'yoyo' ? 'yo-yo' : id);
@@ -109,17 +178,23 @@ export function buildVoiceEntries(): VoiceEntry[] {
     }
   }
   for (const c of chants) for (const l of c.lines) en(vid.sentence(l.text), l.text);
-  for (const f of friends) en(vid.greet(f.id), f.greeting);
+  for (const f of friends) {
+    en(vid.greet(f.id), f.greeting);
+    en(vid.friendName(f.id), `Hi! I'm ${f.name}!`);
+  }
   for (const l of phonicsLetters) {
     en(vid.letter(l.letter), LETTER_NAME[l.letter] ?? l.letter.toUpperCase());
-    // Fallback until a native phoneme recording exists: the letter name (see docs/audio.md).
-    en(vid.phoneme(l.letter), LETTER_NAME[l.letter] ?? l.letter.toUpperCase());
+    // Until a native phoneme recording exists the keyword stands in (never the letter name).
+    en(vid.phoneme(l.letter), l.keyword === 'yoyo' ? 'yo-yo' : l.keyword);
   }
   for (const c of cvcWords) en(vid.pic(c.word), c.word);
   for (let n = 0; n <= 20; n++) en(vid.num(n), NUMBER_WORDS[n]!);
+  for (let n = 1; n <= 20; n++) ko(vid.numKo(n), KO_NUMBERS[n]!);
   praise.en.forEach((t, i) => en(vid.praiseEn(i), t));
   praise.big.forEach((t, i) => en(vid.bigPraise(i), t));
   praise.ko.forEach((t, i) => ko(vid.praiseKo(i), t));
+  praise.process.forEach((t, i) => ko(vid.praiseProcess(i), t));
+  ko('ko.together.done', praise.together);
   for (const [k, t] of Object.entries(voiceLines.ko)) ko(vid.ko(k), t);
   for (const [k, t] of Object.entries(voiceLines.en)) en(vid.en(k), t);
   for (const c of hangul.consonants)
@@ -127,6 +202,7 @@ export function buildVoiceEntries(): VoiceEntry[] {
       const s = composeSyllable(c, v);
       ko(vid.hangul(s), s);
     }
+  for (const j of [...hangul.consonants, ...hangul.vowels]) ko(vid.jamo(j), JAMO_SOUND[j] ?? j);
   for (const w of [...hangul.wordsOpen, ...hangul.wordsClosed]) {
     ko(vid.hangul(w.word), w.word);
     for (const ch of w.word) ko(vid.hangul(ch), ch);

@@ -78,9 +78,9 @@
       "letter": "review"
     },
     {
-      "id": "mimi",
+      "id": "mobi",
       "day": 8,
-      "name": "Mimi",
+      "name": "Mobi",
       "base": "drop",
       "colors": ["#7CC6FE", "#5ED3A2", "#FFF7E8"],
       "signature": "tadpole-lilypad",
@@ -144,9 +144,9 @@
       "letter": "k"
     },
     {
-      "id": "gomo",
+      "id": "soli",
       "day": 14,
-      "name": "Gomo",
+      "name": "Soli",
       "base": "cloud",
       "colors": ["#FFF7E8", "#FF8FAB", "#5ED3A2"],
       "signature": "lotus-shawl",
@@ -221,9 +221,9 @@
       "letter": "f"
     },
     {
-      "id": "ruby",
+      "id": "reni",
       "day": 21,
-      "name": "Ruby",
+      "name": "Reni",
       "base": "drop",
       "colors": ["#FF8FAB", "#7CC6FE", "#FFD166"],
       "signature": "rainbow-wings",

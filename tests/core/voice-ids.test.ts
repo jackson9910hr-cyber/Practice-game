@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildVoiceEntries, slug, vid } from '../../src/core/voice-ids';
+import { buildVoiceEntries, slug, soundIds, vid } from '../../src/core/voice-ids';
 
 describe('voice ids', () => {
   const entries = buildVoiceEntries();
@@ -22,8 +22,21 @@ describe('voice ids', () => {
   });
 
   it('speaks letter names so TTS does not read "a" as an article', () => {
-    expect(byId.get(vid.letter('a'))?.text).toBe('ay');
+    expect(byId.get(vid.letter('a'))?.text).toBe('A.');
     expect(byId.get(vid.letter('b'))?.text).toBe('B');
+  });
+
+  it('never teaches a letter NAME as its sound: without a recording only the keyword is said', () => {
+    expect(byId.get(vid.phoneme('c'))?.text).toBe('cat');
+    expect(soundIds('c', 'cat', () => false)).toEqual([vid.pic('cat')]);
+    expect(soundIds('c', 'cat', () => true)).toEqual([vid.phoneme('c'), vid.pic('cat')]);
+  });
+
+  it('reads ambiguous words the intended way and has Korean numbers and jamo sounds', () => {
+    expect(byId.get(vid.word('read'))?.text).toBe('reed');
+    expect(byId.get(vid.numKo(7))?.text).toBe('일곱');
+    expect(byId.get(vid.jamo('ㄱ'))?.text).toBe('그');
+    expect(byId.get(vid.friendName('appy'))?.text).toBe("Hi! I'm Appy!");
   });
 
   it('slugifies sentences', () => {

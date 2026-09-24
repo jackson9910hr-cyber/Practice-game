@@ -2,6 +2,20 @@
  * "따라 말하기" recorder: records a few seconds on-device only. The stream is released right
  * after recording so the mic indicator never stays on. No scoring, no upload — ever.
  */
+import { audio } from './context';
+/**
+ * True only if the microphone permission is already granted (by the adult, in the parent area).
+ * We never let the system permission prompt appear in front of the child.
+ */
+export async function micGranted(): Promise<boolean> {
+  try {
+    const st = await navigator.permissions?.query({ name: 'microphone' as PermissionName });
+    return st?.state === 'granted';
+  } catch {
+    return false;
+  }
+}
+
 export function canRecord(): boolean {
   return (
     typeof navigator.mediaDevices?.getUserMedia === 'function' &&
@@ -28,12 +42,19 @@ export class Recorder {
   private resolveStop: ((r: Recording | null) => void) | null = null;
 
   async start(maxMs = 5000): Promise<Recording | null> {
+    this.cancelled = false;
+    audio.setSession('play-and-record');
     if (!canRecord()) return null;
     try {
       this.stream = await navigator.mediaDevices.getUserMedia({
         audio: { echoCancellation: true, noiseSuppression: true },
       });
     } catch {
+      audio.setSession('playback');
+      return null;
+    }
+    if (this.cancelled) {
+      this.release();
       return null;
     }
     const type = mimeType();
@@ -57,7 +78,7 @@ export class Recorder {
       };
     });
     rec.start();
-    setTimeout(() => this.stop(), maxMs);
+    this.timer = window.setTimeout(() => this.stop(), maxMs);
     return result;
   }
 
@@ -70,9 +91,21 @@ export class Recorder {
   }
 
   private release() {
+    if (this.timer !== null) clearTimeout(this.timer);
+    this.timer = null;
     this.stream?.getTracks().forEach((t) => t.stop());
     this.stream = null;
     this.rec = null;
+    audio.setSession('playback');
+  }
+
+  private timer: number | null = null;
+  private cancelled = false;
+
+  /** The scene is going away: stop and never start late. */
+  cancel() {
+    this.cancelled = true;
+    this.stop();
   }
 }
 

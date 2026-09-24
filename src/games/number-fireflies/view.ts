@@ -9,7 +9,7 @@ import type { GameApp } from '../../engine/app';
 import { ease, tween, wait } from '../../engine/tween';
 import { Card } from '../../engine/ui';
 import { GameBase } from '../base';
-import { arrange, bounce, hintRing, popIn, shake } from '../common';
+import { arrange, bounce, dim, hintRing, popIn, shake } from '../common';
 import { answerOf, makeFireflyRound, type FireflyQuestion } from './logic';
 
 class Firefly extends Container {
@@ -65,7 +65,8 @@ export class FireflyView extends GameBase<'number-fireflies'> {
   async start() {
     this.qs = makeFireflyRound(this.mode, this.params, this.rng);
     this.setTotal(this.qs.length);
-    await this.instruct([vid.ko('fireflies.count')]);
+    // the instruction matches what this mode actually asks (counting vs. adding/taking away)
+    await this.instruct([vid.ko(this.mode >= 3 ? 'fireflies.add' : 'fireflies.count')]);
     await this.show();
   }
 
@@ -118,7 +119,7 @@ export class FireflyView extends GameBase<'number-fireflies'> {
     const hs = this.homes(q.kind === 'add' ? a + q.b : a, cx, cy, areaW, areaH);
     for (let i = 0; i < a; i++) this.addFly(hs[i]!.x, hs[i]!.y, C.gold, i, false);
     this.eq.text = `${a}`;
-    await voice.say(vid.num(a));
+    await voice.say(vid.numKo(a));
     await wait(400);
     if (q.kind === 'add') {
       this.eq.text = `${a} + ${q.b}`;
@@ -168,8 +169,8 @@ export class FireflyView extends GameBase<'number-fireflies'> {
     lbl.anchor.set(0.5);
     lbl.y = -56;
     f.addChild(lbl);
-    void voice.sayNow(vid.num(n));
-    if (n <= 10) this.expose([NUMBER_WORDS[n]!]);
+    // count in Korean (how children count objects); the English number comes with the answer
+    void voice.sayNow(vid.numKo(n));
     if (this.counted === this.flies.length) {
       setTimeout(() => {
         void voice.say(vid.ko('fireflies.pick'));
@@ -211,18 +212,19 @@ export class FireflyView extends GameBase<'number-fireflies'> {
     if (ok) {
       c.draw(0xfff1b8, C.gold);
       if (this.q.kind !== 'count') this.eq.text = this.eq.text.replace('?', String(ans));
-      await this.celebrate(c.x, c.y, [vid.num(ans)]);
+      await this.celebrate(c.x, c.y, [vid.numKo(ans), vid.num(ans)]);
       this.qi++;
       if (await this.next()) await this.show();
     } else {
       void shake(c);
+      dim(c);
       await this.gentleNo(assist);
       if (assist !== 'none') {
         // recount together: light fireflies one by one with English numbers
         const live = this.flies.filter((f) => f.alpha > 0.5);
         for (const [i, f] of live.entries()) {
           void bounce(f);
-          await voice.say(vid.num(i + 1));
+          await voice.say(vid.numKo(i + 1));
         }
         const right = this.cards[this.q.options.indexOf(ans)];
         if (right) hintRing(right, 100);

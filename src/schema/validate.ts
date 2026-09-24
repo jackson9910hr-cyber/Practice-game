@@ -105,7 +105,13 @@ export function validateAll(): string[] {
   check('curriculum.days', z.array(DaySchema).length(30), curriculumJson.days);
   check(
     'praise',
-    z.object({ en: z.array(z.string()).min(8), ko: z.array(z.string()).min(4), big: z.array(z.string()) }),
+    z.object({
+      en: z.array(z.string()).min(8),
+      ko: z.array(z.string()).min(4),
+      big: z.array(z.string()),
+      process: z.array(z.string()).min(2),
+      together: z.string(),
+    }),
     praiseJson,
   );
   check('voice-lines', z.object({ ko: z.record(z.string()), en: z.record(z.string()) }), voiceLinesJson);
@@ -171,6 +177,10 @@ export function validateAll(): string[] {
     'kitty',
     'pororo',
     'pinkfong',
+    'ruby',
+    'mimi',
+    'gomo',
+    'luma',
   ];
   for (const f of fr)
     err(!banned.includes(f.name.toLowerCase()), `friend name ${f.name} too close to an existing IP`);

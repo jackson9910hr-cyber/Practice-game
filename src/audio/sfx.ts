@@ -25,6 +25,16 @@ function tone(
   o.stop(t0 + dur + 0.05);
 }
 
+let noiseBuf: AudioBuffer | null = null;
+/** One second of white noise, made once and reused (slices start at random offsets). */
+function noiseBuffer(ctx: AudioContext): AudioBuffer {
+  if (noiseBuf && noiseBuf.sampleRate === ctx.sampleRate) return noiseBuf;
+  noiseBuf = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
+  const d = noiseBuf.getChannelData(0);
+  for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+  return noiseBuf;
+}
+
 function noise(
   dur: number,
   opts: { freq?: number; q?: number; vol?: number; at?: number; sweepTo?: number } = {},
@@ -32,12 +42,8 @@ function noise(
   const ctx = audio.ctx;
   if (!ctx) return;
   const t0 = ctx.currentTime + (opts.at ?? 0);
-  const len = Math.max(1, Math.floor(ctx.sampleRate * dur));
-  const buf = ctx.createBuffer(1, len, ctx.sampleRate);
-  const d = buf.getChannelData(0);
-  for (let i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
   const src = ctx.createBufferSource();
-  src.buffer = buf;
+  src.buffer = noiseBuffer(ctx);
   const f = ctx.createBiquadFilter();
   f.type = 'bandpass';
   f.frequency.setValueAtTime(opts.freq ?? 1200, t0);
@@ -47,7 +53,7 @@ function noise(
   g.gain.setValueAtTime(opts.vol ?? 0.2, t0);
   g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
   src.connect(f).connect(g).connect(audio.sfx);
-  src.start(t0);
+  src.start(t0, Math.random() * 0.8, dur);
 }
 
 const PENTA = [523.25, 587.33, 659.25, 783.99, 880, 1046.5, 1174.66, 1318.5, 1567.98];

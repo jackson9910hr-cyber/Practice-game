@@ -21,8 +21,8 @@
       "day": 3,
       "sound": "t",
       "position": "initial",
-      "keyword": "tree",
-      "pictures": ["tree", "two", "ten", "table", "turtle", "tired"]
+      "keyword": "tiger",
+      "pictures": ["tiger", "two", "ten", "table", "turtle", "tired", "tree"]
     },
     {
       "letter": "p",
@@ -37,8 +37,8 @@
       "day": 5,
       "sound": "i",
       "position": "initial",
-      "keyword": "insect",
-      "pictures": ["insect", "in"]
+      "keyword": "igloo",
+      "pictures": ["igloo", "insect", "in"]
     },
     {
       "letter": "n",
@@ -69,8 +69,8 @@
       "day": 10,
       "sound": "g",
       "position": "initial",
-      "keyword": "green",
-      "pictures": ["green", "grape", "grandma", "grandpa", "gift", "garden"]
+      "keyword": "goat",
+      "pictures": ["goat", "green", "grape", "grandma", "grandpa", "gift", "garden"]
     },
     {
       "letter": "o",
@@ -78,7 +78,7 @@
       "sound": "o",
       "position": "initial",
       "keyword": "octopus",
-      "pictures": ["octopus", "on", "ox"]
+      "pictures": ["octopus", "on", "otter"]
     },
     {
       "letter": "c",
@@ -86,20 +86,7 @@
       "sound": "k",
       "position": "initial",
       "keyword": "cat",
-      "pictures": [
-        "cat",
-        "cake",
-        "cow",
-        "cookie",
-        "carrot",
-        "corn",
-        "coat",
-        "cold",
-        "kite",
-        "key",
-        "kangaroo",
-        "king"
-      ]
+      "pictures": ["cat", "cake", "cow", "cookie", "carrot", "corn", "coat", "cold", "candy", "cup", "cap"]
     },
     {
       "letter": "k",
@@ -107,20 +94,7 @@
       "sound": "k",
       "position": "initial",
       "keyword": "kite",
-      "pictures": [
-        "cat",
-        "cake",
-        "cow",
-        "cookie",
-        "carrot",
-        "corn",
-        "coat",
-        "cold",
-        "kite",
-        "key",
-        "kangaroo",
-        "king"
-      ]
+      "pictures": ["kite", "key", "kangaroo", "koala"]
     },
     {
       "letter": "e",
@@ -128,7 +102,7 @@
       "sound": "e",
       "position": "initial",
       "keyword": "egg",
-      "pictures": ["egg", "elephant", "envelope"]
+      "pictures": ["egg", "elephant", "elevator"]
     },
     {
       "letter": "u",
@@ -182,7 +156,7 @@
       "sound": "f",
       "position": "initial",
       "keyword": "fish",
-      "pictures": ["flower", "four", "five", "fish", "frog", "foot", "finger", "fly", "friend"]
+      "pictures": ["flower", "four", "five", "fish", "frog", "foot", "finger", "fly", "friend", "fox"]
     },
     {
       "letter": "l",
@@ -222,7 +196,7 @@
       "sound": "ks",
       "position": "final",
       "keyword": "box",
-      "pictures": ["box", "fox", "six"]
+      "pictures": ["box", "fox", "six", "socks"]
     },
     {
       "letter": "y",
@@ -251,17 +225,15 @@
   ],
   "extraPictures": {
     "ant": "🐜",
-    "insect": "🐞",
+    "insect": "🪲",
     "octopus": "🐙",
     "kite": "🪁",
     "van": "🚐",
-    "queen": "👸",
+    "queen": "draw:combo:👑👩",
     "zebra": "🦓",
     "fox": "🦊",
     "kangaroo": "🦘",
     "key": "🔑",
-    "king": "🤴",
-    "envelope": "✉️",
     "up": "⬆️",
     "violin": "🎻",
     "volcano": "🌋",
@@ -271,7 +243,6 @@
     "quiet": "🤫",
     "juggle": "🤹",
     "nut": "🥜",
-    "ox": "🐂",
     "net": "🥅",
     "pen": "🖊️",
     "pin": "📌",
@@ -285,10 +256,15 @@
     "bat": "🦇",
     "rat": "🐀",
     "bus": "🚌",
-    "cup": "☕",
+    "cup": "🥤",
     "log": "🪵",
-    "lip": "👄",
-    "nest": "🪺"
+    "nest": "🪺",
+    "otter": "🦦",
+    "elevator": "🛗",
+    "tiger": "🐯",
+    "goat": "🐐",
+    "koala": "🐨",
+    "igloo": "draw:thing:igloo"
   },
   "cvc": [
     {
@@ -390,10 +366,6 @@
     {
       "word": "leg",
       "letters": ["l", "e", "g"]
-    },
-    {
-      "word": "lip",
-      "letters": ["l", "i", "p"]
     },
     {
       "word": "log",

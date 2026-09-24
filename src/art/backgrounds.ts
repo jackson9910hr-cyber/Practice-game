@@ -29,22 +29,24 @@ export class GardenBackground extends Container {
     this.addChild(this.sky, this.stars, this.ground, this.features);
   }
 
+  /** Only the land changes colour, so only it is redrawn (cheap enough for per-frame tweens). */
   setRestore(v: number) {
     this.restore = Math.max(0, Math.min(1, v));
-    this.draw();
+    this.drawLand();
   }
 
   layout(w: number, h: number) {
     this.w = w;
     this.h = h;
-    this.draw();
+    this.drawSky();
+    this.drawLand();
   }
 
   private col(c: number) {
     return wilt(c, 1 - this.restore);
   }
 
-  private draw() {
+  private drawSky() {
     const { w, h } = this;
     if (!w) return;
     const s = this.sky;
@@ -68,19 +70,24 @@ export class GardenBackground extends Container {
     s.circle(mx, my, 46).fill({ color: 0xfff3c4, alpha: 0.95 });
     s.circle(mx + 18, my - 10, 40).fill(mix(top, bottom, my / h));
 
-    this.stars.removeChildren();
+    // stars: a handful of layers that twinkle as groups (few Graphics, nothing leaks on resize)
+    this.stars.removeChildren().forEach((c) => c.destroy());
     this.dots = [];
     const n = Math.round((w * h) / 16000);
+    const layers = Array.from({ length: 6 }, () => new Graphics());
     for (let i = 0; i < n; i++) {
-      const g = new Graphics();
       const r = 1.5 + Math.random() * 2.5;
-      g.circle(0, 0, r).fill(0xffffff);
-      g.x = Math.random() * w;
-      g.y = Math.random() * h * 0.55;
+      layers[i % layers.length]!.circle(Math.random() * w, Math.random() * h * 0.55, r).fill(0xffffff);
+    }
+    for (const g of layers) {
       this.stars.addChild(g);
       this.dots.push({ g, phase: Math.random() * 6, speed: 0.5 + Math.random() * 1.5 });
     }
+  }
 
+  private drawLand() {
+    const { w, h } = this;
+    if (!w) return;
     const gr = this.ground;
     gr.clear();
     const hill1 = this.col(this.chapter === 'skybridge' ? 0x6f7fc4 : 0x2f8f6a);

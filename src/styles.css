@@ -29,8 +29,11 @@ body {
   position: fixed;
   inset: 0;
   height: 100dvh;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
-    env(safe-area-inset-left);
+  /* safe-area insets are applied inside the canvas (GameApp.resize), not as padding */
+  --sat: env(safe-area-inset-top);
+  --sar: env(safe-area-inset-right);
+  --sab: env(safe-area-inset-bottom);
+  --sal: env(safe-area-inset-left);
 }
 #app canvas {
   display: block;

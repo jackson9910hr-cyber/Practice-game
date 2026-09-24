@@ -6,8 +6,8 @@ import { Container, Graphics } from 'pixi.js';
 import { LAST_DAY, chapterOf, getDay, getFriend, getLetter, getWord } from '../core/content';
 import { exposeWords } from '../core/answers';
 import { recapWords } from '../core/rounds';
-import { curriculumDay, markToday, secondsLeft } from '../core/progress';
-import { vid } from '../core/voice-ids';
+import { curriculumDay, markToday } from '../core/progress';
+import { soundIds, vid } from '../core/voice-ids';
 import { GardenBackground } from '../art/backgrounds';
 import { Fairy } from '../art/fairy';
 import { FriendSprite } from '../art/friends';
@@ -20,8 +20,7 @@ import type { GameApp } from '../engine/app';
 import { Fx } from '../engine/fx';
 import { Scene } from '../engine/scene';
 import { ease, tween, wait } from '../engine/tween';
-import { Button, Card } from '../engine/ui';
-import { nav } from '../flow';
+import { Card } from '../engine/ui';
 import { store } from '../state';
 import { restoreLevel } from './hub';
 
@@ -157,17 +156,8 @@ export class GoodnightScene extends Scene {
     store.update((s) => markToday(s, { goodnight: true }));
     await store.flush();
     await voice.say(vid.ko('goodnight.bye'));
-    if (this.reason === 'done' && secondsLeft(store.save) > 60) {
-      const back = new Button({
-        icon: '🏡',
-        size: 140,
-        color: C.cream,
-        onTap: () => void nav.hub(this),
-        a11y: '정원으로',
-      });
-      back.position.set(this.game.W - 110, this.game.H - 110);
-      this.addChild(back);
-    }
+    // the ritual ends the day: the garden sleeps (reopening today shows the sleeping garden)
+    void this.reason;
   }
 
   private async teaseTomorrow() {
@@ -180,9 +170,10 @@ export class GoodnightScene extends Scene {
     await tween(f.scale, { x: 1, y: 1 }, { duration: 500, ease: ease.outBack });
     const l = next.letters[0];
     if (l) {
-      await voice.say(vid.ko('goodnight.tomorrow'));
-      await voice.say(vid.phoneme(l));
-      await voice.say(vid.pic(getLetter(l).keyword));
+      const L = getLetter(l);
+      // x is taught as an ending sound (box) — don't promise a friend "starting" with it
+      await voice.say(vid.ko(L.position === 'final' ? 'goodnight.tomorrowFinal' : 'goodnight.tomorrow'));
+      for (const id of soundIds(l, L.keyword, (i) => voice.recorded(i))) await voice.say(id);
     }
     await wait(600);
   }

@@ -55,9 +55,43 @@ class AudioHub {
       window.speechSynthesis.speak(u);
     }
     this.unlocked = true;
+    this.hookLifecycle();
+  }
+
+  private hooked = false;
+  /** Suspend when hidden (no background audio), resume when visible, recover iOS "interrupted". */
+  private hookLifecycle() {
+    if (this.hooked || !this.ctx) return;
+    this.hooked = true;
+    const ctx = this.ctx;
     document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible' && this.ctx?.state !== 'running') void this.ctx?.resume();
+      if (document.visibilityState === 'hidden') {
+        void ctx.suspend();
+        this.onHidden?.();
+      } else {
+        void ctx.resume();
+        this.onVisible?.();
+      }
     });
+    // Siri / alarms / calls interrupt audio without a visibility change: resume on the next touch
+    ctx.addEventListener('statechange', () => {
+      if (ctx.state !== 'running' && document.visibilityState === 'visible') {
+        window.addEventListener('pointerdown', () => void ctx.resume(), { once: true });
+      }
+    });
+  }
+
+  onHidden?: () => void;
+  onVisible?: () => void;
+
+  /** Recording needs the play-and-record session on iOS; switch back to playback afterwards. */
+  setSession(type: 'playback' | 'play-and-record') {
+    const nav = navigator as AudioSessionNav;
+    try {
+      if (nav.audioSession) nav.audioSession.type = type;
+    } catch {
+      /* not supported */
+    }
   }
 
   get now() {

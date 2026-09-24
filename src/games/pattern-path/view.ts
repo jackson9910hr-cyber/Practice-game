@@ -11,8 +11,46 @@ import type { GameApp } from '../../engine/app';
 import { wait } from '../../engine/tween';
 import { Button, Card, speakerIcon } from '../../engine/ui';
 import { GameBase } from '../base';
-import { arrange, bounce, hintRing, popIn, shake } from '../common';
+import { arrange, bounce, dim, hintRing, popIn, shake } from '../common';
 import { makePatternRound, nameOf, same, type Flower, type PatternQuestion } from './logic';
+
+/**
+ * Colour is never the only cue (colour-blind children, GDD §8.1): each colour also gets its own
+ * little mark in the flower's centre.
+ */
+function centerMark(g: Graphics, color: string, r: number) {
+  const ink = { color: C.ink, alpha: 0.75 };
+  switch (color) {
+    case 'red':
+      g.circle(0, 0, r * 0.7).fill(ink);
+      break;
+    case 'blue':
+      g.circle(0, 0, r).stroke({ width: 4, ...ink });
+      break;
+    case 'yellow':
+      g.star(0, 0, 5, r * 1.1, r * 0.5).fill(ink);
+      break;
+    case 'green':
+      g.moveTo(-r, 0)
+        .lineTo(r, 0)
+        .moveTo(0, -r)
+        .lineTo(0, r)
+        .stroke({ width: 4, ...ink });
+      break;
+    case 'pink':
+      g.rect(-r * 0.7, -r * 0.7, r * 1.4, r * 1.4).fill(ink);
+      break;
+    case 'purple':
+      g.poly([0, -r, r, r * 0.8, -r, r * 0.8]).fill(ink);
+      break;
+    default:
+      g.moveTo(-r, -r)
+        .lineTo(r, r)
+        .moveTo(r, -r)
+        .lineTo(-r, r)
+        .stroke({ width: 4, ...ink });
+  }
+}
 
 export function drawFlower(f: Flower): Container {
   const c = new Container();
@@ -27,6 +65,7 @@ export function drawFlower(f: Flower): Container {
     g.circle(0, 0, r * 0.38)
       .fill(C.gold)
       .stroke({ width: 3, color: C.ink, alpha: 0.6 });
+    centerMark(g, f.color, r * 0.2);
   } else drawShape(g, f.shape, r * 0.9, col);
   c.addChild(g);
   return c;
@@ -111,7 +150,9 @@ export class PatternView extends GameBase<'pattern-path'> {
   private async playRow() {
     const q = this.q;
     voice.cancel();
+    const epoch = voice.epoch;
     for (const [i, node] of this.row.entries()) {
+      if (voice.epoch !== epoch || !this.alive) return;
       void bounce(node);
       if (i === q.blank) {
         sfx.twinkle();
@@ -145,6 +186,7 @@ export class PatternView extends GameBase<'pattern-path'> {
       if (await this.next()) await this.show();
     } else {
       void shake(c);
+      dim(c);
       await this.gentleNo(assist);
       if (assist !== 'none') {
         await this.playRow();
@@ -158,22 +200,24 @@ export class PatternView extends GameBase<'pattern-path'> {
   protected layoutGame(w: number, h: number) {
     const portrait = h > w;
     const n = this.row.length;
-    const cell = Math.min(140, (w - 60) / Math.max(n, 1));
-    const y = portrait ? h * 0.38 : h * 0.4;
+    // keep flowers big enough to see big vs small: wrap into two rows rather than shrink below 0.8
+    const perRow = Math.max(1, Math.min(n, Math.floor((w - 60) / (140 * 0.8))));
+    const rows = Math.ceil(n / perRow);
+    const cell = Math.min(140, (w - 60) / perRow);
+    const y0 = (portrait ? h * 0.36 : h * 0.4) - ((rows - 1) * 180) / 2;
     this.stems.clear();
     this.row.forEach((r, i) => {
-      const x = w / 2 + (i - (n - 1) / 2) * cell;
+      const row = Math.floor(i / perRow);
+      const inRow = Math.min(perRow, n - row * perRow);
+      const x = w / 2 + ((i % perRow) - (inRow - 1) / 2) * cell;
+      const y = y0 + row * 180;
       r.position.set(x, y);
       r.scale.set(cell / 140);
       this.stems
         .moveTo(x, y + 30)
-        .lineTo(x, y + 110)
+        .lineTo(x, y + 90)
         .stroke({ width: 6, color: 0x2d8a5a });
     });
-    this.stems
-      .moveTo(w / 2 - (n / 2) * cell, y + 110)
-      .lineTo(w / 2 + (n / 2) * cell, y + 110)
-      .stroke({ width: 10, color: 0x8d5524, alpha: 0.6, cap: 'round' });
     this.speaker.position.set(w / 2, portrait ? h * 0.2 : 180);
     const pos = arrange(this.cards.length, w / 2, portrait ? h * 0.72 : h * 0.78, w - 60, 220, 190);
     this.cards.forEach((c, i) => {

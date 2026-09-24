@@ -68,4 +68,22 @@ describe('sound butterfly', () => {
     r.forEach((q) => expect(q.kind).toBe('read'));
     expect(correctOption(r[0]!)).toBe((r[0] as { word: string }).word);
   });
+
+  it('never offers a same-sound letter as a wrong option (c/k/q)', () => {
+    for (let i = 0; i < 30; i++) {
+      const o = letterOptions('c', ['s', 'a', 't', 'k', 'q', 'm'], 4, false, createRng(i));
+      expect(o).not.toContain('k');
+      expect(o).not.toContain('q');
+    }
+  });
+
+  it('mode 1 never asks for the first letter of an x keyword (x is an ending sound)', () => {
+    const qs = makeButterflyRound(1, ['x', 'x'], 26, levelParams('sound-butterfly', 1), createRng(1));
+    qs.forEach((q) => expect(q.kind === 'letter' && q.letter).not.toBe('x'));
+  });
+
+  it('short a vs short e is never the only difference in CVC options', () => {
+    const o = cvcOptions('pan', ['pan', 'pen', 'pin', 'man'], 2, 'middle', createRng(1));
+    expect(o).not.toContain('pen');
+  });
 });

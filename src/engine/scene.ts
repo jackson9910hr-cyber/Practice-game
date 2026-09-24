@@ -1,6 +1,7 @@
 import { Container, Graphics } from 'pixi.js';
 import type { GameApp } from './app';
 import { tween } from './tween';
+import { cancelDrag } from './drag';
 
 /** Thrown by `alive()` checks to silently end a scene script after the scene was left. */
 export class SceneGone extends Error {}
@@ -62,6 +63,7 @@ export class Router {
     this.busy = this.busy.then(async () => {
       this.fade.eventMode = 'static';
       await tween(this.fade, { alpha: 1 }, { duration: 260 });
+      cancelDrag();
       const old = this.current;
       if (old) {
         old.stop();

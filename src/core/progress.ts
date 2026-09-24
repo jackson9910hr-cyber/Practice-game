@@ -10,8 +10,12 @@ import type { GameId, StationPlan } from './types';
 
 export const SCHEMA_VERSION = 1;
 
-export const STARLIGHT_PER_CORRECT = 1;
-export const STARLIGHT_PER_STATION = 3;
+/**
+ * Starlight rewards effort, not accuracy (GDD §6): nothing per correct answer, a fixed amount for
+ * finishing a station — a slower child earns exactly as much as a fast one.
+ */
+export const STARLIGHT_PER_CORRECT = 0;
+export const STARLIGHT_PER_STATION = 5;
 
 export type Retention = 'session' | '1d' | '7d' | 'manual';
 
@@ -73,7 +77,7 @@ export interface SaveData {
 }
 
 export function defaultSettings(): Settings {
-  return { dailyMinutes: 15, recordingEnabled: false, recordingRetention: '7d', musicOn: true };
+  return { dailyMinutes: 15, recordingEnabled: false, recordingRetention: '1d', musicOn: true };
 }
 
 export function createSave(now: number): SaveData {

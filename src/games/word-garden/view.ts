@@ -13,10 +13,29 @@ import { ease, tween, wait } from '../../engine/tween';
 import { Button, Card, speakerIcon } from '../../engine/ui';
 import { store } from '../../state';
 import { GameBase } from '../base';
-import { arrange, bounce, helpingHand, hintRing, popIn, shake } from '../common';
+import { arrange, bounce, dim, helpingHand, hintRing, popIn, shake } from '../common';
 import { isMoving, makeWordGardenRound, type ChoiceQuestion } from './logic';
 
 const CARD = 230;
+
+/** A friendly talking bee (striped body, wings, face) — tap to hear, drag to answer. */
+function drawBee(color: number): Container {
+  const c = new Container();
+  const g = new Graphics();
+  g.ellipse(-34, -52, 30, 22)
+    .ellipse(34, -52, 30, 22)
+    .fill({ color: 0xffffff, alpha: 0.85 })
+    .stroke({ width: 4, color: C.ink, alpha: 0.5 });
+  g.ellipse(0, 0, 66, 54).fill(color).stroke({ width: 6, color: C.ink });
+  for (const x of [-22, 8, 36]) g.rect(x - 6, -50, 12, 100).fill({ color: C.ink, alpha: 0.75 });
+  g.ellipse(0, 0, 66, 54).stroke({ width: 6, color: C.ink });
+  g.circle(-40, -8, 7).fill(C.ink).circle(-18, -8, 7).fill(C.ink);
+  g.moveTo(-40, 14).quadraticCurveTo(-30, 22, -20, 14).stroke({ width: 4, color: C.ink, cap: 'round' });
+  const s = speakerIcon(44, C.ink);
+  s.position.set(40, 44);
+  c.addChild(g, s);
+  return c;
+}
 
 /** A picture that moves (for action / feeling words in mode 4). */
 class Moving extends Container {
@@ -85,6 +104,8 @@ export class WordGardenView extends GameBase<'word-garden'> {
       a11y: '단어 다시 듣기',
     });
     this.layer.addChild(this.speaker);
+    // mode 2: the bees themselves speak; a second speaker would just repeat the instruction
+    this.speaker.visible = this.mode !== 2;
     this.layoutGame(this.game.W, this.game.H);
     await this.instruct([vid.ko(`wordGarden.${this.mode === 4 ? 4 : this.mode === 2 ? 2 : 1}`)]);
     await this.showQuestion();
@@ -178,6 +199,7 @@ export class WordGardenView extends GameBase<'word-garden'> {
       if (await this.next()) await this.showQuestion();
     } else {
       void shake(card);
+      dim(card);
       await this.gentleNo(assist);
       await this.applyAssist(assist, q);
     }
@@ -208,10 +230,8 @@ export class WordGardenView extends GameBase<'word-garden'> {
     const colors = [C.gold, C.pink, C.sky];
     q.options.forEach((id, i) => {
       const bee = new Card(170, 170, colors[i % 3]);
-      const ic = speakerIcon(80, C.ink);
-      const face = new Graphics();
-      face.circle(-24, -44, 8).fill(C.ink).circle(24, -44, 8).fill(C.ink);
-      bee.addChild(ic, face);
+      bee.bg.alpha = 0;
+      bee.addChild(drawBee(colors[i % 3]!));
       this.layer.addChild(bee);
       this.cards.push(bee);
       void popIn(bee, 200 + i * 100);
@@ -318,13 +338,14 @@ export class WordGardenView extends GameBase<'word-garden'> {
   }
 
   private async flip(m: (typeof this.memCards)[number]) {
-    if (this.busy || m.open || m.done) return;
-    if (this.flipped.length >= 2) return;
+    const idx = this.memCards.indexOf(m);
+    // claim the card synchronously so fast double taps can't flip a 3rd card or pair a card with itself
+    if (this.busy || m.open || m.done || this.flipped.includes(idx) || this.flipped.length >= 2) return;
+    this.flipped.push(idx);
+    if (this.flipped.length === 2) this.busy = true;
     await this.turn(m, true);
     void voice.sayNow(vid.word(m.id));
-    this.flipped.push(this.memCards.indexOf(m));
     if (this.flipped.length < 2) return;
-    this.busy = true;
     const [a, b] = this.flipped.map((i) => this.memCards[i]!) as [typeof m, typeof m];
     await wait(700);
     if (a.id === b.id) {

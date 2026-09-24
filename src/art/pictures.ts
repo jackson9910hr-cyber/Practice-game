@@ -189,6 +189,52 @@ function drawSize(c: Container, which: string, size: number) {
   c.addChild(g);
 }
 
+function drawIgloo(c: Container, size: number) {
+  const g = new Graphics();
+  const r = size * 0.3;
+  g.arc(0, size * 0.12, r, Math.PI, 0)
+    .lineTo(-r, size * 0.12)
+    .fill(0xf2f7ff)
+    .stroke({ width: 4, color: 0x7ea6c9 });
+  for (const y of [-0.02, 0.06])
+    g.moveTo(-r * 0.9, size * y)
+      .lineTo(r * 0.9, size * y)
+      .stroke({ width: 3, color: 0x9dbbd6 });
+  g.arc(0, size * 0.12, r * 0.35, Math.PI, 0).fill(0x3a5a8c);
+  c.addChild(g);
+}
+
+function drawBridge(c: Container, size: number) {
+  const g = new Graphics();
+  const w = size * 0.7;
+  g.roundRect(-w / 2, -size * 0.3, w, size * 0.55, 18).fill(0xbfe6ff);
+  g.rect(-w / 2, size * 0.12, w, size * 0.13).fill(0x4aa3df);
+  g.moveTo(-w / 2 + 10, size * 0.12)
+    .quadraticCurveTo(0, -size * 0.18, w / 2 - 10, size * 0.12)
+    .stroke({ width: 12, color: 0xc0392b, cap: 'round' });
+  g.moveTo(-w / 2 + 10, -size * 0.02)
+    .lineTo(w / 2 - 10, -size * 0.02)
+    .stroke({ width: 8, color: 0x8d5524 });
+  c.addChild(g);
+}
+
+function drawFly(c: Container, size: number) {
+  const g = new Graphics();
+  for (const s of [-1, 1])
+    g.ellipse(s * size * 0.2, -size * 0.06, size * 0.17, size * 0.08)
+      .fill({ color: 0xffffff, alpha: 0.9 })
+      .stroke({ width: 3, color: 0x7cc6fe });
+  const kid = emojiText('🧒', size * 0.42);
+  kid.y = -size * 0.02;
+  const lines = new Graphics();
+  for (const x of [-20, 0, 20])
+    lines
+      .moveTo(x, size * 0.24)
+      .lineTo(x - 6, size * 0.34)
+      .stroke({ width: 4, color: 0xffd166, cap: 'round' });
+  c.addChild(g, kid, lines);
+}
+
 /** Creates a picture roughly `size` units wide, centred on (0,0). */
 export function makePicture(spec: string, size: number): Container {
   const c = new Container();
@@ -225,6 +271,10 @@ export function makePicture(spec: string, size: number): Container {
       break;
     }
     case 'act': {
+      if (arg === 'fly') {
+        drawFly(c, size);
+        break;
+      }
       const kid = emojiText('🧒', size * 0.5);
       kid.y = -size * 0.1;
       const g = new Graphics();
@@ -249,10 +299,12 @@ export function makePicture(spec: string, size: number): Container {
       drawPrep(c, arg, size);
       break;
     case 'thing':
-      drawTable(c, size);
+      if (arg === 'igloo') drawIgloo(c, size);
+      else drawTable(c, size);
       break;
     case 'place':
       if (arg === 'pool') drawPool(c, size);
+      else if (arg === 'bridge') drawBridge(c, size);
       else drawSky(c, size);
       break;
     default:

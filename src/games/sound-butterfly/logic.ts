@@ -34,6 +34,13 @@ function soundKeyOf(l: PhonicsLetter) {
   return `${l.position}:${l.sound}`;
 }
 
+/** Letters with the same (or overlapping) sound can't be distractors for each other: c/k, q/c/k. */
+function sameSound(a: string, b: string): boolean {
+  const sa = phonicsLetters.find((l) => l.letter === a)?.sound ?? a;
+  const sb = phonicsLetters.find((l) => l.letter === b)?.sound ?? b;
+  return sa.startsWith(sb) || sb.startsWith(sa);
+}
+
 export function letterOptions(
   target: string,
   learned: string[],
@@ -42,13 +49,16 @@ export function letterOptions(
   rng: Rng,
 ): string[] {
   const opts = [target];
+  learned = learned.filter((l) => l === target || !sameSound(l, target));
   if (confusable)
     for (const c of rng.shuffle(CONFUSABLE[target] ?? []))
       if (opts.length < choices && learned.includes(c)) opts.push(c);
   const pool = rng.shuffle(learned.filter((l) => !opts.includes(l)));
   // fall back to not-yet-learned letters only if too few learned (early days)
   const rest = rng.shuffle(
-    phonicsLetters.map((l) => l.letter).filter((l) => !opts.includes(l) && !pool.includes(l)),
+    phonicsLetters
+      .map((l) => l.letter)
+      .filter((l) => !opts.includes(l) && !pool.includes(l) && !sameSound(l, target)),
   );
   for (const l of [...pool, ...rest]) if (opts.length < choices) opts.push(l);
   return rng.shuffle(opts);
@@ -72,10 +82,17 @@ export function cvcOptions(
 ): string[] {
   const pos = diff === 'first' ? 0 : diff === 'last' ? 2 : 1;
   const others = rng.shuffle(pool.filter((w) => w !== word));
-  const oneOff = others.filter((w) => diffAt(w, word).length === 1 && diffAt(w, word)[0] === pos);
-  const near = others.filter((w) => diffAt(w, word).length <= 2);
+  // short a vs short e (/æ/–/ɛ/) is one Korean vowel (ㅐ/ㅔ): never make that the only difference
+  const aeOnly = (w: string) =>
+    diffAt(w, word).length === 1 &&
+    diffAt(w, word)[0] === 1 &&
+    'ae'.includes(w[1]!) &&
+    'ae'.includes(word[1]!);
+  const others2 = others.filter((w) => !aeOnly(w));
+  const oneOff = others2.filter((w) => diffAt(w, word).length === 1 && diffAt(w, word)[0] === pos);
+  const near = others2.filter((w) => diffAt(w, word).length <= 2);
   const opts = [word];
-  for (const w of [...oneOff, ...near, ...others])
+  for (const w of [...oneOff, ...near, ...others2])
     if (opts.length < choices && !opts.includes(w)) opts.push(w);
   return rng.shuffle(opts);
 }
@@ -89,11 +106,18 @@ export function makeButterflyRound(
 ): ButterflyQuestion[] {
   const learned = lettersUpTo(day).map((l) => l.letter);
   if (mode <= 1)
-    return letters.map((l) => ({
-      kind: 'letter',
-      letter: l,
-      options: letterOptions(l, learned, p.choices, p.confusable, rng),
-    }));
+    // x is taught as an ENDING sound (box): "catch the first letter of box" would be wrong
+    return letters.map((l0) => {
+      const l =
+        getLetter(l0).position === 'final'
+          ? (learned.filter((x) => getLetter(x).position === 'initial').at(-1) ?? 's')
+          : l0;
+      return {
+        kind: 'letter' as const,
+        letter: l,
+        options: letterOptions(l, learned, p.choices, p.confusable, rng),
+      };
+    });
   if (mode === 2) {
     return letters.map((l) => {
       const L = getLetter(l);

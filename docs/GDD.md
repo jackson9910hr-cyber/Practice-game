@@ -117,19 +117,19 @@
 | | 🌸 **1주 꽃밭** — 색·숫자·모양 | | | | | | |
 | **D1** | Sami | *Hi! I'm Sami. I like red!* | red, blue, yellow, green, pink | `I like ___.` | Ss (sun) | 정원 허브 · 단어 정원 L1(듣고 그림 고르기) · 소리 나비 L1(글자 잡기) · 도감 | — |
 | **D2** | Appy | *This is a flower!* | flower, tree, leaf, sun, moon | `This is a ___.` | Aa (ant) | 한글 조각 L1(자모 조합) | D1 |
-| **D3** | Tiko | *It is purple!* | orange, purple, white, black, brown | `It is ___.` | Tt (tree) | 문장 기차 L1(2~3칸) · 따라 말하기 | D2 |
+| **D3** | Tiko | *It is purple!* | orange, purple, white, black, brown | `It is ___.` | Tt (tiger) | 문장 기차 L1(2~3칸) · 따라 말하기 | D2 |
 | **D4** | Pip | *I have five flowers!* | one, two, three, four, five | `I have ___.` | Pp (pink) | 단어 정원 L2(그림 보고 소리 고르기) | D3 · D1 |
-| **D5** | Izzy | *Look at the heart!* | circle, square, triangle, heart, star | `Look at the ___!` | Ii (insect) | 패턴 꽃길 L1(색 AB 규칙) | D4 · D2 |
+| **D5** | Izzy | *Look at the heart!* | circle, square, triangle, heart, star | `Look at the ___!` | Ii (igloo) | 패턴 꽃길 L1(색 AB 규칙) | D4 · D2 |
 | **D6** | Nubi | *How many stars? Ten!* | six, seven, eight, nine, ten | `How many ___?` | Nn (nine) | 정원 꾸미기(별빛으로 장식) | D5 · D3 |
 | **D7** | Pinta | *I see a big cake!* | big, small, cake, ball, balloon | `I see ___.` | 복습 s·a·t·p·i·n | 🎉 꽃밭 복습 파티 · Color Chant · 소리 나비 L2(첫소리 같은 그림) | 주간 전체(D1~D6) + 헷갈린 단어 |
 | | 🌊 **2주 연못** — 동물·가족·몸 | | | | | | |
-| **D8** | Mimi | *What is it? It's a frog!* | frog, fish, duck, turtle, bug | `What is it? It's a ___.` | Mm (moon) | 🌊 챕터2 연못 · 숫자 반딧불 L1(1~10 세기) | D7 · D5 · D1 |
+| **D8** | Mobi | *What is it? It's a frog!* | frog, fish, duck, turtle, bug | `What is it? It's a ___.` | Mm (moon) | 🌊 챕터2 연못 · 숫자 반딧불 L1(1~10 세기) | D7 · D5 · D1 |
 | **D9** | Dabo | *Where is the cat?* | cat, dog, rabbit, bear, pig | `Where is the ___?` | Dd (dog) | 한글 조각 L2(받침 없는 단어) | D8 · D6 · D2 |
-| **D10** | Gogo | *Is it a lion? No! I'm Gogo!* | lion, monkey, elephant, horse, cow | `Is it a ___?` | Gg (green) | 단어 정원 L3(기억 카드) | D9 · D7 · D3 |
+| **D10** | Gogo | *Is it a lion? No! I'm Gogo!* | lion, monkey, elephant, horse, cow | `Is it a ___?` | Gg (goat) | 단어 정원 L3(기억 카드) | D9 · D7 · D3 |
 | **D11** | Olli | *This is my mom!* | mom, dad, baby, sister, brother | `This is my ___.` | Oo (octopus) | 패턴 꽃길 L2(ABC·AAB) | D10 · D8 · D4 |
 | **D12** | Cubi | *Touch your nose!* | head, eye, nose, mouth, ear | `Touch your ___.` | Cc (cat) | 숫자 반딧불 L2(1~20 세기) | D11 · D9 · D5 |
 | **D13** | Kiwa | *Wash your hands!* | hand, foot, arm, leg, finger | `Wash your ___.` | Kk (kite) | 문장 기차 L2(4칸) | D12 · D10 · D6 |
-| **D14** | Gomo | *I love my grandma!* | water, boat, rock, grandma, grandpa | `I love my ___.` | 복습 m·d·g·o·c·k | 🎉 연못 복습 파티 · Pond Chant · 패턴 꽃길 L3(크기 규칙) | 주간 전체(D8~D13) + 헷갈린 단어 |
+| **D14** | Soli | *I love my grandma!* | water, boat, rock, grandma, grandpa | `I love my ___.` | 복습 m·d·g·o·c·k | 🎉 연못 복습 파티 · Pond Chant · 패턴 꽃길 L3(크기 규칙) | 주간 전체(D8~D13) + 헷갈린 단어 |
 | | 🌲 **3주 숲** — 음식·옷·날씨 | | | | | | |
 | **D15** | Ebbi | *I want a banana!* | apple, banana, grape, strawberry, lemon | `I want ___.` | Ee (egg) | 🌲 챕터3 숲 · 길 찾기 개미 L1(화살표 2~3개) · 소리 나비 L3(CVC 합치기) | D14 · D12 · D8 |
 | **D16** | Uppy | *Do you like milk?* | bread, milk, egg, rice, cookie | `Do you like ___?` | Uu (umbrella) | 패턴 꽃길 L4(색·모양 이름 영어 안내) | D15 · D13 · D9 |
@@ -137,7 +137,7 @@
 | **D18** | Hoho | *Put on your hat!* | hat, shirt, pants, shoes, socks | `Put on your ___.` | Hh (hat) | 한글 조각 L3(받침 있는 단어) | D17 · D15 · D11 |
 | **D19** | Bibi | *Is this your bag?* | dress, coat, bag, umbrella, boots | `Is this your ___?` | Bb (ball) | 길 찾기 개미 L2(화살표 4~6개) | D18 · D16 · D12 |
 | **D20** | Fifi | *It's sunny today!* | sunny, rainy, cloudy, snowy, windy | `It's ___ today.` | Ff (fish) | 문장 기차 L3(질문+대답 2량 기차) | D19 · D17 · D13 |
-| **D21** | Ruby | *What color is it? It's red!* | hot, cold, rainbow, owl, mushroom | `What color is it?` | 복습 e·u·r·h·b·f | 🎉 숲 복습 파티 · Forest Chant | 주간 전체(D15~D20) + 헷갈린 단어 |
+| **D21** | Reni | *What color is it? It's red!* | hot, cold, rainbow, owl, mushroom | `What color is it?` | 복습 e·u·r·h·b·f | 🎉 숲 복습 파티 · Forest Chant | 주간 전체(D15~D20) + 헷갈린 단어 |
 | | 🌉 **4주 하늘다리** — 동작·감정·장소 (D22~D30) | | | | | | |
 | **D22** | Lulu | *I can fly!* | run, jump, walk, swim, fly | `I can ___.` | Ll (lion) | 🌉 챕터4 하늘다리 · 길 찾기 개미 L3(up/down/left/right 영어 지시) | D21 · D19 · D15 |
 | **D23** | Juju | *Can you dance?* | sing, dance, clap, sleep, eat | `Can you ___?` | Jj (juice) | 숫자 반딧불 L4(20 이내 +·−) | D22 · D20 · D16 |
@@ -157,7 +157,7 @@
 |---|---|---|
 | 1 꽃밭 (D7) | Color Chant | *Red, red, I like red! / Blue, blue, I like blue! / One, two, three, four, five — / Look at the star! It is big!* |
 | 2 연못 (D14) | Pond Chant | *Frog, fish, duck, where is the duck? / Touch your nose, touch your ear! / This is my mom, this is my dad, / I love my grandma, I love my grandpa!* |
-| 3 숲 (D21) | Forest Chant | *Apple, banana, I want a grape! / Do you like milk? Do you like rice? / Put on your hat, put on your shoes, / It's sunny today! It's rainy today!* |
+| 3 숲 (D21) | Forest Chant | *Apple, banana, I want grapes! / Do you like milk? Do you like rice? / Put on your hat, put on your shoes, / It's sunny today! It's rainy today!* |
 | 4 하늘다리 (D28) | Sky Chant | *I can run, I can jump, / Can you fly? Let's fly! / I am happy, are you happy? / You are my friend! Good night!* |
 
 - 템포 BPM 84(느린 재즈 챈트), 매 줄 끝 1박 쉼 = 아이가 따라 할 틈. 가사 한 줄씩 **하이라이트되는 그림 카드**가 박자에 맞춰 튄다.
@@ -317,15 +317,15 @@ acc < 0.70 → difficulty -= 1   (최근 5문제 중 정답 ≤1이면 -2)
 | 3 | Tiko | 동그라미 | 보라 붓꼬리 | 18 | Hoho | 동그라미 | 도토리 모자 |
 | 4 | Pip | 콩 | 등딱지에 꽃 5송이 | 19 | Bibi | 콩 | 나뭇잎 가방 |
 | 5 | Izzy | 둥근 세모 | 하트 더듬이 | 20 | Fifi | 구름 | 바람개비 꼬리 |
-| 6 | Nubi | 동그라미×10 마디 | 마디마다 숫자 불빛 | 21 | Ruby | 물방울 | 무지개 날개 |
+| 6 | Nubi | 동그라미×10 마디 | 마디마다 숫자 불빛 | 21 | Reni | 물방울 | 무지개 날개 |
 | 7 | Pinta | 동그라미 | 케이크 모자 | 22 | Lulu | 구름 | 구름 날개 |
-| 8 | Mimi | 물방울 | 올챙이 꼬리 + 연잎 모자 | 23 | Juju | 콩 | 스프링 다리 |
+| 8 | Mobi | 물방울 | 올챙이 꼬리 + 연잎 모자 | 23 | Juju | 콩 | 스프링 다리 |
 | 9 | Dabo | 동그라미 | 조개껍데기 집 | 24 | Vivi | 둥근 세모 | 크레용 꼬리 |
 | 10 | Gogo | 동그라미 | 민들레 솜털 갈기 | 25 | Wobi | 동그라미 | 표정 바뀌는 달무리 |
 | 11 | Olli | 물방울×3 | 엄마·아빠·아기 방울 가족 | 26 | Dexi | 콩 | 배꼽 시계 |
 | 12 | Cubi | 둥근 세모 | 큰 조약돌 코 | 27 | Yumi | 물방울 | 꼬리별 + 작은 배낭 |
 | 13 | Kiwa | 콩 | 다섯 손가락 물풀 손 | 28 | Lexy | 둥근 세모 | 상자 모자 |
-| 14 | Gomo | 구름 | 수련꽃 숄(할머니 요정) | 29 | Zuzu | 구름 | 별무늬 잠옷 |
+| 14 | Soli | 구름 | 수련꽃 숄(할머니 요정) | 29 | Zuzu | 구름 | 별무늬 잠옷 |
 | 15 | Ebbi | 콩 | 바나나 잎 해먹 | 30 | Lumi | 동그라미(달) | 초승달 왕관 · 달지기 |
 
 ### 8.4 유사성 체크리스트 (모든 친구 출고 전)

@@ -118,7 +118,7 @@
     {
       "day": 8,
       "chapter": 2,
-      "friend": "mimi",
+      "friend": "mobi",
       "words": ["frog", "fish", "duck", "turtle", "bug"],
       "pattern": "p08",
       "letters": ["m"],
@@ -184,7 +184,7 @@
     {
       "day": 14,
       "chapter": 2,
-      "friend": "gomo",
+      "friend": "soli",
       "words": ["water", "boat", "rock", "grandma", "grandpa"],
       "pattern": "p14",
       "letters": [],
@@ -261,7 +261,7 @@
     {
       "day": 21,
       "chapter": 3,
-      "friend": "ruby",
+      "friend": "reni",
       "words": ["hot", "cold", "rainbow", "owl", "mushroom"],
       "pattern": "p21",
       "letters": [],

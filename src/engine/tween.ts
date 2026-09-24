@@ -64,6 +64,8 @@ export interface TweenOpts {
 /** Animate numeric props (dot paths allowed, e.g. "scale.x"). Resolves when done or target destroyed. */
 export function tween(target: object, to: Record<string, number>, opts: TweenOpts = {}): Promise<void> {
   const t = target as Target;
+  // Pixi nulls .scale/.position on destroy → never tween a dead object (it would kill the ticker)
+  if (!t || t.destroyed) return Promise.resolve();
   killTweens(target, Object.keys(to));
   return new Promise((resolve) => {
     active.push({
@@ -110,7 +112,11 @@ export function updateTweens(dtMs: number) {
   }
   for (let i = active.length - 1; i >= 0; i--) {
     const a = active[i]!;
-    if (a.target.destroyed) {
+    if (
+      !a.target ||
+      a.target.destroyed ||
+      (a.target as { _observer?: { destroyed?: boolean } })._observer?.destroyed
+    ) {
       active.splice(i, 1);
       a.resolve();
       continue;

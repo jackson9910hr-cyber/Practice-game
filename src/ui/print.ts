@@ -20,6 +20,8 @@ function picHtml(pic: string): string {
     'prep:on': '🐱📦',
     'prep:under': '📦⬇️🐱',
     'thing:table': '🪑',
+    'place:bridge': '🌉',
+    'act:fly': '🕊️',
   };
   return `<span class="emoji">${map[`${kind}:${arg}`] ?? '⭐'}</span>`;
 }

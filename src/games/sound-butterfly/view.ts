@@ -3,7 +3,7 @@ import { Container, Graphics, Text } from 'pixi.js';
 import { getLetter, pictureOf } from '../../core/content';
 import { pickLetters } from '../../core/rounds';
 import type { StationPlan } from '../../core/types';
-import { vid } from '../../core/voice-ids';
+import { soundIds, vid } from '../../core/voice-ids';
 import { C, FONT_LETTER } from '../../art/palette';
 import { makePicture } from '../../art/pictures';
 import { voice } from '../../audio/voice';
@@ -12,7 +12,7 @@ import { wait } from '../../engine/tween';
 import { Button, Card, speakerIcon } from '../../engine/ui';
 import { store } from '../../state';
 import { GameBase } from '../base';
-import { arrange, bounce, helpingHand, hintRing, popIn, shake } from '../common';
+import { arrange, bounce, dim, helpingHand, hintRing, popIn, shake } from '../common';
 import { correctOption, makeButterflyRound, type ButterflyQuestion } from './logic';
 
 const WING = [C.pink, C.sky, C.gold, C.mint];
@@ -103,8 +103,7 @@ export class ButterflyView extends GameBase<'sound-butterfly'> {
 
   /** Letter sound prompt: native phoneme recording if present, then the keyword. */
   private phonemeIds(l: string): string[] {
-    const L = getLetter(l);
-    return [vid.phoneme(l), vid.pic(L.keyword)];
+    return soundIds(l, getLetter(l).keyword, (id) => voice.recorded(id));
   }
 
   private async sayPrompt() {
@@ -115,10 +114,7 @@ export class ButterflyView extends GameBase<'sound-butterfly'> {
     } else if (q.kind === 'sound-match') {
       for (const id of this.phonemeIds(q.letter)) await voice.say(id);
     } else if (q.kind === 'blend') {
-      for (const ch of q.word) {
-        await voice.say(vid.phoneme(ch));
-        await wait(150);
-      }
+      await this.blend(q.word);
     } else {
       await voice.say(vid.pic(q.word));
     }
@@ -134,6 +130,7 @@ export class ButterflyView extends GameBase<'sound-butterfly'> {
 
   private async show() {
     this.clear();
+    this.frozen = false;
     const q = this.q;
     if (q.kind === 'letter') {
       // keyword picture in the bubble; catch the butterfly of its first letter
@@ -158,7 +155,10 @@ export class ButterflyView extends GameBase<'sound-butterfly'> {
         const b = new Butterfly(ch, WING[i % WING.length]!, 0.2);
         b.scale.set(0.7);
         b.baseX = (i - 1) * 190;
-        b.on('pointertap', () => void voice.sayNow(vid.phoneme(ch)));
+        b.on(
+          'pointertap',
+          () => void voice.sayNow(voice.recorded(vid.phoneme(ch)) ? vid.phoneme(ch) : vid.letter(ch)),
+        );
         this.flies.push(b);
         this.prompt.addChild(b);
       });
@@ -179,21 +179,38 @@ export class ButterflyView extends GameBase<'sound-butterfly'> {
     await wait(300);
     if (q.kind === 'sound-match') {
       // name every picture once so the child can hear their first sounds
+      const epoch = voice.epoch;
       for (const [i, id] of q.options.entries()) {
+        if (voice.epoch !== epoch || !this.alive) return; // answered/left meanwhile: stop naming
         void bounce(this.cards[i]!);
         await voice.say(vid.pic(id));
         await wait(200);
       }
     }
-    if (q.kind === 'blend') {
-      for (const [i, ch] of [...q.word].entries()) {
+    if (q.kind === 'blend') return this.blend(q.word);
+    await this.sayPrompt();
+  }
+
+  /**
+   * Sound blending: with native phoneme recordings each butterfly says its sound (c… a… t…);
+   * without them the whole word is said slowly while the butterflies light up left to right.
+   */
+  private async blend(word: string) {
+    const letters = [...word];
+    if (letters.every((ch) => voice.recorded(vid.phoneme(ch)))) {
+      for (const [i, ch] of letters.entries()) {
         void bounce(this.flies[i]!);
         await voice.say(vid.phoneme(ch));
         await wait(250);
       }
       return;
     }
-    await this.sayPrompt();
+    const said = voice.say(vid.pic(word), { rate: 0.5 });
+    for (const [i] of letters.entries()) {
+      if (this.flies[i]) void bounce(this.flies[i]!);
+      await wait(260);
+    }
+    await said;
   }
 
   private addCard(id: string, i: number, content: () => Container) {
@@ -254,6 +271,7 @@ export class ButterflyView extends GameBase<'sound-butterfly'> {
       if (await this.next()) await this.show();
     } else {
       void shake(node);
+      dim(node);
       await this.gentleNo(assist);
       const correct = correctOption(q);
       const target =
@@ -261,6 +279,7 @@ export class ButterflyView extends GameBase<'sound-butterfly'> {
           ? this.flies.find((f) => f.letter === correct)
           : this.cards[q.options.indexOf(correct)];
       if (target && assist !== 'none') {
+        this.frozen = true; // butterflies hold still while we point at the answer
         hintRing(target, 120);
         await this.sayPrompt();
       }
@@ -272,7 +291,9 @@ export class ButterflyView extends GameBase<'sound-butterfly'> {
     this.busy = false;
   }
 
+  private frozen = false;
   protected override tick(dt: number) {
+    if (this.frozen) return;
     for (const f of this.flies) if (!f.destroyed) f.update(dt);
   }
 }

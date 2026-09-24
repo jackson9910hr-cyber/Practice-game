@@ -6,7 +6,7 @@ import type { StationPlan } from '../../core/types';
 import { vid } from '../../core/voice-ids';
 import { C, COLOR_WORDS, FONT_EN } from '../../art/palette';
 import { makePicture } from '../../art/pictures';
-import { canRecord, playBlob, Recorder } from '../../audio/recorder';
+import { canRecord, micGranted, playBlob, Recorder } from '../../audio/recorder';
 import { sfx } from '../../audio/sfx';
 import { voice } from '../../audio/voice';
 import type { GameApp } from '../../engine/app';
@@ -16,7 +16,7 @@ import { Button, Card, speakerIcon } from '../../engine/ui';
 import { store } from '../../state';
 import { addRecording } from '../../storage/db';
 import { GameBase } from '../base';
-import { arrange, bounce, helpingHand, hintRing, popIn, shake } from '../common';
+import { arrange, bounce, dim, helpingHand, hintRing, popIn, shake } from '../common';
 import { makeTrainQuestion, type TrainCard, type TrainQuestion } from './logic';
 
 const CARD_H = 150;
@@ -233,9 +233,12 @@ export class SentenceTrainView extends GameBase<'sentence-train'> {
     const s = Math.min(1, (w - 60) / trainW);
     this.train.scale.set(s);
     this.train.position.set((w - trainW * s) / 2 + 110 * s, portrait ? h * 0.4 : h * 0.44);
-    this.speaker.position.set(w / 2, portrait ? h * 0.18 : 175);
-    if (this.cargo && !portrait) this.speaker.position.set(w * 0.72, 175);
-    const trayY = portrait ? h * 0.72 : h * 0.8;
+    // speaker sits in the top bar (left of the progress stars), never over a train car
+    this.speaker.position.set(Math.max(250, w * 0.25), 95);
+    if (portrait) this.speaker.position.set(w / 2, h * 0.18);
+    const rows = this.trayRows(w);
+    // lift the tray so every row fits on screen
+    const trayY = Math.min(portrait ? h * 0.72 : h * 0.8, h - 100 - (rows - 1) * (CARD_H + 24));
     const pos = this.flowTray(w, trayY);
     this.tray.forEach((t, i) => {
       if (this.cars.some((c) => c.filled === t)) return;
@@ -244,6 +247,19 @@ export class SentenceTrainView extends GameBase<'sentence-train'> {
     this.panel.position.set(w / 2, portrait ? h * 0.74 : h * 0.8);
     const opt = arrange(this.options.length, w / 2, portrait ? h * 0.62 : h * 0.62, w - 80, h * 0.4, 240);
     this.options.forEach((o, i) => o.position.set(opt[i]!.x, opt[i]!.y));
+  }
+
+  private trayRows(w: number) {
+    let rows = 1;
+    let rw = 0;
+    for (const t of this.tray) {
+      if (rw + t.w + 30 > w - 60 && rw > 0) {
+        rows++;
+        rw = 0;
+      }
+      rw += t.w + 30;
+    }
+    return rows;
   }
 
   private flowTray(w: number, y: number) {
@@ -360,7 +376,9 @@ export class SentenceTrainView extends GameBase<'sentence-train'> {
     }));
     sfx.whistle();
     // each car lights up with its word
+    const epoch = voice.epoch;
     for (const car of this.cars) {
+      if (voice.epoch !== epoch || !this.alive) break;
       car.filled!.draw(0xfff1b8, C.gold);
       void bounce(car.c);
       await voice.say(vid.card(car.expected));
@@ -376,50 +394,92 @@ export class SentenceTrainView extends GameBase<'sentence-train'> {
   }
 
   /* ----- mode 3: answer the question ----- */
+  /**
+   * Answering a question: tapping an answer only PLAYS it (and selects it); the big ✔ confirms.
+   * So listening is never mistaken for answering. Mistakes use the same hint ladder as elsewhere.
+   */
   private async askAnswer(q: TrainQuestion) {
     await voice.say(vid.ko('train.answer'));
     const a = q.answer!;
     this.tray.forEach((t) => (t.visible = false));
     await new Promise<void>((resolve) => {
+      let selected: { card: Card; text: string } | null = null;
+      let done = false;
+      const ok = new Button({
+        icon: '✔️',
+        size: 150,
+        color: C.mint,
+        a11y: '이 대답으로 할래',
+        onTap: async () => {
+          if (!selected || done || this.busy) return;
+          this.busy = true;
+          const { card, text } = selected;
+          const correct = text === a.correct;
+          const assist = this.record(correct, { words: correct && a.colorWord ? [a.colorWord] : [] });
+          if (correct) {
+            done = true;
+            card.draw(0xfff1b8, C.gold);
+            ok.visible = false;
+            await this.celebrate(card.x, card.y, [vid.sentence(text)]);
+            this.options.forEach((o) => o.destroy({ children: true }));
+            this.options = [];
+            ok.destroy({ children: true });
+            this.busy = false;
+            await this.sayAlong(a.correct);
+            resolve();
+            return;
+          }
+          void shake(card);
+          dim(card);
+          selected = null;
+          await this.gentleNo(assist);
+          const right = this.options[a.options.indexOf(a.correct)];
+          if (right && assist !== 'none') {
+            hintRing(right, 180);
+            await voice.say(vid.sentence(a.correct));
+          }
+          this.busy = false;
+        },
+      });
+      ok.visible = false;
       a.options.forEach((text, i) => {
-        const card = new Card(Math.max(300, text.length * 26 + 80), 130, i ? C.cream : C.cream);
+        const card = new Card(Math.max(300, text.length * 26 + 80), 130, C.cream);
         const t = new Text({
           text,
           style: { fontFamily: FONT_EN, fontSize: 46, fontWeight: '800', fill: C.ink },
         });
         t.anchor.set(0.5);
-        card.addChild(t);
+        const sp = speakerIcon(40, C.indigo);
+        sp.position.set(-card.w / 2 + 34, 0);
+        t.x = 18;
+        card.addChild(t, sp);
         card.eventMode = 'static';
         card.cursor = 'pointer';
-        card.on('pointertap', async () => {
-          if (this.busy && card.alpha < 1) return;
-          await voice.sayNow(vid.sentence(text));
-          if (text === a.correct) {
-            card.draw(0xfff1b8, C.gold);
-            await this.celebrate(card.x, card.y, []);
-            this.options.forEach((o) => o.destroy({ children: true }));
-            this.options = [];
-            await this.sayAlong(a.correct);
-            resolve();
-          } else {
-            void shake(card);
-            sfx.soft();
-          }
+        card.on('pointertap', () => {
+          if (done || this.busy) return;
+          this.options.forEach((o) => o.alpha > 0.5 && o.draw(C.cream));
+          card.draw(0xe8f6ff, C.sky);
+          selected = { card, text };
+          ok.visible = true;
+          ok.pulse(true);
+          void voice.sayNow(vid.sentence(text));
         });
         this.options.push(card);
         this.layer.addChild(card);
         void popIn(card, i * 120);
       });
+      this.layer.addChild(ok);
       this.layoutGame(this.game.W, this.game.H);
       const pos = arrange(
         this.options.length,
         this.game.W / 2,
-        this.game.H * 0.78,
+        this.game.H * 0.74,
         this.game.W - 80,
         200,
         340,
       );
       this.options.forEach((o, i) => o.position.set(pos[i]!.x, pos[i]!.y));
+      ok.position.set(this.game.W - 110, this.game.H - 110);
     });
   }
 
@@ -470,7 +530,8 @@ export class SentenceTrainView extends GameBase<'sentence-train'> {
     await voice.say(vid.ko('say.go'));
     await voice.say(vid.sentence(text));
     await wait(2200); // time for the child to repeat out loud
-    const recOn = store.save.settings.recordingEnabled && canRecord();
+    // mic only if the adult already granted permission: the system prompt must never face the child
+    const recOn = store.save.settings.recordingEnabled && canRecord() && (await micGranted());
     let blob: Blob | null = null;
     await new Promise<void>((resolve) => {
       const row: Button[] = [];
@@ -544,6 +605,6 @@ export class SentenceTrainView extends GameBase<'sentence-train'> {
 
   override stop() {
     super.stop();
-    this.recorder.stop();
+    this.recorder.cancel();
   }
 }

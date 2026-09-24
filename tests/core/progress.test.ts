@@ -89,9 +89,10 @@ describe('save + play-day progression', () => {
     s = recordAnswerStats(s, 'word-garden', true);
     s = recordAnswerStats(s, 'word-garden', false);
     expect(s.games['word-garden']).toMatchObject({ correct: 1, wrong: 1 });
-    expect(s.starlight).toBe(1);
+    // starlight rewards effort (finishing a station), not correct answers
+    expect(s.starlight).toBe(0);
     s = completeStation(s, 'word-garden', 2);
-    expect(s.starlight).toBe(4);
+    expect(s.starlight).toBe(5);
     expect(s.today?.stationsDone).toBe(1);
     expect(s.games['word-garden']?.lastMode).toBe(2);
     expect(s.games['word-garden']?.played).toBe(1);

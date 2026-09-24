@@ -29,6 +29,12 @@ export function arrange(
   return out;
 }
 
+/** A tried wrong option fades and can't be tapped again (no repeated mistakes on the same card). */
+export function dim(obj: Container) {
+  obj.alpha = 0.4;
+  obj.eventMode = 'none';
+}
+
 export async function popIn(obj: Container, delay = 0) {
   obj.scale.set(0);
   await tween(obj.scale, { x: 1, y: 1 }, { duration: 420, delay, ease: ease.outBack });

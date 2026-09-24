@@ -61,6 +61,18 @@ class Music {
     this.timer = window.setInterval(() => this.schedule(), 90);
   }
 
+  /** pause for background; `resume()` restarts the same track */
+  private paused = '';
+  pause() {
+    if (!this.current) return;
+    this.paused = this.current;
+    this.stop();
+  }
+  resume() {
+    if (this.paused && !this.current) this.play(this.paused);
+    this.paused = '';
+  }
+
   stop() {
     if (this.timer !== null) window.clearInterval(this.timer);
     this.timer = null;
@@ -89,6 +101,8 @@ class Music {
   private schedule() {
     const st = this.style;
     if (!st || !audio.ctx) return;
+    // after the tab was throttled/suspended, don't fire the missed notes all at once
+    if (this.nextTime < audio.now) this.nextTime = audio.now + 0.05;
     const eighth = 60 / st.bpm / 2;
     while (this.nextTime < audio.now + 0.3) {
       const i = this.step % 64;

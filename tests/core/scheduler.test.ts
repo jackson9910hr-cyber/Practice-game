@@ -71,7 +71,7 @@ describe('daily station planner', () => {
     expect(planDay(saveOnDay(28)).find((p) => p.kind === 'review')?.review).toBe('due');
   });
 
-  it('rotates the thinking game to the least recently played one', () => {
+  it('rotates thinking games by due day: hangul/numbers every ~2 days, pattern/ant every ~4', () => {
     const s = saveOnDay(10, {
       games: {
         'hangul-pieces': { played: 3, correct: 0, wrong: 0, lastPlayedDay: 9, lastMode: 1 },
@@ -79,7 +79,16 @@ describe('daily station planner', () => {
         'pattern-path': { played: 2, correct: 0, wrong: 0, lastPlayedDay: 6, lastMode: 1 },
       },
     });
-    expect(planDay(s).find((p) => p.kind === 'thinking')?.game).toBe('pattern-path');
+    // due: hangul 9+2=11, numbers 8+2=10, pattern 6+4=10 → numbers first (tie broken by core order)
+    expect(planDay(s).find((p) => p.kind === 'thinking')?.game).toBe('number-fireflies');
+    const s2 = saveOnDay(10, {
+      games: {
+        'hangul-pieces': { played: 3, correct: 0, wrong: 0, lastPlayedDay: 9, lastMode: 1 },
+        'number-fireflies': { played: 1, correct: 0, wrong: 0, lastPlayedDay: 9, lastMode: 1 },
+        'pattern-path': { played: 2, correct: 0, wrong: 0, lastPlayedDay: 4, lastMode: 1 },
+      },
+    });
+    expect(planDay(s2).find((p) => p.kind === 'thinking')?.game).toBe('pattern-path');
   });
 
   it("never repeats yesterday's station line-up exactly (boredom guard)", () => {

@@ -13,8 +13,10 @@ import { canRecord, playBlob } from '../audio/recorder';
 import { voice } from '../audio/voice';
 import { store } from '../state';
 import { exportBackup, importBackup } from '../storage/backup';
-import { applyRetention, clearRecordings, listRecordings, wipeAll } from '../storage/db';
+import { applyRetention, clearRecordings, deleteRecording, listRecordings, wipeAll } from '../storage/db';
+import privacy from '../data/privacy.json';
 import { printWordCards } from './print';
+import { nav } from '../flow';
 
 const GAME_NAMES: Record<GameId, string> = {
   'word-garden': '단어 정원 (영어 단어)',
@@ -28,7 +30,21 @@ const GAME_NAMES: Record<GameId, string> = {
 
 export let parentOpen = false;
 let gateFails = 0;
-let lockedUntil = 0;
+/** lockout survives a reload (sessionStorage), so refreshing does not bypass it */
+function getLock(): number {
+  try {
+    return Number(sessionStorage.getItem('sg-gate-lock') ?? 0);
+  } catch {
+    return 0;
+  }
+}
+function setLock(until: number) {
+  try {
+    sessionStorage.setItem('sg-gate-lock', String(until));
+  } catch {
+    /* private mode */
+  }
+}
 
 function el<K extends keyof HTMLElementTagNameMap>(
   tag: K,
@@ -51,14 +67,46 @@ function overlay(): HTMLElement {
     document.body.append(o);
   }
   o.innerHTML = '';
+  if (!gamePaused) {
+    gamePaused = true;
+    // entering: pause the game canvas (no rendering behind the dialog), hide it from VoiceOver
+    lastFocus = document.activeElement as HTMLElement | null;
+    setBackgroundInert(true);
+    nav.game?.app.stop();
+    document.addEventListener('keydown', onKey);
+  }
   o.hidden = false;
   return o;
+}
+
+let lastFocus: HTMLElement | null = null;
+let gamePaused = false;
+function setBackgroundInert(on: boolean) {
+  for (const id of ['app', 'boot']) {
+    const e = document.getElementById(id);
+    if (e) e.inert = on;
+  }
+}
+function onKey(e: KeyboardEvent) {
+  if (e.key === 'Escape') closeParent();
+}
+function focusFirst(o: HTMLElement) {
+  const t = o.querySelector<HTMLElement>('h1, .q');
+  if (t) {
+    t.tabIndex = -1;
+    t.focus();
+  }
 }
 
 export function closeParent() {
   const o = document.getElementById('parent');
   if (o) o.hidden = true;
   parentOpen = false;
+  gamePaused = false;
+  setBackgroundInert(false);
+  document.removeEventListener('keydown', onKey);
+  nav.game?.app.start();
+  lastFocus?.focus?.();
 }
 
 export function openParent() {
@@ -72,15 +120,15 @@ export function openParent() {
   const close = el('button', { class: 'x', 'aria-label': '닫기' }, '✕');
   close.onclick = closeParent;
   const q = el('p', { class: 'q' }, `보호자 확인: ${b} × ${a} = ?`);
-  const hint = el('p', { class: 'hint' }, '어른만 들어갈 수 있어요. 답을 입력하세요.');
+  const hint = el('p', { class: 'hint', role: 'status' }, '어른만 들어갈 수 있어요. 답을 입력하세요.');
   const disp = el('output', { class: 'disp', 'aria-live': 'polite' }, '');
   const pad = el('div', { class: 'pad' });
   const now = Date.now();
-  if (now < lockedUntil) {
-    hint.textContent = `잠시 후 다시 시도하세요 (${Math.ceil((lockedUntil - now) / 1000)}초)`;
+  if (now < getLock()) {
+    hint.textContent = `잠시 후 다시 시도하세요 (${Math.ceil((getLock() - now) / 1000)}초)`;
   }
   const submit = () => {
-    if (Date.now() < lockedUntil) return;
+    if (Date.now() < getLock()) return;
     if (Number(entry) === a * b) {
       gateFails = 0;
       dashboard();
@@ -90,14 +138,14 @@ export function openParent() {
       disp.textContent = '';
       hint.textContent = '다시 한 번 계산해 주세요.';
       if (gateFails >= 3) {
-        lockedUntil = Date.now() + 30_000;
+        setLock(Date.now() + 30_000);
         gateFails = 0;
         hint.textContent = '30초 뒤에 다시 시도하세요.';
       }
     }
   };
   for (const k of ['1', '2', '3', '4', '5', '6', '7', '8', '9', '⌫', '0', '확인']) {
-    const btn = el('button', { class: k === '확인' ? 'ok' : '' }, k);
+    const btn = el('button', { class: k === '확인' ? 'ok' : '', 'aria-label': k === '⌫' ? '지우기' : k }, k);
     btn.onclick = () => {
       if (k === '⌫') entry = entry.slice(0, -1);
       else if (k === '확인') return submit();
@@ -108,6 +156,7 @@ export function openParent() {
   }
   box.append(close, q, hint, disp, pad);
   o.append(box);
+  focusFirst(o);
 }
 
 function section(title: string, ...kids: (Node | string)[]) {
@@ -167,10 +216,18 @@ function dashboard() {
   const confList = el('ol', {});
   for (const c of conf)
     confList.append(
-      el('li', {}, speakBtn(vid.word(c.id), c.word.en), ` ${c.word.en} — ${c.word.ko} (틀림 ${c.wrong})`),
+      el(
+        'li',
+        {},
+        speakBtn(vid.word(c.id), c.word.en),
+        ` ${c.word.en} — ${c.word.ko} (더 들어볼 말 · ${c.wrong}번 다시 들음)`,
+      ),
     );
   wrap.append(
-    section('헷갈린 단어 Top 5', conf.length ? confList : el('p', {}, '아직 없어요. 잘하고 있어요!')),
+    section(
+      '더 들어볼 말 Top 5 (퀴즈 대신 놀이로 한 번 써 봐 주세요)',
+      conf.length ? confList : el('p', {}, '아직 없어요. 잘하고 있어요!'),
+    ),
   );
 
   // 단어
@@ -236,6 +293,12 @@ function dashboard() {
         recBox.checked = false;
         alert('마이크 권한이 없어 녹음을 켤 수 없어요. 따라 말하기는 녹음 없이 계속할 수 있어요.');
       }
+    } else {
+      const n = (await listRecordings()).length;
+      if (n && confirm(`저장된 녹음 ${n}개도 지울까요?`)) {
+        await clearRecordings();
+        void loadRecs();
+      }
     }
     store.update((x) => ({ ...x, settings: { ...x.settings, recordingEnabled: recBox.checked } }));
   };
@@ -253,7 +316,7 @@ function dashboard() {
 
   const ret = el('select', { 'aria-label': '녹음 보관 기간' });
   for (const [v, label] of [
-    ['session', '앱을 다시 켜면 삭제'],
+    ['session', '앱을 닫았다 켜면 삭제'],
     ['1d', '1일 뒤 삭제'],
     ['7d', '7일 뒤 삭제'],
     ['manual', '직접 삭제할 때까지'],
@@ -273,10 +336,21 @@ function dashboard() {
     recList.innerHTML = '';
     const rows = await listRecordings();
     if (!rows.length) recList.append(el('p', { class: 'note' }, '저장된 녹음이 없어요.'));
-    for (const r of rows.slice(-10).reverse()) {
+    else {
+      const kb = Math.round(rows.reduce((a, r) => a + r.blob.size, 0) / 1024);
+      recList.append(
+        el('p', { class: 'note' }, `저장된 녹음 ${rows.length}개 · 약 ${kb}KB (최근 20개 표시)`),
+      );
+    }
+    for (const r of rows.slice(-20).reverse()) {
       const b = el('button', {}, `▶ ${new Date(r.at).toLocaleString('ko-KR')} — ${r.sentence}`);
       b.onclick = () => void playBlob(r.blob);
-      recList.append(b);
+      const del = el('button', { class: 'danger', 'aria-label': '이 녹음 삭제' }, '🗑️');
+      del.onclick = async () => {
+        await deleteRecording(r.id!);
+        void loadRecs();
+      };
+      recList.append(el('div', { class: 'rec' }, b, del));
     }
   };
   void loadRecs();
@@ -316,6 +390,7 @@ function dashboard() {
       download: `starlight-garden-${new Date().toISOString().slice(0, 10)}.json`,
     });
     a.click();
+    setTimeout(() => URL.revokeObjectURL(a.getAttribute('href')!), 1000);
   };
   const imp = el('input', {
     type: 'file',
@@ -328,8 +403,10 @@ function dashboard() {
     const r = importBackup(await f.text(), Date.now());
     if (!r.ok) return alert('백업 파일을 읽을 수 없어요.');
     if (confirm(`${r.save.playDay}일째 진도로 되돌릴까요?`)) {
-      store.update(() => r.save);
+      // a backup never switches recording on by itself (mic permission belongs to this device's adult)
+      store.update(() => ({ ...r.save, settings: { ...r.save.settings, recordingEnabled: false } }));
       await store.flush();
+      alert('진도를 불러왔어요. 녹음 기능은 필요하면 다시 켜 주세요.');
       location.reload();
     }
   };
@@ -342,6 +419,11 @@ function dashboard() {
         'Safari에서는 7일 넘게 열지 않으면 저장된 진도가 지워질 수 있어요. 공유 버튼 → "홈 화면에 추가"로 설치하면 안전하고 전체 화면으로 즐길 수 있어요.',
       ),
       exp,
+      el(
+        'p',
+        { class: 'note' },
+        '백업 파일에는 학습 진도와 날짜만 들어 있고, 이름이나 녹음은 들어 있지 않아요.',
+      ),
       el('label', {}, '백업 불러오기 ', imp),
     ),
   );
@@ -363,8 +445,9 @@ function dashboard() {
       el(
         'p',
         { class: 'note' },
-        '이 앱은 광고, 결제, 외부 링크, 채팅, 분석 도구가 없고 어떤 정보도 기기 밖으로 보내지 않아요. 모든 기록은 이 기기의 브라우저 저장소에만 있어요.',
+        '이 앱은 광고, 결제, 외부 링크, 채팅, 분석 도구가 없고 어떤 정보도 기기 밖으로 보내지 않아요. 모든 기록은 이 기기의 앱 저장소에만 있고, 앱을 지우면 함께 지워져요.',
       ),
+      privacyPolicy(),
       el(
         'p',
         { class: 'note' },
@@ -376,4 +459,16 @@ function dashboard() {
     ),
   );
   o.append(wrap);
+  focusFirst(o);
+}
+
+/** Full privacy policy, shown in-app (no external link needed). */
+function privacyPolicy(): HTMLElement {
+  const d = el(
+    'details',
+    { class: 'policy' },
+    el('summary', {}, `📄 ${privacy.title} (${privacy.effective})`),
+  );
+  for (const [h, p] of privacy.sections) d.append(el('h3', {}, h!), el('p', { class: 'note' }, p!));
+  return d;
 }

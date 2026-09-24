@@ -2450,7 +2450,7 @@
     {
       "id": "p29-2",
       "pattern": "p29",
-      "text": "Thank you, mom!",
+      "text": "Thank you, Mom!",
       "cards": [
         {
           "t": "Thank"
@@ -2459,7 +2459,7 @@
           "t": "you"
         },
         {
-          "t": "mom",
+          "t": "Mom",
           "w": "mom"
         }
       ],
@@ -2469,7 +2469,7 @@
     {
       "id": "p29-3",
       "pattern": "p29",
-      "text": "Thank you, grandma!",
+      "text": "Thank you, Grandma!",
       "cards": [
         {
           "t": "Thank"
@@ -2478,7 +2478,7 @@
           "t": "you"
         },
         {
-          "t": "grandma",
+          "t": "Grandma",
           "w": "grandma"
         }
       ],
@@ -2488,7 +2488,7 @@
     {
       "id": "p29-4",
       "pattern": "p29",
-      "text": "Thank you, dad!",
+      "text": "Thank you, Dad!",
       "cards": [
         {
           "t": "Thank"
@@ -2497,7 +2497,7 @@
           "t": "you"
         },
         {
-          "t": "dad",
+          "t": "Dad",
           "w": "dad"
         }
       ],

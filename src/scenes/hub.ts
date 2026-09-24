@@ -15,7 +15,8 @@ import { sfx } from '../audio/sfx';
 import { voice } from '../audio/voice';
 import type { GameApp } from '../engine/app';
 import { Scene } from '../engine/scene';
-import { ease, tween, wait } from '../engine/tween';
+import { tween, wait } from '../engine/tween';
+import { bounce } from '../games/common';
 import { Button, earButton } from '../engine/ui';
 import { Fx } from '../engine/fx';
 import { nav } from '../flow';
@@ -110,7 +111,17 @@ export class HubScene extends Scene {
         onTap: () => this.enterStation(i, p),
         a11y: `놀이 ${i + 1}`,
       });
-      if (state === 'later' && !all) b.enabled = false;
+      if (state === 'later' && !all) {
+        // not a dead button: it answers, and points at the stone to play first
+        b.opts.onTap = () => {
+          void voice.sayNow(vid.ko('hub.locked'));
+          const nx = this.stones[done];
+          if (nx)
+            void tween(nx.scale, { x: 1.3, y: 1.3 }, { duration: 200 }).then(() =>
+              tween(nx.scale, { x: 1, y: 1 }, { duration: 300 }),
+            );
+        };
+      }
       if (state === 'done') {
         const ck = emojiText('✅', 44);
         ck.position.set(50, -50);
@@ -194,17 +205,27 @@ export class HubScene extends Scene {
     this.picker?.destroy({ children: true });
     const p = new Container();
     const bg = new Graphics();
-    const w = Math.min(this.game.W - 40, DECORATIONS.length * 150 + 40);
-    bg.roundRect(-w / 2, -110, w, 220, 40)
+    // two rows of three keeps every button at full size (≥120 units = ≥64 CSS px on phones)
+    const cols = 3;
+    const w = cols * 150 + 60;
+    bg.roundRect(-w / 2, -200, w, 400, 40)
       .fill({ color: C.indigo, alpha: 0.95 })
       .stroke({ width: 5, color: C.gold });
     p.addChild(bg);
+    const occupied = !!store.save.decorations[`slot${slotIndex}`];
+    let pending: string | null = null;
     DECORATIONS.forEach((d, i) => {
       const b = new Button({
         icon: d.icon,
         size: 125,
         color: store.save.starlight >= d.price ? C.cream : 0x8a93b8,
         onTap: () => {
+          if (occupied && pending !== d.id) {
+            // replacing an existing decoration needs a second tap (no accidental spending)
+            pending = d.id;
+            void bounce(b);
+            return void voice.sayNow(vid.ko('decorate.replace'));
+          }
           const next = spendStarlight(store.save, d.price);
           if (!next) {
             void voice.sayNow(vid.ko('decorate.need'));
@@ -224,16 +245,24 @@ export class HubScene extends Scene {
         style: { fontFamily: FONT_EN, fontSize: 30, fontWeight: '800', fill: C.gold },
       });
       price.anchor.set(0.5);
-      price.y = 80;
+      price.y = 78;
       b.addChild(price);
-      b.x = (i - (DECORATIONS.length - 1) / 2) * 140 * Math.min(1, (w - 40) / (DECORATIONS.length * 140));
-      b.scale.set(Math.min(1, (w - 40) / (DECORATIONS.length * 140)));
+      b.position.set(((i % cols) - (cols - 1) / 2) * 150, Math.floor(i / cols) * 190 - 95);
       p.addChild(b);
     });
+    const close = new Button({
+      icon: '✖️',
+      size: 120,
+      color: C.cream,
+      onTap: () => this.toggleDecorate(),
+      a11y: '닫기',
+    });
+    close.position.set(w / 2 - 20, -200);
+    p.addChild(close);
     p.position.set(this.game.W / 2, this.game.H / 2);
+    p.scale.set(Math.min(1, (this.game.W - 20) / (w + 60)));
     this.picker = p;
     this.addChild(p);
-    void tween(p.scale, { x: 1, y: 1 }, { duration: 300, ease: ease.outBack });
   }
 
   layout(w: number, h: number) {
@@ -292,6 +321,8 @@ export class HubScene extends Scene {
       if (!t.goodnight) return void nav.goodnight('time', this);
       return this.sleep();
     }
+    // after the goodnight ritual the garden stays asleep until tomorrow (codex only)
+    if (t.goodnight) return this.sleep();
     if (!all) this.instruction = vid.ko(t.stationsDone === 0 ? 'hub.go' : 'hub.next');
     else if (!t.planted) this.instruction = vid.ko('hub.allDone');
     else this.instruction = vid.ko('hub.free');

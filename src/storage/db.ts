@@ -56,6 +56,10 @@ export async function listRecordings(): Promise<RecordingRow[]> {
   return (await (await db()).getAll('recordings')) as RecordingRow[];
 }
 
+export async function deleteRecording(id: number): Promise<void> {
+  await (await db()).delete('recordings', id);
+}
+
 export async function clearRecordings(): Promise<void> {
   await (await db()).clear('recordings');
 }

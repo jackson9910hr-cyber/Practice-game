@@ -55,17 +55,24 @@ async function boot() {
   music.setEnabled(s.settings.musicOn);
   void requestPersistence();
   void applyRetention(s.settings.recordingRetention, now);
+  // keep recording retention honest even if the app stays open for days
+  const retain = () => void applyRetention(store.save.settings.recordingRetention, Date.now());
+  setInterval(retain, 3_600_000);
+  document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && retain());
 
   // play-time accounting (paused while hidden or while a parent is in the settings)
   setInterval(() => {
     if (document.visibilityState === 'visible' && !parentOpen) store.update((x) => addPlayTime(x, 5));
   }, 5000);
-  document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'hidden') {
-      voice.cancel();
-      void store.flush();
-    }
-  });
+  audio.onHidden = () => {
+    voice.cancel();
+    music.pause();
+    void store.flush();
+  };
+  audio.onVisible = () => {
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    music.resume();
+  };
   window.addEventListener('pagehide', () => void store.flush());
 
   const today = store.save.today!;

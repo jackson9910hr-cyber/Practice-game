@@ -17,8 +17,8 @@ const manifest = (manifestJson as unknown as { entries: Record<string, Entry> })
 const NOVELTY =
   /bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|albert|fred|junior|ralph|kathy|grandma|grandpa|rocko|shelley|flo|eddy|reed|sandy/i;
 const PREFERRED: Record<string, RegExp[]> = {
-  'en-US': [/samantha/i, /ava/i, /allison/i, /susan/i, /google us english/i, /aria/i, /jenny/i, /zira/i],
-  'ko-KR': [/yuna/i, /sora/i, /google 한국/i, /heami/i, /sunhi/i],
+  'en-US': [/samantha/i, /ava/i, /allison/i, /susan/i, /zira/i],
+  'ko-KR': [/yuna/i, /sora/i, /heami/i, /sunhi/i],
 };
 
 export interface SpeakEvent {
@@ -45,18 +45,18 @@ class Voice {
     const pick = () => {
       const all = window.speechSynthesis.getVoices();
       for (const lang of ['en-US', 'ko-KR']) {
-        const cands = all.filter(
-          (v) => v.lang.replace('_', '-').startsWith(lang.slice(0, 2)) && !NOVELTY.test(v.name),
-        );
+        // on-device voices only: network voices (e.g. Chrome's "Google …") would send text off the device
+        const local = all.filter((v) => v.localService && !NOVELTY.test(v.name));
+        const cands = local.filter((v) => v.lang.replace('_', '-').startsWith(lang.slice(0, 2)));
         const exact = cands.filter((v) => v.lang.replace('_', '-') === lang);
         const pool = exact.length ? exact : cands;
         let best: SpeechSynthesisVoice | null = null;
         for (const re of PREFERRED[lang]!) {
-          const enhanced = pool.find((v) => re.test(v.name) && /enhanced|premium|natural/i.test(v.name));
+          const enhanced = pool.find((v) => re.test(v.name) && /enhanced|premium|향상/i.test(v.name));
           best = enhanced ?? pool.find((v) => re.test(v.name)) ?? null;
           if (best) break;
         }
-        this.voices[lang] = best ?? pool.find((v) => v.localService) ?? pool[0] ?? null;
+        this.voices[lang] = best ?? pool[0] ?? null;
       }
     };
     pick();
@@ -70,6 +70,11 @@ class Voice {
   onSpeak(f: (e: SpeakEvent | null) => void) {
     this.listeners.add(f);
     return () => this.listeners.delete(f);
+  }
+
+  /** true if a native recording is attached to this line */
+  recorded(id: string) {
+    return !!manifest[id]?.file;
   }
 
   has(id: string) {
@@ -93,14 +98,23 @@ class Voice {
 
   /** Several lines in order with small pauses. */
   async sayAll(ids: string[], gapMs = 250) {
+    const epoch = this.generation;
     for (const id of ids) {
+      if (epoch !== this.generation) return; // cancelled: don't revive the rest of the list
       await this.say(id);
       await new Promise((r) => setTimeout(r, gapMs));
     }
   }
 
   /** Stop everything queued and speaking now. */
+  private lastCancel = 0;
+  /** Bumps on every cancel: loops can stop when it changes. */
+  get epoch() {
+    return this.generation;
+  }
+
   cancel() {
+    this.lastCancel = performance.now();
     this.generation++;
     this.chain = Promise.resolve();
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
@@ -195,7 +209,10 @@ class Voice {
       this.live.add(u);
       if (gen !== this.generation) return finish();
       this.emit({ id, lang: e.lang, text: e.text, ms: est });
-      window.speechSynthesis.speak(u);
+      // iOS: synthesis can be stuck "paused" after coming back from the background
+      if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+      const wait = performance.now() - this.lastCancel < 60 ? 60 : 0; // speak() right after cancel() is dropped
+      setTimeout(() => window.speechSynthesis.speak(u), wait);
     });
   }
 }

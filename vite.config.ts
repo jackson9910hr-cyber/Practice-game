@@ -31,7 +31,8 @@ function serviceWorker(): Plugin {
       outDir = c.build.outDir;
     },
     generateBundle(_o, bundle) {
-      const files = Object.keys(bundle).filter((f) => !f.endsWith('.map'));
+      // the WebGPU renderer is never used (preference: webgl) → don't precache it
+      const files = Object.keys(bundle).filter((f) => !f.endsWith('.map') && !/WebGPU/.test(f));
       (this as unknown as { _files: string[] })._files = files;
     },
     closeBundle() {
@@ -49,7 +50,8 @@ function serviceWorker(): Plugin {
 const CACHE = 'starlight-${version}';
 const FILES = ${JSON.stringify(all)};
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)));
+  // activate right away; the running page keeps its already-loaded code, the next launch gets the new one
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))));
@@ -61,7 +63,7 @@ self.addEventListener('fetch', (e) => {
       hit || fetch(e.request).then((res) => {
         if (res.ok) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(e.request, copy)); }
         return res;
-      }).catch(() => caches.match('./'))
+      }).catch(() => (e.request.mode === 'navigate' ? caches.match('./') : Response.error()))
     )
   );
 });

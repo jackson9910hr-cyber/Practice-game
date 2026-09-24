@@ -53,6 +53,7 @@ export class HangulView extends GameBase<'hangul-pieces'> {
   private tiles: { c: Container; piece: Piece; used: boolean }[] = [];
   private pic: Container | null = null;
   private model: Text | null = null;
+  private ghosts: Text[] = [];
 
   constructor(game: GameApp, plan: StationPlan, index: number) {
     super(game, 'hangul-pieces', plan, index);
@@ -73,6 +74,7 @@ export class HangulView extends GameBase<'hangul-pieces'> {
     this.blocks = [];
     this.tiles = [];
     this.slots = [];
+    this.ghosts = [];
     this.pic = null;
     this.model = null;
   }
@@ -116,11 +118,11 @@ export class HangulView extends GameBase<'hangul-pieces'> {
             .fill({ color: kind === 'jung' ? C.sky : C.pink, alpha: 0.18 })
             .stroke({ width: 4, color: kind === 'jung' ? C.sky : C.pink });
           box.addChild(g);
-          if (this.params.ghost) {
-            const gh = this.glyph(s.jamo[kind], Math.min(w, h) * 0.8, C.ink);
-            gh.alpha = 0.18;
-            box.addChild(gh);
-          }
+          // faint answer letter: hidden at first, revealed only as a hint after a mistake
+          const gh = this.glyph(s.jamo[kind], Math.min(w, h) * 0.8, C.ink);
+          gh.alpha = 0;
+          this.ghosts.push(gh);
+          box.addChild(gh);
           box.position.set(x, y);
           b.addChild(box);
           this.slots.push({ syl: s, kind, box, filled: false, w, h });
@@ -141,7 +143,12 @@ export class HangulView extends GameBase<'hangul-pieces'> {
       this.tiles.push(tile);
       this.layer.addChild(c);
       void popIn(c, 200 + i * 60);
-      makeDraggable(this.game, c, { onDrop: (gp) => this.drop(tile, gp) });
+      makeDraggable(this.game, c, {
+        onDrop: (gp) => this.drop(tile, gp),
+        // every piece says its sound (ㄱ "그", ㅏ "아") so children decode, not just match shapes
+        onStart: () => void voice.sayNow(vid.jamo(p.jamo)),
+        onTapOnly: () => void voice.sayNow(vid.jamo(p.jamo)),
+      });
     });
     this.layoutGame(this.game.W, this.game.H);
     await wait(300);
@@ -182,7 +189,8 @@ export class HangulView extends GameBase<'hangul-pieces'> {
       const r = Math.floor(i / perRow);
       const inRow = Math.min(perRow, unused.length - r * perRow);
       const x = w / 2 + ((i % perRow) - (inRow - 1) / 2) * 150;
-      const y = (portrait ? h * 0.72 : h * 0.76) + r * 150;
+      const rows = Math.ceil(unused.length / perRow);
+      const y = Math.min(portrait ? h * 0.72 : h * 0.76, h - 90 - (rows - 1) * 150) + r * 150;
       t.c.position.set(x, y);
     });
   }
@@ -262,6 +270,7 @@ export class HangulView extends GameBase<'hangul-pieces'> {
   private async wrong() {
     this.busy = true;
     const assist = this.miss();
+    for (const g of this.ghosts) if (!g.destroyed) g.alpha = 0.22;
     await this.gentleNo(assist);
     const nextSlot = this.slots.find((s) => !s.filled);
     const tile =

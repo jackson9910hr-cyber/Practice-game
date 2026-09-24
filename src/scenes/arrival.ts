@@ -6,7 +6,7 @@ import { Container, Graphics, Text } from 'pixi.js';
 import { chapterOf, getDay, getFriend, getLetter, getWord, pictureOf } from '../core/content';
 import { curriculumDay, meetFriend, setStations } from '../core/progress';
 import { planDay } from '../core/scheduler';
-import { vid } from '../core/voice-ids';
+import { soundIds, vid } from '../core/voice-ids';
 import { GardenBackground } from '../art/backgrounds';
 import { Fairy } from '../art/fairy';
 import { FriendSprite } from '../art/friends';
@@ -23,6 +23,15 @@ import { Button, Card, earButton } from '../engine/ui';
 import { nav } from '../flow';
 import { store } from '../state';
 import { restoreLevel } from './hub';
+
+/** Time for a 7-year-old to repeat a word: ~1 s plus 0.45 s per syllable (rough vowel-group count). */
+export function echoGap(word: string): number {
+  const syl = Math.max(
+    1,
+    (word.toLowerCase().match(/[aeiouy]+/g) ?? []).length - (/[^aeiou]e$/.test(word) ? 1 : 0),
+  );
+  return 1000 + 450 * syl;
+}
 
 export class ArrivalScene extends Scene {
   private bg: GardenBackground;
@@ -85,7 +94,7 @@ export class ArrivalScene extends Scene {
       };
       this.advance = fin;
       this.skip.visible = true;
-      setTimeout(fin, ms);
+      setTimeout(fin, ms + 1200);
     });
   }
 
@@ -159,7 +168,10 @@ export class ArrivalScene extends Scene {
     await this.say(vid.ko('friend.coming'), 'fairy');
     await this.fallingStar();
     this.showBubble(voice.textOf(vid.greet(this.friend.friend.id)));
-    await this.say(vid.greet(this.friend.friend.id));
+    const fr = this.friend.friend;
+    // the friend's name carries the day's first sound (Appy → /æ/): say it unless the greeting does
+    if (!fr.greeting.includes(fr.name)) await this.say(vid.friendName(fr.id));
+    await this.say(vid.greet(fr.id));
     this.friend.hop();
     await wait(300);
     await this.say(vid.ko('friend.words'), 'fairy');
@@ -221,13 +233,14 @@ export class ArrivalScene extends Scene {
     card.addChild(pic, label);
     card.eventMode = 'static';
     card.cursor = 'pointer';
-    card.on('pointertap', () => void voice.sayNow(vid.word(id)));
+    // queued, not interrupting: tapping never skips the rest of the lesson
+    card.on('pointertap', () => void voice.say(vid.word(id)));
     this.stage.addChild(card);
     card.scale.set(0);
     await tween(card.scale, { x: 1, y: 1 }, { duration: 420, ease: ease.outBack });
     this.showBubble(w.sentence);
     await this.say(vid.word(id));
-    await wait(1100); // echo gap: child repeats
+    await wait(echoGap(w.en)); // echo gap: child repeats (longer for longer words)
     await this.say(vid.word(id));
     await wait(250);
     await this.say(vid.wordSentence(id));
@@ -267,12 +280,11 @@ export class ArrivalScene extends Scene {
       card.scale.set(0);
       await tween(card.scale, { x: 1, y: 1 }, { duration: 420, ease: ease.outBack });
       this.showBubble(`${l.toUpperCase()}  ·  ${L.keyword}`);
+      const sound = soundIds(l, L.keyword, (id) => voice.recorded(id));
       await this.say(vid.letter(l));
-      await this.say(vid.phoneme(l));
-      await this.say(vid.pic(L.keyword));
+      for (const id of sound) await this.say(id);
       await wait(900);
-      await this.say(vid.phoneme(l));
-      await this.say(vid.pic(L.keyword));
+      for (const id of sound) await this.say(id);
       await this.waitTap(1400);
     }
   }

@@ -22,6 +22,16 @@ export class Fairy extends Container {
       .stroke({ width: 22, color: C.gold, join: 'round' });
     g.star(0, 0, 5, r, r * 0.52).stroke({ width: 6, color: 0xe0a93a, join: 'round', alpha: 0.9 });
     g.ellipse(-r * 0.28, -r * 0.35, r * 0.12, r * 0.07).fill({ color: 0xffffff, alpha: 0.7 });
+    // signature: a small pink bow on the upper-right point (makes the silhouette its own)
+    const bx = r * 0.62;
+    const by = -r * 0.62;
+    g.poly([bx, by, bx + 26, by - 16, bx + 26, by + 14])
+      .fill(C.pink)
+      .stroke({ width: 3, color: C.ink, alpha: 0.6 });
+    g.poly([bx, by, bx - 22, by - 20, bx - 18, by + 12])
+      .fill(C.pink)
+      .stroke({ width: 3, color: C.ink, alpha: 0.6 });
+    g.circle(bx, by, 8).fill(0xff6f91);
     this.body.addChild(this.glow, g, this.face);
     this.addChild(this.body);
     this.drawFace(false, false);

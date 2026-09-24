@@ -91,12 +91,7 @@ function itemsFor(save: SaveData, plan: StationPlan, day: number, rng: Rng): Ite
     case 'number-fireflies':
       return makeFireflyRound(mode, levelParams(game, lvl), rng).map((q) => {
         const n = answerOf(q);
-        // counting aloud in English: "one, two, three…" (children tap each firefly)
-        const heard =
-          q.kind === 'count'
-            ? Array.from({ length: Math.min(q.n, 10) - 1 }, (_, i) => numberWord(i + 1))
-            : [];
-        return { words: n >= 1 && n <= 10 ? [numberWord(n)] : [], heard };
+        return { words: n >= 1 && n <= 10 ? [numberWord(n)] : [] };
       });
     case 'pattern-path':
       return makePatternRound(mode, levelParams(game, lvl), rng).map((q) => ({

@@ -28,6 +28,9 @@ import { Button, StarProgress, earButton, homeButton } from '../engine/ui';
 import { nav } from '../flow';
 import { store } from '../state';
 
+/** the 2-minute warning is said once per app session */
+let warnedTimeSoon = false;
+
 export abstract class GameBase<G extends GameId> extends Scene {
   protected bg: GardenBackground;
   protected layer = new Container();
@@ -121,6 +124,11 @@ export abstract class GameBase<G extends GameId> extends Scene {
     return voice.sayAll(ids, 150);
   }
 
+  /** Change what the ear button replays without speaking now. */
+  protected setInstruction(ids: string[]) {
+    this.instructionIds = ids;
+  }
+
   protected replayInstruction() {
     void this.instruct(this.instructionIds);
   }
@@ -177,7 +185,12 @@ export abstract class GameBase<G extends GameId> extends Scene {
     this.fx.burst(x, y, { count: 20 });
     voice.cancel();
     for (const id of contentIds) await voice.say(id);
-    const useKo = this.rng.chance(0.25);
+    // effort, not "you're smart": after help, praise the process; otherwise English/Korean 50:50
+    if (assistFor(this.wrongs, this.helpMode) === 'together')
+      return void (await voice.say('ko.together.done'));
+    if (this.wrongs > 0)
+      return void (await voice.say(vid.praiseProcess(this.rng.int(0, praise.process.length - 1))));
+    const useKo = this.rng.chance(0.5);
     const p = this.praiser.next(this.streak);
     const idx = useKo ? this.rng.int(0, praise.ko.length - 1) : p.index;
     await voice.say(useKo ? vid.praiseKo(idx) : p.big ? vid.bigPraise(idx) : vid.praiseEn(idx));
@@ -193,12 +206,26 @@ export abstract class GameBase<G extends GameId> extends Scene {
       await this.finish();
       return false;
     }
-    if (secondsLeft(store.save) <= 0) {
+    const left = secondsLeft(store.save);
+    if (left <= 0) {
+      // time is up: this round still counts, then a warm goodnight
+      this.completeHere();
       await voice.sayNow(vid.ko('timeUp'));
       await nav.goodnight('time', this);
       return false;
     }
+    if (left <= 120 && !warnedTimeSoon) {
+      warnedTimeSoon = true;
+      await voice.say(vid.ko('timeSoon'));
+    }
     return true;
+  }
+
+  private completeHere() {
+    if (this.finished) return;
+    this.finished = true;
+    const counts = this.stationIndex >= (store.save.today?.stationsDone ?? 0);
+    if (counts) store.update((s) => completeStation(s, this.gameId, this.mode));
   }
 
   private async finish() {
@@ -232,9 +259,25 @@ export abstract class GameBase<G extends GameId> extends Scene {
     await wait(300);
   }
 
+  /** Home needs a second, deliberate tap (a thumb resting on the corner must not end the round). */
+  private confirm: Button | null = null;
   private leave() {
+    if (this.confirm) return;
     voice.cancel();
-    void nav.hub(this);
+    void voice.say(vid.ko('leave.ask'));
+    const ok = new Button({
+      icon: '✔️',
+      color: C.mint,
+      onTap: () => void nav.hub(this),
+      a11y: '정원으로 가기',
+    });
+    ok.position.set(this.home.x - 150, this.home.y);
+    this.hud.addChild(ok);
+    this.confirm = ok;
+    setTimeout(() => {
+      if (!ok.destroyed) ok.destroy({ children: true });
+      this.confirm = null;
+    }, 3500);
   }
 
   protected koText(text: string, size = 44, color: number = C.cream) {

@@ -11,6 +11,8 @@
     "Nice!",
     "Good thinking!"
   ],
-  "ko": ["잘했어!", "멋지다!", "우와, 해냈어!", "역시 너야!", "최고야!", "정말 잘 찾았어!"],
-  "big": ["Wow! Amazing!", "You are a star!", "Super star!"]
+  "ko": ["잘했어!", "멋지다!", "우와, 해냈어!", "열심히 찾았구나!", "최고야!", "정말 잘 찾았어!"],
+  "big": ["Wow! Amazing!", "Great listening!", "You worked hard!"],
+  "process": ["끝까지 찾았구나!", "다시 해봐서 찾았어!", "잘 듣고 골랐네!", "포기하지 않았구나!"],
+  "together": "같이 하니까 됐다!"
 }

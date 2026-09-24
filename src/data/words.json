@@ -68,7 +68,7 @@
       "en": "leaf",
       "ko": "나뭇잎",
       "day": 2,
-      "pic": "🍃",
+      "pic": "🍁",
       "sentence": "This is a leaf.",
       "category": "nature"
     },
@@ -302,7 +302,7 @@
       "en": "ball",
       "ko": "공",
       "day": 7,
-      "pic": "⚽",
+      "pic": "🏀",
       "sentence": "I see a ball.",
       "category": "thing"
     },
@@ -474,7 +474,7 @@
       "ko": "아기",
       "day": 11,
       "pic": "👶",
-      "sentence": "This is my baby.",
+      "sentence": "This is a baby.",
       "category": "family"
     },
     {
@@ -957,7 +957,7 @@
     {
       "id": "jump",
       "en": "jump",
-      "ko": "뛰다",
+      "ko": "깡충 뛰다",
       "day": 22,
       "pic": "draw:act:jump",
       "sentence": "I can jump.",
@@ -986,7 +986,7 @@
       "en": "fly",
       "ko": "날다",
       "day": 22,
-      "pic": "🕊️",
+      "pic": "draw:act:fly",
       "sentence": "I can fly.",
       "category": "action"
     },
@@ -1023,7 +1023,7 @@
       "ko": "자다",
       "day": 23,
       "pic": "🛌",
-      "sentence": "Can you sleep?",
+      "sentence": "Let's sleep!",
       "category": "action"
     },
     {
@@ -1032,7 +1032,7 @@
       "ko": "먹다",
       "day": 23,
       "pic": "😋",
-      "sentence": "Can you eat?",
+      "sentence": "Let's eat!",
       "category": "action"
     },
     {
@@ -1067,7 +1067,7 @@
       "en": "cook",
       "ko": "요리하다",
       "day": 24,
-      "pic": "🍳",
+      "pic": "🧑‍🍳",
       "sentence": "Let's cook!",
       "category": "action"
     },
@@ -1076,7 +1076,7 @@
       "en": "hide",
       "ko": "숨다",
       "day": 24,
-      "pic": "🙈",
+      "pic": "🫣",
       "sentence": "Let's hide!",
       "category": "action"
     },
@@ -1110,7 +1110,7 @@
     {
       "id": "scared",
       "en": "scared",
-      "ko": "무서운",
+      "ko": "무서워하는",
       "day": 25,
       "pic": "😨",
       "sentence": "I am scared.",
@@ -1184,7 +1184,7 @@
       "en": "zoo",
       "ko": "동물원",
       "day": 27,
-      "pic": "draw:combo:🦒🎪",
+      "pic": "draw:combo:🦒🦓",
       "sentence": "I'm at the zoo.",
       "category": "place"
     },
@@ -1292,7 +1292,7 @@
       "en": "bridge",
       "ko": "다리(건너는)",
       "day": 29,
-      "pic": "🌉",
+      "pic": "draw:place:bridge",
       "sentence": "This is a bridge.",
       "category": "place"
     },
@@ -1335,7 +1335,7 @@
     {
       "id": "light",
       "en": "light",
-      "ko": "빛",
+      "ko": "불빛",
       "day": 30,
       "pic": "💡",
       "sentence": "Look at the light!",
