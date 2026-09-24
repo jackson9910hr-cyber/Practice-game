@@ -98,7 +98,10 @@ startBtn.addEventListener('click', () => {
 });
 
 // Offline support (production only)
-if ('serviceWorker' in navigator && import.meta.env.PROD) {
+const isNative = !!(
+  window as unknown as { Capacitor?: { isNativePlatform?: () => boolean } }
+).Capacitor?.isNativePlatform?.();
+if ('serviceWorker' in navigator && import.meta.env.PROD && !isNative) {
   window.addEventListener(
     'load',
     () => void navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`),
