@@ -5,12 +5,8 @@
       "day": 1,
       "name": "Sami",
       "base": "circle",
-      "colors": [
-        "#FF8FAB",
-        "#E63946",
-        "#FFF7E8"
-      ],
-      "signature": "petal-cape",
+      "colors": ["#FFE7A3", "#E63946", "#FFF7E8"],
+      "signature": "petal-crown",
       "greeting": "Hi! I'm Sami. I like red!",
       "greetingKo": "안녕! 나는 사미야. 나는 빨강이 좋아!",
       "letter": "s"
@@ -20,11 +16,7 @@
       "day": 2,
       "name": "Appy",
       "base": "bean",
-      "colors": [
-        "#5ED3A2",
-        "#2DC653",
-        "#FFF7E8"
-      ],
+      "colors": ["#5ED3A2", "#2DC653", "#FFF7E8"],
       "signature": "sprouts",
       "greeting": "This is a flower!",
       "greetingKo": "이건 꽃이야!",
@@ -35,11 +27,7 @@
       "day": 3,
       "name": "Tiko",
       "base": "circle",
-      "colors": [
-        "#B784E0",
-        "#8E44AD",
-        "#FFD166"
-      ],
+      "colors": ["#B784E0", "#8E44AD", "#FFD166"],
       "signature": "brush-tail",
       "greeting": "It is purple!",
       "greetingKo": "이건 보라색이야!",
@@ -50,11 +38,7 @@
       "day": 4,
       "name": "Pip",
       "base": "bean",
-      "colors": [
-        "#FF8FAB",
-        "#FFD166",
-        "#5ED3A2"
-      ],
+      "colors": ["#FF8FAB", "#FFD166", "#5ED3A2"],
       "signature": "flower-shell",
       "greeting": "I have five flowers!",
       "greetingKo": "나는 꽃이 다섯 송이 있어!",
@@ -65,11 +49,7 @@
       "day": 5,
       "name": "Izzy",
       "base": "tri",
-      "colors": [
-        "#7CC6FE",
-        "#FF8FAB",
-        "#FFF7E8"
-      ],
+      "colors": ["#7CC6FE", "#FF8FAB", "#FFF7E8"],
       "signature": "heart-antenna",
       "greeting": "Look at the heart!",
       "greetingKo": "하트를 봐!",
@@ -80,11 +60,7 @@
       "day": 6,
       "name": "Nubi",
       "base": "segments",
-      "colors": [
-        "#5ED3A2",
-        "#FFD166",
-        "#FFF7E8"
-      ],
+      "colors": ["#5ED3A2", "#FFD166", "#FFF7E8"],
       "signature": "number-lights",
       "greeting": "How many stars? Ten!",
       "greetingKo": "별이 몇 개야? 열 개!",
@@ -95,11 +71,7 @@
       "day": 7,
       "name": "Pinta",
       "base": "circle",
-      "colors": [
-        "#FFD166",
-        "#FF8FAB",
-        "#FFF7E8"
-      ],
+      "colors": ["#FFD166", "#FF8FAB", "#FFF7E8"],
       "signature": "cake-hat",
       "greeting": "I see a big cake!",
       "greetingKo": "커다란 케이크가 보여!",
@@ -110,11 +82,7 @@
       "day": 8,
       "name": "Mimi",
       "base": "drop",
-      "colors": [
-        "#7CC6FE",
-        "#5ED3A2",
-        "#FFF7E8"
-      ],
+      "colors": ["#7CC6FE", "#5ED3A2", "#FFF7E8"],
       "signature": "tadpole-lilypad",
       "greeting": "What is it? It's a frog!",
       "greetingKo": "이게 뭐야? 개구리야!",
@@ -125,11 +93,7 @@
       "day": 9,
       "name": "Dabo",
       "base": "circle",
-      "colors": [
-        "#FFF7E8",
-        "#FF8FAB",
-        "#7CC6FE"
-      ],
+      "colors": ["#FFF7E8", "#FF8FAB", "#7CC6FE"],
       "signature": "shell-house",
       "greeting": "Where is the cat?",
       "greetingKo": "고양이는 어디 있어?",
@@ -140,11 +104,7 @@
       "day": 10,
       "name": "Gogo",
       "base": "circle",
-      "colors": [
-        "#FFD166",
-        "#FB8500",
-        "#FFF7E8"
-      ],
+      "colors": ["#FFD166", "#FB8500", "#FFF7E8"],
       "signature": "dandelion-mane",
       "greeting": "Is it a lion? No! I'm Gogo!",
       "greetingKo": "사자일까? 아니! 나는 고고야!",
@@ -155,11 +115,7 @@
       "day": 11,
       "name": "Olli",
       "base": "drops",
-      "colors": [
-        "#7CC6FE",
-        "#FF8FAB",
-        "#FFD166"
-      ],
+      "colors": ["#7CC6FE", "#FF8FAB", "#FFD166"],
       "signature": "family-drops",
       "greeting": "This is my mom!",
       "greetingKo": "이분은 우리 엄마야!",
@@ -170,11 +126,7 @@
       "day": 12,
       "name": "Cubi",
       "base": "tri",
-      "colors": [
-        "#A8A8C8",
-        "#7CC6FE",
-        "#FFF7E8"
-      ],
+      "colors": ["#A8A8C8", "#7CC6FE", "#FFF7E8"],
       "signature": "pebble-nose",
       "greeting": "Touch your nose!",
       "greetingKo": "코를 만져 봐!",
@@ -185,11 +137,7 @@
       "day": 13,
       "name": "Kiwa",
       "base": "bean",
-      "colors": [
-        "#5ED3A2",
-        "#7CC6FE",
-        "#FFF7E8"
-      ],
+      "colors": ["#5ED3A2", "#7CC6FE", "#FFF7E8"],
       "signature": "weed-hands",
       "greeting": "Wash your hands!",
       "greetingKo": "손을 씻자!",
@@ -200,11 +148,7 @@
       "day": 14,
       "name": "Gomo",
       "base": "cloud",
-      "colors": [
-        "#FFF7E8",
-        "#FF8FAB",
-        "#5ED3A2"
-      ],
+      "colors": ["#FFF7E8", "#FF8FAB", "#5ED3A2"],
       "signature": "lotus-shawl",
       "greeting": "I love my grandma!",
       "greetingKo": "나는 우리 할머니가 좋아!",
@@ -215,11 +159,7 @@
       "day": 15,
       "name": "Ebbi",
       "base": "bean",
-      "colors": [
-        "#FFD166",
-        "#5ED3A2",
-        "#FFF7E8"
-      ],
+      "colors": ["#FFD166", "#5ED3A2", "#FFF7E8"],
       "signature": "banana-hammock",
       "greeting": "I want a banana!",
       "greetingKo": "바나나 먹고 싶어!",
@@ -230,11 +170,7 @@
       "day": 16,
       "name": "Uppy",
       "base": "cloud",
-      "colors": [
-        "#FFFFFF",
-        "#7CC6FE",
-        "#FFD166"
-      ],
+      "colors": ["#FFFFFF", "#7CC6FE", "#FFD166"],
       "signature": "milk-fluff",
       "greeting": "Do you like milk?",
       "greetingKo": "너는 우유 좋아해?",
@@ -245,11 +181,7 @@
       "day": 17,
       "name": "Rori",
       "base": "drop-up",
-      "colors": [
-        "#FB8500",
-        "#5ED3A2",
-        "#FFF7E8"
-      ],
+      "colors": ["#FB8500", "#5ED3A2", "#FFF7E8"],
       "signature": "root-whiskers",
       "greeting": "I don't like carrots!",
       "greetingKo": "나는 당근이 싫어!",
@@ -260,11 +192,7 @@
       "day": 18,
       "name": "Hoho",
       "base": "circle",
-      "colors": [
-        "#C68B59",
-        "#8D5524",
-        "#FFF7E8"
-      ],
+      "colors": ["#C68B59", "#8D5524", "#FFF7E8"],
       "signature": "acorn-hat",
       "greeting": "Put on your hat!",
       "greetingKo": "모자를 써!",
@@ -275,11 +203,7 @@
       "day": 19,
       "name": "Bibi",
       "base": "bean",
-      "colors": [
-        "#FF8FAB",
-        "#5ED3A2",
-        "#FFF7E8"
-      ],
+      "colors": ["#FF8FAB", "#5ED3A2", "#FFF7E8"],
       "signature": "leaf-bag",
       "greeting": "Is this your bag?",
       "greetingKo": "이거 네 가방이야?",
@@ -290,11 +214,7 @@
       "day": 20,
       "name": "Fifi",
       "base": "cloud",
-      "colors": [
-        "#7CC6FE",
-        "#FFD166",
-        "#FFF7E8"
-      ],
+      "colors": ["#7CC6FE", "#FFD166", "#FFF7E8"],
       "signature": "pinwheel-tail",
       "greeting": "It's sunny today!",
       "greetingKo": "오늘은 날씨가 맑아!",
@@ -305,11 +225,7 @@
       "day": 21,
       "name": "Ruby",
       "base": "drop",
-      "colors": [
-        "#FF8FAB",
-        "#7CC6FE",
-        "#FFD166"
-      ],
+      "colors": ["#FF8FAB", "#7CC6FE", "#FFD166"],
       "signature": "rainbow-wings",
       "greeting": "What color is it? It's red!",
       "greetingKo": "무슨 색이야? 빨강이야!",
@@ -320,11 +236,7 @@
       "day": 22,
       "name": "Lulu",
       "base": "cloud",
-      "colors": [
-        "#FFF7E8",
-        "#7CC6FE",
-        "#FF8FAB"
-      ],
+      "colors": ["#FFF7E8", "#7CC6FE", "#FF8FAB"],
       "signature": "cloud-wings",
       "greeting": "I can fly!",
       "greetingKo": "나는 날 수 있어!",
@@ -335,11 +247,7 @@
       "day": 23,
       "name": "Juju",
       "base": "bean",
-      "colors": [
-        "#B784E0",
-        "#FFD166",
-        "#FFF7E8"
-      ],
+      "colors": ["#B784E0", "#FFD166", "#FFF7E8"],
       "signature": "spring-legs",
       "greeting": "Can you dance?",
       "greetingKo": "너 춤출 수 있어?",
@@ -350,11 +258,7 @@
       "day": 24,
       "name": "Vivi",
       "base": "tri",
-      "colors": [
-        "#5ED3A2",
-        "#E63946",
-        "#FFD166"
-      ],
+      "colors": ["#5ED3A2", "#E63946", "#FFD166"],
       "signature": "crayon-tail",
       "greeting": "Let's draw!",
       "greetingKo": "같이 그림 그리자!",
@@ -365,11 +269,7 @@
       "day": 25,
       "name": "Wobi",
       "base": "circle",
-      "colors": [
-        "#FFD166",
-        "#7CC6FE",
-        "#FFF7E8"
-      ],
+      "colors": ["#FFD166", "#7CC6FE", "#FFF7E8"],
       "signature": "mood-halo",
       "greeting": "I am happy!",
       "greetingKo": "나는 행복해!",
@@ -380,11 +280,7 @@
       "day": 26,
       "name": "Dexi",
       "base": "bean",
-      "colors": [
-        "#FB8500",
-        "#FFD166",
-        "#FFF7E8"
-      ],
+      "colors": ["#FB8500", "#FFD166", "#FFF7E8"],
       "signature": "belly-clock",
       "greeting": "Are you hungry?",
       "greetingKo": "너 배고파?",
@@ -395,11 +291,7 @@
       "day": 27,
       "name": "Yumi",
       "base": "drop",
-      "colors": [
-        "#FFD166",
-        "#FF8FAB",
-        "#7CC6FE"
-      ],
+      "colors": ["#FFD166", "#FF8FAB", "#7CC6FE"],
       "signature": "comet-backpack",
       "greeting": "I'm at the park!",
       "greetingKo": "나는 공원에 있어!",
@@ -410,11 +302,7 @@
       "day": 28,
       "name": "Lexy",
       "base": "tri",
-      "colors": [
-        "#C68B59",
-        "#5ED3A2",
-        "#FFF7E8"
-      ],
+      "colors": ["#C68B59", "#5ED3A2", "#FFF7E8"],
       "signature": "box-hat",
       "greeting": "It's in the box!",
       "greetingKo": "상자 안에 있어!",
@@ -425,11 +313,7 @@
       "day": 29,
       "name": "Zuzu",
       "base": "cloud",
-      "colors": [
-        "#B784E0",
-        "#23305E",
-        "#FFD166"
-      ],
+      "colors": ["#B784E0", "#23305E", "#FFD166"],
       "signature": "star-pajamas",
       "greeting": "Thank you, Twinkle!",
       "greetingKo": "고마워, 반짝아!",
@@ -440,11 +324,7 @@
       "day": 30,
       "name": "Lumi",
       "base": "circle",
-      "colors": [
-        "#FFF7E8",
-        "#FFD166",
-        "#7CC6FE"
-      ],
+      "colors": ["#FFF7E8", "#FFD166", "#7CC6FE"],
       "signature": "crescent-crown",
       "greeting": "You are my friend!",
       "greetingKo": "너는 내 친구야!",

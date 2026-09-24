@@ -1,22 +1,13 @@
 import js from '@eslint/js';
 import tseslint from 'typescript-eslint';
+import globals from 'globals';
 
 export default tseslint.config(
   { ignores: ['dist', 'coverage', 'node_modules', 'public/sw.js'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    languageOptions: {
-      globals: {
-        window: 'readonly',
-        document: 'readonly',
-        navigator: 'readonly',
-        console: 'readonly',
-        self: 'readonly',
-        caches: 'readonly',
-        fetch: 'readonly',
-      },
-    },
+    languageOptions: { globals: { ...globals.browser } },
     rules: {
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       'no-console': ['warn', { allow: ['warn', 'error'] }],
@@ -36,7 +27,8 @@ export default tseslint.config(
     },
   },
   {
-    files: ['scripts/**/*.ts'],
+    files: ['scripts/**/*.{ts,mjs}', 'vite.config.ts'],
+    languageOptions: { globals: { ...globals.node, ...globals.browser } },
     rules: { 'no-console': 'off' },
   },
 );

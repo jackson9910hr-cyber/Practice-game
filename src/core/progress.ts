@@ -62,7 +62,8 @@ export interface SaveData {
   starlight: number;
   starlightTotal: number;
   words: WordStates;
-  adaptive: Partial<Record<GameId, AdaptiveState>>;
+  /** keyed by `${game}:${mode}` so every newly unlocked mode starts gently */
+  adaptive: Record<string, AdaptiveState>;
   games: Partial<Record<GameId, GameStat>>;
   letters: Record<string, { correct: number; wrong: number }>;
   patternsSeen: Record<string, number>;

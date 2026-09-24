@@ -1,0 +1,18 @@
+{
+  "name": "별빛 정원 Starlight Garden",
+  "short_name": "별빛 정원",
+  "description": "만 7세를 위한 30일 한글·수·사고력·영어 학습 게임",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#23305E",
+  "theme_color": "#23305E",
+  "categories": ["education", "kids", "games"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

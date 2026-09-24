@@ -64,6 +64,7 @@ export const vid = {
   wordSentence: (id: string) => `en.wsent.${id}`,
   pic: (id: string) => (words.some((w) => w.id === id) ? `en.word.${id}` : `en.pic.${id}`),
   sentence: (text: string) => `en.t.${slug(text)}`,
+  card: (token: string) => `en.card.${slug(token)}`,
   greet: (friend: string) => `en.greet.${friend}`,
   letter: (l: string) => `en.letter.${l}`,
   phoneme: (l: string) => `en.phoneme.${l}`,
@@ -92,7 +93,10 @@ export function buildVoiceEntries(): VoiceEntry[] {
     en(vid.wordSentence(w.id), w.sentence);
   }
   for (const [id] of Object.entries(extraPictures)) en(vid.pic(id), id === 'yoyo' ? 'yo-yo' : id);
-  for (const s of sentences) en(vid.sentence(s.text), s.text);
+  for (const s of sentences) {
+    en(vid.sentence(s.text), s.text);
+    for (const c of s.cards) en(vid.card(c.t), c.t);
+  }
   for (const p of patterns) {
     if (p.prompt) en(vid.sentence(p.prompt), p.prompt);
     if (p.answer) en(vid.sentence(p.answer), p.answer);

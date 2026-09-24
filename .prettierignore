@@ -5,3 +5,4 @@ package-lock.json
 src/data/levels
 src/data/audio-manifest.json
 docs/simulation.md
+docs/GDD.md

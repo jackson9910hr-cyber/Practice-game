@@ -17,6 +17,691 @@
    "text": "Super star!",
    "file": null
   },
+  "en.card.a": {
+   "lang": "en-US",
+   "text": "a",
+   "file": null
+  },
+  "en.card.am": {
+   "lang": "en-US",
+   "text": "am",
+   "file": null
+  },
+  "en.card.an": {
+   "lang": "en-US",
+   "text": "an",
+   "file": null
+  },
+  "en.card.apple": {
+   "lang": "en-US",
+   "text": "apple",
+   "file": null
+  },
+  "en.card.apples": {
+   "lang": "en-US",
+   "text": "apples",
+   "file": null
+  },
+  "en.card.are": {
+   "lang": "en-US",
+   "text": "are",
+   "file": null
+  },
+  "en.card.arms": {
+   "lang": "en-US",
+   "text": "arms",
+   "file": null
+  },
+  "en.card.at": {
+   "lang": "en-US",
+   "text": "at",
+   "file": null
+  },
+  "en.card.bag": {
+   "lang": "en-US",
+   "text": "bag",
+   "file": null
+  },
+  "en.card.ball": {
+   "lang": "en-US",
+   "text": "ball",
+   "file": null
+  },
+  "en.card.balloon": {
+   "lang": "en-US",
+   "text": "balloon",
+   "file": null
+  },
+  "en.card.balloons": {
+   "lang": "en-US",
+   "text": "balloons",
+   "file": null
+  },
+  "en.card.banana": {
+   "lang": "en-US",
+   "text": "banana",
+   "file": null
+  },
+  "en.card.beach": {
+   "lang": "en-US",
+   "text": "beach",
+   "file": null
+  },
+  "en.card.big": {
+   "lang": "en-US",
+   "text": "big",
+   "file": null
+  },
+  "en.card.box": {
+   "lang": "en-US",
+   "text": "box",
+   "file": null
+  },
+  "en.card.bread": {
+   "lang": "en-US",
+   "text": "bread",
+   "file": null
+  },
+  "en.card.brother": {
+   "lang": "en-US",
+   "text": "brother",
+   "file": null
+  },
+  "en.card.cake": {
+   "lang": "en-US",
+   "text": "cake",
+   "file": null
+  },
+  "en.card.can": {
+   "lang": "en-US",
+   "text": "Can",
+   "file": null
+  },
+  "en.card.candy": {
+   "lang": "en-US",
+   "text": "candy",
+   "file": null
+  },
+  "en.card.carrots": {
+   "lang": "en-US",
+   "text": "carrots",
+   "file": null
+  },
+  "en.card.cat": {
+   "lang": "en-US",
+   "text": "cat",
+   "file": null
+  },
+  "en.card.clap": {
+   "lang": "en-US",
+   "text": "clap",
+   "file": null
+  },
+  "en.card.coat": {
+   "lang": "en-US",
+   "text": "coat",
+   "file": null
+  },
+  "en.card.cold": {
+   "lang": "en-US",
+   "text": "cold",
+   "file": null
+  },
+  "en.card.color": {
+   "lang": "en-US",
+   "text": "color",
+   "file": null
+  },
+  "en.card.cookies": {
+   "lang": "en-US",
+   "text": "cookies",
+   "file": null
+  },
+  "en.card.corn": {
+   "lang": "en-US",
+   "text": "corn",
+   "file": null
+  },
+  "en.card.cow": {
+   "lang": "en-US",
+   "text": "cow",
+   "file": null
+  },
+  "en.card.dad": {
+   "lang": "en-US",
+   "text": "dad",
+   "file": null
+  },
+  "en.card.dance": {
+   "lang": "en-US",
+   "text": "dance",
+   "file": null
+  },
+  "en.card.do": {
+   "lang": "en-US",
+   "text": "Do",
+   "file": null
+  },
+  "en.card.dog": {
+   "lang": "en-US",
+   "text": "dog",
+   "file": null
+  },
+  "en.card.don-t": {
+   "lang": "en-US",
+   "text": "don't",
+   "file": null
+  },
+  "en.card.draw": {
+   "lang": "en-US",
+   "text": "draw",
+   "file": null
+  },
+  "en.card.dress": {
+   "lang": "en-US",
+   "text": "dress",
+   "file": null
+  },
+  "en.card.duck": {
+   "lang": "en-US",
+   "text": "duck",
+   "file": null
+  },
+  "en.card.ear": {
+   "lang": "en-US",
+   "text": "ear",
+   "file": null
+  },
+  "en.card.eggs": {
+   "lang": "en-US",
+   "text": "eggs",
+   "file": null
+  },
+  "en.card.feet": {
+   "lang": "en-US",
+   "text": "feet",
+   "file": null
+  },
+  "en.card.fingers": {
+   "lang": "en-US",
+   "text": "fingers",
+   "file": null
+  },
+  "en.card.fish": {
+   "lang": "en-US",
+   "text": "fish",
+   "file": null
+  },
+  "en.card.five": {
+   "lang": "en-US",
+   "text": "five",
+   "file": null
+  },
+  "en.card.flower": {
+   "lang": "en-US",
+   "text": "flower",
+   "file": null
+  },
+  "en.card.flowers": {
+   "lang": "en-US",
+   "text": "flowers",
+   "file": null
+  },
+  "en.card.fly": {
+   "lang": "en-US",
+   "text": "fly",
+   "file": null
+  },
+  "en.card.friend": {
+   "lang": "en-US",
+   "text": "friend",
+   "file": null
+  },
+  "en.card.frog": {
+   "lang": "en-US",
+   "text": "frog",
+   "file": null
+  },
+  "en.card.grandma": {
+   "lang": "en-US",
+   "text": "grandma",
+   "file": null
+  },
+  "en.card.grandpa": {
+   "lang": "en-US",
+   "text": "grandpa",
+   "file": null
+  },
+  "en.card.grapes": {
+   "lang": "en-US",
+   "text": "grapes",
+   "file": null
+  },
+  "en.card.green": {
+   "lang": "en-US",
+   "text": "green",
+   "file": null
+  },
+  "en.card.hands": {
+   "lang": "en-US",
+   "text": "hands",
+   "file": null
+  },
+  "en.card.happy": {
+   "lang": "en-US",
+   "text": "happy",
+   "file": null
+  },
+  "en.card.hat": {
+   "lang": "en-US",
+   "text": "hat",
+   "file": null
+  },
+  "en.card.have": {
+   "lang": "en-US",
+   "text": "have",
+   "file": null
+  },
+  "en.card.head": {
+   "lang": "en-US",
+   "text": "head",
+   "file": null
+  },
+  "en.card.heart": {
+   "lang": "en-US",
+   "text": "heart",
+   "file": null
+  },
+  "en.card.horse": {
+   "lang": "en-US",
+   "text": "horse",
+   "file": null
+  },
+  "en.card.how": {
+   "lang": "en-US",
+   "text": "How",
+   "file": null
+  },
+  "en.card.hungry": {
+   "lang": "en-US",
+   "text": "hungry",
+   "file": null
+  },
+  "en.card.i": {
+   "lang": "en-US",
+   "text": "I",
+   "file": null
+  },
+  "en.card.i-m": {
+   "lang": "en-US",
+   "text": "I'm",
+   "file": null
+  },
+  "en.card.in": {
+   "lang": "en-US",
+   "text": "in",
+   "file": null
+  },
+  "en.card.is": {
+   "lang": "en-US",
+   "text": "is",
+   "file": null
+  },
+  "en.card.it": {
+   "lang": "en-US",
+   "text": "it",
+   "file": null
+  },
+  "en.card.it-s": {
+   "lang": "en-US",
+   "text": "It's",
+   "file": null
+  },
+  "en.card.jump": {
+   "lang": "en-US",
+   "text": "jump",
+   "file": null
+  },
+  "en.card.leaf": {
+   "lang": "en-US",
+   "text": "leaf",
+   "file": null
+  },
+  "en.card.lemon": {
+   "lang": "en-US",
+   "text": "lemon",
+   "file": null
+  },
+  "en.card.let-s": {
+   "lang": "en-US",
+   "text": "Let's",
+   "file": null
+  },
+  "en.card.like": {
+   "lang": "en-US",
+   "text": "like",
+   "file": null
+  },
+  "en.card.lion": {
+   "lang": "en-US",
+   "text": "lion",
+   "file": null
+  },
+  "en.card.look": {
+   "lang": "en-US",
+   "text": "Look",
+   "file": null
+  },
+  "en.card.love": {
+   "lang": "en-US",
+   "text": "love",
+   "file": null
+  },
+  "en.card.many": {
+   "lang": "en-US",
+   "text": "many",
+   "file": null
+  },
+  "en.card.milk": {
+   "lang": "en-US",
+   "text": "milk",
+   "file": null
+  },
+  "en.card.mom": {
+   "lang": "en-US",
+   "text": "mom",
+   "file": null
+  },
+  "en.card.monkey": {
+   "lang": "en-US",
+   "text": "monkey",
+   "file": null
+  },
+  "en.card.moon": {
+   "lang": "en-US",
+   "text": "moon",
+   "file": null
+  },
+  "en.card.mouth": {
+   "lang": "en-US",
+   "text": "mouth",
+   "file": null
+  },
+  "en.card.music": {
+   "lang": "en-US",
+   "text": "music",
+   "file": null
+  },
+  "en.card.my": {
+   "lang": "en-US",
+   "text": "my",
+   "file": null
+  },
+  "en.card.nose": {
+   "lang": "en-US",
+   "text": "nose",
+   "file": null
+  },
+  "en.card.on": {
+   "lang": "en-US",
+   "text": "on",
+   "file": null
+  },
+  "en.card.owl": {
+   "lang": "en-US",
+   "text": "owl",
+   "file": null
+  },
+  "en.card.park": {
+   "lang": "en-US",
+   "text": "park",
+   "file": null
+  },
+  "en.card.pizza": {
+   "lang": "en-US",
+   "text": "pizza",
+   "file": null
+  },
+  "en.card.play": {
+   "lang": "en-US",
+   "text": "play",
+   "file": null
+  },
+  "en.card.pool": {
+   "lang": "en-US",
+   "text": "pool",
+   "file": null
+  },
+  "en.card.purple": {
+   "lang": "en-US",
+   "text": "purple",
+   "file": null
+  },
+  "en.card.put": {
+   "lang": "en-US",
+   "text": "Put",
+   "file": null
+  },
+  "en.card.rabbit": {
+   "lang": "en-US",
+   "text": "rabbit",
+   "file": null
+  },
+  "en.card.rainbow": {
+   "lang": "en-US",
+   "text": "rainbow",
+   "file": null
+  },
+  "en.card.rainy": {
+   "lang": "en-US",
+   "text": "rainy",
+   "file": null
+  },
+  "en.card.read": {
+   "lang": "en-US",
+   "text": "read",
+   "file": null
+  },
+  "en.card.red": {
+   "lang": "en-US",
+   "text": "red",
+   "file": null
+  },
+  "en.card.run": {
+   "lang": "en-US",
+   "text": "run",
+   "file": null
+  },
+  "en.card.sad": {
+   "lang": "en-US",
+   "text": "sad",
+   "file": null
+  },
+  "en.card.scared": {
+   "lang": "en-US",
+   "text": "scared",
+   "file": null
+  },
+  "en.card.see": {
+   "lang": "en-US",
+   "text": "see",
+   "file": null
+  },
+  "en.card.shirt": {
+   "lang": "en-US",
+   "text": "shirt",
+   "file": null
+  },
+  "en.card.shoes": {
+   "lang": "en-US",
+   "text": "shoes",
+   "file": null
+  },
+  "en.card.sing": {
+   "lang": "en-US",
+   "text": "sing",
+   "file": null
+  },
+  "en.card.sister": {
+   "lang": "en-US",
+   "text": "sister",
+   "file": null
+  },
+  "en.card.sleepy": {
+   "lang": "en-US",
+   "text": "sleepy",
+   "file": null
+  },
+  "en.card.snowy": {
+   "lang": "en-US",
+   "text": "snowy",
+   "file": null
+  },
+  "en.card.socks": {
+   "lang": "en-US",
+   "text": "socks",
+   "file": null
+  },
+  "en.card.star": {
+   "lang": "en-US",
+   "text": "star",
+   "file": null
+  },
+  "en.card.stars": {
+   "lang": "en-US",
+   "text": "stars",
+   "file": null
+  },
+  "en.card.sunny": {
+   "lang": "en-US",
+   "text": "sunny",
+   "file": null
+  },
+  "en.card.swim": {
+   "lang": "en-US",
+   "text": "swim",
+   "file": null
+  },
+  "en.card.table": {
+   "lang": "en-US",
+   "text": "table",
+   "file": null
+  },
+  "en.card.thank": {
+   "lang": "en-US",
+   "text": "Thank",
+   "file": null
+  },
+  "en.card.the": {
+   "lang": "en-US",
+   "text": "the",
+   "file": null
+  },
+  "en.card.thirsty": {
+   "lang": "en-US",
+   "text": "thirsty",
+   "file": null
+  },
+  "en.card.this": {
+   "lang": "en-US",
+   "text": "this",
+   "file": null
+  },
+  "en.card.three": {
+   "lang": "en-US",
+   "text": "three",
+   "file": null
+  },
+  "en.card.tired": {
+   "lang": "en-US",
+   "text": "tired",
+   "file": null
+  },
+  "en.card.today": {
+   "lang": "en-US",
+   "text": "today",
+   "file": null
+  },
+  "en.card.touch": {
+   "lang": "en-US",
+   "text": "Touch",
+   "file": null
+  },
+  "en.card.tree": {
+   "lang": "en-US",
+   "text": "tree",
+   "file": null
+  },
+  "en.card.turtle": {
+   "lang": "en-US",
+   "text": "turtle",
+   "file": null
+  },
+  "en.card.twinkle": {
+   "lang": "en-US",
+   "text": "Twinkle",
+   "file": null
+  },
+  "en.card.two": {
+   "lang": "en-US",
+   "text": "two",
+   "file": null
+  },
+  "en.card.umbrella": {
+   "lang": "en-US",
+   "text": "umbrella",
+   "file": null
+  },
+  "en.card.under": {
+   "lang": "en-US",
+   "text": "under",
+   "file": null
+  },
+  "en.card.want": {
+   "lang": "en-US",
+   "text": "want",
+   "file": null
+  },
+  "en.card.wash": {
+   "lang": "en-US",
+   "text": "Wash",
+   "file": null
+  },
+  "en.card.what": {
+   "lang": "en-US",
+   "text": "What",
+   "file": null
+  },
+  "en.card.where": {
+   "lang": "en-US",
+   "text": "Where",
+   "file": null
+  },
+  "en.card.white": {
+   "lang": "en-US",
+   "text": "white",
+   "file": null
+  },
+  "en.card.windy": {
+   "lang": "en-US",
+   "text": "windy",
+   "file": null
+  },
+  "en.card.you": {
+   "lang": "en-US",
+   "text": "You",
+   "file": null
+  },
+  "en.card.your": {
+   "lang": "en-US",
+   "text": "your",
+   "file": null
+  },
+  "en.card.zoo": {
+   "lang": "en-US",
+   "text": "zoo",
+   "file": null
+  },
   "en.dir.down": {
    "lang": "en-US",
    "text": "Down!",

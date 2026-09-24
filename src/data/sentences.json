@@ -51,10 +51,7 @@
       "day": 10,
       "frame": "Is it a ___?",
       "answer": "Yes, it is.",
-      "distractors": [
-        "Yes, I do.",
-        "Yes, I can."
-      ]
+      "distractors": ["Yes, I do.", "Yes, I can."]
     },
     {
       "id": "p11",
@@ -86,10 +83,7 @@
       "day": 16,
       "frame": "Do you like ___?",
       "answer": "Yes, I do.",
-      "distractors": [
-        "Yes, I can.",
-        "Yes, I am."
-      ]
+      "distractors": ["Yes, I can.", "Yes, I am."]
     },
     {
       "id": "p17",
@@ -106,10 +100,7 @@
       "day": 19,
       "frame": "Is this your ___?",
       "answer": "Yes, it is.",
-      "distractors": [
-        "Yes, I do.",
-        "Yes, I am."
-      ]
+      "distractors": ["Yes, I do.", "Yes, I am."]
     },
     {
       "id": "p20",
@@ -144,10 +135,7 @@
       "day": 23,
       "frame": "Can you ___?",
       "answer": "Yes, I can.",
-      "distractors": [
-        "Yes, I do.",
-        "Yes, I am."
-      ]
+      "distractors": ["Yes, I do.", "Yes, I am."]
     },
     {
       "id": "p24",
@@ -164,10 +152,7 @@
       "day": 26,
       "frame": "Are you ___?",
       "answer": "Yes, I am.",
-      "distractors": [
-        "Yes, I do.",
-        "Yes, I can."
-      ]
+      "distractors": ["Yes, I do.", "Yes, I can."]
     },
     {
       "id": "p27",
@@ -207,9 +192,7 @@
           "w": "red"
         }
       ],
-      "words": [
-        "red"
-      ],
+      "words": ["red"],
       "availableDay": 1
     },
     {
@@ -228,9 +211,7 @@
           "w": "green"
         }
       ],
-      "words": [
-        "green"
-      ],
+      "words": ["green"],
       "availableDay": 1
     },
     {
@@ -249,9 +230,7 @@
           "w": "apple"
         }
       ],
-      "words": [
-        "apple"
-      ],
+      "words": ["apple"],
       "availableDay": 15
     },
     {
@@ -270,9 +249,7 @@
           "w": "music"
         }
       ],
-      "words": [
-        "music"
-      ],
+      "words": ["music"],
       "availableDay": 30
     },
     {
@@ -294,9 +271,7 @@
           "w": "flower"
         }
       ],
-      "words": [
-        "flower"
-      ],
+      "words": ["flower"],
       "availableDay": 2
     },
     {
@@ -318,9 +293,7 @@
           "w": "tree"
         }
       ],
-      "words": [
-        "tree"
-      ],
+      "words": ["tree"],
       "availableDay": 2
     },
     {
@@ -342,9 +315,7 @@
           "w": "leaf"
         }
       ],
-      "words": [
-        "leaf"
-      ],
+      "words": ["leaf"],
       "availableDay": 2
     },
     {
@@ -366,9 +337,7 @@
           "w": "cake"
         }
       ],
-      "words": [
-        "cake"
-      ],
+      "words": ["cake"],
       "availableDay": 7
     },
     {
@@ -387,9 +356,7 @@
           "w": "purple"
         }
       ],
-      "words": [
-        "purple"
-      ],
+      "words": ["purple"],
       "availableDay": 3
     },
     {
@@ -408,9 +375,7 @@
           "w": "white"
         }
       ],
-      "words": [
-        "white"
-      ],
+      "words": ["white"],
       "availableDay": 3
     },
     {
@@ -429,9 +394,7 @@
           "w": "big"
         }
       ],
-      "words": [
-        "big"
-      ],
+      "words": ["big"],
       "availableDay": 7
     },
     {
@@ -450,9 +413,7 @@
           "w": "cold"
         }
       ],
-      "words": [
-        "cold"
-      ],
+      "words": ["cold"],
       "availableDay": 21
     },
     {
@@ -475,10 +436,7 @@
           "w": "flower"
         }
       ],
-      "words": [
-        "two",
-        "flower"
-      ],
+      "words": ["two", "flower"],
       "availableDay": 4
     },
     {
@@ -501,10 +459,7 @@
           "w": "flower"
         }
       ],
-      "words": [
-        "five",
-        "flower"
-      ],
+      "words": ["five", "flower"],
       "availableDay": 4
     },
     {
@@ -527,10 +482,7 @@
           "w": "balloon"
         }
       ],
-      "words": [
-        "three",
-        "balloon"
-      ],
+      "words": ["three", "balloon"],
       "availableDay": 7
     },
     {
@@ -552,9 +504,7 @@
           "w": "bag"
         }
       ],
-      "words": [
-        "bag"
-      ],
+      "words": ["bag"],
       "availableDay": 19
     },
     {
@@ -576,9 +526,7 @@
           "w": "star"
         }
       ],
-      "words": [
-        "star"
-      ],
+      "words": ["star"],
       "availableDay": 5
     },
     {
@@ -600,9 +548,7 @@
           "w": "heart"
         }
       ],
-      "words": [
-        "heart"
-      ],
+      "words": ["heart"],
       "availableDay": 5
     },
     {
@@ -624,9 +570,7 @@
           "w": "moon"
         }
       ],
-      "words": [
-        "moon"
-      ],
+      "words": ["moon"],
       "availableDay": 5
     },
     {
@@ -648,9 +592,7 @@
           "w": "rainbow"
         }
       ],
-      "words": [
-        "rainbow"
-      ],
+      "words": ["rainbow"],
       "availableDay": 21
     },
     {
@@ -669,9 +611,7 @@
           "w": "star"
         }
       ],
-      "words": [
-        "star"
-      ],
+      "words": ["star"],
       "availableDay": 6
     },
     {
@@ -690,9 +630,7 @@
           "w": "flower"
         }
       ],
-      "words": [
-        "flower"
-      ],
+      "words": ["flower"],
       "availableDay": 6
     },
     {
@@ -711,9 +649,7 @@
           "w": "balloon"
         }
       ],
-      "words": [
-        "balloon"
-      ],
+      "words": ["balloon"],
       "availableDay": 7
     },
     {
@@ -732,9 +668,7 @@
           "w": "fish"
         }
       ],
-      "words": [
-        "fish"
-      ],
+      "words": ["fish"],
       "availableDay": 8
     },
     {
@@ -760,10 +694,7 @@
           "w": "cake"
         }
       ],
-      "words": [
-        "big",
-        "cake"
-      ],
+      "words": ["big", "cake"],
       "availableDay": 7
     },
     {
@@ -785,9 +716,7 @@
           "w": "ball"
         }
       ],
-      "words": [
-        "ball"
-      ],
+      "words": ["ball"],
       "availableDay": 7
     },
     {
@@ -813,10 +742,7 @@
           "w": "balloon"
         }
       ],
-      "words": [
-        "red",
-        "balloon"
-      ],
+      "words": ["red", "balloon"],
       "availableDay": 7
     },
     {
@@ -838,9 +764,7 @@
           "w": "owl"
         }
       ],
-      "words": [
-        "owl"
-      ],
+      "words": ["owl"],
       "availableDay": 21
     },
     {
@@ -859,9 +783,7 @@
           "w": "frog"
         }
       ],
-      "words": [
-        "frog"
-      ],
+      "words": ["frog"],
       "availableDay": 8
     },
     {
@@ -880,9 +802,7 @@
           "w": "duck"
         }
       ],
-      "words": [
-        "duck"
-      ],
+      "words": ["duck"],
       "availableDay": 8
     },
     {
@@ -901,9 +821,7 @@
           "w": "turtle"
         }
       ],
-      "words": [
-        "turtle"
-      ],
+      "words": ["turtle"],
       "availableDay": 8
     },
     {
@@ -922,9 +840,7 @@
           "w": "fish"
         }
       ],
-      "words": [
-        "fish"
-      ],
+      "words": ["fish"],
       "availableDay": 8
     },
     {
@@ -946,9 +862,7 @@
           "w": "cat"
         }
       ],
-      "words": [
-        "cat"
-      ],
+      "words": ["cat"],
       "availableDay": 9
     },
     {
@@ -970,9 +884,7 @@
           "w": "dog"
         }
       ],
-      "words": [
-        "dog"
-      ],
+      "words": ["dog"],
       "availableDay": 9
     },
     {
@@ -994,9 +906,7 @@
           "w": "rabbit"
         }
       ],
-      "words": [
-        "rabbit"
-      ],
+      "words": ["rabbit"],
       "availableDay": 9
     },
     {
@@ -1018,9 +928,7 @@
           "w": "ball"
         }
       ],
-      "words": [
-        "ball"
-      ],
+      "words": ["ball"],
       "availableDay": 9
     },
     {
@@ -1042,9 +950,7 @@
           "w": "lion"
         }
       ],
-      "words": [
-        "lion"
-      ],
+      "words": ["lion"],
       "availableDay": 10
     },
     {
@@ -1066,9 +972,7 @@
           "w": "monkey"
         }
       ],
-      "words": [
-        "monkey"
-      ],
+      "words": ["monkey"],
       "availableDay": 10
     },
     {
@@ -1090,9 +994,7 @@
           "w": "horse"
         }
       ],
-      "words": [
-        "horse"
-      ],
+      "words": ["horse"],
       "availableDay": 10
     },
     {
@@ -1114,9 +1016,7 @@
           "w": "cow"
         }
       ],
-      "words": [
-        "cow"
-      ],
+      "words": ["cow"],
       "availableDay": 10
     },
     {
@@ -1138,9 +1038,7 @@
           "w": "mom"
         }
       ],
-      "words": [
-        "mom"
-      ],
+      "words": ["mom"],
       "availableDay": 11
     },
     {
@@ -1162,9 +1060,7 @@
           "w": "dad"
         }
       ],
-      "words": [
-        "dad"
-      ],
+      "words": ["dad"],
       "availableDay": 11
     },
     {
@@ -1186,9 +1082,7 @@
           "w": "sister"
         }
       ],
-      "words": [
-        "sister"
-      ],
+      "words": ["sister"],
       "availableDay": 11
     },
     {
@@ -1210,9 +1104,7 @@
           "w": "brother"
         }
       ],
-      "words": [
-        "brother"
-      ],
+      "words": ["brother"],
       "availableDay": 11
     },
     {
@@ -1231,9 +1123,7 @@
           "w": "nose"
         }
       ],
-      "words": [
-        "nose"
-      ],
+      "words": ["nose"],
       "availableDay": 12
     },
     {
@@ -1252,9 +1142,7 @@
           "w": "head"
         }
       ],
-      "words": [
-        "head"
-      ],
+      "words": ["head"],
       "availableDay": 12
     },
     {
@@ -1273,9 +1161,7 @@
           "w": "ear"
         }
       ],
-      "words": [
-        "ear"
-      ],
+      "words": ["ear"],
       "availableDay": 12
     },
     {
@@ -1294,9 +1180,7 @@
           "w": "mouth"
         }
       ],
-      "words": [
-        "mouth"
-      ],
+      "words": ["mouth"],
       "availableDay": 12
     },
     {
@@ -1315,9 +1199,7 @@
           "w": "hand"
         }
       ],
-      "words": [
-        "hand"
-      ],
+      "words": ["hand"],
       "availableDay": 13
     },
     {
@@ -1336,9 +1218,7 @@
           "w": "foot"
         }
       ],
-      "words": [
-        "foot"
-      ],
+      "words": ["foot"],
       "availableDay": 13
     },
     {
@@ -1357,9 +1237,7 @@
           "w": "arm"
         }
       ],
-      "words": [
-        "arm"
-      ],
+      "words": ["arm"],
       "availableDay": 13
     },
     {
@@ -1378,9 +1256,7 @@
           "w": "finger"
         }
       ],
-      "words": [
-        "finger"
-      ],
+      "words": ["finger"],
       "availableDay": 13
     },
     {
@@ -1402,9 +1278,7 @@
           "w": "grandma"
         }
       ],
-      "words": [
-        "grandma"
-      ],
+      "words": ["grandma"],
       "availableDay": 14
     },
     {
@@ -1426,9 +1300,7 @@
           "w": "grandpa"
         }
       ],
-      "words": [
-        "grandpa"
-      ],
+      "words": ["grandpa"],
       "availableDay": 14
     },
     {
@@ -1450,9 +1322,7 @@
           "w": "mom"
         }
       ],
-      "words": [
-        "mom"
-      ],
+      "words": ["mom"],
       "availableDay": 14
     },
     {
@@ -1474,9 +1344,7 @@
           "w": "dad"
         }
       ],
-      "words": [
-        "dad"
-      ],
+      "words": ["dad"],
       "availableDay": 14
     },
     {
@@ -1498,9 +1366,7 @@
           "w": "banana"
         }
       ],
-      "words": [
-        "banana"
-      ],
+      "words": ["banana"],
       "availableDay": 15
     },
     {
@@ -1522,9 +1388,7 @@
           "w": "apple"
         }
       ],
-      "words": [
-        "apple"
-      ],
+      "words": ["apple"],
       "availableDay": 15
     },
     {
@@ -1543,9 +1407,7 @@
           "w": "grape"
         }
       ],
-      "words": [
-        "grape"
-      ],
+      "words": ["grape"],
       "availableDay": 15
     },
     {
@@ -1567,9 +1429,7 @@
           "w": "lemon"
         }
       ],
-      "words": [
-        "lemon"
-      ],
+      "words": ["lemon"],
       "availableDay": 15
     },
     {
@@ -1591,9 +1451,7 @@
           "w": "milk"
         }
       ],
-      "words": [
-        "milk"
-      ],
+      "words": ["milk"],
       "availableDay": 16
     },
     {
@@ -1615,9 +1473,7 @@
           "w": "bread"
         }
       ],
-      "words": [
-        "bread"
-      ],
+      "words": ["bread"],
       "availableDay": 16
     },
     {
@@ -1639,9 +1495,7 @@
           "w": "egg"
         }
       ],
-      "words": [
-        "egg"
-      ],
+      "words": ["egg"],
       "availableDay": 16
     },
     {
@@ -1663,9 +1517,7 @@
           "w": "cookie"
         }
       ],
-      "words": [
-        "cookie"
-      ],
+      "words": ["cookie"],
       "availableDay": 16
     },
     {
@@ -1687,9 +1539,7 @@
           "w": "carrot"
         }
       ],
-      "words": [
-        "carrot"
-      ],
+      "words": ["carrot"],
       "availableDay": 17
     },
     {
@@ -1711,9 +1561,7 @@
           "w": "corn"
         }
       ],
-      "words": [
-        "corn"
-      ],
+      "words": ["corn"],
       "availableDay": 17
     },
     {
@@ -1735,9 +1583,7 @@
           "w": "candy"
         }
       ],
-      "words": [
-        "candy"
-      ],
+      "words": ["candy"],
       "availableDay": 17
     },
     {
@@ -1759,9 +1605,7 @@
           "w": "pizza"
         }
       ],
-      "words": [
-        "pizza"
-      ],
+      "words": ["pizza"],
       "availableDay": 17
     },
     {
@@ -1783,9 +1627,7 @@
           "w": "hat"
         }
       ],
-      "words": [
-        "hat"
-      ],
+      "words": ["hat"],
       "availableDay": 18
     },
     {
@@ -1807,9 +1649,7 @@
           "w": "shoes"
         }
       ],
-      "words": [
-        "shoes"
-      ],
+      "words": ["shoes"],
       "availableDay": 18
     },
     {
@@ -1831,9 +1671,7 @@
           "w": "socks"
         }
       ],
-      "words": [
-        "socks"
-      ],
+      "words": ["socks"],
       "availableDay": 18
     },
     {
@@ -1855,9 +1693,7 @@
           "w": "shirt"
         }
       ],
-      "words": [
-        "shirt"
-      ],
+      "words": ["shirt"],
       "availableDay": 18
     },
     {
@@ -1879,9 +1715,7 @@
           "w": "bag"
         }
       ],
-      "words": [
-        "bag"
-      ],
+      "words": ["bag"],
       "availableDay": 19
     },
     {
@@ -1903,9 +1737,7 @@
           "w": "coat"
         }
       ],
-      "words": [
-        "coat"
-      ],
+      "words": ["coat"],
       "availableDay": 19
     },
     {
@@ -1927,9 +1759,7 @@
           "w": "dress"
         }
       ],
-      "words": [
-        "dress"
-      ],
+      "words": ["dress"],
       "availableDay": 19
     },
     {
@@ -1951,9 +1781,7 @@
           "w": "umbrella"
         }
       ],
-      "words": [
-        "umbrella"
-      ],
+      "words": ["umbrella"],
       "availableDay": 19
     },
     {
@@ -1972,9 +1800,7 @@
           "t": "today"
         }
       ],
-      "words": [
-        "sunny"
-      ],
+      "words": ["sunny"],
       "availableDay": 20
     },
     {
@@ -1993,9 +1819,7 @@
           "t": "today"
         }
       ],
-      "words": [
-        "rainy"
-      ],
+      "words": ["rainy"],
       "availableDay": 20
     },
     {
@@ -2014,9 +1838,7 @@
           "t": "today"
         }
       ],
-      "words": [
-        "snowy"
-      ],
+      "words": ["snowy"],
       "availableDay": 20
     },
     {
@@ -2035,9 +1857,7 @@
           "t": "today"
         }
       ],
-      "words": [
-        "windy"
-      ],
+      "words": ["windy"],
       "availableDay": 20
     },
     {
@@ -2077,9 +1897,7 @@
           "w": "fly"
         }
       ],
-      "words": [
-        "fly"
-      ],
+      "words": ["fly"],
       "availableDay": 22
     },
     {
@@ -2098,9 +1916,7 @@
           "w": "run"
         }
       ],
-      "words": [
-        "run"
-      ],
+      "words": ["run"],
       "availableDay": 22
     },
     {
@@ -2119,9 +1935,7 @@
           "w": "jump"
         }
       ],
-      "words": [
-        "jump"
-      ],
+      "words": ["jump"],
       "availableDay": 22
     },
     {
@@ -2140,9 +1954,7 @@
           "w": "swim"
         }
       ],
-      "words": [
-        "swim"
-      ],
+      "words": ["swim"],
       "availableDay": 22
     },
     {
@@ -2161,9 +1973,7 @@
           "w": "dance"
         }
       ],
-      "words": [
-        "dance"
-      ],
+      "words": ["dance"],
       "availableDay": 23
     },
     {
@@ -2182,9 +1992,7 @@
           "w": "sing"
         }
       ],
-      "words": [
-        "sing"
-      ],
+      "words": ["sing"],
       "availableDay": 23
     },
     {
@@ -2203,9 +2011,7 @@
           "w": "clap"
         }
       ],
-      "words": [
-        "clap"
-      ],
+      "words": ["clap"],
       "availableDay": 23
     },
     {
@@ -2224,9 +2030,7 @@
           "w": "jump"
         }
       ],
-      "words": [
-        "jump"
-      ],
+      "words": ["jump"],
       "availableDay": 23
     },
     {
@@ -2242,9 +2046,7 @@
           "w": "draw"
         }
       ],
-      "words": [
-        "draw"
-      ],
+      "words": ["draw"],
       "availableDay": 24
     },
     {
@@ -2260,9 +2062,7 @@
           "w": "read"
         }
       ],
-      "words": [
-        "read"
-      ],
+      "words": ["read"],
       "availableDay": 24
     },
     {
@@ -2278,9 +2078,7 @@
           "w": "play"
         }
       ],
-      "words": [
-        "play"
-      ],
+      "words": ["play"],
       "availableDay": 24
     },
     {
@@ -2296,9 +2094,7 @@
           "w": "dance"
         }
       ],
-      "words": [
-        "dance"
-      ],
+      "words": ["dance"],
       "availableDay": 24
     },
     {
@@ -2317,9 +2113,7 @@
           "w": "happy"
         }
       ],
-      "words": [
-        "happy"
-      ],
+      "words": ["happy"],
       "availableDay": 25
     },
     {
@@ -2338,9 +2132,7 @@
           "w": "sad"
         }
       ],
-      "words": [
-        "sad"
-      ],
+      "words": ["sad"],
       "availableDay": 25
     },
     {
@@ -2359,9 +2151,7 @@
           "w": "sleepy"
         }
       ],
-      "words": [
-        "sleepy"
-      ],
+      "words": ["sleepy"],
       "availableDay": 25
     },
     {
@@ -2380,9 +2170,7 @@
           "w": "scared"
         }
       ],
-      "words": [
-        "scared"
-      ],
+      "words": ["scared"],
       "availableDay": 25
     },
     {
@@ -2401,9 +2189,7 @@
           "w": "hungry"
         }
       ],
-      "words": [
-        "hungry"
-      ],
+      "words": ["hungry"],
       "availableDay": 26
     },
     {
@@ -2422,9 +2208,7 @@
           "w": "tired"
         }
       ],
-      "words": [
-        "tired"
-      ],
+      "words": ["tired"],
       "availableDay": 26
     },
     {
@@ -2443,9 +2227,7 @@
           "w": "thirsty"
         }
       ],
-      "words": [
-        "thirsty"
-      ],
+      "words": ["thirsty"],
       "availableDay": 26
     },
     {
@@ -2464,9 +2246,7 @@
           "w": "happy"
         }
       ],
-      "words": [
-        "happy"
-      ],
+      "words": ["happy"],
       "availableDay": 26
     },
     {
@@ -2488,9 +2268,7 @@
           "w": "park"
         }
       ],
-      "words": [
-        "park"
-      ],
+      "words": ["park"],
       "availableDay": 27
     },
     {
@@ -2512,9 +2290,7 @@
           "w": "zoo"
         }
       ],
-      "words": [
-        "zoo"
-      ],
+      "words": ["zoo"],
       "availableDay": 27
     },
     {
@@ -2536,9 +2312,7 @@
           "w": "beach"
         }
       ],
-      "words": [
-        "beach"
-      ],
+      "words": ["beach"],
       "availableDay": 27
     },
     {
@@ -2560,9 +2334,7 @@
           "w": "pool"
         }
       ],
-      "words": [
-        "pool"
-      ],
+      "words": ["pool"],
       "availableDay": 27
     },
     {
@@ -2585,10 +2357,7 @@
           "w": "box"
         }
       ],
-      "words": [
-        "in",
-        "box"
-      ],
+      "words": ["in", "box"],
       "availableDay": 28
     },
     {
@@ -2611,10 +2380,7 @@
           "w": "box"
         }
       ],
-      "words": [
-        "on",
-        "box"
-      ],
+      "words": ["on", "box"],
       "availableDay": 28
     },
     {
@@ -2637,10 +2403,7 @@
           "w": "table"
         }
       ],
-      "words": [
-        "under",
-        "table"
-      ],
+      "words": ["under", "table"],
       "availableDay": 28
     },
     {
@@ -2663,10 +2426,7 @@
           "w": "table"
         }
       ],
-      "words": [
-        "on",
-        "table"
-      ],
+      "words": ["on", "table"],
       "availableDay": 28
     },
     {
@@ -2703,9 +2463,7 @@
           "w": "mom"
         }
       ],
-      "words": [
-        "mom"
-      ],
+      "words": ["mom"],
       "availableDay": 29
     },
     {
@@ -2724,9 +2482,7 @@
           "w": "grandma"
         }
       ],
-      "words": [
-        "grandma"
-      ],
+      "words": ["grandma"],
       "availableDay": 29
     },
     {
@@ -2745,9 +2501,7 @@
           "w": "dad"
         }
       ],
-      "words": [
-        "dad"
-      ],
+      "words": ["dad"],
       "availableDay": 29
     },
     {
@@ -2769,9 +2523,7 @@
           "w": "friend"
         }
       ],
-      "words": [
-        "friend"
-      ],
+      "words": ["friend"],
       "availableDay": 30
     },
     {
@@ -2793,9 +2545,7 @@
           "w": "sister"
         }
       ],
-      "words": [
-        "sister"
-      ],
+      "words": ["sister"],
       "availableDay": 30
     },
     {
@@ -2817,9 +2567,7 @@
           "w": "brother"
         }
       ],
-      "words": [
-        "brother"
-      ],
+      "words": ["brother"],
       "availableDay": 30
     },
     {
@@ -2841,9 +2589,7 @@
           "w": "star"
         }
       ],
-      "words": [
-        "star"
-      ],
+      "words": ["star"],
       "availableDay": 30
     }
   ]

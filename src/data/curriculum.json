@@ -5,10 +5,7 @@
       "key": "flowerbed",
       "name": "Flower Bed",
       "nameKo": "꽃밭",
-      "days": [
-        1,
-        7
-      ],
+      "days": [1, 7],
       "theme": "색·숫자·모양",
       "chant": "chant1"
     },
@@ -17,10 +14,7 @@
       "key": "pond",
       "name": "Pond",
       "nameKo": "연못",
-      "days": [
-        8,
-        14
-      ],
+      "days": [8, 14],
       "theme": "동물·가족·몸",
       "chant": "chant2"
     },
@@ -29,10 +23,7 @@
       "key": "forest",
       "name": "Forest",
       "nameKo": "숲",
-      "days": [
-        15,
-        21
-      ],
+      "days": [15, 21],
       "theme": "음식·옷·날씨",
       "chant": "chant3"
     },
@@ -41,10 +32,7 @@
       "key": "skybridge",
       "name": "Sky Bridge",
       "nameKo": "하늘다리",
-      "days": [
-        22,
-        30
-      ],
+      "days": [22, 30],
       "theme": "동작·감정·장소",
       "chant": "chant4"
     }
@@ -54,22 +42,10 @@
       "day": 1,
       "chapter": 1,
       "friend": "sami",
-      "words": [
-        "red",
-        "blue",
-        "yellow",
-        "green",
-        "pink"
-      ],
+      "words": ["red", "blue", "yellow", "green", "pink"],
       "pattern": "p01",
-      "letters": [
-        "s"
-      ],
-      "unlocks": [
-        "word-garden:1",
-        "sound-butterfly:1",
-        "feature:codex"
-      ],
+      "letters": ["s"],
+      "unlocks": ["word-garden:1", "sound-butterfly:1", "feature:codex"],
       "party": false,
       "finale": false
     },
@@ -77,20 +53,10 @@
       "day": 2,
       "chapter": 1,
       "friend": "appy",
-      "words": [
-        "flower",
-        "tree",
-        "leaf",
-        "sun",
-        "moon"
-      ],
+      "words": ["flower", "tree", "leaf", "sun", "moon"],
       "pattern": "p02",
-      "letters": [
-        "a"
-      ],
-      "unlocks": [
-        "hangul-pieces:1"
-      ],
+      "letters": ["a"],
+      "unlocks": ["hangul-pieces:1"],
       "party": false,
       "finale": false
     },
@@ -98,21 +64,10 @@
       "day": 3,
       "chapter": 1,
       "friend": "tiko",
-      "words": [
-        "orange",
-        "purple",
-        "white",
-        "black",
-        "brown"
-      ],
+      "words": ["orange", "purple", "white", "black", "brown"],
       "pattern": "p03",
-      "letters": [
-        "t"
-      ],
-      "unlocks": [
-        "sentence-train:1",
-        "feature:record"
-      ],
+      "letters": ["t"],
+      "unlocks": ["sentence-train:1", "feature:record"],
       "party": false,
       "finale": false
     },
@@ -120,20 +75,10 @@
       "day": 4,
       "chapter": 1,
       "friend": "pip",
-      "words": [
-        "one",
-        "two",
-        "three",
-        "four",
-        "five"
-      ],
+      "words": ["one", "two", "three", "four", "five"],
       "pattern": "p04",
-      "letters": [
-        "p"
-      ],
-      "unlocks": [
-        "word-garden:2"
-      ],
+      "letters": ["p"],
+      "unlocks": ["word-garden:2"],
       "party": false,
       "finale": false
     },
@@ -141,20 +86,10 @@
       "day": 5,
       "chapter": 1,
       "friend": "izzy",
-      "words": [
-        "circle",
-        "square",
-        "triangle",
-        "heart",
-        "star"
-      ],
+      "words": ["circle", "square", "triangle", "heart", "star"],
       "pattern": "p05",
-      "letters": [
-        "i"
-      ],
-      "unlocks": [
-        "pattern-path:1"
-      ],
+      "letters": ["i"],
+      "unlocks": ["pattern-path:1"],
       "party": false,
       "finale": false
     },
@@ -162,20 +97,10 @@
       "day": 6,
       "chapter": 1,
       "friend": "nubi",
-      "words": [
-        "six",
-        "seven",
-        "eight",
-        "nine",
-        "ten"
-      ],
+      "words": ["six", "seven", "eight", "nine", "ten"],
       "pattern": "p06",
-      "letters": [
-        "n"
-      ],
-      "unlocks": [
-        "feature:decorate"
-      ],
+      "letters": ["n"],
+      "unlocks": ["feature:decorate"],
       "party": false,
       "finale": false
     },
@@ -183,19 +108,10 @@
       "day": 7,
       "chapter": 1,
       "friend": "pinta",
-      "words": [
-        "big",
-        "small",
-        "cake",
-        "ball",
-        "balloon"
-      ],
+      "words": ["big", "small", "cake", "ball", "balloon"],
       "pattern": "p07",
       "letters": [],
-      "unlocks": [
-        "sound-butterfly:2",
-        "feature:chant"
-      ],
+      "unlocks": ["sound-butterfly:2", "feature:chant"],
       "party": true,
       "finale": false
     },
@@ -203,20 +119,10 @@
       "day": 8,
       "chapter": 2,
       "friend": "mimi",
-      "words": [
-        "frog",
-        "fish",
-        "duck",
-        "turtle",
-        "bug"
-      ],
+      "words": ["frog", "fish", "duck", "turtle", "bug"],
       "pattern": "p08",
-      "letters": [
-        "m"
-      ],
-      "unlocks": [
-        "number-fireflies:1"
-      ],
+      "letters": ["m"],
+      "unlocks": ["number-fireflies:1"],
       "party": false,
       "finale": false
     },
@@ -224,20 +130,10 @@
       "day": 9,
       "chapter": 2,
       "friend": "dabo",
-      "words": [
-        "cat",
-        "dog",
-        "rabbit",
-        "bear",
-        "pig"
-      ],
+      "words": ["cat", "dog", "rabbit", "bear", "pig"],
       "pattern": "p09",
-      "letters": [
-        "d"
-      ],
-      "unlocks": [
-        "hangul-pieces:2"
-      ],
+      "letters": ["d"],
+      "unlocks": ["hangul-pieces:2"],
       "party": false,
       "finale": false
     },
@@ -245,20 +141,10 @@
       "day": 10,
       "chapter": 2,
       "friend": "gogo",
-      "words": [
-        "lion",
-        "monkey",
-        "elephant",
-        "horse",
-        "cow"
-      ],
+      "words": ["lion", "monkey", "elephant", "horse", "cow"],
       "pattern": "p10",
-      "letters": [
-        "g"
-      ],
-      "unlocks": [
-        "word-garden:3"
-      ],
+      "letters": ["g"],
+      "unlocks": ["word-garden:3"],
       "party": false,
       "finale": false
     },
@@ -266,20 +152,10 @@
       "day": 11,
       "chapter": 2,
       "friend": "olli",
-      "words": [
-        "mom",
-        "dad",
-        "baby",
-        "sister",
-        "brother"
-      ],
+      "words": ["mom", "dad", "baby", "sister", "brother"],
       "pattern": "p11",
-      "letters": [
-        "o"
-      ],
-      "unlocks": [
-        "pattern-path:2"
-      ],
+      "letters": ["o"],
+      "unlocks": ["pattern-path:2"],
       "party": false,
       "finale": false
     },
@@ -287,20 +163,10 @@
       "day": 12,
       "chapter": 2,
       "friend": "cubi",
-      "words": [
-        "head",
-        "eye",
-        "nose",
-        "mouth",
-        "ear"
-      ],
+      "words": ["head", "eye", "nose", "mouth", "ear"],
       "pattern": "p12",
-      "letters": [
-        "c"
-      ],
-      "unlocks": [
-        "number-fireflies:2"
-      ],
+      "letters": ["c"],
+      "unlocks": ["number-fireflies:2"],
       "party": false,
       "finale": false
     },
@@ -308,20 +174,10 @@
       "day": 13,
       "chapter": 2,
       "friend": "kiwa",
-      "words": [
-        "hand",
-        "foot",
-        "arm",
-        "leg",
-        "finger"
-      ],
+      "words": ["hand", "foot", "arm", "leg", "finger"],
       "pattern": "p13",
-      "letters": [
-        "k"
-      ],
-      "unlocks": [
-        "sentence-train:2"
-      ],
+      "letters": ["k"],
+      "unlocks": ["sentence-train:2"],
       "party": false,
       "finale": false
     },
@@ -329,18 +185,10 @@
       "day": 14,
       "chapter": 2,
       "friend": "gomo",
-      "words": [
-        "water",
-        "boat",
-        "rock",
-        "grandma",
-        "grandpa"
-      ],
+      "words": ["water", "boat", "rock", "grandma", "grandpa"],
       "pattern": "p14",
       "letters": [],
-      "unlocks": [
-        "pattern-path:3"
-      ],
+      "unlocks": ["pattern-path:3"],
       "party": true,
       "finale": false
     },
@@ -348,21 +196,10 @@
       "day": 15,
       "chapter": 3,
       "friend": "ebbi",
-      "words": [
-        "apple",
-        "banana",
-        "grape",
-        "strawberry",
-        "lemon"
-      ],
+      "words": ["apple", "banana", "grape", "strawberry", "lemon"],
       "pattern": "p15",
-      "letters": [
-        "e"
-      ],
-      "unlocks": [
-        "ant-path:1",
-        "sound-butterfly:3"
-      ],
+      "letters": ["e"],
+      "unlocks": ["ant-path:1", "sound-butterfly:3"],
       "party": false,
       "finale": false
     },
@@ -370,20 +207,10 @@
       "day": 16,
       "chapter": 3,
       "friend": "uppy",
-      "words": [
-        "bread",
-        "milk",
-        "egg",
-        "rice",
-        "cookie"
-      ],
+      "words": ["bread", "milk", "egg", "rice", "cookie"],
       "pattern": "p16",
-      "letters": [
-        "u"
-      ],
-      "unlocks": [
-        "pattern-path:4"
-      ],
+      "letters": ["u"],
+      "unlocks": ["pattern-path:4"],
       "party": false,
       "finale": false
     },
@@ -391,20 +218,10 @@
       "day": 17,
       "chapter": 3,
       "friend": "rori",
-      "words": [
-        "carrot",
-        "corn",
-        "juice",
-        "pizza",
-        "candy"
-      ],
+      "words": ["carrot", "corn", "juice", "pizza", "candy"],
       "pattern": "p17",
-      "letters": [
-        "r"
-      ],
-      "unlocks": [
-        "number-fireflies:3"
-      ],
+      "letters": ["r"],
+      "unlocks": ["number-fireflies:3"],
       "party": false,
       "finale": false
     },
@@ -412,20 +229,10 @@
       "day": 18,
       "chapter": 3,
       "friend": "hoho",
-      "words": [
-        "hat",
-        "shirt",
-        "pants",
-        "shoes",
-        "socks"
-      ],
+      "words": ["hat", "shirt", "pants", "shoes", "socks"],
       "pattern": "p18",
-      "letters": [
-        "h"
-      ],
-      "unlocks": [
-        "hangul-pieces:3"
-      ],
+      "letters": ["h"],
+      "unlocks": ["hangul-pieces:3"],
       "party": false,
       "finale": false
     },
@@ -433,20 +240,10 @@
       "day": 19,
       "chapter": 3,
       "friend": "bibi",
-      "words": [
-        "dress",
-        "coat",
-        "bag",
-        "umbrella",
-        "boots"
-      ],
+      "words": ["dress", "coat", "bag", "umbrella", "boots"],
       "pattern": "p19",
-      "letters": [
-        "b"
-      ],
-      "unlocks": [
-        "ant-path:2"
-      ],
+      "letters": ["b"],
+      "unlocks": ["ant-path:2"],
       "party": false,
       "finale": false
     },
@@ -454,20 +251,10 @@
       "day": 20,
       "chapter": 3,
       "friend": "fifi",
-      "words": [
-        "sunny",
-        "rainy",
-        "cloudy",
-        "snowy",
-        "windy"
-      ],
+      "words": ["sunny", "rainy", "cloudy", "snowy", "windy"],
       "pattern": "p20",
-      "letters": [
-        "f"
-      ],
-      "unlocks": [
-        "sentence-train:3"
-      ],
+      "letters": ["f"],
+      "unlocks": ["sentence-train:3"],
       "party": false,
       "finale": false
     },
@@ -475,13 +262,7 @@
       "day": 21,
       "chapter": 3,
       "friend": "ruby",
-      "words": [
-        "hot",
-        "cold",
-        "rainbow",
-        "owl",
-        "mushroom"
-      ],
+      "words": ["hot", "cold", "rainbow", "owl", "mushroom"],
       "pattern": "p21",
       "letters": [],
       "unlocks": [],
@@ -492,20 +273,10 @@
       "day": 22,
       "chapter": 4,
       "friend": "lulu",
-      "words": [
-        "run",
-        "jump",
-        "walk",
-        "swim",
-        "fly"
-      ],
+      "words": ["run", "jump", "walk", "swim", "fly"],
       "pattern": "p22",
-      "letters": [
-        "l"
-      ],
-      "unlocks": [
-        "ant-path:3"
-      ],
+      "letters": ["l"],
+      "unlocks": ["ant-path:3"],
       "party": false,
       "finale": false
     },
@@ -513,20 +284,10 @@
       "day": 23,
       "chapter": 4,
       "friend": "juju",
-      "words": [
-        "sing",
-        "dance",
-        "clap",
-        "sleep",
-        "eat"
-      ],
+      "words": ["sing", "dance", "clap", "sleep", "eat"],
       "pattern": "p23",
-      "letters": [
-        "j"
-      ],
-      "unlocks": [
-        "number-fireflies:4"
-      ],
+      "letters": ["j"],
+      "unlocks": ["number-fireflies:4"],
       "party": false,
       "finale": false
     },
@@ -534,20 +295,10 @@
       "day": 24,
       "chapter": 4,
       "friend": "vivi",
-      "words": [
-        "read",
-        "draw",
-        "play",
-        "cook",
-        "hide"
-      ],
+      "words": ["read", "draw", "play", "cook", "hide"],
       "pattern": "p24",
-      "letters": [
-        "v"
-      ],
-      "unlocks": [
-        "word-garden:4"
-      ],
+      "letters": ["v"],
+      "unlocks": ["word-garden:4"],
       "party": false,
       "finale": false
     },
@@ -555,20 +306,10 @@
       "day": 25,
       "chapter": 4,
       "friend": "wobi",
-      "words": [
-        "happy",
-        "sad",
-        "angry",
-        "scared",
-        "sleepy"
-      ],
+      "words": ["happy", "sad", "angry", "scared", "sleepy"],
       "pattern": "p25",
-      "letters": [
-        "w"
-      ],
-      "unlocks": [
-        "sound-butterfly:4"
-      ],
+      "letters": ["w"],
+      "unlocks": ["sound-butterfly:4"],
       "party": false,
       "finale": false
     },
@@ -576,20 +317,10 @@
       "day": 26,
       "chapter": 4,
       "friend": "dexi",
-      "words": [
-        "hungry",
-        "thirsty",
-        "tired",
-        "brave",
-        "shy"
-      ],
+      "words": ["hungry", "thirsty", "tired", "brave", "shy"],
       "pattern": "p26",
-      "letters": [
-        "x"
-      ],
-      "unlocks": [
-        "sentence-train:4"
-      ],
+      "letters": ["x"],
+      "unlocks": ["sentence-train:4"],
       "party": false,
       "finale": false
     },
@@ -597,20 +328,10 @@
       "day": 27,
       "chapter": 4,
       "friend": "yumi",
-      "words": [
-        "park",
-        "zoo",
-        "beach",
-        "store",
-        "pool"
-      ],
+      "words": ["park", "zoo", "beach", "store", "pool"],
       "pattern": "p27",
-      "letters": [
-        "y"
-      ],
-      "unlocks": [
-        "feature:greeting-medley"
-      ],
+      "letters": ["y"],
+      "unlocks": ["feature:greeting-medley"],
       "party": false,
       "finale": false
     },
@@ -618,13 +339,7 @@
       "day": 28,
       "chapter": 4,
       "friend": "lexy",
-      "words": [
-        "in",
-        "on",
-        "under",
-        "box",
-        "table"
-      ],
+      "words": ["in", "on", "under", "box", "table"],
       "pattern": "p28",
       "letters": [],
       "unlocks": [],
@@ -635,21 +350,10 @@
       "day": 29,
       "chapter": 4,
       "friend": "zuzu",
-      "words": [
-        "sky",
-        "cloud",
-        "night",
-        "bridge",
-        "dream"
-      ],
+      "words": ["sky", "cloud", "night", "bridge", "dream"],
       "pattern": "p29",
-      "letters": [
-        "z",
-        "q"
-      ],
-      "unlocks": [
-        "feature:rehearsal"
-      ],
+      "letters": ["z", "q"],
+      "unlocks": ["feature:rehearsal"],
       "party": false,
       "finale": false
     },
@@ -657,18 +361,10 @@
       "day": 30,
       "chapter": 4,
       "friend": "lumi",
-      "words": [
-        "friend",
-        "gift",
-        "music",
-        "light",
-        "garden"
-      ],
+      "words": ["friend", "gift", "music", "light", "garden"],
       "pattern": "p30",
       "letters": [],
-      "unlocks": [
-        "feature:finale"
-      ],
+      "unlocks": ["feature:finale"],
       "party": false,
       "finale": true
     }

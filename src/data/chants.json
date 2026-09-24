@@ -8,32 +8,19 @@
       "lines": [
         {
           "text": "Red, red, I like red!",
-          "words": [
-            "red"
-          ]
+          "words": ["red"]
         },
         {
           "text": "Blue, blue, I like blue!",
-          "words": [
-            "blue"
-          ]
+          "words": ["blue"]
         },
         {
           "text": "One, two, three, four, five!",
-          "words": [
-            "one",
-            "two",
-            "three",
-            "four",
-            "five"
-          ]
+          "words": ["one", "two", "three", "four", "five"]
         },
         {
           "text": "Look at the star! It is big!",
-          "words": [
-            "star",
-            "big"
-          ]
+          "words": ["star", "big"]
         }
       ]
     },
@@ -45,32 +32,19 @@
       "lines": [
         {
           "text": "Frog, fish, duck. Where is the duck?",
-          "words": [
-            "frog",
-            "fish",
-            "duck"
-          ]
+          "words": ["frog", "fish", "duck"]
         },
         {
           "text": "Touch your nose, touch your ear!",
-          "words": [
-            "nose",
-            "ear"
-          ]
+          "words": ["nose", "ear"]
         },
         {
           "text": "This is my mom, this is my dad.",
-          "words": [
-            "mom",
-            "dad"
-          ]
+          "words": ["mom", "dad"]
         },
         {
           "text": "I love my grandma, I love my grandpa!",
-          "words": [
-            "grandma",
-            "grandpa"
-          ]
+          "words": ["grandma", "grandpa"]
         }
       ]
     },
@@ -82,32 +56,19 @@
       "lines": [
         {
           "text": "Apple, banana, I want a grape!",
-          "words": [
-            "apple",
-            "banana",
-            "grape"
-          ]
+          "words": ["apple", "banana", "grape"]
         },
         {
           "text": "Do you like milk? Do you like rice?",
-          "words": [
-            "milk",
-            "rice"
-          ]
+          "words": ["milk", "rice"]
         },
         {
           "text": "Put on your hat, put on your shoes.",
-          "words": [
-            "hat",
-            "shoes"
-          ]
+          "words": ["hat", "shoes"]
         },
         {
           "text": "It's sunny today! It's rainy today!",
-          "words": [
-            "sunny",
-            "rainy"
-          ]
+          "words": ["sunny", "rainy"]
         }
       ]
     },
@@ -119,29 +80,19 @@
       "lines": [
         {
           "text": "I can run, I can jump.",
-          "words": [
-            "run",
-            "jump"
-          ]
+          "words": ["run", "jump"]
         },
         {
           "text": "Can you fly? Let's fly!",
-          "words": [
-            "fly"
-          ]
+          "words": ["fly"]
         },
         {
           "text": "I am happy, are you happy?",
-          "words": [
-            "happy"
-          ]
+          "words": ["happy"]
         },
         {
           "text": "You are my friend! Good night!",
-          "words": [
-            "friend",
-            "night"
-          ]
+          "words": ["friend", "night"]
         }
       ]
     }
