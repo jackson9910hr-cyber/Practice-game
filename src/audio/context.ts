@@ -48,6 +48,7 @@ class AudioHub {
     src.buffer = buf;
     src.connect(ctx.destination);
     src.start(0);
+    this.startKeepAlive();
     // iOS: the first speechSynthesis.speak must also happen inside a gesture.
     if ('speechSynthesis' in window) {
       const u = new SpeechSynthesisUtterance(' ');
@@ -56,6 +57,40 @@ class AudioHub {
     }
     this.unlocked = true;
     this.hookLifecycle();
+  }
+
+  /**
+   * Older iOS (no Audio Session API) mutes Web Audio when the ring/silent switch is on — but a
+   * playing <audio> element moves the page into the "playback" category, which ignores the
+   * switch. A looping silent WAV (made in memory → blob:, allowed by the CSP) does exactly that.
+   */
+  private keepAlive: HTMLAudioElement | null = null;
+  private startKeepAlive() {
+    if (this.keepAlive) return void this.keepAlive.play().catch(() => undefined);
+    const sr = 8000;
+    const n = sr; // 1 s of silence
+    const buf = new ArrayBuffer(44 + n);
+    const v = new DataView(buf);
+    const str = (o: number, s: string) => [...s].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)));
+    str(0, 'RIFF');
+    v.setUint32(4, 36 + n, true);
+    str(8, 'WAVEfmt ');
+    v.setUint32(16, 16, true);
+    v.setUint16(20, 1, true); // PCM
+    v.setUint16(22, 1, true); // mono
+    v.setUint32(24, sr, true);
+    v.setUint32(28, sr, true);
+    v.setUint16(32, 1, true);
+    v.setUint16(34, 8, true); // 8-bit
+    str(36, 'data');
+    v.setUint32(40, n, true);
+    new Uint8Array(buf, 44).fill(128); // 8-bit silence
+    const el = new Audio(URL.createObjectURL(new Blob([buf], { type: 'audio/wav' })));
+    el.loop = true;
+    el.setAttribute('playsinline', '');
+    el.setAttribute('x-webkit-airplay', 'deny');
+    this.keepAlive = el;
+    void el.play().catch(() => undefined);
   }
 
   private hooked = false;
@@ -67,9 +102,11 @@ class AudioHub {
     document.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'hidden') {
         void ctx.suspend();
+        this.keepAlive?.pause();
         this.onHidden?.();
       } else {
         void ctx.resume();
+        void this.keepAlive?.play().catch(() => undefined);
         this.onVisible?.();
       }
     });

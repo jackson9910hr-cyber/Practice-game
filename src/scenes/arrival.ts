@@ -148,6 +148,13 @@ export class ArrivalScene extends Scene {
   async start() {
     const cd = getDay(this.day);
     music.play(chapterOf(this.day).key);
+    const fr0 = getFriend(cd.friend);
+    void voice.preload([
+      vid.friendName(fr0.id),
+      vid.greet(fr0.id),
+      ...cd.words.flatMap((w) => [vid.word(w), vid.wordSentence(w)]),
+      ...cd.letters.flatMap((l) => [vid.letter(l), vid.phoneme(l), vid.pic(getLetter(l).keyword)]),
+    ]);
     const s = store.save;
     const first = s.playDay === 1 && s.friendsMet.length === 0;
     await wait(400);

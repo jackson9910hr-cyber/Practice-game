@@ -13,6 +13,10 @@
 3. 별을 누르면 시작합니다. 소리가 안 들리면 무음 스위치를 확인하세요.
 4. 보호자 메뉴는 정원 화면 오른쪽 위 ⚙️에 있고, 곱셈 문제를 풀어야 들어갈 수 있습니다.
 
+## 소리 출처
+
+영어 음성은 [Piper](https://github.com/rhasspy/piper)(MIT)와 LibriTTS(Zen et al., CC BY 4.0, openslr.org/60)로 만든 녹음입니다. 효과음과 음악은 코드로 생성합니다. 자세한 내용은 [docs/audio.md](docs/audio.md)를 보세요.
+
 ## 개발
 
 ```bash
@@ -23,6 +27,7 @@ npm run check          # lint + format + 데이터 검증 + 커버리지 + 빌�
 npm run simulate       # 가상 아이 3명 × 30일 → docs/simulation.md
 npm run gen:levels     # 게임별 32단계 난이도 JSON 생성
 npm run gen:audio      # 음성 매니페스트 재생성 (녹음 파일 경로는 보존)
+npm run gen:voice      # 영어 녹음 생성 (Python + Piper, docs/audio.md 참고)
 ```
 
 ## 구조

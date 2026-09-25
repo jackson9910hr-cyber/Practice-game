@@ -381,6 +381,20 @@ VoicePlayer: file 있으면 <AudioBuffer> 재생 → 없으면 speechSynthesis(l
 - 원어민 녹음 교체 = 파일을 넣고 매니페스트에 `file`만 채우면 끝 (코드 수정 0). 가이드는 Stage 6 `docs/audio.md`.
 - 효과음·챕터 루프 음악·챈트 반주 = Web Audio 오실레이터/노이즈로 코드 생성(5음계 펜타토닉 → 불협 없음).
 
+**사운드 설계 (Stage 6 반영, 구현 기준)**
+
+| 층 | 내용 | 구현 |
+|---|---|---|
+| 영어 음성 | 783줄 전부 **녹음 파일**(MP3 48kbps, 5.2MB): 단어·예문·문장·인사·숫자·방향·알파벳 이름·**파닉스 음소**(IPA로 합성, 글자 이름 아님) | Piper TTS `en-us-libritts-high` 화자 172(CC BY 4.0, 출처는 부모 화면·README) · `npm run gen:voice` · ASR(pocketsphinx) 품질 검사 |
+| 한국어 음성 | 지시·칭찬·친구 이름·숫자(하나, 둘…)·자모 소리 | 기기 내장 ko-KR 음성(오프라인 `localService`만). 공개 라이선스 한국어 음성 모델이 없어 녹음 파일은 추후 교체 슬롯으로 남김 |
+| 효과음 18종 | tap·pop·pickup·snap·flip·whoosh·soft(오답, 부드럽게)·correct·sparkle·chime·fanfare·whistle·plant·twinkle·count·kick·shaker·clap | Web Audio 절차 생성, 공유 노이즈 버퍼 |
+| 음악 | 챕터별 펜타토닉 루프 4곡 + 축제 | 음성 재생 중 자동 덕킹 |
+| 배경 소리 | 꽃밭 풍경·연못 물방울/개구리·숲 새소리·하늘다리 바람·밤 귀뚜라미 | `ambience.ts`, 드문 랜덤 이벤트(웅웅거림 없음), 음악과 함께 덕킹 |
+
+- 첫 탭에서 AudioContext 잠금 해제 + **무음 WAV 루프 `<audio>`**로 iOS 무음 스위치에서도 소리가 나게 함.
+- 오프라인: SW가 음성 파일을 내용 해시로 키한 별도 캐시에 미리 받음 → 비행기 모드에서도 전부 재생.
+- 부모 화면: 음악·효과음·음성 켜기/끄기, 음성 테스트.
+
 ### 9.4 저장
 
 - IndexedDB `starlight-garden` DB, store: `save`(단일 문서), `recordings`(Blob), `meta`.

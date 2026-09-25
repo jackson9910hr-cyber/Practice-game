@@ -18,7 +18,8 @@
     "gen:levels": "tsx scripts/gen-levels.ts",
     "gen:audio": "tsx scripts/gen-audio-manifest.ts",
     "simulate": "tsx scripts/simulate.ts",
-    "check": "npm run lint && npm run format:check && npm run validate:data && npm run test:cov && npm run build"
+    "check": "npm run lint && npm run format:check && npm run validate:data && npm run test:cov && npm run build",
+    "gen:voice": "python3 scripts/gen-voice.py"
   },
   "dependencies": {
     "idb": "^8.0.3",

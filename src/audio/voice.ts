@@ -72,6 +72,21 @@ class Voice {
     return () => this.listeners.delete(f);
   }
 
+  /** Fetch + decode recordings ahead of time (e.g. today's words) so lines start without a gap. */
+  async preload(ids: string[]) {
+    if (!audio.ctx) return;
+    for (const id of ids) {
+      const f = manifest[id]?.file;
+      if (!f || this.buffers.has(f)) continue;
+      try {
+        const res = await fetch(`${import.meta.env.BASE_URL}${f}`);
+        if (res.ok) this.buffers.set(f, await audio.ctx.decodeAudioData(await res.arrayBuffer()));
+      } catch {
+        /* played later on demand */
+      }
+    }
+  }
+
   /** true if a native recording is attached to this line */
   recorded(id: string) {
     return !!manifest[id]?.file;

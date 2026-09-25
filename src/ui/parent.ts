@@ -371,7 +371,12 @@ function dashboard() {
   wrap.append(
     section(
       '음성',
-      el('p', {}, `영어: ${vi.en} · 한국어: ${vi.ko}`),
+      el('p', {}, '영어: 게임에 들어 있는 녹음(오프라인에서도 재생) · 한국어: ' + vi.ko + ' (기기 음성)'),
+      el(
+        'p',
+        { class: 'note' },
+        '영어 음성 출처: Piper 음성 합성(MIT)과 LibriTTS 데이터(CC BY 4.0, openslr.org/60)로 만든 녹음입니다. 원어민 녹음으로 바꿀 수 있어요.',
+      ),
       vt,
       el(
         'p',

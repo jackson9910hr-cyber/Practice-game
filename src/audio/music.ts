@@ -1,6 +1,7 @@
 /**
  * Generated chapter loops (Web Audio, pentatonic → no clashes). 8-bar deterministic loop per chapter.
  */
+import { ambience } from './ambience';
 import { audio } from './context';
 
 interface Style {
@@ -42,6 +43,7 @@ class Music {
   enabled = true;
 
   play(name: string) {
+    ambience.play(name);
     if (this.current === name && this.timer !== null) return;
     this.stop();
     this.current = name;
@@ -67,6 +69,7 @@ class Music {
     if (!this.current) return;
     this.paused = this.current;
     this.stop();
+    ambience.stop();
   }
   resume() {
     if (this.paused && !this.current) this.play(this.paused);
@@ -81,6 +84,7 @@ class Music {
 
   setEnabled(on: boolean) {
     this.enabled = on;
+    ambience.setEnabled(on);
     if (!on) this.stop();
   }
 

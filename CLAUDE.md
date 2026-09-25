@@ -24,6 +24,8 @@ npm run simulate       # 가상 아이 3명 × 30일 밸런스 리포트
 - 각 미니게임 = `games/<name>/logic.ts`(순수, 테스트 필수) + `view.ts`(Pixi). 문제 생성·정답 판정·힌트 단계는 logic에.
 - 모든 콘텐츠(단어·문장·친구·레벨·칭찬·음성 문구)는 JSON. 코드에 학습 문자열 하드코딩 금지.
 - 모든 음성은 `audio-manifest.json`의 ID로 호출. 녹음 파일이 있으면 파일, 없으면 Web Speech 폴백(en-US rate 0.8 / ko-KR).
+- 영어 음성은 `public/audio/en/**`의 생성 녹음(`npm run gen:voice`, Piper LibriTTS CC BY 4.0 — 출처 표기 유지). 새 영어 문구를 넣으면 재생성 후 `validate:data`로 파일 존재 확인. 파닉스는 음소 녹음(글자 이름 금지).
+- 코드에 쓰는 음성 ID 리터럴은 매니페스트에 있어야 함(`tests/core/voice-literals.test.ts`).
 - 세이브 스키마 변경 시 `schemaVersion` 증가 + `storage/migrations.ts`에 마이그레이션 + 테스트.
 - 런타임 의존성 최소화: `pixi.js`, `idb` 외 추가 전에 이유를 PR/커밋에 남길 것. `zod`는 테스트·스크립트 전용.
 

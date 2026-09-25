@@ -1,3921 +1,4705 @@
 {
- "$comment": "Voice lines by id. Set \"file\" to a path under public/ (e.g. \"audio/en/word/red.m4a\") to replace TTS. See docs/audio.md.",
+ "$comment": "Voice lines by id. \"file\" is a recording under public/ (played instead of the device voice). See docs/audio.md.",
  "version": 1,
+ "attribution": "English voice: Piper neural TTS (MIT) with the \"en-us-libritts-high\" model, trained on LibriTTS (Zen et al., CC BY 4.0, openslr.org/60), speaker 172.",
  "entries": {
   "en.big.0": {
    "lang": "en-US",
    "text": "Wow! Amazing!",
-   "file": null
+   "file": "audio/en/big/0.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.big.1": {
    "lang": "en-US",
    "text": "Great listening!",
-   "file": null
+   "file": "audio/en/big/1.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.big.2": {
    "lang": "en-US",
    "text": "You worked hard!",
-   "file": null
+   "file": "audio/en/big/2.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.a": {
    "lang": "en-US",
    "text": "a",
-   "file": null
+   "file": "audio/en/card/a.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.am": {
    "lang": "en-US",
    "text": "am",
-   "file": null
+   "file": "audio/en/card/am.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.an": {
    "lang": "en-US",
    "text": "an",
-   "file": null
+   "file": "audio/en/card/an.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.apple": {
    "lang": "en-US",
    "text": "apple",
-   "file": null
+   "file": "audio/en/card/apple.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.apples": {
    "lang": "en-US",
    "text": "apples",
-   "file": null
+   "file": "audio/en/card/apples.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.are": {
    "lang": "en-US",
    "text": "are",
-   "file": null
+   "file": "audio/en/card/are.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.arms": {
    "lang": "en-US",
    "text": "arms",
-   "file": null
+   "file": "audio/en/card/arms.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.at": {
    "lang": "en-US",
    "text": "at",
-   "file": null
+   "file": "audio/en/card/at.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.bag": {
    "lang": "en-US",
    "text": "bag",
-   "file": null
+   "file": "audio/en/card/bag.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.ball": {
    "lang": "en-US",
    "text": "ball",
-   "file": null
+   "file": "audio/en/card/ball.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.balloon": {
    "lang": "en-US",
    "text": "balloon",
-   "file": null
+   "file": "audio/en/card/balloon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.balloons": {
    "lang": "en-US",
    "text": "balloons",
-   "file": null
+   "file": "audio/en/card/balloons.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.banana": {
    "lang": "en-US",
    "text": "banana",
-   "file": null
+   "file": "audio/en/card/banana.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.beach": {
    "lang": "en-US",
    "text": "beach",
-   "file": null
+   "file": "audio/en/card/beach.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.big": {
    "lang": "en-US",
    "text": "big",
-   "file": null
+   "file": "audio/en/card/big.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.box": {
    "lang": "en-US",
    "text": "box",
-   "file": null
+   "file": "audio/en/card/box.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.bread": {
    "lang": "en-US",
    "text": "bread",
-   "file": null
+   "file": "audio/en/card/bread.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.brother": {
    "lang": "en-US",
    "text": "brother",
-   "file": null
+   "file": "audio/en/card/brother.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.cake": {
    "lang": "en-US",
    "text": "cake",
-   "file": null
+   "file": "audio/en/card/cake.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.can": {
    "lang": "en-US",
    "text": "Can",
-   "file": null
+   "file": "audio/en/card/can.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.candy": {
    "lang": "en-US",
    "text": "candy",
-   "file": null
+   "file": "audio/en/card/candy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.carrots": {
    "lang": "en-US",
    "text": "carrots",
-   "file": null
+   "file": "audio/en/card/carrots.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.cat": {
    "lang": "en-US",
    "text": "cat",
-   "file": null
+   "file": "audio/en/card/cat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.clap": {
    "lang": "en-US",
    "text": "clap",
-   "file": null
+   "file": "audio/en/card/clap.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.coat": {
    "lang": "en-US",
    "text": "coat",
-   "file": null
+   "file": "audio/en/card/coat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.cold": {
    "lang": "en-US",
    "text": "cold",
-   "file": null
+   "file": "audio/en/card/cold.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.color": {
    "lang": "en-US",
    "text": "color",
-   "file": null
+   "file": "audio/en/card/color.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.cookies": {
    "lang": "en-US",
    "text": "cookies",
-   "file": null
+   "file": "audio/en/card/cookies.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.corn": {
    "lang": "en-US",
    "text": "corn",
-   "file": null
+   "file": "audio/en/card/corn.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.cow": {
    "lang": "en-US",
    "text": "cow",
-   "file": null
+   "file": "audio/en/card/cow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.dad": {
    "lang": "en-US",
    "text": "Dad",
-   "file": null
+   "file": "audio/en/card/dad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.dance": {
    "lang": "en-US",
    "text": "dance",
-   "file": null
+   "file": "audio/en/card/dance.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.do": {
    "lang": "en-US",
    "text": "Do",
-   "file": null
+   "file": "audio/en/card/do.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.dog": {
    "lang": "en-US",
    "text": "dog",
-   "file": null
+   "file": "audio/en/card/dog.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.don-t": {
    "lang": "en-US",
    "text": "don't",
-   "file": null
+   "file": "audio/en/card/don-t.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.draw": {
    "lang": "en-US",
    "text": "draw",
-   "file": null
+   "file": "audio/en/card/draw.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.dress": {
    "lang": "en-US",
    "text": "dress",
-   "file": null
+   "file": "audio/en/card/dress.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.duck": {
    "lang": "en-US",
    "text": "duck",
-   "file": null
+   "file": "audio/en/card/duck.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.ear": {
    "lang": "en-US",
    "text": "ear",
-   "file": null
+   "file": "audio/en/card/ear.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.eggs": {
    "lang": "en-US",
    "text": "eggs",
-   "file": null
+   "file": "audio/en/card/eggs.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.feet": {
    "lang": "en-US",
    "text": "feet",
-   "file": null
+   "file": "audio/en/card/feet.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.fingers": {
    "lang": "en-US",
    "text": "fingers",
-   "file": null
+   "file": "audio/en/card/fingers.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.fish": {
    "lang": "en-US",
    "text": "fish",
-   "file": null
+   "file": "audio/en/card/fish.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.five": {
    "lang": "en-US",
    "text": "five",
-   "file": null
+   "file": "audio/en/card/five.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.flower": {
    "lang": "en-US",
    "text": "flower",
-   "file": null
+   "file": "audio/en/card/flower.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.flowers": {
    "lang": "en-US",
    "text": "flowers",
-   "file": null
+   "file": "audio/en/card/flowers.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.fly": {
    "lang": "en-US",
    "text": "fly",
-   "file": null
+   "file": "audio/en/card/fly.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.friend": {
    "lang": "en-US",
    "text": "friend",
-   "file": null
+   "file": "audio/en/card/friend.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.frog": {
    "lang": "en-US",
    "text": "frog",
-   "file": null
+   "file": "audio/en/card/frog.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.grandma": {
    "lang": "en-US",
    "text": "Grandma",
-   "file": null
+   "file": "audio/en/card/grandma.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.grandpa": {
    "lang": "en-US",
    "text": "grandpa",
-   "file": null
+   "file": "audio/en/card/grandpa.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.grapes": {
    "lang": "en-US",
    "text": "grapes",
-   "file": null
+   "file": "audio/en/card/grapes.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.green": {
    "lang": "en-US",
    "text": "green",
-   "file": null
+   "file": "audio/en/card/green.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.hands": {
    "lang": "en-US",
    "text": "hands",
-   "file": null
+   "file": "audio/en/card/hands.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.happy": {
    "lang": "en-US",
    "text": "happy",
-   "file": null
+   "file": "audio/en/card/happy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.hat": {
    "lang": "en-US",
    "text": "hat",
-   "file": null
+   "file": "audio/en/card/hat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.have": {
    "lang": "en-US",
    "text": "have",
-   "file": null
+   "file": "audio/en/card/have.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.head": {
    "lang": "en-US",
    "text": "head",
-   "file": null
+   "file": "audio/en/card/head.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.heart": {
    "lang": "en-US",
    "text": "heart",
-   "file": null
+   "file": "audio/en/card/heart.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.horse": {
    "lang": "en-US",
    "text": "horse",
-   "file": null
+   "file": "audio/en/card/horse.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.how": {
    "lang": "en-US",
    "text": "How",
-   "file": null
+   "file": "audio/en/card/how.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.hungry": {
    "lang": "en-US",
    "text": "hungry",
-   "file": null
+   "file": "audio/en/card/hungry.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.i": {
    "lang": "en-US",
    "text": "I",
-   "file": null
+   "file": "audio/en/card/i.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.i-m": {
    "lang": "en-US",
    "text": "I'm",
-   "file": null
+   "file": "audio/en/card/i-m.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.in": {
    "lang": "en-US",
    "text": "in",
-   "file": null
+   "file": "audio/en/card/in.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.is": {
    "lang": "en-US",
    "text": "is",
-   "file": null
+   "file": "audio/en/card/is.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.it": {
    "lang": "en-US",
    "text": "it",
-   "file": null
+   "file": "audio/en/card/it.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.it-s": {
    "lang": "en-US",
    "text": "It's",
-   "file": null
+   "file": "audio/en/card/it-s.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.jump": {
    "lang": "en-US",
    "text": "jump",
-   "file": null
+   "file": "audio/en/card/jump.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.leaf": {
    "lang": "en-US",
    "text": "leaf",
-   "file": null
+   "file": "audio/en/card/leaf.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.lemon": {
    "lang": "en-US",
    "text": "lemon",
-   "file": null
+   "file": "audio/en/card/lemon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.let-s": {
    "lang": "en-US",
    "text": "Let's",
-   "file": null
+   "file": "audio/en/card/let-s.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.like": {
    "lang": "en-US",
    "text": "like",
-   "file": null
+   "file": "audio/en/card/like.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.lion": {
    "lang": "en-US",
    "text": "lion",
-   "file": null
+   "file": "audio/en/card/lion.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.look": {
    "lang": "en-US",
    "text": "Look",
-   "file": null
+   "file": "audio/en/card/look.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.love": {
    "lang": "en-US",
    "text": "love",
-   "file": null
+   "file": "audio/en/card/love.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.many": {
    "lang": "en-US",
    "text": "many",
-   "file": null
+   "file": "audio/en/card/many.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.milk": {
    "lang": "en-US",
    "text": "milk",
-   "file": null
+   "file": "audio/en/card/milk.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.mom": {
    "lang": "en-US",
    "text": "Mom",
-   "file": null
+   "file": "audio/en/card/mom.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.monkey": {
    "lang": "en-US",
    "text": "monkey",
-   "file": null
+   "file": "audio/en/card/monkey.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.moon": {
    "lang": "en-US",
    "text": "moon",
-   "file": null
+   "file": "audio/en/card/moon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.mouth": {
    "lang": "en-US",
    "text": "mouth",
-   "file": null
+   "file": "audio/en/card/mouth.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.music": {
    "lang": "en-US",
    "text": "music",
-   "file": null
+   "file": "audio/en/card/music.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.my": {
    "lang": "en-US",
    "text": "my",
-   "file": null
+   "file": "audio/en/card/my.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.nose": {
    "lang": "en-US",
    "text": "nose",
-   "file": null
+   "file": "audio/en/card/nose.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.on": {
    "lang": "en-US",
    "text": "on",
-   "file": null
+   "file": "audio/en/card/on.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.owl": {
    "lang": "en-US",
    "text": "owl",
-   "file": null
+   "file": "audio/en/card/owl.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.park": {
    "lang": "en-US",
    "text": "park",
-   "file": null
+   "file": "audio/en/card/park.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.pizza": {
    "lang": "en-US",
    "text": "pizza",
-   "file": null
+   "file": "audio/en/card/pizza.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.play": {
    "lang": "en-US",
    "text": "play",
-   "file": null
+   "file": "audio/en/card/play.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.pool": {
    "lang": "en-US",
    "text": "pool",
-   "file": null
+   "file": "audio/en/card/pool.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.purple": {
    "lang": "en-US",
    "text": "purple",
-   "file": null
+   "file": "audio/en/card/purple.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.put": {
    "lang": "en-US",
    "text": "Put",
-   "file": null
+   "file": "audio/en/card/put.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.rabbit": {
    "lang": "en-US",
    "text": "rabbit",
-   "file": null
+   "file": "audio/en/card/rabbit.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.rainbow": {
    "lang": "en-US",
    "text": "rainbow",
-   "file": null
+   "file": "audio/en/card/rainbow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.rainy": {
    "lang": "en-US",
    "text": "rainy",
-   "file": null
+   "file": "audio/en/card/rainy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.read": {
    "lang": "en-US",
    "text": "read",
-   "file": null
+   "file": "audio/en/card/read.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.red": {
    "lang": "en-US",
    "text": "red",
-   "file": null
+   "file": "audio/en/card/red.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.run": {
    "lang": "en-US",
    "text": "run",
-   "file": null
+   "file": "audio/en/card/run.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.sad": {
    "lang": "en-US",
    "text": "sad",
-   "file": null
+   "file": "audio/en/card/sad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.scared": {
    "lang": "en-US",
    "text": "scared",
-   "file": null
+   "file": "audio/en/card/scared.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.see": {
    "lang": "en-US",
    "text": "see",
-   "file": null
+   "file": "audio/en/card/see.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.shirt": {
    "lang": "en-US",
    "text": "shirt",
-   "file": null
+   "file": "audio/en/card/shirt.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.shoes": {
    "lang": "en-US",
    "text": "shoes",
-   "file": null
+   "file": "audio/en/card/shoes.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.sing": {
    "lang": "en-US",
    "text": "sing",
-   "file": null
+   "file": "audio/en/card/sing.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.sister": {
    "lang": "en-US",
    "text": "sister",
-   "file": null
+   "file": "audio/en/card/sister.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.sleepy": {
    "lang": "en-US",
    "text": "sleepy",
-   "file": null
+   "file": "audio/en/card/sleepy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.snowy": {
    "lang": "en-US",
    "text": "snowy",
-   "file": null
+   "file": "audio/en/card/snowy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.socks": {
    "lang": "en-US",
    "text": "socks",
-   "file": null
+   "file": "audio/en/card/socks.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.star": {
    "lang": "en-US",
    "text": "star",
-   "file": null
+   "file": "audio/en/card/star.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.stars": {
    "lang": "en-US",
    "text": "stars",
-   "file": null
+   "file": "audio/en/card/stars.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.sunny": {
    "lang": "en-US",
    "text": "sunny",
-   "file": null
+   "file": "audio/en/card/sunny.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.swim": {
    "lang": "en-US",
    "text": "swim",
-   "file": null
+   "file": "audio/en/card/swim.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.table": {
    "lang": "en-US",
    "text": "table",
-   "file": null
+   "file": "audio/en/card/table.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.thank": {
    "lang": "en-US",
    "text": "Thank",
-   "file": null
+   "file": "audio/en/card/thank.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.the": {
    "lang": "en-US",
    "text": "the",
-   "file": null
+   "file": "audio/en/card/the.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.thirsty": {
    "lang": "en-US",
    "text": "thirsty",
-   "file": null
+   "file": "audio/en/card/thirsty.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.this": {
    "lang": "en-US",
    "text": "this",
-   "file": null
+   "file": "audio/en/card/this.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.three": {
    "lang": "en-US",
    "text": "three",
-   "file": null
+   "file": "audio/en/card/three.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.tired": {
    "lang": "en-US",
    "text": "tired",
-   "file": null
+   "file": "audio/en/card/tired.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.today": {
    "lang": "en-US",
    "text": "today",
-   "file": null
+   "file": "audio/en/card/today.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.touch": {
    "lang": "en-US",
    "text": "Touch",
-   "file": null
+   "file": "audio/en/card/touch.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.tree": {
    "lang": "en-US",
    "text": "tree",
-   "file": null
+   "file": "audio/en/card/tree.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.turtle": {
    "lang": "en-US",
    "text": "turtle",
-   "file": null
+   "file": "audio/en/card/turtle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.twinkle": {
    "lang": "en-US",
    "text": "Twinkle",
-   "file": null
+   "file": "audio/en/card/twinkle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.two": {
    "lang": "en-US",
    "text": "two",
-   "file": null
+   "file": "audio/en/card/two.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.umbrella": {
    "lang": "en-US",
    "text": "umbrella",
-   "file": null
+   "file": "audio/en/card/umbrella.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.under": {
    "lang": "en-US",
    "text": "under",
-   "file": null
+   "file": "audio/en/card/under.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.want": {
    "lang": "en-US",
    "text": "want",
-   "file": null
+   "file": "audio/en/card/want.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.wash": {
    "lang": "en-US",
    "text": "Wash",
-   "file": null
+   "file": "audio/en/card/wash.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.what": {
    "lang": "en-US",
    "text": "What",
-   "file": null
+   "file": "audio/en/card/what.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.where": {
    "lang": "en-US",
    "text": "Where",
-   "file": null
+   "file": "audio/en/card/where.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.white": {
    "lang": "en-US",
    "text": "white",
-   "file": null
+   "file": "audio/en/card/white.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.windy": {
    "lang": "en-US",
    "text": "windy",
-   "file": null
+   "file": "audio/en/card/windy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.you": {
    "lang": "en-US",
    "text": "You",
-   "file": null
+   "file": "audio/en/card/you.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.your": {
    "lang": "en-US",
    "text": "your",
-   "file": null
+   "file": "audio/en/card/your.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.card.zoo": {
    "lang": "en-US",
    "text": "zoo",
-   "file": null
+   "file": "audio/en/card/zoo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.dir.down": {
    "lang": "en-US",
    "text": "Down!",
-   "file": null
+   "file": "audio/en/dir/down.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.dir.left": {
    "lang": "en-US",
    "text": "Left!",
-   "file": null
+   "file": "audio/en/dir/left.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.dir.right": {
    "lang": "en-US",
    "text": "Right!",
-   "file": null
+   "file": "audio/en/dir/right.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.dir.up": {
    "lang": "en-US",
    "text": "Up!",
-   "file": null
+   "file": "audio/en/dir/up.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.appy": {
    "lang": "en-US",
    "text": "This is a flower!",
-   "file": null
+   "file": "audio/en/greet/appy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.bibi": {
    "lang": "en-US",
    "text": "Is this your bag?",
-   "file": null
+   "file": "audio/en/greet/bibi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.cubi": {
    "lang": "en-US",
    "text": "Touch your nose!",
-   "file": null
+   "file": "audio/en/greet/cubi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.dabo": {
    "lang": "en-US",
    "text": "Where is the cat?",
-   "file": null
+   "file": "audio/en/greet/dabo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.dexi": {
    "lang": "en-US",
    "text": "Are you hungry?",
-   "file": null
+   "file": "audio/en/greet/dexi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.ebbi": {
    "lang": "en-US",
    "text": "I want a banana!",
-   "file": null
+   "file": "audio/en/greet/ebbi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.fifi": {
    "lang": "en-US",
    "text": "It's sunny today!",
-   "file": null
+   "file": "audio/en/greet/fifi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.gogo": {
    "lang": "en-US",
    "text": "Is it a lion? No! I'm Gogo!",
-   "file": null
+   "file": "audio/en/greet/gogo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.hoho": {
    "lang": "en-US",
    "text": "Put on your hat!",
-   "file": null
+   "file": "audio/en/greet/hoho.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.izzy": {
    "lang": "en-US",
    "text": "Look at the heart!",
-   "file": null
+   "file": "audio/en/greet/izzy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.juju": {
    "lang": "en-US",
    "text": "Can you dance?",
-   "file": null
+   "file": "audio/en/greet/juju.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.kiwa": {
    "lang": "en-US",
    "text": "Wash your hands!",
-   "file": null
+   "file": "audio/en/greet/kiwa.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.lexy": {
    "lang": "en-US",
    "text": "It's in the box!",
-   "file": null
+   "file": "audio/en/greet/lexy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.lulu": {
    "lang": "en-US",
    "text": "I can fly!",
-   "file": null
+   "file": "audio/en/greet/lulu.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.lumi": {
    "lang": "en-US",
    "text": "You are my friend!",
-   "file": null
+   "file": "audio/en/greet/lumi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.mobi": {
    "lang": "en-US",
    "text": "What is it? It's a frog!",
-   "file": null
+   "file": "audio/en/greet/mobi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.nubi": {
    "lang": "en-US",
    "text": "How many stars? Ten!",
-   "file": null
+   "file": "audio/en/greet/nubi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.olli": {
    "lang": "en-US",
    "text": "This is my mom!",
-   "file": null
+   "file": "audio/en/greet/olli.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.pinta": {
    "lang": "en-US",
    "text": "I see a big cake!",
-   "file": null
+   "file": "audio/en/greet/pinta.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.pip": {
    "lang": "en-US",
    "text": "I have five flowers!",
-   "file": null
+   "file": "audio/en/greet/pip.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.reni": {
    "lang": "en-US",
    "text": "What color is it? It's red!",
-   "file": null
+   "file": "audio/en/greet/reni.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.rori": {
    "lang": "en-US",
    "text": "I don't like carrots!",
-   "file": null
+   "file": "audio/en/greet/rori.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.sami": {
    "lang": "en-US",
    "text": "Hi! I'm Sami. I like red!",
-   "file": null
+   "file": "audio/en/greet/sami.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.soli": {
    "lang": "en-US",
    "text": "I love my grandma!",
-   "file": null
+   "file": "audio/en/greet/soli.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.tiko": {
    "lang": "en-US",
    "text": "It is purple!",
-   "file": null
+   "file": "audio/en/greet/tiko.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.uppy": {
    "lang": "en-US",
    "text": "Do you like milk?",
-   "file": null
+   "file": "audio/en/greet/uppy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.vivi": {
    "lang": "en-US",
    "text": "Let's draw!",
-   "file": null
+   "file": "audio/en/greet/vivi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.wobi": {
    "lang": "en-US",
    "text": "I am happy!",
-   "file": null
+   "file": "audio/en/greet/wobi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.yumi": {
    "lang": "en-US",
    "text": "I'm at the park!",
-   "file": null
+   "file": "audio/en/greet/yumi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.greet.zuzu": {
    "lang": "en-US",
    "text": "Thank you, Twinkle!",
-   "file": null
+   "file": "audio/en/greet/zuzu.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.a": {
    "lang": "en-US",
    "text": "A.",
-   "file": null
+   "file": "audio/en/letter/a.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.b": {
    "lang": "en-US",
    "text": "B",
-   "file": null
+   "file": "audio/en/letter/b.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.c": {
    "lang": "en-US",
    "text": "C",
-   "file": null
+   "file": "audio/en/letter/c.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.d": {
    "lang": "en-US",
    "text": "D",
-   "file": null
+   "file": "audio/en/letter/d.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.e": {
    "lang": "en-US",
    "text": "E.",
-   "file": null
+   "file": "audio/en/letter/e.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.f": {
    "lang": "en-US",
    "text": "F",
-   "file": null
+   "file": "audio/en/letter/f.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.g": {
    "lang": "en-US",
    "text": "G",
-   "file": null
+   "file": "audio/en/letter/g.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.h": {
    "lang": "en-US",
    "text": "H",
-   "file": null
+   "file": "audio/en/letter/h.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.i": {
    "lang": "en-US",
    "text": "I.",
-   "file": null
+   "file": "audio/en/letter/i.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.j": {
    "lang": "en-US",
    "text": "J",
-   "file": null
+   "file": "audio/en/letter/j.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.k": {
    "lang": "en-US",
    "text": "K",
-   "file": null
+   "file": "audio/en/letter/k.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.l": {
    "lang": "en-US",
    "text": "L",
-   "file": null
+   "file": "audio/en/letter/l.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.m": {
    "lang": "en-US",
    "text": "M",
-   "file": null
+   "file": "audio/en/letter/m.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.n": {
    "lang": "en-US",
    "text": "N",
-   "file": null
+   "file": "audio/en/letter/n.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.o": {
    "lang": "en-US",
    "text": "O.",
-   "file": null
+   "file": "audio/en/letter/o.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.p": {
    "lang": "en-US",
    "text": "P",
-   "file": null
+   "file": "audio/en/letter/p.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.q": {
    "lang": "en-US",
    "text": "Q",
-   "file": null
+   "file": "audio/en/letter/q.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.r": {
    "lang": "en-US",
    "text": "R",
-   "file": null
+   "file": "audio/en/letter/r.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.s": {
    "lang": "en-US",
    "text": "S",
-   "file": null
+   "file": "audio/en/letter/s.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.t": {
    "lang": "en-US",
    "text": "T",
-   "file": null
+   "file": "audio/en/letter/t.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.u": {
    "lang": "en-US",
    "text": "U.",
-   "file": null
+   "file": "audio/en/letter/u.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.v": {
    "lang": "en-US",
    "text": "V",
-   "file": null
+   "file": "audio/en/letter/v.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.w": {
    "lang": "en-US",
    "text": "W",
-   "file": null
+   "file": "audio/en/letter/w.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.x": {
    "lang": "en-US",
    "text": "X",
-   "file": null
+   "file": "audio/en/letter/x.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.y": {
    "lang": "en-US",
    "text": "Y.",
-   "file": null
+   "file": "audio/en/letter/y.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.letter.z": {
    "lang": "en-US",
    "text": "Z",
-   "file": null
+   "file": "audio/en/letter/z.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.misc.festival": {
    "lang": "en-US",
    "text": "Welcome to the Starlight Festival!",
-   "file": null
+   "file": "audio/en/misc/festival.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.misc.goodnight": {
    "lang": "en-US",
    "text": "Good night!",
-   "file": null
+   "file": "audio/en/misc/goodnight.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.misc.hello": {
    "lang": "en-US",
    "text": "Hello!",
-   "file": null
+   "file": "audio/en/misc/hello.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.misc.listen": {
    "lang": "en-US",
    "text": "Listen!",
-   "file": null
+   "file": "audio/en/misc/listen.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.misc.no": {
    "lang": "en-US",
    "text": "No!",
-   "file": null
+   "file": "audio/en/misc/no.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.misc.ready": {
    "lang": "en-US",
    "text": "Ready? Go!",
-   "file": null
+   "file": "audio/en/misc/ready.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.misc.yes": {
    "lang": "en-US",
    "text": "Yes!",
-   "file": null
+   "file": "audio/en/misc/yes.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.appy": {
    "lang": "en-US",
    "text": "Hi! I'm Appy!",
-   "file": null
+   "file": "audio/en/name/appy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.bibi": {
    "lang": "en-US",
    "text": "Hi! I'm Bibi!",
-   "file": null
+   "file": "audio/en/name/bibi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.cubi": {
    "lang": "en-US",
    "text": "Hi! I'm Cubi!",
-   "file": null
+   "file": "audio/en/name/cubi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.dabo": {
    "lang": "en-US",
    "text": "Hi! I'm Dabo!",
-   "file": null
+   "file": "audio/en/name/dabo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.dexi": {
    "lang": "en-US",
    "text": "Hi! I'm Dexi!",
-   "file": null
+   "file": "audio/en/name/dexi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.ebbi": {
    "lang": "en-US",
    "text": "Hi! I'm Ebbi!",
-   "file": null
+   "file": "audio/en/name/ebbi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.fifi": {
    "lang": "en-US",
    "text": "Hi! I'm Fifi!",
-   "file": null
+   "file": "audio/en/name/fifi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.gogo": {
    "lang": "en-US",
    "text": "Hi! I'm Gogo!",
-   "file": null
+   "file": "audio/en/name/gogo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.hoho": {
    "lang": "en-US",
    "text": "Hi! I'm Hoho!",
-   "file": null
+   "file": "audio/en/name/hoho.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.izzy": {
    "lang": "en-US",
    "text": "Hi! I'm Izzy!",
-   "file": null
+   "file": "audio/en/name/izzy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.juju": {
    "lang": "en-US",
    "text": "Hi! I'm Juju!",
-   "file": null
+   "file": "audio/en/name/juju.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.kiwa": {
    "lang": "en-US",
    "text": "Hi! I'm Kiwa!",
-   "file": null
+   "file": "audio/en/name/kiwa.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.lexy": {
    "lang": "en-US",
    "text": "Hi! I'm Lexy!",
-   "file": null
+   "file": "audio/en/name/lexy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.lulu": {
    "lang": "en-US",
    "text": "Hi! I'm Lulu!",
-   "file": null
+   "file": "audio/en/name/lulu.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.lumi": {
    "lang": "en-US",
    "text": "Hi! I'm Lumi!",
-   "file": null
+   "file": "audio/en/name/lumi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.mobi": {
    "lang": "en-US",
    "text": "Hi! I'm Mobi!",
-   "file": null
+   "file": "audio/en/name/mobi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.nubi": {
    "lang": "en-US",
    "text": "Hi! I'm Nubi!",
-   "file": null
+   "file": "audio/en/name/nubi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.olli": {
    "lang": "en-US",
    "text": "Hi! I'm Olli!",
-   "file": null
+   "file": "audio/en/name/olli.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.pinta": {
    "lang": "en-US",
    "text": "Hi! I'm Pinta!",
-   "file": null
+   "file": "audio/en/name/pinta.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.pip": {
    "lang": "en-US",
    "text": "Hi! I'm Pip!",
-   "file": null
+   "file": "audio/en/name/pip.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.reni": {
    "lang": "en-US",
    "text": "Hi! I'm Reni!",
-   "file": null
+   "file": "audio/en/name/reni.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.rori": {
    "lang": "en-US",
    "text": "Hi! I'm Rori!",
-   "file": null
+   "file": "audio/en/name/rori.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.sami": {
    "lang": "en-US",
    "text": "Hi! I'm Sami!",
-   "file": null
+   "file": "audio/en/name/sami.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.soli": {
    "lang": "en-US",
    "text": "Hi! I'm Soli!",
-   "file": null
+   "file": "audio/en/name/soli.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.tiko": {
    "lang": "en-US",
    "text": "Hi! I'm Tiko!",
-   "file": null
+   "file": "audio/en/name/tiko.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.uppy": {
    "lang": "en-US",
    "text": "Hi! I'm Uppy!",
-   "file": null
+   "file": "audio/en/name/uppy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.vivi": {
    "lang": "en-US",
    "text": "Hi! I'm Vivi!",
-   "file": null
+   "file": "audio/en/name/vivi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.wobi": {
    "lang": "en-US",
    "text": "Hi! I'm Wobi!",
-   "file": null
+   "file": "audio/en/name/wobi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.yumi": {
    "lang": "en-US",
    "text": "Hi! I'm Yumi!",
-   "file": null
+   "file": "audio/en/name/yumi.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.name.zuzu": {
    "lang": "en-US",
    "text": "Hi! I'm Zuzu!",
-   "file": null
+   "file": "audio/en/name/zuzu.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.0": {
    "lang": "en-US",
    "text": "zero",
-   "file": null
+   "file": "audio/en/num/0.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.1": {
    "lang": "en-US",
    "text": "one",
-   "file": null
+   "file": "audio/en/num/1.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.10": {
    "lang": "en-US",
    "text": "ten",
-   "file": null
+   "file": "audio/en/num/10.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.11": {
    "lang": "en-US",
    "text": "eleven",
-   "file": null
+   "file": "audio/en/num/11.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.12": {
    "lang": "en-US",
    "text": "twelve",
-   "file": null
+   "file": "audio/en/num/12.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.13": {
    "lang": "en-US",
    "text": "thirteen",
-   "file": null
+   "file": "audio/en/num/13.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.14": {
    "lang": "en-US",
    "text": "fourteen",
-   "file": null
+   "file": "audio/en/num/14.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.15": {
    "lang": "en-US",
    "text": "fifteen",
-   "file": null
+   "file": "audio/en/num/15.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.16": {
    "lang": "en-US",
    "text": "sixteen",
-   "file": null
+   "file": "audio/en/num/16.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.17": {
    "lang": "en-US",
    "text": "seventeen",
-   "file": null
+   "file": "audio/en/num/17.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.18": {
    "lang": "en-US",
    "text": "eighteen",
-   "file": null
+   "file": "audio/en/num/18.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.19": {
    "lang": "en-US",
    "text": "nineteen",
-   "file": null
+   "file": "audio/en/num/19.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.2": {
    "lang": "en-US",
    "text": "two",
-   "file": null
+   "file": "audio/en/num/2.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.20": {
    "lang": "en-US",
    "text": "twenty",
-   "file": null
+   "file": "audio/en/num/20.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.3": {
    "lang": "en-US",
    "text": "three",
-   "file": null
+   "file": "audio/en/num/3.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.4": {
    "lang": "en-US",
    "text": "four",
-   "file": null
+   "file": "audio/en/num/4.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.5": {
    "lang": "en-US",
    "text": "five",
-   "file": null
+   "file": "audio/en/num/5.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.6": {
    "lang": "en-US",
    "text": "six",
-   "file": null
+   "file": "audio/en/num/6.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.7": {
    "lang": "en-US",
    "text": "seven",
-   "file": null
+   "file": "audio/en/num/7.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.8": {
    "lang": "en-US",
    "text": "eight",
-   "file": null
+   "file": "audio/en/num/8.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.num.9": {
    "lang": "en-US",
    "text": "nine",
-   "file": null
+   "file": "audio/en/num/9.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.a": {
    "lang": "en-US",
    "text": "ant",
-   "file": null
+   "file": "audio/en/phoneme/a.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.b": {
    "lang": "en-US",
    "text": "ball",
-   "file": null
+   "file": "audio/en/phoneme/b.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.c": {
    "lang": "en-US",
    "text": "cat",
-   "file": null
+   "file": "audio/en/phoneme/c.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.d": {
    "lang": "en-US",
    "text": "dog",
-   "file": null
+   "file": "audio/en/phoneme/d.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.e": {
    "lang": "en-US",
    "text": "egg",
-   "file": null
+   "file": "audio/en/phoneme/e.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.f": {
    "lang": "en-US",
    "text": "fish",
-   "file": null
+   "file": "audio/en/phoneme/f.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.g": {
    "lang": "en-US",
    "text": "goat",
-   "file": null
+   "file": "audio/en/phoneme/g.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.h": {
    "lang": "en-US",
    "text": "hat",
-   "file": null
+   "file": "audio/en/phoneme/h.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.i": {
    "lang": "en-US",
    "text": "igloo",
-   "file": null
+   "file": "audio/en/phoneme/i.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.j": {
    "lang": "en-US",
    "text": "juice",
-   "file": null
+   "file": "audio/en/phoneme/j.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.k": {
    "lang": "en-US",
    "text": "kite",
-   "file": null
+   "file": "audio/en/phoneme/k.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.l": {
    "lang": "en-US",
    "text": "lion",
-   "file": null
+   "file": "audio/en/phoneme/l.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.m": {
    "lang": "en-US",
    "text": "moon",
-   "file": null
+   "file": "audio/en/phoneme/m.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.n": {
    "lang": "en-US",
    "text": "nine",
-   "file": null
+   "file": "audio/en/phoneme/n.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.o": {
    "lang": "en-US",
    "text": "octopus",
-   "file": null
+   "file": "audio/en/phoneme/o.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.p": {
    "lang": "en-US",
    "text": "pink",
-   "file": null
+   "file": "audio/en/phoneme/p.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.q": {
    "lang": "en-US",
    "text": "queen",
-   "file": null
+   "file": "audio/en/phoneme/q.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.r": {
    "lang": "en-US",
    "text": "red",
-   "file": null
+   "file": "audio/en/phoneme/r.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.s": {
    "lang": "en-US",
    "text": "sun",
-   "file": null
+   "file": "audio/en/phoneme/s.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.t": {
    "lang": "en-US",
    "text": "tiger",
-   "file": null
+   "file": "audio/en/phoneme/t.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.u": {
    "lang": "en-US",
    "text": "umbrella",
-   "file": null
+   "file": "audio/en/phoneme/u.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.v": {
    "lang": "en-US",
    "text": "van",
-   "file": null
+   "file": "audio/en/phoneme/v.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.w": {
    "lang": "en-US",
    "text": "water",
-   "file": null
+   "file": "audio/en/phoneme/w.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.x": {
    "lang": "en-US",
    "text": "box",
-   "file": null
+   "file": "audio/en/phoneme/x.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.y": {
    "lang": "en-US",
    "text": "yellow",
-   "file": null
+   "file": "audio/en/phoneme/y.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.phoneme.z": {
    "lang": "en-US",
    "text": "zoo",
-   "file": null
+   "file": "audio/en/phoneme/z.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.ant": {
    "lang": "en-US",
    "text": "ant",
-   "file": null
+   "file": "audio/en/pic/ant.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.bat": {
    "lang": "en-US",
    "text": "bat",
-   "file": null
+   "file": "audio/en/pic/bat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.bed": {
    "lang": "en-US",
    "text": "bed",
-   "file": null
+   "file": "audio/en/pic/bed.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.bus": {
    "lang": "en-US",
    "text": "bus",
-   "file": null
+   "file": "audio/en/pic/bus.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.cap": {
    "lang": "en-US",
    "text": "cap",
-   "file": null
+   "file": "audio/en/pic/cap.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.cup": {
    "lang": "en-US",
    "text": "cup",
-   "file": null
+   "file": "audio/en/pic/cup.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.elevator": {
    "lang": "en-US",
    "text": "elevator",
-   "file": null
+   "file": "audio/en/pic/elevator.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.fox": {
    "lang": "en-US",
    "text": "fox",
-   "file": null
+   "file": "audio/en/pic/fox.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.goat": {
    "lang": "en-US",
    "text": "goat",
-   "file": null
+   "file": "audio/en/pic/goat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.hen": {
    "lang": "en-US",
    "text": "hen",
-   "file": null
+   "file": "audio/en/pic/hen.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.igloo": {
    "lang": "en-US",
    "text": "igloo",
-   "file": null
+   "file": "audio/en/pic/igloo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.insect": {
    "lang": "en-US",
    "text": "insect",
-   "file": null
+   "file": "audio/en/pic/insect.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.juggle": {
    "lang": "en-US",
    "text": "juggle",
-   "file": null
+   "file": "audio/en/pic/juggle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.kangaroo": {
    "lang": "en-US",
    "text": "kangaroo",
-   "file": null
+   "file": "audio/en/pic/kangaroo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.key": {
    "lang": "en-US",
    "text": "key",
-   "file": null
+   "file": "audio/en/pic/key.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.kite": {
    "lang": "en-US",
    "text": "kite",
-   "file": null
+   "file": "audio/en/pic/kite.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.koala": {
    "lang": "en-US",
    "text": "koala",
-   "file": null
+   "file": "audio/en/pic/koala.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.log": {
    "lang": "en-US",
    "text": "log",
-   "file": null
+   "file": "audio/en/pic/log.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.map": {
    "lang": "en-US",
    "text": "map",
-   "file": null
+   "file": "audio/en/pic/map.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.nest": {
    "lang": "en-US",
    "text": "nest",
-   "file": null
+   "file": "audio/en/pic/nest.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.net": {
    "lang": "en-US",
    "text": "net",
-   "file": null
+   "file": "audio/en/pic/net.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.nut": {
    "lang": "en-US",
    "text": "nut",
-   "file": null
+   "file": "audio/en/pic/nut.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.octopus": {
    "lang": "en-US",
    "text": "octopus",
-   "file": null
+   "file": "audio/en/pic/octopus.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.otter": {
    "lang": "en-US",
    "text": "otter",
-   "file": null
+   "file": "audio/en/pic/otter.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.pan": {
    "lang": "en-US",
    "text": "pan",
-   "file": null
+   "file": "audio/en/pic/pan.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.pen": {
    "lang": "en-US",
    "text": "pen",
-   "file": null
+   "file": "audio/en/pic/pen.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.pin": {
    "lang": "en-US",
    "text": "pin",
-   "file": null
+   "file": "audio/en/pic/pin.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.pot": {
    "lang": "en-US",
    "text": "pot",
-   "file": null
+   "file": "audio/en/pic/pot.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.queen": {
    "lang": "en-US",
    "text": "queen",
-   "file": null
+   "file": "audio/en/pic/queen.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.quiet": {
    "lang": "en-US",
    "text": "quiet",
-   "file": null
+   "file": "audio/en/pic/quiet.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.rat": {
    "lang": "en-US",
    "text": "rat",
-   "file": null
+   "file": "audio/en/pic/rat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.tiger": {
    "lang": "en-US",
    "text": "tiger",
-   "file": null
+   "file": "audio/en/pic/tiger.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.up": {
    "lang": "en-US",
    "text": "up",
-   "file": null
+   "file": "audio/en/pic/up.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.van": {
    "lang": "en-US",
    "text": "van",
-   "file": null
+   "file": "audio/en/pic/van.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.violin": {
    "lang": "en-US",
    "text": "violin",
-   "file": null
+   "file": "audio/en/pic/violin.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.volcano": {
    "lang": "en-US",
    "text": "volcano",
-   "file": null
+   "file": "audio/en/pic/volcano.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.watermelon": {
    "lang": "en-US",
    "text": "watermelon",
-   "file": null
+   "file": "audio/en/pic/watermelon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.web": {
    "lang": "en-US",
    "text": "web",
-   "file": null
+   "file": "audio/en/pic/web.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.yarn": {
    "lang": "en-US",
    "text": "yarn",
-   "file": null
+   "file": "audio/en/pic/yarn.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.yoyo": {
    "lang": "en-US",
    "text": "yo-yo",
-   "file": null
+   "file": "audio/en/pic/yoyo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.pic.zebra": {
    "lang": "en-US",
    "text": "zebra",
-   "file": null
+   "file": "audio/en/pic/zebra.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.praise.0": {
    "lang": "en-US",
    "text": "Great job!",
-   "file": null
+   "file": "audio/en/praise/0.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.praise.1": {
    "lang": "en-US",
    "text": "You did it!",
-   "file": null
+   "file": "audio/en/praise/1.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.praise.2": {
    "lang": "en-US",
    "text": "Wow!",
-   "file": null
+   "file": "audio/en/praise/2.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.praise.3": {
    "lang": "en-US",
    "text": "Awesome!",
-   "file": null
+   "file": "audio/en/praise/3.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.praise.4": {
    "lang": "en-US",
    "text": "Super!",
-   "file": null
+   "file": "audio/en/praise/4.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.praise.5": {
    "lang": "en-US",
    "text": "Well done!",
-   "file": null
+   "file": "audio/en/praise/5.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.praise.6": {
    "lang": "en-US",
    "text": "Yay!",
-   "file": null
+   "file": "audio/en/praise/6.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.praise.7": {
    "lang": "en-US",
    "text": "Fantastic!",
-   "file": null
+   "file": "audio/en/praise/7.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.praise.8": {
    "lang": "en-US",
    "text": "Nice!",
-   "file": null
+   "file": "audio/en/praise/8.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.praise.9": {
    "lang": "en-US",
    "text": "Good thinking!",
-   "file": null
+   "file": "audio/en/praise/9.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.apple-banana-i-want-grapes": {
    "lang": "en-US",
    "text": "Apple, banana, I want grapes!",
-   "file": null
+   "file": "audio/en/t/apple-banana-i-want-grapes.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.are-you-happy": {
    "lang": "en-US",
    "text": "Are you happy?",
-   "file": null
+   "file": "audio/en/t/are-you-happy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.are-you-hungry": {
    "lang": "en-US",
    "text": "Are you hungry?",
-   "file": null
+   "file": "audio/en/t/are-you-hungry.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.are-you-thirsty": {
    "lang": "en-US",
    "text": "Are you thirsty?",
-   "file": null
+   "file": "audio/en/t/are-you-thirsty.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.are-you-tired": {
    "lang": "en-US",
    "text": "Are you tired?",
-   "file": null
+   "file": "audio/en/t/are-you-tired.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.blue-blue-i-like-blue": {
    "lang": "en-US",
    "text": "Blue, blue, I like blue!",
-   "file": null
+   "file": "audio/en/t/blue-blue-i-like-blue.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.can-you-clap": {
    "lang": "en-US",
    "text": "Can you clap?",
-   "file": null
+   "file": "audio/en/t/can-you-clap.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.can-you-dance": {
    "lang": "en-US",
    "text": "Can you dance?",
-   "file": null
+   "file": "audio/en/t/can-you-dance.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.can-you-fly-let-s-fly": {
    "lang": "en-US",
    "text": "Can you fly? Let's fly!",
-   "file": null
+   "file": "audio/en/t/can-you-fly-let-s-fly.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.can-you-jump": {
    "lang": "en-US",
    "text": "Can you jump?",
-   "file": null
+   "file": "audio/en/t/can-you-jump.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.can-you-sing": {
    "lang": "en-US",
    "text": "Can you sing?",
-   "file": null
+   "file": "audio/en/t/can-you-sing.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.do-you-like-bread": {
    "lang": "en-US",
    "text": "Do you like bread?",
-   "file": null
+   "file": "audio/en/t/do-you-like-bread.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.do-you-like-cookies": {
    "lang": "en-US",
    "text": "Do you like cookies?",
-   "file": null
+   "file": "audio/en/t/do-you-like-cookies.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.do-you-like-eggs": {
    "lang": "en-US",
    "text": "Do you like eggs?",
-   "file": null
+   "file": "audio/en/t/do-you-like-eggs.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.do-you-like-milk": {
    "lang": "en-US",
    "text": "Do you like milk?",
-   "file": null
+   "file": "audio/en/t/do-you-like-milk.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.do-you-like-milk-do-you-like-rice": {
    "lang": "en-US",
    "text": "Do you like milk? Do you like rice?",
-   "file": null
+   "file": "audio/en/t/do-you-like-milk-do-you-like-rice.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.frog-fish-duck-where-is-the-duck": {
    "lang": "en-US",
    "text": "Frog, fish, duck. Where is the duck?",
-   "file": null
+   "file": "audio/en/t/frog-fish-duck-where-is-the-duck.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.how-many-balloons": {
    "lang": "en-US",
    "text": "How many balloons?",
-   "file": null
+   "file": "audio/en/t/how-many-balloons.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.how-many-fish": {
    "lang": "en-US",
    "text": "How many fish?",
-   "file": null
+   "file": "audio/en/t/how-many-fish.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.how-many-flowers": {
    "lang": "en-US",
    "text": "How many flowers?",
-   "file": null
+   "file": "audio/en/t/how-many-flowers.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.how-many-stars": {
    "lang": "en-US",
    "text": "How many stars?",
-   "file": null
+   "file": "audio/en/t/how-many-stars.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-am-happy": {
    "lang": "en-US",
    "text": "I am happy.",
-   "file": null
+   "file": "audio/en/t/i-am-happy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-am-happy-are-you-happy": {
    "lang": "en-US",
    "text": "I am happy, are you happy?",
-   "file": null
+   "file": "audio/en/t/i-am-happy-are-you-happy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-am-sad": {
    "lang": "en-US",
    "text": "I am sad.",
-   "file": null
+   "file": "audio/en/t/i-am-sad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-am-scared": {
    "lang": "en-US",
    "text": "I am scared.",
-   "file": null
+   "file": "audio/en/t/i-am-scared.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-am-sleepy": {
    "lang": "en-US",
    "text": "I am sleepy.",
-   "file": null
+   "file": "audio/en/t/i-am-sleepy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-can-fly": {
    "lang": "en-US",
    "text": "I can fly.",
-   "file": null
+   "file": "audio/en/t/i-can-fly.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-can-jump": {
    "lang": "en-US",
    "text": "I can jump.",
-   "file": null
+   "file": "audio/en/t/i-can-jump.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-can-run": {
    "lang": "en-US",
    "text": "I can run.",
-   "file": null
+   "file": "audio/en/t/i-can-run.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-can-run-i-can-jump": {
    "lang": "en-US",
    "text": "I can run, I can jump.",
-   "file": null
+   "file": "audio/en/t/i-can-run-i-can-jump.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-can-swim": {
    "lang": "en-US",
    "text": "I can swim.",
-   "file": null
+   "file": "audio/en/t/i-can-swim.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-don-t-like-candy": {
    "lang": "en-US",
    "text": "I don't like candy.",
-   "file": null
+   "file": "audio/en/t/i-don-t-like-candy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-don-t-like-carrots": {
    "lang": "en-US",
    "text": "I don't like carrots.",
-   "file": null
+   "file": "audio/en/t/i-don-t-like-carrots.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-don-t-like-corn": {
    "lang": "en-US",
    "text": "I don't like corn.",
-   "file": null
+   "file": "audio/en/t/i-don-t-like-corn.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-don-t-like-pizza": {
    "lang": "en-US",
    "text": "I don't like pizza.",
-   "file": null
+   "file": "audio/en/t/i-don-t-like-pizza.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-have-a-bag": {
    "lang": "en-US",
    "text": "I have a bag.",
-   "file": null
+   "file": "audio/en/t/i-have-a-bag.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-have-five-flowers": {
    "lang": "en-US",
    "text": "I have five flowers.",
-   "file": null
+   "file": "audio/en/t/i-have-five-flowers.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-have-three-balloons": {
    "lang": "en-US",
    "text": "I have three balloons.",
-   "file": null
+   "file": "audio/en/t/i-have-three-balloons.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-have-two-flowers": {
    "lang": "en-US",
    "text": "I have two flowers.",
-   "file": null
+   "file": "audio/en/t/i-have-two-flowers.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-like-apples": {
    "lang": "en-US",
    "text": "I like apples.",
-   "file": null
+   "file": "audio/en/t/i-like-apples.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-like-green": {
    "lang": "en-US",
    "text": "I like green.",
-   "file": null
+   "file": "audio/en/t/i-like-green.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-like-music": {
    "lang": "en-US",
    "text": "I like music.",
-   "file": null
+   "file": "audio/en/t/i-like-music.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-like-red": {
    "lang": "en-US",
    "text": "I like red.",
-   "file": null
+   "file": "audio/en/t/i-like-red.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-love-my-dad": {
    "lang": "en-US",
    "text": "I love my dad.",
-   "file": null
+   "file": "audio/en/t/i-love-my-dad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-love-my-grandma": {
    "lang": "en-US",
    "text": "I love my grandma.",
-   "file": null
+   "file": "audio/en/t/i-love-my-grandma.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-love-my-grandma-i-love-my-grandpa": {
    "lang": "en-US",
    "text": "I love my grandma, I love my grandpa!",
-   "file": null
+   "file": "audio/en/t/i-love-my-grandma-i-love-my-grandpa.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-love-my-grandpa": {
    "lang": "en-US",
    "text": "I love my grandpa.",
-   "file": null
+   "file": "audio/en/t/i-love-my-grandpa.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-love-my-mom": {
    "lang": "en-US",
    "text": "I love my mom.",
-   "file": null
+   "file": "audio/en/t/i-love-my-mom.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-m-at-the-beach": {
    "lang": "en-US",
    "text": "I'm at the beach.",
-   "file": null
+   "file": "audio/en/t/i-m-at-the-beach.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-m-at-the-park": {
    "lang": "en-US",
    "text": "I'm at the park.",
-   "file": null
+   "file": "audio/en/t/i-m-at-the-park.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-m-at-the-pool": {
    "lang": "en-US",
    "text": "I'm at the pool.",
-   "file": null
+   "file": "audio/en/t/i-m-at-the-pool.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-m-at-the-zoo": {
    "lang": "en-US",
    "text": "I'm at the zoo.",
-   "file": null
+   "file": "audio/en/t/i-m-at-the-zoo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-see-a-ball": {
    "lang": "en-US",
    "text": "I see a ball.",
-   "file": null
+   "file": "audio/en/t/i-see-a-ball.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-see-a-big-cake": {
    "lang": "en-US",
    "text": "I see a big cake.",
-   "file": null
+   "file": "audio/en/t/i-see-a-big-cake.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-see-a-red-balloon": {
    "lang": "en-US",
    "text": "I see a red balloon.",
-   "file": null
+   "file": "audio/en/t/i-see-a-red-balloon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-see-an-owl": {
    "lang": "en-US",
    "text": "I see an owl.",
-   "file": null
+   "file": "audio/en/t/i-see-an-owl.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-want-a-banana": {
    "lang": "en-US",
    "text": "I want a banana.",
-   "file": null
+   "file": "audio/en/t/i-want-a-banana.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-want-a-lemon": {
    "lang": "en-US",
    "text": "I want a lemon.",
-   "file": null
+   "file": "audio/en/t/i-want-a-lemon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-want-an-apple": {
    "lang": "en-US",
    "text": "I want an apple.",
-   "file": null
+   "file": "audio/en/t/i-want-an-apple.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.i-want-grapes": {
    "lang": "en-US",
    "text": "I want grapes.",
-   "file": null
+   "file": "audio/en/t/i-want-grapes.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.is-it-a-cow": {
    "lang": "en-US",
    "text": "Is it a cow?",
-   "file": null
+   "file": "audio/en/t/is-it-a-cow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.is-it-a-horse": {
    "lang": "en-US",
    "text": "Is it a horse?",
-   "file": null
+   "file": "audio/en/t/is-it-a-horse.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.is-it-a-lion": {
    "lang": "en-US",
    "text": "Is it a lion?",
-   "file": null
+   "file": "audio/en/t/is-it-a-lion.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.is-it-a-monkey": {
    "lang": "en-US",
    "text": "Is it a monkey?",
-   "file": null
+   "file": "audio/en/t/is-it-a-monkey.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.is-this-your-bag": {
    "lang": "en-US",
    "text": "Is this your bag?",
-   "file": null
+   "file": "audio/en/t/is-this-your-bag.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.is-this-your-coat": {
    "lang": "en-US",
    "text": "Is this your coat?",
-   "file": null
+   "file": "audio/en/t/is-this-your-coat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.is-this-your-dress": {
    "lang": "en-US",
    "text": "Is this your dress?",
-   "file": null
+   "file": "audio/en/t/is-this-your-dress.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.is-this-your-umbrella": {
    "lang": "en-US",
    "text": "Is this your umbrella?",
-   "file": null
+   "file": "audio/en/t/is-this-your-umbrella.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-is-big": {
    "lang": "en-US",
    "text": "It is big.",
-   "file": null
+   "file": "audio/en/t/it-is-big.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-is-cold": {
    "lang": "en-US",
    "text": "It is cold.",
-   "file": null
+   "file": "audio/en/t/it-is-cold.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-is-purple": {
    "lang": "en-US",
    "text": "It is purple.",
-   "file": null
+   "file": "audio/en/t/it-is-purple.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-is-white": {
    "lang": "en-US",
    "text": "It is white.",
-   "file": null
+   "file": "audio/en/t/it-is-white.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-a-duck": {
    "lang": "en-US",
    "text": "It's a duck.",
-   "file": null
+   "file": "audio/en/t/it-s-a-duck.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-a-fish": {
    "lang": "en-US",
    "text": "It's a fish.",
-   "file": null
+   "file": "audio/en/t/it-s-a-fish.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-a-frog": {
    "lang": "en-US",
    "text": "It's a frog.",
-   "file": null
+   "file": "audio/en/t/it-s-a-frog.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-a-turtle": {
    "lang": "en-US",
    "text": "It's a turtle.",
-   "file": null
+   "file": "audio/en/t/it-s-a-turtle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-black": {
    "lang": "en-US",
    "text": "It's black.",
-   "file": null
+   "file": "audio/en/t/it-s-black.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-blue": {
    "lang": "en-US",
    "text": "It's blue.",
-   "file": null
+   "file": "audio/en/t/it-s-blue.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-brown": {
    "lang": "en-US",
    "text": "It's brown.",
-   "file": null
+   "file": "audio/en/t/it-s-brown.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-green": {
    "lang": "en-US",
    "text": "It's green.",
-   "file": null
+   "file": "audio/en/t/it-s-green.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-in-the-box": {
    "lang": "en-US",
    "text": "It's in the box.",
-   "file": null
+   "file": "audio/en/t/it-s-in-the-box.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-on-the-box": {
    "lang": "en-US",
    "text": "It's on the box.",
-   "file": null
+   "file": "audio/en/t/it-s-on-the-box.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-on-the-table": {
    "lang": "en-US",
    "text": "It's on the table.",
-   "file": null
+   "file": "audio/en/t/it-s-on-the-table.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-orange": {
    "lang": "en-US",
    "text": "It's orange.",
-   "file": null
+   "file": "audio/en/t/it-s-orange.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-pink": {
    "lang": "en-US",
    "text": "It's pink.",
-   "file": null
+   "file": "audio/en/t/it-s-pink.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-purple": {
    "lang": "en-US",
    "text": "It's purple.",
-   "file": null
+   "file": "audio/en/t/it-s-purple.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-rainy-today": {
    "lang": "en-US",
    "text": "It's rainy today.",
-   "file": null
+   "file": "audio/en/t/it-s-rainy-today.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-red": {
    "lang": "en-US",
    "text": "It's red.",
-   "file": null
+   "file": "audio/en/t/it-s-red.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-snowy-today": {
    "lang": "en-US",
    "text": "It's snowy today.",
-   "file": null
+   "file": "audio/en/t/it-s-snowy-today.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-sunny-today": {
    "lang": "en-US",
    "text": "It's sunny today.",
-   "file": null
+   "file": "audio/en/t/it-s-sunny-today.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-sunny-today-it-s-rainy-today": {
    "lang": "en-US",
    "text": "It's sunny today! It's rainy today!",
-   "file": null
+   "file": "audio/en/t/it-s-sunny-today-it-s-rainy-today.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-under-the-table": {
    "lang": "en-US",
    "text": "It's under the table.",
-   "file": null
+   "file": "audio/en/t/it-s-under-the-table.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-white": {
    "lang": "en-US",
    "text": "It's white.",
-   "file": null
+   "file": "audio/en/t/it-s-white.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-windy-today": {
    "lang": "en-US",
    "text": "It's windy today.",
-   "file": null
+   "file": "audio/en/t/it-s-windy-today.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.it-s-yellow": {
    "lang": "en-US",
    "text": "It's yellow.",
-   "file": null
+   "file": "audio/en/t/it-s-yellow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.let-s-dance": {
    "lang": "en-US",
    "text": "Let's dance!",
-   "file": null
+   "file": "audio/en/t/let-s-dance.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.let-s-draw": {
    "lang": "en-US",
    "text": "Let's draw!",
-   "file": null
+   "file": "audio/en/t/let-s-draw.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.let-s-play": {
    "lang": "en-US",
    "text": "Let's play!",
-   "file": null
+   "file": "audio/en/t/let-s-play.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.let-s-read": {
    "lang": "en-US",
    "text": "Let's read!",
-   "file": null
+   "file": "audio/en/t/let-s-read.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.look-at-the-heart": {
    "lang": "en-US",
    "text": "Look at the heart!",
-   "file": null
+   "file": "audio/en/t/look-at-the-heart.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.look-at-the-moon": {
    "lang": "en-US",
    "text": "Look at the moon!",
-   "file": null
+   "file": "audio/en/t/look-at-the-moon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.look-at-the-rainbow": {
    "lang": "en-US",
    "text": "Look at the rainbow!",
-   "file": null
+   "file": "audio/en/t/look-at-the-rainbow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.look-at-the-star": {
    "lang": "en-US",
    "text": "Look at the star!",
-   "file": null
+   "file": "audio/en/t/look-at-the-star.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.look-at-the-star-it-is-big": {
    "lang": "en-US",
    "text": "Look at the star! It is big!",
-   "file": null
+   "file": "audio/en/t/look-at-the-star-it-is-big.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.one-two-three-four-five": {
    "lang": "en-US",
    "text": "One, two, three, four, five!",
-   "file": null
+   "file": "audio/en/t/one-two-three-four-five.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.put-on-your-hat": {
    "lang": "en-US",
    "text": "Put on your hat.",
-   "file": null
+   "file": "audio/en/t/put-on-your-hat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.put-on-your-hat-put-on-your-shoes": {
    "lang": "en-US",
    "text": "Put on your hat, put on your shoes.",
-   "file": null
+   "file": "audio/en/t/put-on-your-hat-put-on-your-shoes.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.put-on-your-shirt": {
    "lang": "en-US",
    "text": "Put on your shirt.",
-   "file": null
+   "file": "audio/en/t/put-on-your-shirt.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.put-on-your-shoes": {
    "lang": "en-US",
    "text": "Put on your shoes.",
-   "file": null
+   "file": "audio/en/t/put-on-your-shoes.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.put-on-your-socks": {
    "lang": "en-US",
    "text": "Put on your socks.",
-   "file": null
+   "file": "audio/en/t/put-on-your-socks.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.red-red-i-like-red": {
    "lang": "en-US",
    "text": "Red, red, I like red!",
-   "file": null
+   "file": "audio/en/t/red-red-i-like-red.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.thank-you-dad": {
    "lang": "en-US",
    "text": "Thank you, Dad!",
-   "file": null
+   "file": "audio/en/t/thank-you-dad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.thank-you-grandma": {
    "lang": "en-US",
    "text": "Thank you, Grandma!",
-   "file": null
+   "file": "audio/en/t/thank-you-grandma.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.thank-you-mom": {
    "lang": "en-US",
    "text": "Thank you, Mom!",
-   "file": null
+   "file": "audio/en/t/thank-you-mom.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.thank-you-twinkle": {
    "lang": "en-US",
    "text": "Thank you, Twinkle!",
-   "file": null
+   "file": "audio/en/t/thank-you-twinkle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.this-is-a-cake": {
    "lang": "en-US",
    "text": "This is a cake.",
-   "file": null
+   "file": "audio/en/t/this-is-a-cake.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.this-is-a-flower": {
    "lang": "en-US",
    "text": "This is a flower.",
-   "file": null
+   "file": "audio/en/t/this-is-a-flower.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.this-is-a-leaf": {
    "lang": "en-US",
    "text": "This is a leaf.",
-   "file": null
+   "file": "audio/en/t/this-is-a-leaf.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.this-is-a-tree": {
    "lang": "en-US",
    "text": "This is a tree.",
-   "file": null
+   "file": "audio/en/t/this-is-a-tree.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.this-is-my-brother": {
    "lang": "en-US",
    "text": "This is my brother.",
-   "file": null
+   "file": "audio/en/t/this-is-my-brother.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.this-is-my-dad": {
    "lang": "en-US",
    "text": "This is my dad.",
-   "file": null
+   "file": "audio/en/t/this-is-my-dad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.this-is-my-mom": {
    "lang": "en-US",
    "text": "This is my mom.",
-   "file": null
+   "file": "audio/en/t/this-is-my-mom.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.this-is-my-mom-this-is-my-dad": {
    "lang": "en-US",
    "text": "This is my mom, this is my dad.",
-   "file": null
+   "file": "audio/en/t/this-is-my-mom-this-is-my-dad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.this-is-my-sister": {
    "lang": "en-US",
    "text": "This is my sister.",
-   "file": null
+   "file": "audio/en/t/this-is-my-sister.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.touch-your-ear": {
    "lang": "en-US",
    "text": "Touch your ear.",
-   "file": null
+   "file": "audio/en/t/touch-your-ear.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.touch-your-head": {
    "lang": "en-US",
    "text": "Touch your head.",
-   "file": null
+   "file": "audio/en/t/touch-your-head.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.touch-your-mouth": {
    "lang": "en-US",
    "text": "Touch your mouth.",
-   "file": null
+   "file": "audio/en/t/touch-your-mouth.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.touch-your-nose": {
    "lang": "en-US",
    "text": "Touch your nose.",
-   "file": null
+   "file": "audio/en/t/touch-your-nose.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.touch-your-nose-touch-your-ear": {
    "lang": "en-US",
    "text": "Touch your nose, touch your ear!",
-   "file": null
+   "file": "audio/en/t/touch-your-nose-touch-your-ear.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.wash-your-arms": {
    "lang": "en-US",
    "text": "Wash your arms.",
-   "file": null
+   "file": "audio/en/t/wash-your-arms.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.wash-your-feet": {
    "lang": "en-US",
    "text": "Wash your feet.",
-   "file": null
+   "file": "audio/en/t/wash-your-feet.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.wash-your-fingers": {
    "lang": "en-US",
    "text": "Wash your fingers.",
-   "file": null
+   "file": "audio/en/t/wash-your-fingers.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.wash-your-hands": {
    "lang": "en-US",
    "text": "Wash your hands.",
-   "file": null
+   "file": "audio/en/t/wash-your-hands.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.what-color-is-it": {
    "lang": "en-US",
    "text": "What color is it?",
-   "file": null
+   "file": "audio/en/t/what-color-is-it.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.what-is-it": {
    "lang": "en-US",
    "text": "What is it?",
-   "file": null
+   "file": "audio/en/t/what-is-it.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.where-is-the-ball": {
    "lang": "en-US",
    "text": "Where is the ball?",
-   "file": null
+   "file": "audio/en/t/where-is-the-ball.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.where-is-the-cat": {
    "lang": "en-US",
    "text": "Where is the cat?",
-   "file": null
+   "file": "audio/en/t/where-is-the-cat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.where-is-the-dog": {
    "lang": "en-US",
    "text": "Where is the dog?",
-   "file": null
+   "file": "audio/en/t/where-is-the-dog.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.where-is-the-rabbit": {
    "lang": "en-US",
    "text": "Where is the rabbit?",
-   "file": null
+   "file": "audio/en/t/where-is-the-rabbit.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.yes-i-am": {
    "lang": "en-US",
    "text": "Yes, I am.",
-   "file": null
+   "file": "audio/en/t/yes-i-am.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.yes-i-can": {
    "lang": "en-US",
    "text": "Yes, I can.",
-   "file": null
+   "file": "audio/en/t/yes-i-can.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.yes-i-do": {
    "lang": "en-US",
    "text": "Yes, I do.",
-   "file": null
+   "file": "audio/en/t/yes-i-do.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.yes-it-is": {
    "lang": "en-US",
    "text": "Yes, it is.",
-   "file": null
+   "file": "audio/en/t/yes-it-is.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.you-are-my-brother": {
    "lang": "en-US",
    "text": "You are my brother.",
-   "file": null
+   "file": "audio/en/t/you-are-my-brother.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.you-are-my-friend": {
    "lang": "en-US",
    "text": "You are my friend.",
-   "file": null
+   "file": "audio/en/t/you-are-my-friend.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.you-are-my-friend-good-night": {
    "lang": "en-US",
    "text": "You are my friend! Good night!",
-   "file": null
+   "file": "audio/en/t/you-are-my-friend-good-night.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.you-are-my-sister": {
    "lang": "en-US",
    "text": "You are my sister.",
-   "file": null
+   "file": "audio/en/t/you-are-my-sister.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.t.you-are-my-star": {
    "lang": "en-US",
    "text": "You are my star.",
-   "file": null
+   "file": "audio/en/t/you-are-my-star.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.angry": {
    "lang": "en-US",
    "text": "angry",
-   "file": null
+   "file": "audio/en/word/angry.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.apple": {
    "lang": "en-US",
    "text": "apple",
-   "file": null
+   "file": "audio/en/word/apple.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.arm": {
    "lang": "en-US",
    "text": "arm",
-   "file": null
+   "file": "audio/en/word/arm.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.baby": {
    "lang": "en-US",
    "text": "baby",
-   "file": null
+   "file": "audio/en/word/baby.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.bag": {
    "lang": "en-US",
    "text": "bag",
-   "file": null
+   "file": "audio/en/word/bag.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.ball": {
    "lang": "en-US",
    "text": "ball",
-   "file": null
+   "file": "audio/en/word/ball.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.balloon": {
    "lang": "en-US",
    "text": "balloon",
-   "file": null
+   "file": "audio/en/word/balloon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.banana": {
    "lang": "en-US",
    "text": "banana",
-   "file": null
+   "file": "audio/en/word/banana.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.beach": {
    "lang": "en-US",
    "text": "beach",
-   "file": null
+   "file": "audio/en/word/beach.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.bear": {
    "lang": "en-US",
    "text": "bear",
-   "file": null
+   "file": "audio/en/word/bear.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.big": {
    "lang": "en-US",
    "text": "big",
-   "file": null
+   "file": "audio/en/word/big.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.black": {
    "lang": "en-US",
    "text": "black",
-   "file": null
+   "file": "audio/en/word/black.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.blue": {
    "lang": "en-US",
    "text": "blue",
-   "file": null
+   "file": "audio/en/word/blue.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.boat": {
    "lang": "en-US",
    "text": "boat",
-   "file": null
+   "file": "audio/en/word/boat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.boots": {
    "lang": "en-US",
    "text": "boots",
-   "file": null
+   "file": "audio/en/word/boots.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.box": {
    "lang": "en-US",
    "text": "box",
-   "file": null
+   "file": "audio/en/word/box.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.brave": {
    "lang": "en-US",
    "text": "brave",
-   "file": null
+   "file": "audio/en/word/brave.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.bread": {
    "lang": "en-US",
    "text": "bread",
-   "file": null
+   "file": "audio/en/word/bread.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.bridge": {
    "lang": "en-US",
    "text": "bridge",
-   "file": null
+   "file": "audio/en/word/bridge.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.brother": {
    "lang": "en-US",
    "text": "brother",
-   "file": null
+   "file": "audio/en/word/brother.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.brown": {
    "lang": "en-US",
    "text": "brown",
-   "file": null
+   "file": "audio/en/word/brown.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.bug": {
    "lang": "en-US",
    "text": "bug",
-   "file": null
+   "file": "audio/en/word/bug.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.cake": {
    "lang": "en-US",
    "text": "cake",
-   "file": null
+   "file": "audio/en/word/cake.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.candy": {
    "lang": "en-US",
    "text": "candy",
-   "file": null
+   "file": "audio/en/word/candy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.carrot": {
    "lang": "en-US",
    "text": "carrot",
-   "file": null
+   "file": "audio/en/word/carrot.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.cat": {
    "lang": "en-US",
    "text": "cat",
-   "file": null
+   "file": "audio/en/word/cat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.circle": {
    "lang": "en-US",
    "text": "circle",
-   "file": null
+   "file": "audio/en/word/circle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.clap": {
    "lang": "en-US",
    "text": "clap",
-   "file": null
+   "file": "audio/en/word/clap.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.cloud": {
    "lang": "en-US",
    "text": "cloud",
-   "file": null
+   "file": "audio/en/word/cloud.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.cloudy": {
    "lang": "en-US",
    "text": "cloudy",
-   "file": null
+   "file": "audio/en/word/cloudy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.coat": {
    "lang": "en-US",
    "text": "coat",
-   "file": null
+   "file": "audio/en/word/coat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.cold": {
    "lang": "en-US",
    "text": "cold",
-   "file": null
+   "file": "audio/en/word/cold.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.cook": {
    "lang": "en-US",
    "text": "cook",
-   "file": null
+   "file": "audio/en/word/cook.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.cookie": {
    "lang": "en-US",
    "text": "cookie",
-   "file": null
+   "file": "audio/en/word/cookie.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.corn": {
    "lang": "en-US",
    "text": "corn",
-   "file": null
+   "file": "audio/en/word/corn.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.cow": {
    "lang": "en-US",
    "text": "cow",
-   "file": null
+   "file": "audio/en/word/cow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.dad": {
    "lang": "en-US",
    "text": "dad",
-   "file": null
+   "file": "audio/en/word/dad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.dance": {
    "lang": "en-US",
    "text": "dance",
-   "file": null
+   "file": "audio/en/word/dance.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.dog": {
    "lang": "en-US",
    "text": "dog",
-   "file": null
+   "file": "audio/en/word/dog.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.draw": {
    "lang": "en-US",
    "text": "draw",
-   "file": null
+   "file": "audio/en/word/draw.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.dream": {
    "lang": "en-US",
    "text": "dream",
-   "file": null
+   "file": "audio/en/word/dream.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.dress": {
    "lang": "en-US",
    "text": "dress",
-   "file": null
+   "file": "audio/en/word/dress.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.duck": {
    "lang": "en-US",
    "text": "duck",
-   "file": null
+   "file": "audio/en/word/duck.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.ear": {
    "lang": "en-US",
    "text": "ear",
-   "file": null
+   "file": "audio/en/word/ear.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.eat": {
    "lang": "en-US",
    "text": "eat",
-   "file": null
+   "file": "audio/en/word/eat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.egg": {
    "lang": "en-US",
    "text": "egg",
-   "file": null
+   "file": "audio/en/word/egg.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.eight": {
    "lang": "en-US",
    "text": "eight",
-   "file": null
+   "file": "audio/en/word/eight.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.elephant": {
    "lang": "en-US",
    "text": "elephant",
-   "file": null
+   "file": "audio/en/word/elephant.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.eye": {
    "lang": "en-US",
    "text": "eye",
-   "file": null
+   "file": "audio/en/word/eye.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.finger": {
    "lang": "en-US",
    "text": "finger",
-   "file": null
+   "file": "audio/en/word/finger.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.fish": {
    "lang": "en-US",
    "text": "fish",
-   "file": null
+   "file": "audio/en/word/fish.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.five": {
    "lang": "en-US",
    "text": "five",
-   "file": null
+   "file": "audio/en/word/five.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.flower": {
    "lang": "en-US",
    "text": "flower",
-   "file": null
+   "file": "audio/en/word/flower.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.fly": {
    "lang": "en-US",
    "text": "fly",
-   "file": null
+   "file": "audio/en/word/fly.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.foot": {
    "lang": "en-US",
    "text": "foot",
-   "file": null
+   "file": "audio/en/word/foot.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.four": {
    "lang": "en-US",
    "text": "four",
-   "file": null
+   "file": "audio/en/word/four.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.friend": {
    "lang": "en-US",
    "text": "friend",
-   "file": null
+   "file": "audio/en/word/friend.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.frog": {
    "lang": "en-US",
    "text": "frog",
-   "file": null
+   "file": "audio/en/word/frog.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.garden": {
    "lang": "en-US",
    "text": "garden",
-   "file": null
+   "file": "audio/en/word/garden.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.gift": {
    "lang": "en-US",
    "text": "gift",
-   "file": null
+   "file": "audio/en/word/gift.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.grandma": {
    "lang": "en-US",
    "text": "grandma",
-   "file": null
+   "file": "audio/en/word/grandma.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.grandpa": {
    "lang": "en-US",
    "text": "grandpa",
-   "file": null
+   "file": "audio/en/word/grandpa.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.grape": {
    "lang": "en-US",
    "text": "grape",
-   "file": null
+   "file": "audio/en/word/grape.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.green": {
    "lang": "en-US",
    "text": "green",
-   "file": null
+   "file": "audio/en/word/green.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.hand": {
    "lang": "en-US",
    "text": "hand",
-   "file": null
+   "file": "audio/en/word/hand.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.happy": {
    "lang": "en-US",
    "text": "happy",
-   "file": null
+   "file": "audio/en/word/happy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.hat": {
    "lang": "en-US",
    "text": "hat",
-   "file": null
+   "file": "audio/en/word/hat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.head": {
    "lang": "en-US",
    "text": "head",
-   "file": null
+   "file": "audio/en/word/head.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.heart": {
    "lang": "en-US",
    "text": "heart",
-   "file": null
+   "file": "audio/en/word/heart.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.hide": {
    "lang": "en-US",
    "text": "hide",
-   "file": null
+   "file": "audio/en/word/hide.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.horse": {
    "lang": "en-US",
    "text": "horse",
-   "file": null
+   "file": "audio/en/word/horse.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.hot": {
    "lang": "en-US",
    "text": "hot",
-   "file": null
+   "file": "audio/en/word/hot.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.hungry": {
    "lang": "en-US",
    "text": "hungry",
-   "file": null
+   "file": "audio/en/word/hungry.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.in": {
    "lang": "en-US",
    "text": "in",
-   "file": null
+   "file": "audio/en/word/in.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.juice": {
    "lang": "en-US",
    "text": "juice",
-   "file": null
+   "file": "audio/en/word/juice.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.jump": {
    "lang": "en-US",
    "text": "jump",
-   "file": null
+   "file": "audio/en/word/jump.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.leaf": {
    "lang": "en-US",
    "text": "leaf",
-   "file": null
+   "file": "audio/en/word/leaf.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.leg": {
    "lang": "en-US",
    "text": "leg",
-   "file": null
+   "file": "audio/en/word/leg.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.lemon": {
    "lang": "en-US",
    "text": "lemon",
-   "file": null
+   "file": "audio/en/word/lemon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.light": {
    "lang": "en-US",
    "text": "light",
-   "file": null
+   "file": "audio/en/word/light.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.lion": {
    "lang": "en-US",
    "text": "lion",
-   "file": null
+   "file": "audio/en/word/lion.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.milk": {
    "lang": "en-US",
    "text": "milk",
-   "file": null
+   "file": "audio/en/word/milk.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.mom": {
    "lang": "en-US",
    "text": "mom",
-   "file": null
+   "file": "audio/en/word/mom.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.monkey": {
    "lang": "en-US",
    "text": "monkey",
-   "file": null
+   "file": "audio/en/word/monkey.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.moon": {
    "lang": "en-US",
    "text": "moon",
-   "file": null
+   "file": "audio/en/word/moon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.mouth": {
    "lang": "en-US",
    "text": "mouth",
-   "file": null
+   "file": "audio/en/word/mouth.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.mushroom": {
    "lang": "en-US",
    "text": "mushroom",
-   "file": null
+   "file": "audio/en/word/mushroom.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.music": {
    "lang": "en-US",
    "text": "music",
-   "file": null
+   "file": "audio/en/word/music.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.night": {
    "lang": "en-US",
    "text": "night",
-   "file": null
+   "file": "audio/en/word/night.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.nine": {
    "lang": "en-US",
    "text": "nine",
-   "file": null
+   "file": "audio/en/word/nine.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.nose": {
    "lang": "en-US",
    "text": "nose",
-   "file": null
+   "file": "audio/en/word/nose.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.on": {
    "lang": "en-US",
    "text": "on",
-   "file": null
+   "file": "audio/en/word/on.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.one": {
    "lang": "en-US",
    "text": "one",
-   "file": null
+   "file": "audio/en/word/one.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.orange": {
    "lang": "en-US",
    "text": "orange",
-   "file": null
+   "file": "audio/en/word/orange.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.owl": {
    "lang": "en-US",
    "text": "owl",
-   "file": null
+   "file": "audio/en/word/owl.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.pants": {
    "lang": "en-US",
    "text": "pants",
-   "file": null
+   "file": "audio/en/word/pants.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.park": {
    "lang": "en-US",
    "text": "park",
-   "file": null
+   "file": "audio/en/word/park.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.pig": {
    "lang": "en-US",
    "text": "pig",
-   "file": null
+   "file": "audio/en/word/pig.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.pink": {
    "lang": "en-US",
    "text": "pink",
-   "file": null
+   "file": "audio/en/word/pink.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.pizza": {
    "lang": "en-US",
    "text": "pizza",
-   "file": null
+   "file": "audio/en/word/pizza.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.play": {
    "lang": "en-US",
    "text": "play",
-   "file": null
+   "file": "audio/en/word/play.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.pool": {
    "lang": "en-US",
    "text": "pool",
-   "file": null
+   "file": "audio/en/word/pool.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.purple": {
    "lang": "en-US",
    "text": "purple",
-   "file": null
+   "file": "audio/en/word/purple.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.rabbit": {
    "lang": "en-US",
    "text": "rabbit",
-   "file": null
+   "file": "audio/en/word/rabbit.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.rainbow": {
    "lang": "en-US",
    "text": "rainbow",
-   "file": null
+   "file": "audio/en/word/rainbow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.rainy": {
    "lang": "en-US",
    "text": "rainy",
-   "file": null
+   "file": "audio/en/word/rainy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.read": {
    "lang": "en-US",
    "text": "reed",
-   "file": null
+   "file": "audio/en/word/read.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.red": {
    "lang": "en-US",
    "text": "red",
-   "file": null
+   "file": "audio/en/word/red.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.rice": {
    "lang": "en-US",
    "text": "rice",
-   "file": null
+   "file": "audio/en/word/rice.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.rock": {
    "lang": "en-US",
    "text": "rock",
-   "file": null
+   "file": "audio/en/word/rock.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.run": {
    "lang": "en-US",
    "text": "run",
-   "file": null
+   "file": "audio/en/word/run.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.sad": {
    "lang": "en-US",
    "text": "sad",
-   "file": null
+   "file": "audio/en/word/sad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.scared": {
    "lang": "en-US",
    "text": "scared",
-   "file": null
+   "file": "audio/en/word/scared.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.seven": {
    "lang": "en-US",
    "text": "seven",
-   "file": null
+   "file": "audio/en/word/seven.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.shirt": {
    "lang": "en-US",
    "text": "shirt",
-   "file": null
+   "file": "audio/en/word/shirt.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.shoes": {
    "lang": "en-US",
    "text": "shoes",
-   "file": null
+   "file": "audio/en/word/shoes.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.shy": {
    "lang": "en-US",
    "text": "shy",
-   "file": null
+   "file": "audio/en/word/shy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.sing": {
    "lang": "en-US",
    "text": "sing",
-   "file": null
+   "file": "audio/en/word/sing.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.sister": {
    "lang": "en-US",
    "text": "sister",
-   "file": null
+   "file": "audio/en/word/sister.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.six": {
    "lang": "en-US",
    "text": "six",
-   "file": null
+   "file": "audio/en/word/six.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.sky": {
    "lang": "en-US",
    "text": "sky",
-   "file": null
+   "file": "audio/en/word/sky.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.sleep": {
    "lang": "en-US",
    "text": "sleep",
-   "file": null
+   "file": "audio/en/word/sleep.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.sleepy": {
    "lang": "en-US",
    "text": "sleepy",
-   "file": null
+   "file": "audio/en/word/sleepy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.small": {
    "lang": "en-US",
    "text": "small",
-   "file": null
+   "file": "audio/en/word/small.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.snowy": {
    "lang": "en-US",
    "text": "snowy",
-   "file": null
+   "file": "audio/en/word/snowy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.socks": {
    "lang": "en-US",
    "text": "socks",
-   "file": null
+   "file": "audio/en/word/socks.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.square": {
    "lang": "en-US",
    "text": "square",
-   "file": null
+   "file": "audio/en/word/square.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.star": {
    "lang": "en-US",
    "text": "star",
-   "file": null
+   "file": "audio/en/word/star.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.store": {
    "lang": "en-US",
    "text": "store",
-   "file": null
+   "file": "audio/en/word/store.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.strawberry": {
    "lang": "en-US",
    "text": "strawberry",
-   "file": null
+   "file": "audio/en/word/strawberry.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.sun": {
    "lang": "en-US",
    "text": "sun",
-   "file": null
+   "file": "audio/en/word/sun.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.sunny": {
    "lang": "en-US",
    "text": "sunny",
-   "file": null
+   "file": "audio/en/word/sunny.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.swim": {
    "lang": "en-US",
    "text": "swim",
-   "file": null
+   "file": "audio/en/word/swim.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.table": {
    "lang": "en-US",
    "text": "table",
-   "file": null
+   "file": "audio/en/word/table.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.ten": {
    "lang": "en-US",
    "text": "ten",
-   "file": null
+   "file": "audio/en/word/ten.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.thirsty": {
    "lang": "en-US",
    "text": "thirsty",
-   "file": null
+   "file": "audio/en/word/thirsty.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.three": {
    "lang": "en-US",
    "text": "three",
-   "file": null
+   "file": "audio/en/word/three.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.tired": {
    "lang": "en-US",
    "text": "tired",
-   "file": null
+   "file": "audio/en/word/tired.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.tree": {
    "lang": "en-US",
    "text": "tree",
-   "file": null
+   "file": "audio/en/word/tree.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.triangle": {
    "lang": "en-US",
    "text": "triangle",
-   "file": null
+   "file": "audio/en/word/triangle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.turtle": {
    "lang": "en-US",
    "text": "turtle",
-   "file": null
+   "file": "audio/en/word/turtle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.two": {
    "lang": "en-US",
    "text": "two",
-   "file": null
+   "file": "audio/en/word/two.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.umbrella": {
    "lang": "en-US",
    "text": "umbrella",
-   "file": null
+   "file": "audio/en/word/umbrella.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.under": {
    "lang": "en-US",
    "text": "under",
-   "file": null
+   "file": "audio/en/word/under.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.walk": {
    "lang": "en-US",
    "text": "walk",
-   "file": null
+   "file": "audio/en/word/walk.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.water": {
    "lang": "en-US",
    "text": "water",
-   "file": null
+   "file": "audio/en/word/water.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.white": {
    "lang": "en-US",
    "text": "white",
-   "file": null
+   "file": "audio/en/word/white.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.windy": {
    "lang": "en-US",
    "text": "windy",
-   "file": null
+   "file": "audio/en/word/windy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.yellow": {
    "lang": "en-US",
    "text": "yellow",
-   "file": null
+   "file": "audio/en/word/yellow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.word.zoo": {
    "lang": "en-US",
    "text": "zoo",
-   "file": null
+   "file": "audio/en/word/zoo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.angry": {
    "lang": "en-US",
    "text": "I am angry.",
-   "file": null
+   "file": "audio/en/wsent/angry.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.apple": {
    "lang": "en-US",
    "text": "I want an apple.",
-   "file": null
+   "file": "audio/en/wsent/apple.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.arm": {
    "lang": "en-US",
    "text": "Wash your arms.",
-   "file": null
+   "file": "audio/en/wsent/arm.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.baby": {
    "lang": "en-US",
    "text": "This is a baby.",
-   "file": null
+   "file": "audio/en/wsent/baby.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.bag": {
    "lang": "en-US",
    "text": "Is this your bag?",
-   "file": null
+   "file": "audio/en/wsent/bag.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.ball": {
    "lang": "en-US",
    "text": "I see a ball.",
-   "file": null
+   "file": "audio/en/wsent/ball.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.balloon": {
    "lang": "en-US",
    "text": "I see a balloon.",
-   "file": null
+   "file": "audio/en/wsent/balloon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.banana": {
    "lang": "en-US",
    "text": "I want a banana.",
-   "file": null
+   "file": "audio/en/wsent/banana.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.beach": {
    "lang": "en-US",
    "text": "I'm at the beach.",
-   "file": null
+   "file": "audio/en/wsent/beach.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.bear": {
    "lang": "en-US",
    "text": "Where is the bear?",
-   "file": null
+   "file": "audio/en/wsent/bear.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.big": {
    "lang": "en-US",
    "text": "It is big.",
-   "file": null
+   "file": "audio/en/wsent/big.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.black": {
    "lang": "en-US",
    "text": "It is black.",
-   "file": null
+   "file": "audio/en/wsent/black.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.blue": {
    "lang": "en-US",
    "text": "I like blue.",
-   "file": null
+   "file": "audio/en/wsent/blue.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.boat": {
    "lang": "en-US",
    "text": "I love my boat.",
-   "file": null
+   "file": "audio/en/wsent/boat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.boots": {
    "lang": "en-US",
    "text": "Put on your boots.",
-   "file": null
+   "file": "audio/en/wsent/boots.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.box": {
    "lang": "en-US",
    "text": "It's a box.",
-   "file": null
+   "file": "audio/en/wsent/box.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.brave": {
    "lang": "en-US",
    "text": "Are you brave?",
-   "file": null
+   "file": "audio/en/wsent/brave.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.bread": {
    "lang": "en-US",
    "text": "Do you like bread?",
-   "file": null
+   "file": "audio/en/wsent/bread.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.bridge": {
    "lang": "en-US",
    "text": "This is a bridge.",
-   "file": null
+   "file": "audio/en/wsent/bridge.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.brother": {
    "lang": "en-US",
    "text": "This is my brother.",
-   "file": null
+   "file": "audio/en/wsent/brother.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.brown": {
    "lang": "en-US",
    "text": "It is brown.",
-   "file": null
+   "file": "audio/en/wsent/brown.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.bug": {
    "lang": "en-US",
    "text": "What is it? It's a bug.",
-   "file": null
+   "file": "audio/en/wsent/bug.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.cake": {
    "lang": "en-US",
    "text": "I see a cake.",
-   "file": null
+   "file": "audio/en/wsent/cake.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.candy": {
    "lang": "en-US",
    "text": "I don't like candy.",
-   "file": null
+   "file": "audio/en/wsent/candy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.carrot": {
    "lang": "en-US",
    "text": "I don't like carrots.",
-   "file": null
+   "file": "audio/en/wsent/carrot.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.cat": {
    "lang": "en-US",
    "text": "Where is the cat?",
-   "file": null
+   "file": "audio/en/wsent/cat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.circle": {
    "lang": "en-US",
    "text": "Look at the circle!",
-   "file": null
+   "file": "audio/en/wsent/circle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.clap": {
    "lang": "en-US",
    "text": "Can you clap?",
-   "file": null
+   "file": "audio/en/wsent/clap.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.cloud": {
    "lang": "en-US",
    "text": "I see a cloud.",
-   "file": null
+   "file": "audio/en/wsent/cloud.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.cloudy": {
    "lang": "en-US",
    "text": "It's cloudy today.",
-   "file": null
+   "file": "audio/en/wsent/cloudy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.coat": {
    "lang": "en-US",
    "text": "Is this your coat?",
-   "file": null
+   "file": "audio/en/wsent/coat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.cold": {
    "lang": "en-US",
    "text": "It is cold.",
-   "file": null
+   "file": "audio/en/wsent/cold.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.cook": {
    "lang": "en-US",
    "text": "Let's cook!",
-   "file": null
+   "file": "audio/en/wsent/cook.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.cookie": {
    "lang": "en-US",
    "text": "Do you like cookies?",
-   "file": null
+   "file": "audio/en/wsent/cookie.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.corn": {
    "lang": "en-US",
    "text": "I don't like corn.",
-   "file": null
+   "file": "audio/en/wsent/corn.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.cow": {
    "lang": "en-US",
    "text": "Is it a cow?",
-   "file": null
+   "file": "audio/en/wsent/cow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.dad": {
    "lang": "en-US",
    "text": "This is my dad.",
-   "file": null
+   "file": "audio/en/wsent/dad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.dance": {
    "lang": "en-US",
    "text": "Can you dance?",
-   "file": null
+   "file": "audio/en/wsent/dance.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.dog": {
    "lang": "en-US",
    "text": "Where is the dog?",
-   "file": null
+   "file": "audio/en/wsent/dog.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.draw": {
    "lang": "en-US",
    "text": "Let's draw!",
-   "file": null
+   "file": "audio/en/wsent/draw.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.dream": {
    "lang": "en-US",
    "text": "Sweet dreams!",
-   "file": null
+   "file": "audio/en/wsent/dream.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.dress": {
    "lang": "en-US",
    "text": "Is this your dress?",
-   "file": null
+   "file": "audio/en/wsent/dress.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.duck": {
    "lang": "en-US",
    "text": "What is it? It's a duck.",
-   "file": null
+   "file": "audio/en/wsent/duck.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.ear": {
    "lang": "en-US",
    "text": "Touch your ear.",
-   "file": null
+   "file": "audio/en/wsent/ear.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.eat": {
    "lang": "en-US",
    "text": "Let's eat!",
-   "file": null
+   "file": "audio/en/wsent/eat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.egg": {
    "lang": "en-US",
    "text": "Do you like eggs?",
-   "file": null
+   "file": "audio/en/wsent/egg.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.eight": {
    "lang": "en-US",
    "text": "How many stars? Eight!",
-   "file": null
+   "file": "audio/en/wsent/eight.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.elephant": {
    "lang": "en-US",
    "text": "Is it an elephant?",
-   "file": null
+   "file": "audio/en/wsent/elephant.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.eye": {
    "lang": "en-US",
    "text": "Touch your eye.",
-   "file": null
+   "file": "audio/en/wsent/eye.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.finger": {
    "lang": "en-US",
    "text": "Wash your fingers.",
-   "file": null
+   "file": "audio/en/wsent/finger.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.fish": {
    "lang": "en-US",
    "text": "What is it? It's a fish.",
-   "file": null
+   "file": "audio/en/wsent/fish.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.five": {
    "lang": "en-US",
    "text": "I have five flowers.",
-   "file": null
+   "file": "audio/en/wsent/five.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.flower": {
    "lang": "en-US",
    "text": "This is a flower.",
-   "file": null
+   "file": "audio/en/wsent/flower.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.fly": {
    "lang": "en-US",
    "text": "I can fly.",
-   "file": null
+   "file": "audio/en/wsent/fly.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.foot": {
    "lang": "en-US",
    "text": "Wash your feet.",
-   "file": null
+   "file": "audio/en/wsent/foot.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.four": {
    "lang": "en-US",
    "text": "I have four flowers.",
-   "file": null
+   "file": "audio/en/wsent/four.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.friend": {
    "lang": "en-US",
    "text": "You are my friend.",
-   "file": null
+   "file": "audio/en/wsent/friend.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.frog": {
    "lang": "en-US",
    "text": "What is it? It's a frog.",
-   "file": null
+   "file": "audio/en/wsent/frog.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.garden": {
    "lang": "en-US",
    "text": "I love my garden.",
-   "file": null
+   "file": "audio/en/wsent/garden.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.gift": {
    "lang": "en-US",
    "text": "This is a gift.",
-   "file": null
+   "file": "audio/en/wsent/gift.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.grandma": {
    "lang": "en-US",
    "text": "I love my grandma.",
-   "file": null
+   "file": "audio/en/wsent/grandma.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.grandpa": {
    "lang": "en-US",
    "text": "I love my grandpa.",
-   "file": null
+   "file": "audio/en/wsent/grandpa.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.grape": {
    "lang": "en-US",
    "text": "I want grapes.",
-   "file": null
+   "file": "audio/en/wsent/grape.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.green": {
    "lang": "en-US",
    "text": "I like green.",
-   "file": null
+   "file": "audio/en/wsent/green.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.hand": {
    "lang": "en-US",
    "text": "Wash your hands.",
-   "file": null
+   "file": "audio/en/wsent/hand.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.happy": {
    "lang": "en-US",
    "text": "I am happy.",
-   "file": null
+   "file": "audio/en/wsent/happy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.hat": {
    "lang": "en-US",
    "text": "Put on your hat.",
-   "file": null
+   "file": "audio/en/wsent/hat.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.head": {
    "lang": "en-US",
    "text": "Touch your head.",
-   "file": null
+   "file": "audio/en/wsent/head.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.heart": {
    "lang": "en-US",
    "text": "Look at the heart!",
-   "file": null
+   "file": "audio/en/wsent/heart.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.hide": {
    "lang": "en-US",
    "text": "Let's hide!",
-   "file": null
+   "file": "audio/en/wsent/hide.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.horse": {
    "lang": "en-US",
    "text": "Is it a horse?",
-   "file": null
+   "file": "audio/en/wsent/horse.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.hot": {
    "lang": "en-US",
    "text": "It is hot.",
-   "file": null
+   "file": "audio/en/wsent/hot.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.hungry": {
    "lang": "en-US",
    "text": "Are you hungry?",
-   "file": null
+   "file": "audio/en/wsent/hungry.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.in": {
    "lang": "en-US",
    "text": "It's in the box.",
-   "file": null
+   "file": "audio/en/wsent/in.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.juice": {
    "lang": "en-US",
    "text": "I like juice.",
-   "file": null
+   "file": "audio/en/wsent/juice.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.jump": {
    "lang": "en-US",
    "text": "I can jump.",
-   "file": null
+   "file": "audio/en/wsent/jump.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.leaf": {
    "lang": "en-US",
    "text": "This is a leaf.",
-   "file": null
+   "file": "audio/en/wsent/leaf.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.leg": {
    "lang": "en-US",
    "text": "Wash your legs.",
-   "file": null
+   "file": "audio/en/wsent/leg.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.lemon": {
    "lang": "en-US",
    "text": "I want a lemon.",
-   "file": null
+   "file": "audio/en/wsent/lemon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.light": {
    "lang": "en-US",
    "text": "Look at the light!",
-   "file": null
+   "file": "audio/en/wsent/light.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.lion": {
    "lang": "en-US",
    "text": "Is it a lion?",
-   "file": null
+   "file": "audio/en/wsent/lion.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.milk": {
    "lang": "en-US",
    "text": "Do you like milk?",
-   "file": null
+   "file": "audio/en/wsent/milk.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.mom": {
    "lang": "en-US",
    "text": "This is my mom.",
-   "file": null
+   "file": "audio/en/wsent/mom.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.monkey": {
    "lang": "en-US",
    "text": "Is it a monkey?",
-   "file": null
+   "file": "audio/en/wsent/monkey.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.moon": {
    "lang": "en-US",
    "text": "This is the moon.",
-   "file": null
+   "file": "audio/en/wsent/moon.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.mouth": {
    "lang": "en-US",
    "text": "Touch your mouth.",
-   "file": null
+   "file": "audio/en/wsent/mouth.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.mushroom": {
    "lang": "en-US",
    "text": "It's a mushroom.",
-   "file": null
+   "file": "audio/en/wsent/mushroom.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.music": {
    "lang": "en-US",
    "text": "I like music.",
-   "file": null
+   "file": "audio/en/wsent/music.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.night": {
    "lang": "en-US",
    "text": "Good night!",
-   "file": null
+   "file": "audio/en/wsent/night.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.nine": {
    "lang": "en-US",
    "text": "How many stars? Nine!",
-   "file": null
+   "file": "audio/en/wsent/nine.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.nose": {
    "lang": "en-US",
    "text": "Touch your nose.",
-   "file": null
+   "file": "audio/en/wsent/nose.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.on": {
    "lang": "en-US",
    "text": "It's on the box.",
-   "file": null
+   "file": "audio/en/wsent/on.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.one": {
    "lang": "en-US",
    "text": "I have one flower.",
-   "file": null
+   "file": "audio/en/wsent/one.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.orange": {
    "lang": "en-US",
    "text": "It is orange.",
-   "file": null
+   "file": "audio/en/wsent/orange.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.owl": {
    "lang": "en-US",
    "text": "I see an owl.",
-   "file": null
+   "file": "audio/en/wsent/owl.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.pants": {
    "lang": "en-US",
    "text": "Put on your pants.",
-   "file": null
+   "file": "audio/en/wsent/pants.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.park": {
    "lang": "en-US",
    "text": "I'm at the park.",
-   "file": null
+   "file": "audio/en/wsent/park.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.pig": {
    "lang": "en-US",
    "text": "Where is the pig?",
-   "file": null
+   "file": "audio/en/wsent/pig.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.pink": {
    "lang": "en-US",
    "text": "I like pink.",
-   "file": null
+   "file": "audio/en/wsent/pink.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.pizza": {
    "lang": "en-US",
    "text": "I like pizza.",
-   "file": null
+   "file": "audio/en/wsent/pizza.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.play": {
    "lang": "en-US",
    "text": "Let's play!",
-   "file": null
+   "file": "audio/en/wsent/play.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.pool": {
    "lang": "en-US",
    "text": "I'm at the pool.",
-   "file": null
+   "file": "audio/en/wsent/pool.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.purple": {
    "lang": "en-US",
    "text": "It is purple.",
-   "file": null
+   "file": "audio/en/wsent/purple.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.rabbit": {
    "lang": "en-US",
    "text": "Where is the rabbit?",
-   "file": null
+   "file": "audio/en/wsent/rabbit.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.rainbow": {
    "lang": "en-US",
    "text": "Look at the rainbow!",
-   "file": null
+   "file": "audio/en/wsent/rainbow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.rainy": {
    "lang": "en-US",
    "text": "It's rainy today.",
-   "file": null
+   "file": "audio/en/wsent/rainy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.read": {
    "lang": "en-US",
    "text": "Let's read!",
-   "file": null
+   "file": "audio/en/wsent/read.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.red": {
    "lang": "en-US",
    "text": "I like red.",
-   "file": null
+   "file": "audio/en/wsent/red.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.rice": {
    "lang": "en-US",
    "text": "Do you like rice?",
-   "file": null
+   "file": "audio/en/wsent/rice.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.rock": {
    "lang": "en-US",
    "text": "I see a rock.",
-   "file": null
+   "file": "audio/en/wsent/rock.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.run": {
    "lang": "en-US",
    "text": "I can run.",
-   "file": null
+   "file": "audio/en/wsent/run.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.sad": {
    "lang": "en-US",
    "text": "I am sad.",
-   "file": null
+   "file": "audio/en/wsent/sad.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.scared": {
    "lang": "en-US",
    "text": "I am scared.",
-   "file": null
+   "file": "audio/en/wsent/scared.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.seven": {
    "lang": "en-US",
    "text": "How many stars? Seven!",
-   "file": null
+   "file": "audio/en/wsent/seven.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.shirt": {
    "lang": "en-US",
    "text": "Put on your shirt.",
-   "file": null
+   "file": "audio/en/wsent/shirt.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.shoes": {
    "lang": "en-US",
    "text": "Put on your shoes.",
-   "file": null
+   "file": "audio/en/wsent/shoes.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.shy": {
    "lang": "en-US",
    "text": "Are you shy?",
-   "file": null
+   "file": "audio/en/wsent/shy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.sing": {
    "lang": "en-US",
    "text": "Can you sing?",
-   "file": null
+   "file": "audio/en/wsent/sing.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.sister": {
    "lang": "en-US",
    "text": "This is my sister.",
-   "file": null
+   "file": "audio/en/wsent/sister.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.six": {
    "lang": "en-US",
    "text": "How many stars? Six!",
-   "file": null
+   "file": "audio/en/wsent/six.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.sky": {
    "lang": "en-US",
    "text": "Look at the sky!",
-   "file": null
+   "file": "audio/en/wsent/sky.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.sleep": {
    "lang": "en-US",
    "text": "Let's sleep!",
-   "file": null
+   "file": "audio/en/wsent/sleep.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.sleepy": {
    "lang": "en-US",
    "text": "I am sleepy.",
-   "file": null
+   "file": "audio/en/wsent/sleepy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.small": {
    "lang": "en-US",
    "text": "It is small.",
-   "file": null
+   "file": "audio/en/wsent/small.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.snowy": {
    "lang": "en-US",
    "text": "It's snowy today.",
-   "file": null
+   "file": "audio/en/wsent/snowy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.socks": {
    "lang": "en-US",
    "text": "Put on your socks.",
-   "file": null
+   "file": "audio/en/wsent/socks.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.square": {
    "lang": "en-US",
    "text": "Look at the square!",
-   "file": null
+   "file": "audio/en/wsent/square.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.star": {
    "lang": "en-US",
    "text": "Look at the star!",
-   "file": null
+   "file": "audio/en/wsent/star.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.store": {
    "lang": "en-US",
    "text": "I'm at the store.",
-   "file": null
+   "file": "audio/en/wsent/store.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.strawberry": {
    "lang": "en-US",
    "text": "I want a strawberry.",
-   "file": null
+   "file": "audio/en/wsent/strawberry.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.sun": {
    "lang": "en-US",
    "text": "This is the sun.",
-   "file": null
+   "file": "audio/en/wsent/sun.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.sunny": {
    "lang": "en-US",
    "text": "It's sunny today.",
-   "file": null
+   "file": "audio/en/wsent/sunny.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.swim": {
    "lang": "en-US",
    "text": "I can swim.",
-   "file": null
+   "file": "audio/en/wsent/swim.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.table": {
    "lang": "en-US",
    "text": "It's on the table.",
-   "file": null
+   "file": "audio/en/wsent/table.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.ten": {
    "lang": "en-US",
    "text": "How many stars? Ten!",
-   "file": null
+   "file": "audio/en/wsent/ten.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.thirsty": {
    "lang": "en-US",
    "text": "Are you thirsty?",
-   "file": null
+   "file": "audio/en/wsent/thirsty.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.three": {
    "lang": "en-US",
    "text": "I have three flowers.",
-   "file": null
+   "file": "audio/en/wsent/three.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.tired": {
    "lang": "en-US",
    "text": "Are you tired?",
-   "file": null
+   "file": "audio/en/wsent/tired.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.tree": {
    "lang": "en-US",
    "text": "This is a tree.",
-   "file": null
+   "file": "audio/en/wsent/tree.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.triangle": {
    "lang": "en-US",
    "text": "Look at the triangle!",
-   "file": null
+   "file": "audio/en/wsent/triangle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.turtle": {
    "lang": "en-US",
    "text": "What is it? It's a turtle.",
-   "file": null
+   "file": "audio/en/wsent/turtle.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.two": {
    "lang": "en-US",
    "text": "I have two flowers.",
-   "file": null
+   "file": "audio/en/wsent/two.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.umbrella": {
    "lang": "en-US",
    "text": "Is this your umbrella?",
-   "file": null
+   "file": "audio/en/wsent/umbrella.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.under": {
    "lang": "en-US",
    "text": "It's under the box.",
-   "file": null
+   "file": "audio/en/wsent/under.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.walk": {
    "lang": "en-US",
    "text": "I can walk.",
-   "file": null
+   "file": "audio/en/wsent/walk.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.water": {
    "lang": "en-US",
    "text": "I love water.",
-   "file": null
+   "file": "audio/en/wsent/water.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.white": {
    "lang": "en-US",
    "text": "It is white.",
-   "file": null
+   "file": "audio/en/wsent/white.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.windy": {
    "lang": "en-US",
    "text": "It's windy today.",
-   "file": null
+   "file": "audio/en/wsent/windy.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.yellow": {
    "lang": "en-US",
    "text": "I like yellow.",
-   "file": null
+   "file": "audio/en/wsent/yellow.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "en.wsent.zoo": {
    "lang": "en-US",
    "text": "I'm at the zoo.",
-   "file": null
+   "file": "audio/en/wsent/zoo.mp3",
+   "source": "generated:piper-libritts-172"
   },
   "ko.ant.english": {
    "lang": "ko-KR",

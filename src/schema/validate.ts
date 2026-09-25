@@ -3,6 +3,8 @@
  * Used by `npm run validate:data` and by tests (never bundled into the app).
  */
 import { z } from 'zod';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import wordsJson from '../data/words.json';
 import sentencesJson from '../data/sentences.json';
 import friendsJson from '../data/friends.json';
@@ -22,6 +24,8 @@ const pic = z
   .string()
   .min(1)
   .refine((p) => !p.startsWith('draw:') || /^draw:[a-z]+:.+$/.test(p), 'bad draw spec');
+
+const PUBLIC_DIR = join(import.meta.dirname, '..', '..', 'public');
 
 export const WordSchema = z.object({
   id: z.string().regex(/^[a-z]+$/),
@@ -260,6 +264,7 @@ export function validateAll(): string[] {
       !!m && m.text === e.text && m.lang === e.lang,
       `audio manifest missing/out of date: ${e.id} (run npm run gen:audio)`,
     );
+    if (m?.file) err(existsSync(join(PUBLIC_DIR, m.file)), `audio file missing on disk: ${m.file}`);
   }
   return errors;
 }
